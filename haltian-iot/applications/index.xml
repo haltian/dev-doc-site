@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Applications on Haltian Developer Documentation</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/applications/</link><description>Recent content in Applications on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://haltian.github.io/dev-doc-site/haltian-iot/applications/index.xml" rel="self" type="application/rss+xml"/><item><title>Haltian IoT Studio</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/applications/iot-studio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/applications/iot-studio/</guid><description>&lt;p&gt;Haltian IoT Studio is a web application for managing your Haltian IoT deployment, including devices, spaces, users, and API access.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Haltian IoT Studio provides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Device Management&lt;/strong&gt; - View device status, measurements, and configuration&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Space Management&lt;/strong&gt; - Configure buildings, floors, and zones&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;User Management&lt;/strong&gt; - Create accounts and manage access permissions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;API Configuration&lt;/strong&gt; - Generate and manage API keys&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Visualization&lt;/strong&gt; - View real-time and historical data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Access URL:&lt;/strong&gt; &lt;a href="https://haltian-iot-studio.eu.haltian.io"&gt;https://haltian-iot-studio.eu.haltian.io&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="user-roles"&gt;User Roles&lt;/h2&gt;
+&lt;p&gt;Haltian IoT Studio supports multiple user roles with different permissions:&lt;/p&gt;</description></item></channel></rss>

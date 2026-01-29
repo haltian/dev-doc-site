@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Integrations on Haltian Developer Documentation</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/</link><description>Recent content in Integrations on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/index.xml" rel="self" type="application/rss+xml"/><item><title>MQTT Data Stream</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/mqtt-data-stream/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/mqtt-data-stream/</guid><description>&lt;p&gt;Thingsee Operations Cloud includes an MQTT broker for real-time data streaming. This is the preferred integration method unless you have specific requirements for cloud-native integrations like Azure IoT Hub.&lt;/p&gt;
+&lt;h2 id="topic-structure"&gt;Topic Structure&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;cloudext/json/{env}/{country}/{groupId}/{tuid}/{messageId}
+&lt;/code&gt;&lt;/pre&gt;&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Segment&lt;/th&gt;
+ &lt;th&gt;Description&lt;/th&gt;
+ &lt;th&gt;Example&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;env&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Environment prefix&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;pr&lt;/code&gt; (production)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;country&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Country code&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;fi&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;groupId&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Deployment group&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;prfi00examplename&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;tuid&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Device unique ID&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;TSEN01ABC12345678&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;messageId&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Message type ID&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;12100&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="subscription-examples"&gt;Subscription Examples&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;All data from a group:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;cloudext/json/pr/fi/prfi00samplegroup/#
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;All data from a specific device:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Azure IoT Hub</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/azure-iot-hub/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/azure-iot-hub/</guid><description>&lt;p&gt;Azure IoT Hub is one of the most common integration points for Thingsee data. This guide explains how to set up the connection.&lt;/p&gt;
+&lt;h2 id="how-it-works"&gt;How It Works&lt;/h2&gt;
+&lt;p&gt;Thingsee Operations Cloud connects as a &lt;strong&gt;single device&lt;/strong&gt; to your Azure IoT Hub. All sensor data is forwarded through this connection with individual device identifiers inside each message.&lt;/p&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
+flowchart TB
+ subgraph Azure[&amp;#34;Azure (North)&amp;#34;]
+ App[Your App]
+ EH[Event Hub]
+ Hub[IoT Hub]
+ end
+ 
+ subgraph Thingsee[&amp;#34;Thingsee (South)&amp;#34;]
+ Cloud[Operations Cloud]
+ GW[Gateway]
+ S1[Sensor 1]
+ S2[Sensor 2]
+ end
+ 
+ S1 &amp;amp; S2 --&amp;gt; GW
+ GW --&amp;gt; Cloud
+ Cloud --&amp;gt;|Single Device Connection| Hub
+ Hub --&amp;gt; EH --&amp;gt; App&lt;/pre&gt;
+&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
+&lt;p&gt;The actual device identifier is in the &lt;code&gt;tsmTuid&lt;/code&gt; property of each JSON message. Azure&amp;rsquo;s DeviceId remains constant (e.g., &amp;ldquo;thingsee&amp;rdquo;).&lt;/p&gt;</description></item><item><title>Amazon API Gateway</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/aws-api-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/aws-api-gateway/</guid><description>&lt;p&gt;Amazon API Gateway is an AWS service for creating, securing, and managing APIs at scale. It provides a gateway between applications and backend services for secure and efficient communication.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
+flowchart TB
+ subgraph AWS[&amp;#34;AWS Cloud (North)&amp;#34;]
+ DDB[(DynamoDB)]
+ S3[(S3)]
+ OTHER[Other AWS Services]
+ LAMBDA[Lambda Function]
+ APIGW[API Gateway]
+ end
+ 
+ subgraph Thingsee[&amp;#34;Thingsee (South)&amp;#34;]
+ T[Thingsee Cloud]
+ end
+ 
+ T --&amp;gt;|HTTPS POST| APIGW
+ APIGW --&amp;gt; LAMBDA
+ LAMBDA --&amp;gt; DDB &amp;amp; S3 &amp;amp; OTHER&lt;/pre&gt;
+&lt;h2 id="setup-steps"&gt;Setup Steps&lt;/h2&gt;
+&lt;h3 id="1-create-api-gateway"&gt;1. Create API Gateway&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open AWS Console → API Gateway&lt;/li&gt;
+&lt;li&gt;Create a new REST API or HTTP API&lt;/li&gt;
+&lt;li&gt;Create a resource (e.g., &lt;code&gt;/thingsee&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Add POST method to the resource&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="2-create-lambda-function"&gt;2. Create Lambda Function&lt;/h3&gt;
+&lt;p&gt;Create a Lambda function to process incoming messages:&lt;/p&gt;</description></item><item><title>WebSocket</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/websocket/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/websocket/</guid><description>&lt;p&gt;Thingsee Cloud can connect to WebSocket servers to deliver real-time IoT data. This is useful for applications requiring push-based data delivery without polling.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
+flowchart TB
+ APP[Your Application]
+ WS[Your WebSocket Server]
+ T[Thingsee Cloud]
+ 
+ T --&amp;gt;|WebSocket| WS --&amp;gt; APP&lt;/pre&gt;
+&lt;h2 id="setup"&gt;Setup&lt;/h2&gt;
+&lt;h3 id="1-create-websocket-server"&gt;1. Create WebSocket Server&lt;/h3&gt;
+&lt;p&gt;Set up a WebSocket server that can receive connections from Thingsee Cloud.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Node.js Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;const&lt;/span&gt; &lt;span style="color:#000"&gt;WebSocket&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#000"&gt;require&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;ws&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;const&lt;/span&gt; &lt;span style="color:#000"&gt;wss&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;new&lt;/span&gt; &lt;span style="color:#000"&gt;WebSocket&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;Server&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;({&lt;/span&gt; &lt;span style="color:#000"&gt;port&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;:&lt;/span&gt; &lt;span style="color:#0000cf;font-weight:bold"&gt;8080&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000"&gt;wss&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;on&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;connection&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;ws&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;=&amp;gt;&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000"&gt;console&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;log&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;Thingsee connected&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000"&gt;ws&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;on&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;message&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;data&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;=&amp;gt;&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;const&lt;/span&gt; &lt;span style="color:#000"&gt;messages&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#000"&gt;JSON&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;parse&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;data&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000"&gt;messages&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;forEach&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;message&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;=&amp;gt;&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000"&gt;console&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;log&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;Received:&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#000"&gt;message&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;tsmTuid&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#000"&gt;message&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;tsmId&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000"&gt;processMessage&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;message&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000;font-weight:bold"&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000;font-weight:bold"&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000"&gt;ws&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;on&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;close&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;()&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;=&amp;gt;&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000"&gt;console&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;log&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;Connection closed&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000;font-weight:bold"&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;function&lt;/span&gt; &lt;span style="color:#000"&gt;processMessage&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;message&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#8f5902;font-style:italic"&gt;// Your processing logic here
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="2-configure-authentication-optional"&gt;2. Configure Authentication (Optional)&lt;/h3&gt;
+&lt;p&gt;If your WebSocket requires authentication:&lt;/p&gt;</description></item><item><title>Splunk</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/splunk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/splunk/</guid><description>&lt;p&gt;Splunk is a powerful platform for searching, monitoring, and analyzing machine-generated data. Integrating Thingsee with Splunk enables advanced analytics on your IoT sensor data.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
+flowchart TB
+ subgraph North[&amp;#34;Splunk (North)&amp;#34;]
+ DASH[Dashboards]
+ ALERT[Alerts]
+ REPORT[Reports]
+ S[Splunk]
+ end
+ 
+ T[Thingsee Cloud]
+ 
+ T --&amp;gt;|HTTP Event Collector| S
+ S --&amp;gt; DASH &amp;amp; ALERT &amp;amp; REPORT&lt;/pre&gt;
+&lt;h2 id="setup"&gt;Setup&lt;/h2&gt;
+&lt;h3 id="1-configure-http-event-collector-hec"&gt;1. Configure HTTP Event Collector (HEC)&lt;/h3&gt;
+&lt;p&gt;In Splunk:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;strong&gt;Settings → Data Inputs → HTTP Event Collector&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;New Token&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Configure token settings:
+&lt;ul&gt;
+&lt;li&gt;Name: &lt;code&gt;thingsee-iot&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Source Type: &lt;code&gt;_json&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Note your HEC endpoint and token&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="2-request-integration"&gt;2. Request Integration&lt;/h3&gt;
+&lt;p&gt;Contact Haltian with:&lt;/p&gt;</description></item><item><title>ThingsBoard</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/thingsboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/thingsboard/</guid><description>&lt;p&gt;&lt;a href="https://thingsboard.io/"&gt;ThingsBoard&lt;/a&gt; is an open-source IoT platform for device management, data collection, processing, and visualization.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
+flowchart TB
+ subgraph North[&amp;#34;ThingsBoard (North)&amp;#34;]
+ DASH[Dashboards]
+ RULES[Rule Engine]
+ ALERT[Alerts]
+ TB[ThingsBoard]
+ end
+ 
+ T[Thingsee Cloud]
+ 
+ T --&amp;gt;|HTTP/MQTT| TB
+ TB --&amp;gt; DASH &amp;amp; RULES &amp;amp; ALERT&lt;/pre&gt;
+&lt;h2 id="integration-methods"&gt;Integration Methods&lt;/h2&gt;
+&lt;p&gt;Thingsee integrates with ThingsBoard using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;HTTP Integration&lt;/strong&gt; - HTTPS POST to ThingsBoard endpoint&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MQTT Integration&lt;/strong&gt; - Publish to ThingsBoard MQTT broker&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="setup"&gt;Setup&lt;/h2&gt;
+&lt;h3 id="1-enable-http-integration"&gt;1. Enable HTTP Integration&lt;/h3&gt;
+&lt;p&gt;In ThingsBoard:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;strong&gt;Integrations → HTTP&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Create new integration&lt;/li&gt;
+&lt;li&gt;Configure endpoint settings&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="2-create-uplink-converter"&gt;2. Create Uplink Converter&lt;/h3&gt;
+&lt;p&gt;ThingsBoard requires an uplink converter to transform Thingsee messages into ThingsBoard format.&lt;/p&gt;</description></item><item><title>Wirepas</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/wirepas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/wirepas/</guid><description>&lt;p&gt;Thingsee uses &lt;a href="https://www.wirepas.com/"&gt;Wirepas Mesh&lt;/a&gt; for low-power, scalable wireless sensor networks. This page explains how Wirepas technology works within Thingsee deployments.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Wirepas is one of the most robust and scalable IoT mesh networking technologies available. Thingsee products use &lt;strong&gt;Wirepas 5.0&lt;/strong&gt; as the default mesh networking protocol.&lt;/p&gt;
+&lt;h2 id="how-wirepas-works"&gt;How Wirepas Works&lt;/h2&gt;
+&lt;h3 id="radio-technology"&gt;Radio Technology&lt;/h3&gt;
+&lt;p&gt;Wirepas operates on unlicensed frequency bands:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Band&lt;/th&gt;
+ &lt;th&gt;Frequency&lt;/th&gt;
+ &lt;th&gt;Thingsee Support&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2.4 GHz&lt;/td&gt;
+ &lt;td&gt;2400-2483 MHz&lt;/td&gt;
+ &lt;td&gt;✅ Primary&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;868 MHz&lt;/td&gt;
+ &lt;td&gt;868-870 MHz&lt;/td&gt;
+ &lt;td&gt;Available&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;915 MHz&lt;/td&gt;
+ &lt;td&gt;902-928 MHz&lt;/td&gt;
+ &lt;td&gt;Available&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Thingsee sensors use Nordic nRF52-series chips with 2.4 GHz radio.&lt;/p&gt;</description></item><item><title>Wapice IoT-Ticket</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/wapice-iot-ticket/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/wapice-iot-ticket/</guid><description>&lt;p&gt;&lt;a href="https://www.iot-ticket.com/"&gt;Wapice IoT-Ticket&lt;/a&gt; provides a rapid way to get both IoT sensor devices and a full-featured dashboard running.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
+flowchart TB
+ subgraph North[&amp;#34;Wapice IoT-Ticket (North)&amp;#34;]
+ DASH[Dashboard]
+ WIDGETS[Widgets]
+ DT[DataTags]
+ W[Wapice IoT-Ticket]
+ end
+ 
+ T[Thingsee Cloud]
+ 
+ T --&amp;gt;|REST API| W
+ W --&amp;gt; DT --&amp;gt; DASH &amp;amp; WIDGETS&lt;/pre&gt;
+&lt;h2 id="features"&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Quick setup&lt;/strong&gt; - Dashboard in less than a minute&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DataTag modeling&lt;/strong&gt; - Thingsee messages as Wapice DataTags&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Native widgets&lt;/strong&gt; - Gauges, charts, maps, and more&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;REST API&lt;/strong&gt; - Automated data delivery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="setup"&gt;Setup&lt;/h2&gt;
+&lt;h3 id="if-you-have-a-wapice-account"&gt;If You Have a Wapice Account&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Create credentials for Thingsee Cloud integration&lt;/li&gt;
+&lt;li&gt;Contact Haltian with your Wapice REST API credentials&lt;/li&gt;
+&lt;li&gt;Thingsee will forward data to your dashboard&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="if-you-dont-have-a-wapice-account"&gt;If You Don&amp;rsquo;t Have a Wapice Account&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Option 1:&lt;/strong&gt; Contact &lt;a href="https://www.iot-ticket.com/"&gt;iot-ticket.com&lt;/a&gt; to get started&lt;/p&gt;</description></item><item><title>Parse Platform</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/parse-platform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/parse-platform/</guid><description>&lt;p&gt;&lt;a href="https://parseplatform.org/"&gt;Parse Platform&lt;/a&gt; is an open-source application stack that provides an alternative to Google Firebase. Parse can be self-hosted or used as a managed service.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
+flowchart TB
+ subgraph North[&amp;#34;Parse Server (North)&amp;#34;]
+ DB[(MongoDB)]
+ APP[Your Application]
+ DASH[Parse Dashboard]
+ P[Parse Server]
+ end
+ 
+ T[Thingsee Cloud]
+ 
+ T --&amp;gt;|REST API| P
+ P --&amp;gt; DB &amp;amp; APP &amp;amp; DASH&lt;/pre&gt;
+&lt;h2 id="deployment-options"&gt;Deployment Options&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Option&lt;/th&gt;
+ &lt;th&gt;Description&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Self-hosted&lt;/td&gt;
+ &lt;td&gt;Docker, Kubernetes, VPS&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Managed&lt;/td&gt;
+ &lt;td&gt;Parse hosting providers&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;On-premises&lt;/td&gt;
+ &lt;td&gt;Enterprise deployment&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="integration-methods"&gt;Integration Methods&lt;/h2&gt;
+&lt;h3 id="method-1-direct-document-creation"&gt;Method 1: Direct Document Creation&lt;/h3&gt;
+&lt;p&gt;Send each Thingsee message as a Parse document:&lt;/p&gt;</description></item><item><title>InfluxDB</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/influxdb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/influxdb/</guid><description>&lt;p&gt;&lt;a href="https://www.influxdata.com/"&gt;InfluxDB&lt;/a&gt; is a purpose-built time series platform for IoT analytics and monitoring.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
+flowchart TB
+ subgraph North[&amp;#34;InfluxDB (North)&amp;#34;]
+ DASH[Dashboards]
+ ALERT[Alerting]
+ API[Query API]
+ I[InfluxDB]
+ end
+ 
+ T[Thingsee Cloud]
+ 
+ T --&amp;gt;|Line Protocol| I
+ I --&amp;gt; DASH &amp;amp; ALERT &amp;amp; API&lt;/pre&gt;
+&lt;h2 id="setup"&gt;Setup&lt;/h2&gt;
+&lt;h3 id="1-install-influxdb"&gt;1. Install InfluxDB&lt;/h3&gt;
+&lt;p&gt;Follow &lt;a href="https://docs.influxdata.com/influxdb/latest/install/"&gt;InfluxDB installation guide&lt;/a&gt; or use InfluxDB Cloud.&lt;/p&gt;
+&lt;h3 id="2-configure-access"&gt;2. Configure Access&lt;/h3&gt;
+&lt;p&gt;Create access credentials:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Organization name&lt;/li&gt;
+&lt;li&gt;Bucket name&lt;/li&gt;
+&lt;li&gt;Write token&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-request-integration"&gt;3. Request Integration&lt;/h3&gt;
+&lt;p&gt;Contact Haltian with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;InfluxDB server URL&lt;/li&gt;
+&lt;li&gt;Write token&lt;/li&gt;
+&lt;li&gt;Organization name&lt;/li&gt;
+&lt;li&gt;Bucket name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="data-schema"&gt;Data Schema&lt;/h2&gt;
+&lt;p&gt;Thingsee Cloud converts messages to InfluxDB line protocol:&lt;/p&gt;</description></item><item><title>Custom Integration</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/custom-integration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/custom-integration/</guid><description>&lt;p&gt;Thingsee can be integrated with any custom cloud endpoint. This option provides maximum flexibility for specialized requirements.&lt;/p&gt;
+&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
+&lt;p&gt;Custom integrations are case-by-case configurations that may incur additional costs. Contact Haltian to discuss your requirements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="customization-options"&gt;Customization Options&lt;/h2&gt;
+&lt;h3 id="protocol"&gt;Protocol&lt;/h3&gt;
+&lt;p&gt;Choose your communication protocol:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Protocol&lt;/th&gt;
+ &lt;th&gt;Description&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;HTTP/HTTPS&lt;/td&gt;
+ &lt;td&gt;RESTful API calls&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;MQTT&lt;/td&gt;
+ &lt;td&gt;Publish/subscribe messaging&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;AMQP&lt;/td&gt;
+ &lt;td&gt;Advanced message queuing&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;CoAP&lt;/td&gt;
+ &lt;td&gt;Constrained application protocol&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;WebSocket&lt;/td&gt;
+ &lt;td&gt;Real-time bidirectional&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;FTP/SFTP&lt;/td&gt;
+ &lt;td&gt;File-based transfer&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="authorization"&gt;Authorization&lt;/h3&gt;
+&lt;p&gt;Supported authentication methods:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Method&lt;/th&gt;
+ &lt;th&gt;Description&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;API Key&lt;/td&gt;
+ &lt;td&gt;Header or query parameter&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;OAuth 2.0&lt;/td&gt;
+ &lt;td&gt;Token-based authentication&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Basic Auth&lt;/td&gt;
+ &lt;td&gt;Username/password&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Certificate&lt;/td&gt;
+ &lt;td&gt;mTLS client certificates&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Custom&lt;/td&gt;
+ &lt;td&gt;Proprietary authentication&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="message-format"&gt;Message Format&lt;/h3&gt;
+&lt;p&gt;While Thingsee Message format is strongly recommended, customizations are possible:&lt;/p&gt;</description></item><item><title>Open MQTT Data (Demo)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/open-mqtt-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/open-mqtt-data/</guid><description>&lt;p&gt;Want to see real Thingsee data? Connect to our open MQTT data stream from live office sensors.&lt;/p&gt;
+&lt;h2 id="quick-start"&gt;Quick Start&lt;/h2&gt;
+&lt;p&gt;Connect to the open MQTT broker:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Setting&lt;/th&gt;
+ &lt;th&gt;Value&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Host&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;live-data.haltian.com&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Port&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;1883&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Topic&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;cloudext/json/pr/fi/office/#&lt;/code&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Password&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;None&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="command-line"&gt;Command Line&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mosquitto_sub -h live-data.haltian.com -p &lt;span style="color:#0000cf;font-weight:bold"&gt;1883&lt;/span&gt; -t &lt;span style="color:#4e9a06"&gt;&amp;#34;cloudext/json/pr/fi/office/#&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="subscribe-to-specific-device"&gt;Subscribe to Specific Device&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mosquitto_sub -h live-data.haltian.com -p &lt;span style="color:#0000cf;font-weight:bold"&gt;1883&lt;/span&gt; -t &lt;span style="color:#4e9a06"&gt;&amp;#34;cloudext/json/pr/fi/office/{tuid}/#&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Replace &lt;code&gt;{tuid}&lt;/code&gt; with a device identifier from the demo sensors below.&lt;/p&gt;
+&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Client ID&lt;/div&gt;
+&lt;p&gt;Use a randomized MQTT client ID to avoid conflicts with other connected users.&lt;/p&gt;</description></item></channel></rss>

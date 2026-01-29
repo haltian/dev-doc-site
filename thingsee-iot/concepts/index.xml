@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Concepts on Haltian Developer Documentation</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/</link><description>Recent content in Concepts on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/index.xml" rel="self" type="application/rss+xml"/><item><title>Architecture</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/architecture/</guid><description>&lt;p&gt;The Thingsee IoT platform provides a complete end-to-end solution for IoT deployments, from sensors to cloud integrations.&lt;/p&gt;
+&lt;h2 id="system-architecture"&gt;System Architecture&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
+flowchart TB
+ subgraph Integration[&amp;#34;Customer Cloud (North)&amp;#34;]
+ MQTT[MQTT Broker]
+ REST[REST API]
+ AZURE[Azure IoT Hub]
+ AWS[AWS IoT]
+ CUSTOM[Custom Integration]
+ end
+
+ subgraph Cloud[&amp;#34;Thingsee Operations Cloud&amp;#34;]
+ API[Open Services API]
+ DP[Data Pipeline]
+ DM[Device Management]
+ end
+
+ subgraph Gateways[&amp;#34;Gateway Devices&amp;#34;]
+ GW2G[Thingsee GATEWAY 2G]
+ GWLAN[Thingsee GATEWAY LAN]
+ end
+
+ subgraph Mesh[&amp;#34;Wirepas Mesh Network&amp;#34;]
+ WM[Wirepas 5.0 Protocol]
+ end
+
+ subgraph Sensors[&amp;#34;Sensor Devices (South)&amp;#34;]
+ ENV[Thingsee ENVIRONMENT]
+ PRES[Thingsee PRESENCE]
+ DIST[Thingsee DISTANCE]
+ AIR[Thingsee AIR]
+ ANGLE[Thingsee ANGLE]
+ end
+
+ Sensors --&amp;gt; Mesh
+ Mesh --&amp;gt; Gateways
+ Gateways --&amp;gt; Cloud
+ Cloud --&amp;gt; Integration&lt;/pre&gt;
+&lt;h2 id="key-components"&gt;Key Components&lt;/h2&gt;
+&lt;h3 id="sensor-layer"&gt;Sensor Layer&lt;/h3&gt;
+&lt;p&gt;Thingsee sensors are battery-powered, wireless devices that measure environmental conditions and transmit data through the mesh network:&lt;/p&gt;</description></item><item><title>Security</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/security/</guid><description>&lt;p&gt;Thingsee IoT platform is designed with security and data privacy as fundamental principles, ensuring your IoT deployment meets enterprise security requirements.&lt;/p&gt;
+&lt;h2 id="data-privacy-principles"&gt;Data Privacy Principles&lt;/h2&gt;
+&lt;h3 id="privacy-by-design"&gt;Privacy by Design&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;No personal data&lt;/strong&gt; - Thingsee devices don&amp;rsquo;t collect personal information&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anonymous identifiers&lt;/strong&gt; - Devices use serial numbers as the only identity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Customer-controlled&lt;/strong&gt; - You decide what data leaves your premises&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="data-ownership"&gt;Data Ownership&lt;/h3&gt;
+&lt;p&gt;All sensor data belongs to you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Thingsee Cloud acts as a secure transit point&lt;/li&gt;
+&lt;li&gt;Data is forwarded to your designated endpoints&lt;/li&gt;
+&lt;li&gt;No data mining or secondary use by Haltian&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="cloud-security"&gt;Cloud Security&lt;/h2&gt;
+&lt;h3 id="single-tenant-deployment"&gt;Single Tenant Deployment&lt;/h3&gt;
+&lt;p&gt;Every customer receives an isolated cloud environment:&lt;/p&gt;</description></item><item><title>Best Practices</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/best-practices/</guid><description>&lt;p&gt;Follow these best practices to build robust, scalable integrations with Thingsee IoT platform.&lt;/p&gt;
+&lt;h2 id="data-storage-design"&gt;Data Storage Design&lt;/h2&gt;
+&lt;h3 id="partition-by-device-identity"&gt;Partition by Device Identity&lt;/h3&gt;
+&lt;p&gt;Structure your data storage around the device identifier (&lt;code&gt;tsmTuid&lt;/code&gt;):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sql" data-lang="sql"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8f5902;font-style:italic"&gt;-- Example: TimescaleDB hypertable
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;CREATE&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;TABLE&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000"&gt;sensor_data&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000"&gt;time&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000"&gt;TIMESTAMPTZ&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;NOT&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;NULL&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000"&gt;tuid&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87"&gt;TEXT&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;NOT&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;NULL&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000"&gt;tsm_id&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87"&gt;INTEGER&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;NOT&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;NULL&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;data&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000"&gt;JSONB&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;);&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f8f8f8"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;SELECT&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000"&gt;create_hypertable&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;sensor_data&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;time&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;);&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;CREATE&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;INDEX&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000"&gt;idx_tuid&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;ON&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000"&gt;sensor_data&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;tuid&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000"&gt;time&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;DESC&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;);&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="separate-hot-and-cold-data"&gt;Separate Hot and Cold Data&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Data Type&lt;/th&gt;
+ &lt;th&gt;Storage&lt;/th&gt;
+ &lt;th&gt;Retention&lt;/th&gt;
+ &lt;th&gt;Access Pattern&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Hot&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Time-series DB&lt;/td&gt;
+ &lt;td&gt;7-30 days&lt;/td&gt;
+ &lt;td&gt;Real-time queries&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Warm&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Column store&lt;/td&gt;
+ &lt;td&gt;1-2 years&lt;/td&gt;
+ &lt;td&gt;Analytics, reports&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Cold&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Object storage&lt;/td&gt;
+ &lt;td&gt;7+ years&lt;/td&gt;
+ &lt;td&gt;Compliance, archive&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="thing-identity-handling"&gt;Thing Identity Handling&lt;/h2&gt;
+&lt;h3 id="build-identity-in-your-cloud"&gt;Build Identity in Your Cloud&lt;/h3&gt;
+&lt;p&gt;Thingsee devices use serial numbers (&lt;code&gt;tsmTuid&lt;/code&gt;) as identifiers. Build meaningful identity mapping in your system:&lt;/p&gt;</description></item></channel></rss>
