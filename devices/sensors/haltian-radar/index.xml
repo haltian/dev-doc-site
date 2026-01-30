@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian RADAR on Haltian Developer Documentation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/</link><description>Recent content in Haltian RADAR on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/installation/</guid><description>&lt;h2 id="before-installation"&gt;Before Installation&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian RADAR on Haltian Developer Documentation</title><link>https://developer.haltian.io/devices/sensors/haltian-radar/</link><description>Recent content in Haltian RADAR on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/devices/sensors/haltian-radar/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/devices/sensors/haltian-radar/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/haltian-radar/installation/</guid><description>&lt;h2 id="before-installation"&gt;Before Installation&lt;/h2&gt;
 &lt;h3 id="prerequisites"&gt;Prerequisites&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Ensure Thingsee Gateway is installed and operational&lt;/li&gt;
@@ -23,7 +23,7 @@
 &lt;li&gt;IP68 rating allows installation in exposed locations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="parking-space-monitoring---wall-or-pole-mount"&gt;Parking Space Monitoring - Wall or Pole Mount&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Most common installation method for parking&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/operation/</guid><description>&lt;h2 id="how-radar-detection-works"&gt;How RADAR Detection Works&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Most common installation method for parking&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/sensors/haltian-radar/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/haltian-radar/operation/</guid><description>&lt;h2 id="how-radar-detection-works"&gt;How RADAR Detection Works&lt;/h2&gt;
 &lt;h3 id="60ghz-pulsed-coherent-radar-technology"&gt;60GHz Pulsed Coherent Radar Technology&lt;/h3&gt;
 &lt;p&gt;The Haltian RADAR uses &lt;strong&gt;60GHz pulsed coherent radar&lt;/strong&gt; to detect objects within its sensing range.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Detection principle:&lt;/strong&gt;&lt;/p&gt;
@@ -41,7 +41,7 @@
 &lt;li&gt;&lt;strong&gt;Coverage&lt;/strong&gt;: Widens with distance (wider at far range)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Sensitivity&lt;/strong&gt;: Uniform across beam width&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Calculation example:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/configuration/</guid><description>&lt;h2 id="configuration-overview"&gt;Configuration Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Calculation example:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://developer.haltian.io/devices/sensors/haltian-radar/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/haltian-radar/configuration/</guid><description>&lt;h2 id="configuration-overview"&gt;Configuration Overview&lt;/h2&gt;
 &lt;p&gt;Haltian RADAR sensors are &lt;strong&gt;remotely configurable&lt;/strong&gt; via &lt;strong&gt;Haltian Operations Cloud&lt;/strong&gt;. This allows adjusting key parameters without physical access to the sensor.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Key configurable parameters:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -51,7 +51,7 @@
 &lt;li&gt;&lt;strong&gt;Operational mode&lt;/strong&gt;: Parking, loading dock, or custom&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
-&lt;p&gt;Configuration changes require access to Haltian Operations Cloud. Contact Haltian support if you need assistance with remote configuration.&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/specifications/</guid><description>&lt;h2 id="general-specifications"&gt;General Specifications&lt;/h2&gt;
+&lt;p&gt;Configuration changes require access to Haltian Operations Cloud. Contact Haltian support if you need assistance with remote configuration.&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/sensors/haltian-radar/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/haltian-radar/specifications/</guid><description>&lt;h2 id="general-specifications"&gt;General Specifications&lt;/h2&gt;
 &lt;h3 id="product-information"&gt;Product Information&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -143,7 +143,7 @@
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id="environmental-protection"&gt;Environmental Protection&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;IP68 certification:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/troubleshooting/</guid><description>&lt;h2 id="troubleshooting-overview"&gt;Troubleshooting Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;IP68 certification:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/sensors/haltian-radar/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/haltian-radar/troubleshooting/</guid><description>&lt;h2 id="troubleshooting-overview"&gt;Troubleshooting Overview&lt;/h2&gt;
 &lt;p&gt;This guide addresses common issues with Haltian RADAR sensors and provides step-by-step solutions.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Quick troubleshooting approach:&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;

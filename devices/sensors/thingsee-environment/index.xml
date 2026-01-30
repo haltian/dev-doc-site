@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee ENVIRONMENT on Haltian Developer Documentation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/</link><description>Recent content in Thingsee ENVIRONMENT on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee ENVIRONMENT on Haltian Developer Documentation</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment/</link><description>Recent content in Thingsee ENVIRONMENT on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/devices/sensors/thingsee-environment/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-environment/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hlQ9cVhRADA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
@@ -24,7 +24,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="use-case-identification"&gt;Use Case Identification&lt;/h3&gt;
-&lt;p&gt;Determine which sensors you&amp;rsquo;ll use:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/operation/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Determine which sensors you&amp;rsquo;ll use:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-environment/operation/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee ENVIRONMENT operates continuously once installed, automatically measuring environmental parameters, motion, and magnetic field changes. This multipurpose sensor combines six sensor types, each with specific monitoring capabilities and applications.&lt;/p&gt;
 &lt;h2 id="automatic-operation"&gt;Automatic Operation&lt;/h2&gt;
 &lt;h3 id="normal-operation"&gt;Normal Operation&lt;/h3&gt;
@@ -48,7 +48,7 @@
 &lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: -40°C to +85°C&lt;br&gt;
 &lt;strong&gt;Operating Range&lt;/strong&gt;: -20°C to +50°C (battery specification)&lt;br&gt;
 &lt;strong&gt;Accuracy&lt;/strong&gt;: ±0.3°C&lt;br&gt;
-&lt;strong&gt;Event Threshold&lt;/strong&gt;: 0.5°C absolute change (default)&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;strong&gt;Event Threshold&lt;/strong&gt;: 0.5°C absolute change (default)&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-environment/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee ENVIRONMENT sensors are preconfigured from the factory with optimal default settings for most applications. However, specific parameters can be adjusted remotely via Haltian IoT Studio or by contacting Haltian support for specialized configurations like Machine Usage Mode.&lt;/p&gt;
 &lt;h2 id="default-configuration"&gt;Default Configuration&lt;/h2&gt;
 &lt;h3 id="factory-settings"&gt;Factory Settings&lt;/h3&gt;
@@ -110,7 +110,7 @@
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id="standard-operating-mode"&gt;Standard Operating Mode&lt;/h3&gt;
-&lt;p&gt;Default configuration suits:&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
+&lt;p&gt;Default configuration suits:&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-environment/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Model&lt;/strong&gt;: Thingsee ENVIRONMENT&lt;br&gt;
 &lt;strong&gt;Product Code&lt;/strong&gt;: TBD&lt;br&gt;
 &lt;strong&gt;Manufacturer&lt;/strong&gt;: Haltian Oy, Finland&lt;br&gt;
@@ -198,7 +198,7 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Accuracy specification ±5% RH is typical for this sensor class. Suitable for comfort monitoring and general environmental tracking. Not suitable for precision metrology applications.&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Accuracy specification ±5% RH is typical for this sensor class. Suitable for comfort monitoring and general environmental tracking. Not suitable for precision metrology applications.&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-environment/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
 &lt;h3 id="basic-checks"&gt;Basic Checks&lt;/h3&gt;
 &lt;p&gt;Before detailed troubleshooting:&lt;/p&gt;
 &lt;ul&gt;

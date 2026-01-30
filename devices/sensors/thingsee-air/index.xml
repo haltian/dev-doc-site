@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee AIR on Haltian Developer Documentation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/</link><description>Recent content in Thingsee AIR on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee AIR on Haltian Developer Documentation</title><link>https://developer.haltian.io/devices/sensors/thingsee-air/</link><description>Recent content in Thingsee AIR on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/devices/sensors/thingsee-air/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/devices/sensors/thingsee-air/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-air/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/h54plvBygjc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
@@ -25,7 +25,7 @@
 &lt;/ul&gt;
 &lt;h2 id="baseline-calibration-requirements"&gt;Baseline Calibration Requirements&lt;/h2&gt;
 &lt;h3 id="initial-calibration-period"&gt;Initial Calibration Period&lt;/h3&gt;
-&lt;p&gt;Thingsee AIR sensors require an initial calibration period for optimal accuracy:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/operation/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Thingsee AIR sensors require an initial calibration period for optimal accuracy:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/sensors/thingsee-air/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-air/operation/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee AIR operates continuously once installed, automatically measuring and reporting air quality parameters. This guide covers monitoring, data interpretation, and operational best practices.&lt;/p&gt;
 &lt;h2 id="automatic-operation"&gt;Automatic Operation&lt;/h2&gt;
 &lt;h3 id="normal-operation"&gt;Normal Operation&lt;/h3&gt;
@@ -38,7 +38,7 @@
 &lt;li&gt;&lt;strong&gt;Self-heals&lt;/strong&gt; network connections if temporary loss occurs&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="no-user-intervention-required"&gt;No User Intervention Required&lt;/h3&gt;
-&lt;p&gt;The sensor is designed for autonomous operation:&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The sensor is designed for autonomous operation:&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://developer.haltian.io/devices/sensors/thingsee-air/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-air/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee AIR sensors come preconfigured from the factory with optimal default settings for most applications. However, specific parameters can be adjusted remotely via Haltian IoT Studio to fine-tune sensor behavior for your environment.&lt;/p&gt;
 &lt;h2 id="default-configuration"&gt;Default Configuration&lt;/h2&gt;
 &lt;h3 id="factory-settings"&gt;Factory Settings&lt;/h3&gt;
@@ -100,7 +100,7 @@
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id="standard-operating-mode"&gt;Standard Operating Mode&lt;/h3&gt;
-&lt;p&gt;The default configuration suits most applications:&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
+&lt;p&gt;The default configuration suits most applications:&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/sensors/thingsee-air/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-air/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Model&lt;/strong&gt;: Thingsee AIR&lt;br&gt;
 &lt;strong&gt;Product Code&lt;/strong&gt;: TBD&lt;br&gt;
 &lt;strong&gt;Manufacturer&lt;/strong&gt;: Haltian Oy, Finland&lt;br&gt;
@@ -157,7 +157,7 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Performance Notes:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Performance Notes:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/sensors/thingsee-air/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-air/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
 &lt;h3 id="basic-checks"&gt;Basic Checks&lt;/h3&gt;
 &lt;p&gt;Before detailed troubleshooting:&lt;/p&gt;
 &lt;ul&gt;

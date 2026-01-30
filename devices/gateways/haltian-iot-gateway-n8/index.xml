@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian IoT Gateway N8 on Haltian Developer Documentation</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/</link><description>Recent content in Haltian IoT Gateway N8 on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/installation/</guid><description>&lt;h2 id="physical-installation"&gt;Physical Installation&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian IoT Gateway N8 on Haltian Developer Documentation</title><link>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/</link><description>Recent content in Haltian IoT Gateway N8 on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/installation/</guid><description>&lt;h2 id="physical-installation"&gt;Physical Installation&lt;/h2&gt;
 &lt;h3 id="mounting-options"&gt;Mounting Options&lt;/h3&gt;
 &lt;p&gt;The Gateway N8 supports multiple mounting configurations for different deployment scenarios.&lt;/p&gt;
 &lt;h4 id="wall-mounting"&gt;Wall Mounting&lt;/h4&gt;
@@ -31,7 +31,7 @@
 &lt;h4 id="din-rail-mounting"&gt;DIN Rail Mounting&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Install Optional DIN Rail Bracket&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Install Optional DIN Rail Bracket&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;The Gateway N8 can be configured for various network topologies and operational parameters. Configuration is performed through the Haltian IoT Studio web interface or via local access methods.&lt;/p&gt;
 &lt;h2 id="network-configuration"&gt;Network Configuration&lt;/h2&gt;
 &lt;h3 id="ethernet-configuration"&gt;Ethernet Configuration&lt;/h3&gt;
@@ -44,7 +44,7 @@
 &lt;li&gt;Registers with assigned IP address&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Static IP Configuration:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For networks without DHCP or requiring fixed addresses:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/operation/</guid><description>&lt;h2 id="normal-operation"&gt;Normal Operation&lt;/h2&gt;
+&lt;p&gt;For networks without DHCP or requiring fixed addresses:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/operation/</guid><description>&lt;h2 id="normal-operation"&gt;Normal Operation&lt;/h2&gt;
 &lt;h3 id="startup-sequence"&gt;Startup Sequence&lt;/h3&gt;
 &lt;p&gt;Gateway boot process typically takes 30-60 seconds:&lt;/p&gt;
 &lt;ol&gt;
@@ -140,7 +140,7 @@
 &lt;/table&gt;
 &lt;h2 id="network-management"&gt;Network Management&lt;/h2&gt;
 &lt;h3 id="wirepas-mesh-network"&gt;Wirepas Mesh Network&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Network Formation:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/specifications/</guid><description>&lt;h2 id="hardware-specifications"&gt;Hardware Specifications&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Network Formation:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/specifications/</guid><description>&lt;h2 id="hardware-specifications"&gt;Hardware Specifications&lt;/h2&gt;
 &lt;h3 id="processor"&gt;Processor&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -354,7 +354,7 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;LTE Frequency Bands (Example - Verify for region):&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist"&gt;Quick Diagnostic Checklist&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;LTE Frequency Bands (Example - Verify for region):&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist"&gt;Quick Diagnostic Checklist&lt;/h2&gt;
 &lt;p&gt;Before detailed troubleshooting, verify these basics:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Power LED illuminated (power connected and working)&lt;/li&gt;

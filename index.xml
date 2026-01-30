@@ -1,30 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian Developer Documentation</title><link>https://haltian.github.io/dev-doc-site/</link><description>Recent content on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://haltian.github.io/dev-doc-site/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Install Thingsee ANGLE</title><link>https://haltian.github.io/dev-doc-site/devices/archive/thingsee-angle/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/archive/thingsee-angle/installation/</guid><description>&lt;figure&gt;&lt;img src="https://haltian.github.io/dev-doc-site/assets/images/thingsee-iot/step1.png"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian Developer Documentation</title><link>https://developer.haltian.io/</link><description>Recent content on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Install Thingsee ANGLE</title><link>https://developer.haltian.io/devices/archive/thingsee-angle/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/archive/thingsee-angle/installation/</guid><description>&lt;figure&gt;&lt;img src="https://developer.haltian.io/assets/images/thingsee-iot/step1.png"
  alt="Thingsee ANGLE installation step 1"&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;&lt;img src="https://haltian.github.io/dev-doc-site/assets/images/thingsee-iot/step2.png"
+&lt;figure&gt;&lt;img src="https://developer.haltian.io/assets/images/thingsee-iot/step2.png"
  alt="Thingsee ANGLE installation step 2"&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;&lt;img src="https://haltian.github.io/dev-doc-site/assets/images/thingsee-iot/step3.png"
+&lt;figure&gt;&lt;img src="https://developer.haltian.io/assets/images/thingsee-iot/step3.png"
  alt="Thingsee ANGLE installation step 3"&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;&lt;img src="https://haltian.github.io/dev-doc-site/assets/images/thingsee-iot/step4.png"
+&lt;figure&gt;&lt;img src="https://developer.haltian.io/assets/images/thingsee-iot/step4.png"
  alt="Thingsee ANGLE installation step 4"&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;&lt;img src="https://haltian.github.io/dev-doc-site/assets/images/thingsee-iot/step5.png"
+&lt;figure&gt;&lt;img src="https://developer.haltian.io/assets/images/thingsee-iot/step5.png"
  alt="Thingsee ANGLE installation step 5"&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;&lt;img src="https://haltian.github.io/dev-doc-site/assets/images/thingsee-iot/step6.png"
+&lt;figure&gt;&lt;img src="https://developer.haltian.io/assets/images/thingsee-iot/step6.png"
  alt="Thingsee ANGLE installation step 6"&gt;
 &lt;/figure&gt;
 
-&lt;figure&gt;&lt;img src="https://haltian.github.io/dev-doc-site/assets/images/thingsee-iot/step7.png"
+&lt;figure&gt;&lt;img src="https://developer.haltian.io/assets/images/thingsee-iot/step7.png"
  alt="Thingsee ANGLE installation step 7"&gt;
-&lt;/figure&gt;</description></item><item><title>Authentication</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/apis/service-api/authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/apis/service-api/authentication/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;/figure&gt;</description></item><item><title>Authentication</title><link>https://developer.haltian.io/haltian-iot/apis/service-api/authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/service-api/authentication/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;The Service API uses user account authentication with JWT tokens. Each user is assigned to a role with specific permissions.&lt;/p&gt;
 &lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Info&lt;/div&gt;
 &lt;p&gt;For comprehensive information about roles, permissions, and access control, see &lt;a href="../../concepts/roles-and-access/"&gt;Roles and Access Management&lt;/a&gt;.&lt;/p&gt;
@@ -42,7 +42,7 @@ sequenceDiagram
  Client-&amp;gt;&amp;gt;API: LogoutMutation()
  API--&amp;gt;&amp;gt;Client: Session terminated&lt;/pre&gt;
 &lt;h2 id="login"&gt;Login&lt;/h2&gt;
-&lt;p&gt;Authenticate with email, password, and organization name to receive access and refresh tokens.&lt;/p&gt;</description></item><item><title>Folder Structure</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/apis/data-api/folder-structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/apis/data-api/folder-structure/</guid><description>&lt;h2 id="directory-layout"&gt;Directory Layout&lt;/h2&gt;
+&lt;p&gt;Authenticate with email, password, and organization name to receive access and refresh tokens.&lt;/p&gt;</description></item><item><title>Folder Structure</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/folder-structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/folder-structure/</guid><description>&lt;h2 id="directory-layout"&gt;Directory Layout&lt;/h2&gt;
 &lt;p&gt;Parquet files are organized in a predictable hierarchy within your S3 bucket:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;downloads/parquet/
 └── {organizationId}/ # Your organization UUID
@@ -70,7 +70,7 @@ sequenceDiagram
  ├── space/
  └── zone/
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="entity-folders"&gt;Entity Folders&lt;/h2&gt;
-&lt;p&gt;Each entity type has its own top-level folder:&lt;/p&gt;</description></item><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/installation/</guid><description>&lt;h2 id="physical-installation"&gt;Physical Installation&lt;/h2&gt;
+&lt;p&gt;Each entity type has its own top-level folder:&lt;/p&gt;</description></item><item><title>Installation</title><link>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/installation/</guid><description>&lt;h2 id="physical-installation"&gt;Physical Installation&lt;/h2&gt;
 &lt;h3 id="mounting-options"&gt;Mounting Options&lt;/h3&gt;
 &lt;p&gt;The Gateway N8 supports multiple mounting configurations for different deployment scenarios.&lt;/p&gt;
 &lt;h4 id="wall-mounting"&gt;Wall Mounting&lt;/h4&gt;
@@ -103,7 +103,7 @@ sequenceDiagram
 &lt;h4 id="din-rail-mounting"&gt;DIN Rail Mounting&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Install Optional DIN Rail Bracket&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/installation/</guid><description>&lt;h2 id="before-you-begin"&gt;Before You Begin&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Install Optional DIN Rail Bracket&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Installation</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/installation/</guid><description>&lt;h2 id="before-you-begin"&gt;Before You Begin&lt;/h2&gt;
 &lt;h3 id="package-contents-verification"&gt;Package Contents Verification&lt;/h3&gt;
 &lt;p&gt;Verify you have received all components:&lt;/p&gt;
 &lt;ul&gt;
@@ -125,7 +125,7 @@ sequenceDiagram
 &lt;h2 id="sim-card-installation"&gt;SIM Card Installation&lt;/h2&gt;
 &lt;h3 id="before-powering-on"&gt;Before Powering On&lt;/h3&gt;
 &lt;div class="alert alert-danger" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Critical&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;ALWAYS insert SIM card BEFORE powering on gateway.&lt;/strong&gt; Inserting SIM while powered can damage the SIM slot.&lt;/p&gt;</description></item><item><title>Installation Guide</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-presence/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-presence/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;ALWAYS insert SIM card BEFORE powering on gateway.&lt;/strong&gt; Inserting SIM while powered can damage the SIM slot.&lt;/p&gt;</description></item><item><title>Installation Guide</title><link>https://developer.haltian.io/devices/sensors/thingsee-presence/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-presence/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/35B_peJpTUs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
@@ -158,7 +158,7 @@ sequenceDiagram
 &lt;/ul&gt;
 &lt;h2 id="detection-capability"&gt;Detection Capability&lt;/h2&gt;
 &lt;h3 id="height-dependent-detection-area"&gt;Height-Dependent Detection Area&lt;/h3&gt;
-&lt;p&gt;Thingsee PRESENCE detection capability changes based on installation height. The chart below shows different detection zones at various heights.&lt;/p&gt;</description></item><item><title>Haltian IoT Studio</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/applications/iot-studio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/applications/iot-studio/</guid><description>&lt;p&gt;Haltian IoT Studio is a web application for managing your Haltian IoT deployment, including devices, spaces, users, and API access.&lt;/p&gt;
+&lt;p&gt;Thingsee PRESENCE detection capability changes based on installation height. The chart below shows different detection zones at various heights.&lt;/p&gt;</description></item><item><title>Haltian IoT Studio</title><link>https://developer.haltian.io/haltian-iot/applications/iot-studio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/iot-studio/</guid><description>&lt;p&gt;Haltian IoT Studio is a web application for managing your Haltian IoT deployment, including devices, spaces, users, and API access.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Haltian IoT Studio provides:&lt;/p&gt;
 &lt;ul&gt;
@@ -170,7 +170,7 @@ sequenceDiagram
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Access URL:&lt;/strong&gt; &lt;a href="https://haltian-iot-studio.eu.haltian.io"&gt;https://haltian-iot-studio.eu.haltian.io&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="user-roles"&gt;User Roles&lt;/h2&gt;
-&lt;p&gt;Haltian IoT Studio supports multiple user roles with different permissions:&lt;/p&gt;</description></item><item><title>Message Header</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/message-header/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/message-header/</guid><description>&lt;p&gt;Every Thingsee Message follows a consistent JSON/CBOR structure with required header fields and profile-specific data.&lt;/p&gt;
+&lt;p&gt;Haltian IoT Studio supports multiple user roles with different permissions:&lt;/p&gt;</description></item><item><title>Message Header</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/message-header/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/message-header/</guid><description>&lt;p&gt;Every Thingsee Message follows a consistent JSON/CBOR structure with required header fields and profile-specific data.&lt;/p&gt;
 &lt;h2 id="message-structure"&gt;Message Structure&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;[{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;&amp;#34;tsmId&amp;#34;&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;:&lt;/span&gt; &lt;span style="color:#a40000"&gt;Number&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#8f5902;font-style:italic"&gt;// Message ID (required)
@@ -206,7 +206,7 @@ sequenceDiagram
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Microsoft Places Integration</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/integrations/microsoft-places/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/integrations/microsoft-places/</guid><description>&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Status&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Microsoft Places Integration</title><link>https://developer.haltian.io/haltian-iot/integrations/microsoft-places/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/integrations/microsoft-places/</guid><description>&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Status&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Experimental&lt;/strong&gt; - This integration is in active development. Contact Haltian for implementation support.&lt;/p&gt;
 &lt;/div&gt;
 &lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
@@ -217,7 +217,7 @@ sequenceDiagram
 &lt;li&gt;Optimize space management with occupancy and utilization data&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Haltian IoT sensors provide real-time occupancy data to Microsoft Places, enabling accurate room availability, desk booking, and space analytics.&lt;/p&gt;
-&lt;p&gt;For the latest Microsoft Places information, see the &lt;a href="https://learn.microsoft.com/en-in/microsoft-365/places/places-overview"&gt;Microsoft Places documentation&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Subscribe to MQTT Data Stream</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/guides/mqtt-subscription/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/guides/mqtt-subscription/</guid><description>&lt;p&gt;This guide shows you how to subscribe to Haltian IoT MQTT data stream using Python. You&amp;rsquo;ll learn to connect, authenticate, and process incoming sensor measurements.&lt;/p&gt;
+&lt;p&gt;For the latest Microsoft Places information, see the &lt;a href="https://learn.microsoft.com/en-in/microsoft-365/places/places-overview"&gt;Microsoft Places documentation&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Subscribe to MQTT Data Stream</title><link>https://developer.haltian.io/haltian-iot/guides/mqtt-subscription/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/mqtt-subscription/</guid><description>&lt;p&gt;This guide shows you how to subscribe to Haltian IoT MQTT data stream using Python. You&amp;rsquo;ll learn to connect, authenticate, and process incoming sensor measurements.&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Python 3.7 or later&lt;/li&gt;
@@ -259,7 +259,7 @@ sequenceDiagram
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
-&lt;p&gt;Demo credentials provide read-only access to Haltian&amp;rsquo;s sales demo environment. For production use, obtain credentials from your Haltian IoT Studio organization.&lt;/p&gt;</description></item><item><title>Platform Overview</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/getting-started/platform-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/getting-started/platform-overview/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Demo credentials provide read-only access to Haltian&amp;rsquo;s sales demo environment. For production use, obtain credentials from your Haltian IoT Studio organization.&lt;/p&gt;</description></item><item><title>Platform Overview</title><link>https://developer.haltian.io/haltian-iot/getting-started/platform-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/getting-started/platform-overview/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Haltian IoT is a versatile, cloud-based, and self-host capable IoT data-collection platform.&lt;/p&gt;
 &lt;p&gt;The platform primarily supports the Wirepas ecosystem IoT devices but is also equipped to integrate other radio technologies and third-party devices through project-specific integrations.&lt;/p&gt;
 &lt;p&gt;It offers a comprehensive set of APIs, tools, and services designed to facilitate the development of IoT solutions.&lt;/p&gt;
@@ -370,7 +370,7 @@ flowchart BT
  style DataLake fill:#cfe3e0,stroke:#143633,stroke-width:2px,color:#143633
  style AIML fill:#cfe3e0,stroke:#143633,stroke-width:2px,color:#143633&lt;/pre&gt;
 &lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Platform Evolution&lt;/div&gt;
-&lt;p&gt;Haltian IoT can be described as &amp;ldquo;Thingsee 2.0&amp;rdquo; - it adds new features and concepts over our existing Thingsee Operations Cloud. The platform also incorporates designs from Haltian Empathic Building, particularly around data concepts at spaces and asset levels.&lt;/p&gt;</description></item><item><title>Roles and Access Management</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/concepts/roles-and-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/concepts/roles-and-access/</guid><description>&lt;p&gt;Haltian IoT Platform implements Role-Based Access Control (RBAC) for both user accounts and API access, providing fine-grained permission management across the platform.&lt;/p&gt;
+&lt;p&gt;Haltian IoT can be described as &amp;ldquo;Thingsee 2.0&amp;rdquo; - it adds new features and concepts over our existing Thingsee Operations Cloud. The platform also incorporates designs from Haltian Empathic Building, particularly around data concepts at spaces and asset levels.&lt;/p&gt;</description></item><item><title>Roles and Access Management</title><link>https://developer.haltian.io/haltian-iot/concepts/roles-and-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/concepts/roles-and-access/</guid><description>&lt;p&gt;Haltian IoT Platform implements Role-Based Access Control (RBAC) for both user accounts and API access, providing fine-grained permission management across the platform.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;The platform implements a hierarchical RBAC system with five distinct roles, each designed for specific use cases and responsibilities. Access control operates at two primary scopes: &lt;strong&gt;Organization&lt;/strong&gt; and &lt;strong&gt;Space&lt;/strong&gt;, allowing fine-grained permission management.&lt;/p&gt;
 &lt;h2 id="user-roles"&gt;User Roles&lt;/h2&gt;
@@ -460,7 +460,7 @@ graph TD
 &lt;li&gt;&lt;strong&gt;Use Case&lt;/strong&gt;: Dashboard users, report viewers, stakeholders&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="access-control-scopes"&gt;Access Control Scopes&lt;/h2&gt;
-&lt;p&gt;The RBAC system operates at two distinct scopes:&lt;/p&gt;</description></item><item><title>Thingsee CBOR to JSON Conversion</title><link>https://haltian.github.io/dev-doc-site/devices/technical-reference/cbor-json-conversion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/technical-reference/cbor-json-conversion/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The RBAC system operates at two distinct scopes:&lt;/p&gt;</description></item><item><title>Thingsee CBOR to JSON Conversion</title><link>https://developer.haltian.io/devices/technical-reference/cbor-json-conversion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/technical-reference/cbor-json-conversion/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee sensors transmit data using &lt;strong&gt;CBOR (Concise Binary Object Representation)&lt;/strong&gt;, a compact binary format optimized for low-power wireless communication. Applications and cloud platforms consume this data as &lt;strong&gt;JSON&lt;/strong&gt;, requiring conversion at the gateway or backend level.&lt;/p&gt;
 &lt;p&gt;This guide provides:&lt;/p&gt;
 &lt;ul&gt;
@@ -470,7 +470,7 @@ graph TD
 &lt;li&gt;Wirepas endpoint configuration details&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="why-cbor"&gt;Why CBOR?&lt;/h3&gt;
-&lt;p&gt;CBOR reduces message size by ~60-70% compared to JSON, which:&lt;/p&gt;</description></item><item><title>Topics</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/apis/stream-api/topics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/apis/stream-api/topics/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;CBOR reduces message size by ~60-70% compared to JSON, which:&lt;/p&gt;</description></item><item><title>Topics</title><link>https://developer.haltian.io/haltian-iot/apis/stream-api/topics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/stream-api/topics/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;The Stream API publishes device data to structured MQTT topics. Each topic follows a consistent naming pattern that includes integration identifiers and data types.&lt;/p&gt;
 &lt;h2 id="topic-structure"&gt;Topic Structure&lt;/h2&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;haltian-iot/events/{integration-id}/{api-key-id}/{event-kind}/{event-type}/{device-id}
@@ -507,7 +507,7 @@ graph TD
 &lt;/table&gt;
 &lt;h2 id="event-kinds"&gt;Event Kinds&lt;/h2&gt;
 &lt;h3 id="measurements"&gt;measurements&lt;/h3&gt;
-&lt;p&gt;Device sensor readings and telemetry data.&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Device sensor readings and telemetry data.&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;The Gateway N8 can be configured for various network topologies and operational parameters. Configuration is performed through the Haltian IoT Studio web interface or via local access methods.&lt;/p&gt;
 &lt;h2 id="network-configuration"&gt;Network Configuration&lt;/h2&gt;
 &lt;h3 id="ethernet-configuration"&gt;Ethernet Configuration&lt;/h3&gt;
@@ -520,7 +520,7 @@ graph TD
 &lt;li&gt;Registers with assigned IP address&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Static IP Configuration:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For networks without DHCP or requiring fixed addresses:&lt;/p&gt;</description></item><item><title>Thingsee PRESENCE Configuration</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-presence/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-presence/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;For networks without DHCP or requiring fixed addresses:&lt;/p&gt;</description></item><item><title>Thingsee PRESENCE Configuration</title><link>https://developer.haltian.io/devices/sensors/thingsee-presence/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-presence/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee PRESENCE configuration is performed via &lt;a href="../../../haltian-iot/apis/service-api/"&gt;Service API (GraphQL)&lt;/a&gt; or by sending CBOR-encoded downlink messages. This page documents all configuration parameters, valid ranges, and common configuration scenarios.&lt;/p&gt;
 &lt;h2 id="configuration-methods"&gt;Configuration Methods&lt;/h2&gt;
 &lt;h3 id="service-api-graphql"&gt;Service API (GraphQL)&lt;/h3&gt;
@@ -535,7 +535,7 @@ graph TD
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;See:&lt;/strong&gt; &lt;a href="../../../haltian-iot/apis/service-api/"&gt;Service API Documentation&lt;/a&gt; for details.&lt;/p&gt;
 &lt;h3 id="cbor-downlink-messages"&gt;CBOR Downlink Messages&lt;/h3&gt;
-&lt;p&gt;Direct binary message approach for custom integrations.&lt;/p&gt;</description></item><item><title>Examples</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/apis/stream-api/examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/apis/stream-api/examples/</guid><description>&lt;h2 id="python-example"&gt;Python Example&lt;/h2&gt;
+&lt;p&gt;Direct binary message approach for custom integrations.&lt;/p&gt;</description></item><item><title>Examples</title><link>https://developer.haltian.io/haltian-iot/apis/stream-api/examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/stream-api/examples/</guid><description>&lt;h2 id="python-example"&gt;Python Example&lt;/h2&gt;
 &lt;p&gt;Using the &lt;code&gt;paho-mqtt&lt;/code&gt; library:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;import&lt;/span&gt; &lt;span style="color:#000"&gt;paho.mqtt.client&lt;/span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;as&lt;/span&gt; &lt;span style="color:#000"&gt;mqtt&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;import&lt;/span&gt; &lt;span style="color:#000"&gt;json&lt;/span&gt;
@@ -595,7 +595,7 @@ graph TD
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="installation"&gt;Installation&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pip install paho-mqtt
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="nodejs-example"&gt;Node.js Example&lt;/h2&gt;
-&lt;p&gt;Using the &lt;code&gt;mqtt&lt;/code&gt; package:&lt;/p&gt;</description></item><item><title>Message Commands</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/message-commands/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/message-commands/</guid><description>&lt;p&gt;Thingsee Commands are special messages for sending configurations or commands to gateways and sensors. They enable remote device management and behavior customization.&lt;/p&gt;
+&lt;p&gt;Using the &lt;code&gt;mqtt&lt;/code&gt; package:&lt;/p&gt;</description></item><item><title>Message Commands</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/message-commands/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/message-commands/</guid><description>&lt;p&gt;Thingsee Commands are special messages for sending configurations or commands to gateways and sensors. They enable remote device management and behavior customization.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Commands use the same structure as regular Thingsee Messages but carry data that devices can process and act upon.&lt;/p&gt;
 &lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;actorBkg&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;actorBorder&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;noteBorderColor&amp;#39;:&amp;#39;#FF8862&amp;#39;,&amp;#39;noteBkgColor&amp;#39;:&amp;#39;#FFCFC0&amp;#39;,&amp;#39;signalColor&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
@@ -666,7 +666,7 @@ sequenceDiagram
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#4e9a06"&gt; &amp;#34;reportInterval&amp;#34;: 60
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#4e9a06"&gt; }]&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="transaction-id"&gt;Transaction ID&lt;/h3&gt;
-&lt;p&gt;The &lt;code&gt;transactionId&lt;/code&gt; field:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/operation/</guid><description>&lt;h2 id="normal-operation"&gt;Normal Operation&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;transactionId&lt;/code&gt; field:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/operation/</guid><description>&lt;h2 id="normal-operation"&gt;Normal Operation&lt;/h2&gt;
 &lt;h3 id="startup-sequence"&gt;Startup Sequence&lt;/h3&gt;
 &lt;p&gt;Gateway boot process typically takes 60-90 seconds:&lt;/p&gt;
 &lt;ol&gt;
@@ -706,10 +706,10 @@ sequenceDiagram
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Operational&lt;/strong&gt; (90+ seconds)&lt;/p&gt;</description></item><item><title>Operation Guide</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-presence/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-presence/operation/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Operational&lt;/strong&gt; (90+ seconds)&lt;/p&gt;</description></item><item><title>Operation Guide</title><link>https://developer.haltian.io/devices/sensors/thingsee-presence/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-presence/operation/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee PRESENCE supports three distinct operating modes configured via cloud API. Each mode has different reporting behavior, network traffic characteristics, and optimal use cases.&lt;/p&gt;
 &lt;div class="alert alert-warning" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Important&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Data Latency:&lt;/strong&gt; There&amp;rsquo;s always a delay from measurement to alerts. Measurement results are sent in predefined intervals (e.g., 1 minute) and time is needed for data to travel through the network and be processed in the cloud service. This sensor is not suitable for real-time applications requiring instant alerts.&lt;/p&gt;</description></item><item><title>Identify Device by QR Code</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/guides/qr-code-identification/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/guides/qr-code-identification/</guid><description>&lt;p&gt;Every Haltian device has a QR code containing its unique identifier (TUID). This guide shows how to query device information from Haltian IoT using QR code data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data Latency:&lt;/strong&gt; There&amp;rsquo;s always a delay from measurement to alerts. Measurement results are sent in predefined intervals (e.g., 1 minute) and time is needed for data to travel through the network and be processed in the cloud service. This sensor is not suitable for real-time applications requiring instant alerts.&lt;/p&gt;</description></item><item><title>Identify Device by QR Code</title><link>https://developer.haltian.io/haltian-iot/guides/qr-code-identification/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/qr-code-identification/</guid><description>&lt;p&gt;Every Haltian device has a QR code containing its unique identifier (TUID). This guide shows how to query device information from Haltian IoT using QR code data.&lt;/p&gt;
 &lt;h2 id="understanding-device-identifiers"&gt;Understanding Device Identifiers&lt;/h2&gt;
 &lt;p&gt;Haltian devices use two types of identifiers:&lt;/p&gt;
 &lt;table&gt;
@@ -733,7 +733,7 @@ sequenceDiagram
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;The TUID is physically readable from the device, while the UUID is used in MQTT topics and API responses.&lt;/p&gt;</description></item><item><title>Queries</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/apis/service-api/queries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/apis/service-api/queries/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The TUID is physically readable from the device, while the UUID is used in MQTT topics and API responses.&lt;/p&gt;</description></item><item><title>Queries</title><link>https://developer.haltian.io/haltian-iot/apis/service-api/queries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/service-api/queries/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;The Service API provides GraphQL queries for retrieving devices, measurements, spaces, and assets. Queries support filtering, pagination, and field selection.&lt;/p&gt;
 &lt;h2 id="devices"&gt;Devices&lt;/h2&gt;
 &lt;h3 id="device-search"&gt;Device Search&lt;/h3&gt;
@@ -786,7 +786,7 @@ sequenceDiagram
 &lt;li&gt;&lt;strong&gt;lastSeen&lt;/strong&gt; - Last communication timestamp.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="measurements"&gt;Measurements&lt;/h2&gt;
-&lt;p&gt;Measurements are sensor data values stored in a time-series database, optimized for time-based queries.&lt;/p&gt;</description></item><item><title>Schema Reference</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/apis/data-api/schema-reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/apis/data-api/schema-reference/</guid><description>&lt;h2 id="data-types"&gt;Data Types&lt;/h2&gt;
+&lt;p&gt;Measurements are sensor data values stored in a time-series database, optimized for time-based queries.&lt;/p&gt;</description></item><item><title>Schema Reference</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/schema-reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/schema-reference/</guid><description>&lt;h2 id="data-types"&gt;Data Types&lt;/h2&gt;
 &lt;p&gt;All Parquet files use these Apache Arrow/Parquet data types:&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -868,7 +868,7 @@ sequenceDiagram
 &lt;/table&gt;
 &lt;hr&gt;
 &lt;h3 id="device"&gt;Device&lt;/h3&gt;
-&lt;p&gt;IoT device inventory and properties.&lt;/p&gt;</description></item><item><title>ThingsBoard Integration</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/integrations/thingsboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/integrations/thingsboard/</guid><description>&lt;p&gt;ThingsBoard is an open-source IoT platform for data collection, processing, visualization, and device management. This guide shows how to integrate Haltian IoT data with ThingsBoard.&lt;/p&gt;
+&lt;p&gt;IoT device inventory and properties.&lt;/p&gt;</description></item><item><title>ThingsBoard Integration</title><link>https://developer.haltian.io/haltian-iot/integrations/thingsboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/integrations/thingsboard/</guid><description>&lt;p&gt;ThingsBoard is an open-source IoT platform for data collection, processing, visualization, and device management. This guide shows how to integrate Haltian IoT data with ThingsBoard.&lt;/p&gt;
 &lt;h2 id="compatibility"&gt;Compatibility&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -903,14 +903,14 @@ sequenceDiagram
 &lt;li&gt;Device ID mapping (UUID to physical device)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Credentials&lt;/div&gt;
-&lt;p&gt;Contact &lt;a href="mailto:support@haltian.com"&gt;support@haltian.com&lt;/a&gt; or your Haltian account manager for MQTT credentials.&lt;/p&gt;</description></item><item><title>Glossary</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/concepts/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/concepts/glossary/</guid><description>&lt;h2 id="a"&gt;A&lt;/h2&gt;
+&lt;p&gt;Contact &lt;a href="mailto:support@haltian.com"&gt;support@haltian.com&lt;/a&gt; or your Haltian account manager for MQTT credentials.&lt;/p&gt;</description></item><item><title>Glossary</title><link>https://developer.haltian.io/haltian-iot/concepts/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/concepts/glossary/</guid><description>&lt;h2 id="a"&gt;A&lt;/h2&gt;
 &lt;h3 id="api"&gt;API&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Application Programming Interface&lt;/strong&gt; - A set of protocols and tools for building software applications. Haltian IoT provides GraphQL and MQTT APIs.&lt;/p&gt;
 &lt;h3 id="asset"&gt;Asset&lt;/h3&gt;
 &lt;p&gt;An object that serves a purpose for a use case. Assets are objects to which data sources (like sensors) are attached. An asset can be statically assigned to a single space or dynamically travel between spaces.&lt;/p&gt;
 &lt;h2 id="b"&gt;B&lt;/h2&gt;
 &lt;h3 id="beacon"&gt;BEACON&lt;/h3&gt;
-&lt;p&gt;An operating mode of the Haltian EH Locator that does not route tag messages to other Haltian EH Locators/Haltian IoT Gateways, but is used to increase tag positioning accuracy.&lt;/p&gt;</description></item><item><title>Integration Examples</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/apis/data-api/integration-examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/apis/data-api/integration-examples/</guid><description>&lt;h2 id="python-with-pandas"&gt;Python with Pandas&lt;/h2&gt;
+&lt;p&gt;An operating mode of the Haltian EH Locator that does not route tag messages to other Haltian EH Locators/Haltian IoT Gateways, but is used to increase tag positioning accuracy.&lt;/p&gt;</description></item><item><title>Integration Examples</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/integration-examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/integration-examples/</guid><description>&lt;h2 id="python-with-pandas"&gt;Python with Pandas&lt;/h2&gt;
 &lt;p&gt;Read Parquet files directly into pandas DataFrames:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;import&lt;/span&gt; &lt;span style="color:#000"&gt;pandas&lt;/span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;as&lt;/span&gt; &lt;span style="color:#000"&gt;pd&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -943,7 +943,7 @@ sequenceDiagram
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000"&gt;filters&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;[(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;installationStatus&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#4e9a06"&gt;&amp;#39;=&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#4e9a06"&gt;&amp;#39;installed&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)]&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="duckdb"&gt;DuckDB&lt;/h2&gt;
-&lt;p&gt;Query Parquet files directly with SQL:&lt;/p&gt;</description></item><item><title>Mutations</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/apis/service-api/mutations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/apis/service-api/mutations/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Query Parquet files directly with SQL:&lt;/p&gt;</description></item><item><title>Mutations</title><link>https://developer.haltian.io/haltian-iot/apis/service-api/mutations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/service-api/mutations/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Mutations allow you to create, update, and delete resources in Haltian IoT. Available mutations depend on your user role.&lt;/p&gt;
 &lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
 &lt;p&gt;The complete mutation API is available via GraphQL introspection. Use Postman or Apollo CLI to explore available mutations for your role.&lt;/p&gt;
@@ -1013,7 +1013,7 @@ sequenceDiagram
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f8f8f8"&gt; &lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;}&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;}&lt;/span&gt;&lt;span style="color:#f8f8f8"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="file-attachments"&gt;File Attachments&lt;/h2&gt;
-&lt;p&gt;Haltian IoT API supports file attachments for various objects.&lt;/p&gt;</description></item><item><title>Working with Occupancy Data</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/guides/occupancy-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/guides/occupancy-data/</guid><description>&lt;p&gt;This guide explains how to work with Haltian IoT&amp;rsquo;s occupancy data, including device groups and the Occupancy Data Engine (ODE).&lt;/p&gt;
+&lt;p&gt;Haltian IoT API supports file attachments for various objects.&lt;/p&gt;</description></item><item><title>Working with Occupancy Data</title><link>https://developer.haltian.io/haltian-iot/guides/occupancy-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/occupancy-data/</guid><description>&lt;p&gt;This guide explains how to work with Haltian IoT&amp;rsquo;s occupancy data, including device groups and the Occupancy Data Engine (ODE).&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Haltian IoT provides occupancy intelligence through:&lt;/p&gt;
 &lt;ul&gt;
@@ -1021,7 +1021,7 @@ sequenceDiagram
 &lt;li&gt;&lt;strong&gt;Occupancy Data Engine (ODE)&lt;/strong&gt; - Backend service that processes sensor data into occupancy metrics&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="device-groups"&gt;Device Groups&lt;/h2&gt;
-&lt;p&gt;Device groups act as virtual devices that combine measurements from multiple physical sensors. They&amp;rsquo;re commonly used for:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/operation/</guid><description>&lt;h2 id="normal-operation"&gt;Normal Operation&lt;/h2&gt;
+&lt;p&gt;Device groups act as virtual devices that combine measurements from multiple physical sensors. They&amp;rsquo;re commonly used for:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/operation/</guid><description>&lt;h2 id="normal-operation"&gt;Normal Operation&lt;/h2&gt;
 &lt;h3 id="startup-sequence"&gt;Startup Sequence&lt;/h3&gt;
 &lt;p&gt;Gateway boot process typically takes 30-60 seconds:&lt;/p&gt;
 &lt;ol&gt;
@@ -1117,7 +1117,7 @@ sequenceDiagram
 &lt;/table&gt;
 &lt;h2 id="network-management"&gt;Network Management&lt;/h2&gt;
 &lt;h3 id="wirepas-mesh-network"&gt;Wirepas Mesh Network&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Network Formation:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/specifications/</guid><description>&lt;h2 id="product-information"&gt;Product Information&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Network Formation:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/specifications/</guid><description>&lt;h2 id="product-information"&gt;Product Information&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -1232,7 +1232,7 @@ sequenceDiagram
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;LTE Cat M1 Frequency Bands:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Azure Integration</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/apis/data-api/azure-integration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/apis/data-api/azure-integration/</guid><description>&lt;p&gt;This guide provides step-by-step instructions for integrating Azure with Haltian IoT to automatically retrieve Parquet files from AWS S3 and upload them to your Azure infrastructure.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LTE Cat M1 Frequency Bands:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Azure Integration</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/azure-integration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/azure-integration/</guid><description>&lt;p&gt;This guide provides step-by-step instructions for integrating Azure with Haltian IoT to automatically retrieve Parquet files from AWS S3 and upload them to your Azure infrastructure.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;The integration uses an Azure Function App to:&lt;/p&gt;
 &lt;ol&gt;
@@ -1259,7 +1259,7 @@ flowchart TB
  FUNC --&amp;gt;|&amp;#34;DFS API&amp;#34;| ONELAKE
  FUNC --&amp;gt;|&amp;#34;Blob Service&amp;#34;| STORAGE&lt;/pre&gt;
 &lt;h2 id="destination-options"&gt;Destination Options&lt;/h2&gt;
-&lt;p&gt;Choose the destination that fits your analytics infrastructure:&lt;/p&gt;</description></item><item><title>Gateway Binary Passthrough</title><link>https://haltian.github.io/dev-doc-site/devices/technical-reference/gateway-binary-passthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/technical-reference/gateway-binary-passthrough/</guid><description>&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Status&lt;/div&gt;
+&lt;p&gt;Choose the destination that fits your analytics infrastructure:&lt;/p&gt;</description></item><item><title>Gateway Binary Passthrough</title><link>https://developer.haltian.io/devices/technical-reference/gateway-binary-passthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/technical-reference/gateway-binary-passthrough/</guid><description>&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Status&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Beta&lt;/strong&gt; - This feature is in beta and available on Haltian IoT N8 Gateway only.&lt;/p&gt;
 &lt;/div&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
@@ -1271,7 +1271,7 @@ flowchart TB
 &lt;li&gt;Data sovereignty within your network&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;See Also&lt;/div&gt;
-&lt;p&gt;For cloud-based binary passthrough via Haltian IoT MQTT, see &lt;a href="https://haltian.github.io/dev-doc-site/haltian-iot/apis/stream-api/cloud-binary-passthrough/"&gt;Cloud Binary Passthrough&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Position Data Best Practices</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/guides/position-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/guides/position-data/</guid><description>&lt;p&gt;This guide provides best practices for working with position data from Haltian IoT devices, including asset tags, locators, and presence sensors.&lt;/p&gt;
+&lt;p&gt;For cloud-based binary passthrough via Haltian IoT MQTT, see &lt;a href="https://developer.haltian.io/haltian-iot/apis/stream-api/cloud-binary-passthrough/"&gt;Cloud Binary Passthrough&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Position Data Best Practices</title><link>https://developer.haltian.io/haltian-iot/guides/position-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/position-data/</guid><description>&lt;p&gt;This guide provides best practices for working with position data from Haltian IoT devices, including asset tags, locators, and presence sensors.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Haltian IoT provides several types of position data:&lt;/p&gt;
 &lt;table&gt;
@@ -1306,7 +1306,7 @@ flowchart TB
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="device-identifiers"&gt;Device Identifiers&lt;/h2&gt;
-&lt;p&gt;When working with position data, understand the device identifiers:&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/specifications/</guid><description>&lt;h2 id="hardware-specifications"&gt;Hardware Specifications&lt;/h2&gt;
+&lt;p&gt;When working with position data, understand the device identifiers:&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/specifications/</guid><description>&lt;h2 id="hardware-specifications"&gt;Hardware Specifications&lt;/h2&gt;
 &lt;h3 id="processor"&gt;Processor&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -1520,7 +1520,7 @@ flowchart TB
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;LTE Frequency Bands (Example - Verify for region):&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Technical Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-presence/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-presence/specifications/</guid><description>&lt;h2 id="environmental-specifications"&gt;Environmental Specifications&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;LTE Frequency Bands (Example - Verify for region):&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Technical Specifications</title><link>https://developer.haltian.io/devices/sensors/thingsee-presence/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-presence/specifications/</guid><description>&lt;h2 id="environmental-specifications"&gt;Environmental Specifications&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -1565,7 +1565,7 @@ flowchart TB
 &lt;li&gt;Cold environments may require lower detection threshold&lt;/li&gt;
 &lt;li&gt;Avoid locations with rapid temperature changes&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Humidity Impact:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist"&gt;Quick Diagnostic Checklist&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Humidity Impact:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist"&gt;Quick Diagnostic Checklist&lt;/h2&gt;
 &lt;p&gt;Before detailed troubleshooting:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Power LED illuminated (power connected)&lt;/li&gt;
@@ -1588,7 +1588,7 @@ flowchart TB
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Check USB Cable&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Cloud Binary Passthrough</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/apis/stream-api/cloud-binary-passthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/apis/stream-api/cloud-binary-passthrough/</guid><description>&lt;div class="alert alert-warning" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Beta Feature&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Check USB Cable&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Cloud Binary Passthrough</title><link>https://developer.haltian.io/haltian-iot/apis/stream-api/cloud-binary-passthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/stream-api/cloud-binary-passthrough/</guid><description>&lt;div class="alert alert-warning" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Beta Feature&lt;/div&gt;
 &lt;p&gt;Cloud Binary Passthrough is currently in &lt;strong&gt;beta&lt;/strong&gt;. This feature must be enabled for your organization before use. Contact &lt;a href="https://haltian.com/contact/"&gt;Haltian Support&lt;/a&gt; to request access.&lt;/p&gt;
 &lt;/div&gt;
 &lt;blockquote&gt;
@@ -1598,7 +1598,7 @@ flowchart TB
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This guide explains how to process binary passthrough data from Wirepas mesh networks received via &lt;strong&gt;cloud-based MQTT&lt;/strong&gt;. The data flows from wireless sensors through Wirepas gateways to Haltian IoT Cloud, which forwards it to your MQTT broker.&lt;/p&gt;</description></item><item><title>Measurement Types Reference</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/guides/measurement-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/guides/measurement-types/</guid><description>&lt;p&gt;This page provides a complete reference of all measurement types available in Haltian IoT, including their descriptions, value formats, and typical use cases.&lt;/p&gt;
+&lt;p&gt;This guide explains how to process binary passthrough data from Wirepas mesh networks received via &lt;strong&gt;cloud-based MQTT&lt;/strong&gt;. The data flows from wireless sensors through Wirepas gateways to Haltian IoT Cloud, which forwards it to your MQTT broker.&lt;/p&gt;</description></item><item><title>Measurement Types Reference</title><link>https://developer.haltian.io/haltian-iot/guides/measurement-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/measurement-types/</guid><description>&lt;p&gt;This page provides a complete reference of all measurement types available in Haltian IoT, including their descriptions, value formats, and typical use cases.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Measurements are sensor data values sent by Haltian IoT devices. Each measurement has:&lt;/p&gt;
 &lt;ul&gt;
@@ -1636,7 +1636,7 @@ flowchart TB
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;&amp;#34;value&amp;#34;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;:&lt;/span&gt; &lt;span style="color:#0000cf;font-weight:bold"&gt;23.5&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="humidity"&gt;humidity&lt;/h3&gt;
-&lt;p&gt;Relative humidity percentage.&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/haltian-iot-gateway-n8/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist"&gt;Quick Diagnostic Checklist&lt;/h2&gt;
+&lt;p&gt;Relative humidity percentage.&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/haltian-iot-gateway-n8/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist"&gt;Quick Diagnostic Checklist&lt;/h2&gt;
 &lt;p&gt;Before detailed troubleshooting, verify these basics:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Power LED illuminated (power connected and working)&lt;/li&gt;
@@ -1651,7 +1651,7 @@ flowchart TB
 &lt;p&gt;&lt;strong&gt;Possible Causes and Solutions:&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;No Power to Gateway&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting &amp; Maintenance</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-presence/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-presence/troubleshooting/</guid><description>&lt;h2 id="installation-issues"&gt;Installation Issues&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;No Power to Gateway&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting &amp; Maintenance</title><link>https://developer.haltian.io/devices/sensors/thingsee-presence/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-presence/troubleshooting/</guid><description>&lt;h2 id="installation-issues"&gt;Installation Issues&lt;/h2&gt;
 &lt;h3 id="led-not-flashing-on-battery-installation"&gt;LED Not Flashing on Battery Installation&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Symptoms:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1689,7 +1689,7 @@ flowchart TB
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Tap sensor against palm&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Common Profile (1000-1999)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/common-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/common-profile/</guid><description>&lt;p&gt;This profile may be used as is, or be used as a basis, by all profiles to implement some generic functions that are typically required by all applications regardless of their actual use cases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tap sensor against palm&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Common Profile (1000-1999)</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/common-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/common-profile/</guid><description>&lt;p&gt;This profile may be used as is, or be used as a basis, by all profiles to implement some generic functions that are typically required by all applications regardless of their actual use cases.&lt;/p&gt;
 &lt;h2 id="system-information-messages"&gt;System Information Messages&lt;/h2&gt;
 &lt;h3 id="thing-system-info-1100"&gt;Thing System Info (1100)&lt;/h3&gt;
 &lt;p&gt;Reports device firmware and identification information.&lt;/p&gt;
@@ -1720,7 +1720,7 @@ flowchart TB
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Deployment Groups</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/howtos/deployment-groups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/howtos/deployment-groups/</guid><description>&lt;p&gt;Deployment Groups are a powerful feature for organizing and managing your Thingsee IoT devices. They enable bulk operations, targeted updates, and efficient data routing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Deployment Groups</title><link>https://developer.haltian.io/thingsee-iot/howtos/deployment-groups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/howtos/deployment-groups/</guid><description>&lt;p&gt;Deployment Groups are a powerful feature for organizing and managing your Thingsee IoT devices. They enable bulk operations, targeted updates, and efficient data routing.&lt;/p&gt;
 &lt;h2 id="what-are-deployment-groups"&gt;What Are Deployment Groups?&lt;/h2&gt;
 &lt;p&gt;A &lt;strong&gt;DeploymentGroup&lt;/strong&gt; (groupId) is a logical collection of devices. Every Thingsee device belongs to a single deployment group. When devices are manufactured, they start as &amp;ldquo;unassigned&amp;rdquo; and can be assigned to groups during installation.&lt;/p&gt;
 &lt;h2 id="use-cases"&gt;Use Cases&lt;/h2&gt;
@@ -1751,7 +1751,7 @@ flowchart TB
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="group-naming-convention"&gt;Group Naming Convention&lt;/h2&gt;
-&lt;p&gt;Deployment groups follow this naming structure:&lt;/p&gt;</description></item><item><title>MQTT Data Stream</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/mqtt-data-stream/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/mqtt-data-stream/</guid><description>&lt;p&gt;Thingsee Operations Cloud includes an MQTT broker for real-time data streaming. This is the preferred integration method unless you have specific requirements for cloud-native integrations like Azure IoT Hub.&lt;/p&gt;
+&lt;p&gt;Deployment groups follow this naming structure:&lt;/p&gt;</description></item><item><title>MQTT Data Stream</title><link>https://developer.haltian.io/thingsee-iot/integrations/mqtt-data-stream/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/mqtt-data-stream/</guid><description>&lt;p&gt;Thingsee Operations Cloud includes an MQTT broker for real-time data streaming. This is the preferred integration method unless you have specific requirements for cloud-native integrations like Azure IoT Hub.&lt;/p&gt;
 &lt;h2 id="topic-structure"&gt;Topic Structure&lt;/h2&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;cloudext/json/{env}/{country}/{groupId}/{tuid}/{messageId}
 &lt;/code&gt;&lt;/pre&gt;&lt;table&gt;
@@ -1793,7 +1793,7 @@ flowchart TB
 &lt;h3 id="subscription-examples"&gt;Subscription Examples&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;All data from a group:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;cloudext/json/pr/fi/prfi00samplegroup/#
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;All data from a specific device:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Thingsee Toolbox</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/applications/thingsee-toolbox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/applications/thingsee-toolbox/</guid><description>&lt;p&gt;Thingsee Toolbox is the primary application for deploying and managing Haltian Thingsee IoT installations. With Thingsee Toolbox you can add stacks, manage deployment groups, replace devices, and export CSV files for comprehensive IoT management.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;All data from a specific device:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Thingsee Toolbox</title><link>https://developer.haltian.io/thingsee-iot/applications/thingsee-toolbox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/applications/thingsee-toolbox/</guid><description>&lt;p&gt;Thingsee Toolbox is the primary application for deploying and managing Haltian Thingsee IoT installations. With Thingsee Toolbox you can add stacks, manage deployment groups, replace devices, and export CSV files for comprehensive IoT management.&lt;/p&gt;
 &lt;h2 id="download"&gt;Download&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://apps.apple.com/app/thingsee-toolbox"&gt;App Store (iOS)&lt;/a&gt;&lt;/li&gt;
@@ -1839,7 +1839,7 @@ flowchart TB
 &lt;li&gt;Grant camera and storage permissions&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="adding-a-stack"&gt;Adding a Stack&lt;/h3&gt;
-&lt;p&gt;A &lt;strong&gt;stack&lt;/strong&gt; is a database where your devices are stored.&lt;/p&gt;</description></item><item><title>Analytics Profile (2000-2999)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/analytics-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/analytics-profile/</guid><description>&lt;h2 id="occupancy-info-data-2100"&gt;Occupancy Info Data (2100)&lt;/h2&gt;
+&lt;p&gt;A &lt;strong&gt;stack&lt;/strong&gt; is a database where your devices are stored.&lt;/p&gt;</description></item><item><title>Analytics Profile (2000-2999)</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/analytics-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/analytics-profile/</guid><description>&lt;h2 id="occupancy-info-data-2100"&gt;Occupancy Info Data (2100)&lt;/h2&gt;
 &lt;p&gt;Reports the current occupancy state of a monitored area.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;&amp;#34;state&amp;#34;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;:&lt;/span&gt; &lt;span style="color:#a40000"&gt;Number&lt;/span&gt;
@@ -1888,7 +1888,7 @@ flowchart TB
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
-&lt;p&gt;In event mode, devices may only send the jammed state (&lt;code&gt;1&lt;/code&gt;). The absence of messages indicates normal operation.&lt;/p&gt;</description></item><item><title>Architecture</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/architecture/</guid><description>&lt;p&gt;The Thingsee IoT platform provides a complete end-to-end solution for IoT deployments, from sensors to cloud integrations.&lt;/p&gt;
+&lt;p&gt;In event mode, devices may only send the jammed state (&lt;code&gt;1&lt;/code&gt;). The absence of messages indicates normal operation.&lt;/p&gt;</description></item><item><title>Architecture</title><link>https://developer.haltian.io/thingsee-iot/concepts/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/concepts/architecture/</guid><description>&lt;p&gt;The Thingsee IoT platform provides a complete end-to-end solution for IoT deployments, from sensors to cloud integrations.&lt;/p&gt;
 &lt;h2 id="system-architecture"&gt;System Architecture&lt;/h2&gt;
 &lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
 flowchart TB
@@ -1929,7 +1929,7 @@ flowchart TB
  Cloud --&amp;gt; Integration&lt;/pre&gt;
 &lt;h2 id="key-components"&gt;Key Components&lt;/h2&gt;
 &lt;h3 id="sensor-layer"&gt;Sensor Layer&lt;/h3&gt;
-&lt;p&gt;Thingsee sensors are battery-powered, wireless devices that measure environmental conditions and transmit data through the mesh network:&lt;/p&gt;</description></item><item><title>Azure IoT Hub</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/azure-iot-hub/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/azure-iot-hub/</guid><description>&lt;p&gt;Azure IoT Hub is one of the most common integration points for Thingsee data. This guide explains how to set up the connection.&lt;/p&gt;
+&lt;p&gt;Thingsee sensors are battery-powered, wireless devices that measure environmental conditions and transmit data through the mesh network:&lt;/p&gt;</description></item><item><title>Azure IoT Hub</title><link>https://developer.haltian.io/thingsee-iot/integrations/azure-iot-hub/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/azure-iot-hub/</guid><description>&lt;p&gt;Azure IoT Hub is one of the most common integration points for Thingsee data. This guide explains how to set up the connection.&lt;/p&gt;
 &lt;h2 id="how-it-works"&gt;How It Works&lt;/h2&gt;
 &lt;p&gt;Thingsee Operations Cloud connects as a &lt;strong&gt;single device&lt;/strong&gt; to your Azure IoT Hub. All sensor data is forwarded through this connection with individual device identifiers inside each message.&lt;/p&gt;
 &lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
@@ -1952,7 +1952,7 @@ flowchart TB
  Cloud --&amp;gt;|Single Device Connection| Hub
  Hub --&amp;gt; EH --&amp;gt; App&lt;/pre&gt;
 &lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
-&lt;p&gt;The actual device identifier is in the &lt;code&gt;tsmTuid&lt;/code&gt; property of each JSON message. Azure&amp;rsquo;s DeviceId remains constant (e.g., &amp;ldquo;thingsee&amp;rdquo;).&lt;/p&gt;</description></item><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/accessories/thingsee-powercover/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/accessories/thingsee-powercover/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+&lt;p&gt;The actual device identifier is in the &lt;code&gt;tsmTuid&lt;/code&gt; property of each JSON message. Azure&amp;rsquo;s DeviceId remains constant (e.g., &amp;ldquo;thingsee&amp;rdquo;).&lt;/p&gt;</description></item><item><title>Installation</title><link>https://developer.haltian.io/devices/accessories/thingsee-powercover/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/accessories/thingsee-powercover/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/to7RuEOx1wg?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
@@ -1962,7 +1962,7 @@ flowchart TB
 &lt;hr&gt;
 &lt;h2 id="using-thingsee-powercover"&gt;Using Thingsee POWERCOVER&lt;/h2&gt;
 &lt;p&gt;Thingsee POWERCOVER can be used as a power source for the following Thingsee sensor devices: Thingsee PRESENCE, Thingsee ENVIRONMENT and Thingsee DISTANCE, in cases where extremely long operating time without battery change is needed.&lt;/p&gt;
-&lt;p&gt;Thingsee POWERCOVER works with 3 AA Lithium batteries which provide Thingsee sensor devices up to 10 years of battery life.&lt;/p&gt;</description></item><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-lan/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-lan/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+&lt;p&gt;Thingsee POWERCOVER works with 3 AA Lithium batteries which provide Thingsee sensor devices up to 10 years of battery life.&lt;/p&gt;</description></item><item><title>Installation</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-lan/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/thingsee-gateway-lan/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sx6UoHfS9qw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
@@ -1974,7 +1974,7 @@ flowchart TB
 &lt;p&gt;Install the gateway to a secure location. In public places, install the gateway behind locked doors.
 To ensure strong enough signal strength for data delivery, keep the maximum distance between mesh network devices
 under 20m.&lt;/p&gt;
-&lt;p&gt;If the distance between a measuring sensor and the gateway is &amp;gt; 20m or if the sensors are separated by a fire door or other thick building materials, use extra sensors as routers.&lt;/p&gt;</description></item><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/installation/</guid><description>&lt;h2 id="before-installation"&gt;Before Installation&lt;/h2&gt;
+&lt;p&gt;If the distance between a measuring sensor and the gateway is &amp;gt; 20m or if the sensors are separated by a fire door or other thick building materials, use extra sensors as routers.&lt;/p&gt;</description></item><item><title>Installation</title><link>https://developer.haltian.io/devices/sensors/haltian-radar/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/haltian-radar/installation/</guid><description>&lt;h2 id="before-installation"&gt;Before Installation&lt;/h2&gt;
 &lt;h3 id="prerequisites"&gt;Prerequisites&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Ensure Thingsee Gateway is installed and operational&lt;/li&gt;
@@ -1999,7 +1999,7 @@ under 20m.&lt;/p&gt;
 &lt;li&gt;IP68 rating allows installation in exposed locations&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="parking-space-monitoring---wall-or-pole-mount"&gt;Parking Space Monitoring - Wall or Pole Mount&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Most common installation method for parking&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Most common installation method for parking&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Installation</title><link>https://developer.haltian.io/devices/sensors/thingsee-air/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-air/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/h54plvBygjc?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
@@ -2026,7 +2026,7 @@ under 20m.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id="baseline-calibration-requirements"&gt;Baseline Calibration Requirements&lt;/h2&gt;
 &lt;h3 id="initial-calibration-period"&gt;Initial Calibration Period&lt;/h3&gt;
-&lt;p&gt;Thingsee AIR sensors require an initial calibration period for optimal accuracy:&lt;/p&gt;</description></item><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+&lt;p&gt;Thingsee AIR sensors require an initial calibration period for optimal accuracy:&lt;/p&gt;</description></item><item><title>Installation</title><link>https://developer.haltian.io/devices/sensors/thingsee-count/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-count/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Ys1HiVMJCys?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
@@ -2041,15 +2041,15 @@ under 20m.&lt;/p&gt;
 &lt;li&gt;Download Thingsee Toolbox app (iOS/Android) for configuration&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="planning-sensor-placement"&gt;Planning Sensor Placement&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Key Considerations:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment-rugged/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment-rugged/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
-&lt;p&gt;See also: &lt;a href="https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/installation/"&gt;Thingsee ENVIRONMENT installation video&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key Considerations:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Installation</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment-rugged/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-environment-rugged/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+&lt;p&gt;See also: &lt;a href="https://developer.haltian.io/devices/sensors/thingsee-environment/installation/"&gt;Thingsee ENVIRONMENT installation video&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="download-pdf"&gt;Download PDF&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://4233666.fs1.hubspotusercontent-na1.net/hubfs/4233666/User%20Guides/Thingsee_ENVIRONMENT_RUGGED_UG_v.24.02.pdf"&gt;Download&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="using-thingsee-environment-rugged-sensor"&gt;Using THINGSEE ENVIRONMENT RUGGED sensor&lt;/h2&gt;
 &lt;p&gt;Environment monitoring can make any building, parking area, yard or any indoor or outdoor space smart.
 Real-time information over temperature can be used to create better end-user experiences, efficient energy consumption and better facility management planning with factual data over the environmental factors.&lt;/p&gt;
-&lt;p&gt;Thingsee ENVIRONMENT RUGGED sensor measures temperature, and it has an accelerometer and a magnetic switch.&lt;/p&gt;</description></item><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+&lt;p&gt;Thingsee ENVIRONMENT RUGGED sensor measures temperature, and it has an accelerometer and a magnetic switch.&lt;/p&gt;</description></item><item><title>Installation</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-environment/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hlQ9cVhRADA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
@@ -2075,7 +2075,7 @@ Real-time information over temperature can be used to create better end-user exp
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="use-case-identification"&gt;Use Case Identification&lt;/h3&gt;
-&lt;p&gt;Determine which sensors you&amp;rsquo;ll use:&lt;/p&gt;</description></item><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-leakage-rugged/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-leakage-rugged/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+&lt;p&gt;Determine which sensors you&amp;rsquo;ll use:&lt;/p&gt;</description></item><item><title>Installation</title><link>https://developer.haltian.io/devices/sensors/thingsee-leakage-rugged/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-leakage-rugged/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/oaRE3-LafUw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
@@ -2084,7 +2084,7 @@ Real-time information over temperature can be used to create better end-user exp
 &lt;p&gt;&lt;a href="https://4233666.fs1.hubspotusercontent-na1.net/hubfs/4233666/User%20Guides/Thingsee_LEAKAGE_RUGGED_UG_v.24.10.pdf"&gt;Download&lt;/a&gt;&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="using-thingsee-leakage-rugged-sensor"&gt;Using THINGSEE LEAKAGE RUGGED sensor&lt;/h2&gt;
 &lt;h5 id="overview"&gt;Overview&lt;/h5&gt;
-&lt;p&gt;Thingsee LEAKAGE RUGGED is designed to detect the presence of water beneath the device. It activates when water covers the two detection pins located at the bottom of the sensor (effective in water layers wider than 2.4 cm).&lt;/p&gt;</description></item><item><title>Installing Thingsee AIR</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/howtos/install-thingsee-air/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/howtos/install-thingsee-air/</guid><description>&lt;p&gt;Thingsee AIR detects carbon dioxide (CO₂), total volatile organic compounds (TVOC), temperature, humidity, and barometric pressure. This guide covers proper installation for accurate measurements.&lt;/p&gt;
+&lt;p&gt;Thingsee LEAKAGE RUGGED is designed to detect the presence of water beneath the device. It activates when water covers the two detection pins located at the bottom of the sensor (effective in water layers wider than 2.4 cm).&lt;/p&gt;</description></item><item><title>Installing Thingsee AIR</title><link>https://developer.haltian.io/thingsee-iot/howtos/install-thingsee-air/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/howtos/install-thingsee-air/</guid><description>&lt;p&gt;Thingsee AIR detects carbon dioxide (CO₂), total volatile organic compounds (TVOC), temperature, humidity, and barometric pressure. This guide covers proper installation for accurate measurements.&lt;/p&gt;
 &lt;h2 id="specifications"&gt;Specifications&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -2122,7 +2122,7 @@ Real-time information over temperature can be used to create better end-user exp
 &lt;/table&gt;
 &lt;h2 id="sensor-calibration"&gt;Sensor Calibration&lt;/h2&gt;
 &lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Calibration Period&lt;/div&gt;
-&lt;p&gt;The sensor requires calibration time before providing accurate readings:&lt;/p&gt;</description></item><item><title>Thingsee Toolbox Lite</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/applications/thingsee-toolbox-lite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/applications/thingsee-toolbox-lite/</guid><description>&lt;p&gt;Thingsee Toolbox Lite is a streamlined mobile application for installation and maintenance purposes. It provides essential functionality for managing Thingsee IoT devices with a simplified interface.&lt;/p&gt;
+&lt;p&gt;The sensor requires calibration time before providing accurate readings:&lt;/p&gt;</description></item><item><title>Thingsee Toolbox Lite</title><link>https://developer.haltian.io/thingsee-iot/applications/thingsee-toolbox-lite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/applications/thingsee-toolbox-lite/</guid><description>&lt;p&gt;Thingsee Toolbox Lite is a streamlined mobile application for installation and maintenance purposes. It provides essential functionality for managing Thingsee IoT devices with a simplified interface.&lt;/p&gt;
 &lt;h2 id="download"&gt;Download&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://apps.apple.com/app/thingsee-toolbox-lite"&gt;App Store (iOS)&lt;/a&gt;&lt;/li&gt;
@@ -2189,7 +2189,7 @@ Real-time information over temperature can be used to create better end-user exp
 &lt;li&gt;Confirm or cancel&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="sessions"&gt;Sessions&lt;/h2&gt;
-&lt;p&gt;Sessions are time-limited work periods for installations or maintenance.&lt;/p&gt;</description></item><item><title>Amazon API Gateway</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/aws-api-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/aws-api-gateway/</guid><description>&lt;p&gt;Amazon API Gateway is an AWS service for creating, securing, and managing APIs at scale. It provides a gateway between applications and backend services for secure and efficient communication.&lt;/p&gt;
+&lt;p&gt;Sessions are time-limited work periods for installations or maintenance.&lt;/p&gt;</description></item><item><title>Amazon API Gateway</title><link>https://developer.haltian.io/thingsee-iot/integrations/aws-api-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/aws-api-gateway/</guid><description>&lt;p&gt;Amazon API Gateway is an AWS service for creating, securing, and managing APIs at scale. It provides a gateway between applications and backend services for secure and efficient communication.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
 flowchart TB
@@ -2217,7 +2217,7 @@ flowchart TB
 &lt;li&gt;Add POST method to the resource&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="2-create-lambda-function"&gt;2. Create Lambda Function&lt;/h3&gt;
-&lt;p&gt;Create a Lambda function to process incoming messages:&lt;/p&gt;</description></item><item><title>Edge Profile (3000-3999)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/edge-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/edge-profile/</guid><description>&lt;h2 id="edge-core-state-change-3100"&gt;Edge Core State Change (3100)&lt;/h2&gt;
+&lt;p&gt;Create a Lambda function to process incoming messages:&lt;/p&gt;</description></item><item><title>Edge Profile (3000-3999)</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/edge-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/edge-profile/</guid><description>&lt;h2 id="edge-core-state-change-3100"&gt;Edge Core State Change (3100)&lt;/h2&gt;
 &lt;p&gt;Reports the current state of the Thingsee Edge core.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;&amp;#34;state&amp;#34;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;:&lt;/span&gt; &lt;span style="color:#a40000"&gt;Number&lt;/span&gt;
@@ -2277,7 +2277,7 @@ flowchart TB
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Response&lt;/strong&gt; (&lt;code&gt;tsmEv: 36&lt;/code&gt;):&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/operation/</guid><description>&lt;h2 id="how-radar-detection-works"&gt;How RADAR Detection Works&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Response&lt;/strong&gt; (&lt;code&gt;tsmEv: 36&lt;/code&gt;):&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/sensors/haltian-radar/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/haltian-radar/operation/</guid><description>&lt;h2 id="how-radar-detection-works"&gt;How RADAR Detection Works&lt;/h2&gt;
 &lt;h3 id="60ghz-pulsed-coherent-radar-technology"&gt;60GHz Pulsed Coherent Radar Technology&lt;/h3&gt;
 &lt;p&gt;The Haltian RADAR uses &lt;strong&gt;60GHz pulsed coherent radar&lt;/strong&gt; to detect objects within its sensing range.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Detection principle:&lt;/strong&gt;&lt;/p&gt;
@@ -2295,7 +2295,7 @@ flowchart TB
 &lt;li&gt;&lt;strong&gt;Coverage&lt;/strong&gt;: Widens with distance (wider at far range)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Sensitivity&lt;/strong&gt;: Uniform across beam width&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Calculation example:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/operation/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Calculation example:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/sensors/thingsee-air/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-air/operation/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee AIR operates continuously once installed, automatically measuring and reporting air quality parameters. This guide covers monitoring, data interpretation, and operational best practices.&lt;/p&gt;
 &lt;h2 id="automatic-operation"&gt;Automatic Operation&lt;/h2&gt;
 &lt;h3 id="normal-operation"&gt;Normal Operation&lt;/h3&gt;
@@ -2308,7 +2308,7 @@ flowchart TB
 &lt;li&gt;&lt;strong&gt;Self-heals&lt;/strong&gt; network connections if temporary loss occurs&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="no-user-intervention-required"&gt;No User Intervention Required&lt;/h3&gt;
-&lt;p&gt;The sensor is designed for autonomous operation:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/operation/</guid><description>&lt;h2 id="how-time-of-flight-tof-detection-works"&gt;How Time-of-Flight (ToF) Detection Works&lt;/h2&gt;
+&lt;p&gt;The sensor is designed for autonomous operation:&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/sensors/thingsee-count/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-count/operation/</guid><description>&lt;h2 id="how-time-of-flight-tof-detection-works"&gt;How Time-of-Flight (ToF) Detection Works&lt;/h2&gt;
 &lt;h3 id="laser-based-distance-measurement"&gt;Laser-Based Distance Measurement&lt;/h3&gt;
 &lt;p&gt;Thingsee COUNT uses &lt;strong&gt;Time-of-Flight (ToF) laser technology&lt;/strong&gt; to detect people moving through doorways.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Detection principle:&lt;/strong&gt;&lt;/p&gt;
@@ -2321,7 +2321,7 @@ flowchart TB
 &lt;li&gt;&lt;strong&gt;Direction determination&lt;/strong&gt;: Sequence of distance changes determines entry vs. exit&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="tof-vs-pir-technology"&gt;ToF vs. PIR Technology&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Time-of-Flight advantages over PIR (Passive Infrared):&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/operation/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Time-of-Flight advantages over PIR (Passive Infrared):&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-environment/operation/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee ENVIRONMENT operates continuously once installed, automatically measuring environmental parameters, motion, and magnetic field changes. This multipurpose sensor combines six sensor types, each with specific monitoring capabilities and applications.&lt;/p&gt;
 &lt;h2 id="automatic-operation"&gt;Automatic Operation&lt;/h2&gt;
 &lt;h3 id="normal-operation"&gt;Normal Operation&lt;/h3&gt;
@@ -2345,7 +2345,7 @@ flowchart TB
 &lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: -40°C to +85°C&lt;br&gt;
 &lt;strong&gt;Operating Range&lt;/strong&gt;: -20°C to +50°C (battery specification)&lt;br&gt;
 &lt;strong&gt;Accuracy&lt;/strong&gt;: ±0.3°C&lt;br&gt;
-&lt;strong&gt;Event Threshold&lt;/strong&gt;: 0.5°C absolute change (default)&lt;/p&gt;</description></item><item><title>Security</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/security/</guid><description>&lt;p&gt;Thingsee IoT platform is designed with security and data privacy as fundamental principles, ensuring your IoT deployment meets enterprise security requirements.&lt;/p&gt;
+&lt;strong&gt;Event Threshold&lt;/strong&gt;: 0.5°C absolute change (default)&lt;/p&gt;</description></item><item><title>Security</title><link>https://developer.haltian.io/thingsee-iot/concepts/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/concepts/security/</guid><description>&lt;p&gt;Thingsee IoT platform is designed with security and data privacy as fundamental principles, ensuring your IoT deployment meets enterprise security requirements.&lt;/p&gt;
 &lt;h2 id="data-privacy-principles"&gt;Data Privacy Principles&lt;/h2&gt;
 &lt;h3 id="privacy-by-design"&gt;Privacy by Design&lt;/h3&gt;
 &lt;ul&gt;
@@ -2362,7 +2362,7 @@ flowchart TB
 &lt;/ul&gt;
 &lt;h2 id="cloud-security"&gt;Cloud Security&lt;/h2&gt;
 &lt;h3 id="single-tenant-deployment"&gt;Single Tenant Deployment&lt;/h3&gt;
-&lt;p&gt;Every customer receives an isolated cloud environment:&lt;/p&gt;</description></item><item><title>Thingsee Entry</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/applications/thingsee-entry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/applications/thingsee-entry/</guid><description>&lt;p&gt;Thingsee Entry provides a simple, fast way to access sensor data without setting up a dedicated cloud or application environment. The app has everything needed for basic use of Thingsee sensors.&lt;/p&gt;
+&lt;p&gt;Every customer receives an isolated cloud environment:&lt;/p&gt;</description></item><item><title>Thingsee Entry</title><link>https://developer.haltian.io/thingsee-iot/applications/thingsee-entry/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/applications/thingsee-entry/</guid><description>&lt;p&gt;Thingsee Entry provides a simple, fast way to access sensor data without setting up a dedicated cloud or application environment. The app has everything needed for basic use of Thingsee sensors.&lt;/p&gt;
 &lt;h2 id="download"&gt;Download&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://apps.apple.com/app/thingsee-entry"&gt;App Store (iOS)&lt;/a&gt;&lt;/li&gt;
@@ -2400,7 +2400,7 @@ flowchart TB
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Thingsee Entry supports both light and dark themes.&lt;/p&gt;</description></item><item><title>Unreal Engine Integration</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/howtos/unreal-engine/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/howtos/unreal-engine/</guid><description>&lt;p&gt;Connect live IoT data to Epic&amp;rsquo;s Unreal Engine for next-level visualizations, gamification experiences, and impressive demos.&lt;/p&gt;
+&lt;p&gt;Thingsee Entry supports both light and dark themes.&lt;/p&gt;</description></item><item><title>Unreal Engine Integration</title><link>https://developer.haltian.io/thingsee-iot/howtos/unreal-engine/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/howtos/unreal-engine/</guid><description>&lt;p&gt;Connect live IoT data to Epic&amp;rsquo;s Unreal Engine for next-level visualizations, gamification experiences, and impressive demos.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Connecting Thingsee IoT data to Unreal Engine enables:&lt;/p&gt;
 &lt;ul&gt;
@@ -2460,7 +2460,7 @@ flowchart TB
 &lt;li&gt;&lt;strong&gt;Thingsee Cloud integration&lt;/strong&gt; configured to forward data to your WebSocket server&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class="alert alert-warning" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Data Format&lt;/div&gt;
-&lt;p&gt;The WebSocket must receive data in Thingsee Message JSON Array format. Don&amp;rsquo;t transform the payload.&lt;/p&gt;</description></item><item><title>Best Practices</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/concepts/best-practices/</guid><description>&lt;p&gt;Follow these best practices to build robust, scalable integrations with Thingsee IoT platform.&lt;/p&gt;
+&lt;p&gt;The WebSocket must receive data in Thingsee Message JSON Array format. Don&amp;rsquo;t transform the payload.&lt;/p&gt;</description></item><item><title>Best Practices</title><link>https://developer.haltian.io/thingsee-iot/concepts/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/concepts/best-practices/</guid><description>&lt;p&gt;Follow these best practices to build robust, scalable integrations with Thingsee IoT platform.&lt;/p&gt;
 &lt;h2 id="data-storage-design"&gt;Data Storage Design&lt;/h2&gt;
 &lt;h3 id="partition-by-device-identity"&gt;Partition by Device Identity&lt;/h3&gt;
 &lt;p&gt;Structure your data storage around the device identifier (&lt;code&gt;tsmTuid&lt;/code&gt;):&lt;/p&gt;
@@ -2507,7 +2507,7 @@ flowchart TB
 &lt;/table&gt;
 &lt;h2 id="thing-identity-handling"&gt;Thing Identity Handling&lt;/h2&gt;
 &lt;h3 id="build-identity-in-your-cloud"&gt;Build Identity in Your Cloud&lt;/h3&gt;
-&lt;p&gt;Thingsee devices use serial numbers (&lt;code&gt;tsmTuid&lt;/code&gt;) as identifiers. Build meaningful identity mapping in your system:&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/configuration/</guid><description>&lt;h2 id="configuration-overview"&gt;Configuration Overview&lt;/h2&gt;
+&lt;p&gt;Thingsee devices use serial numbers (&lt;code&gt;tsmTuid&lt;/code&gt;) as identifiers. Build meaningful identity mapping in your system:&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://developer.haltian.io/devices/sensors/haltian-radar/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/haltian-radar/configuration/</guid><description>&lt;h2 id="configuration-overview"&gt;Configuration Overview&lt;/h2&gt;
 &lt;p&gt;Haltian RADAR sensors are &lt;strong&gt;remotely configurable&lt;/strong&gt; via &lt;strong&gt;Haltian Operations Cloud&lt;/strong&gt;. This allows adjusting key parameters without physical access to the sensor.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Key configurable parameters:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2517,7 +2517,7 @@ flowchart TB
 &lt;li&gt;&lt;strong&gt;Operational mode&lt;/strong&gt;: Parking, loading dock, or custom&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
-&lt;p&gt;Configuration changes require access to Haltian Operations Cloud. Contact Haltian support if you need assistance with remote configuration.&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Configuration changes require access to Haltian Operations Cloud. Contact Haltian support if you need assistance with remote configuration.&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://developer.haltian.io/devices/sensors/thingsee-air/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-air/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee AIR sensors come preconfigured from the factory with optimal default settings for most applications. However, specific parameters can be adjusted remotely via Haltian IoT Studio to fine-tune sensor behavior for your environment.&lt;/p&gt;
 &lt;h2 id="default-configuration"&gt;Default Configuration&lt;/h2&gt;
 &lt;h3 id="factory-settings"&gt;Factory Settings&lt;/h3&gt;
@@ -2579,7 +2579,7 @@ flowchart TB
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id="standard-operating-mode"&gt;Standard Operating Mode&lt;/h3&gt;
-&lt;p&gt;The default configuration suits most applications:&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/configuration/</guid><description>&lt;h2 id="configuration-overview"&gt;Configuration Overview&lt;/h2&gt;
+&lt;p&gt;The default configuration suits most applications:&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://developer.haltian.io/devices/sensors/thingsee-count/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-count/configuration/</guid><description>&lt;h2 id="configuration-overview"&gt;Configuration Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee COUNT configuration is performed using the &lt;strong&gt;Thingsee Toolbox mobile app&lt;/strong&gt; (iOS/Android). The primary configuration is &lt;strong&gt;entry direction&lt;/strong&gt; (IN vs. OUT), which determines how the sensor interprets people passing through the doorway.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Configuration method:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2594,7 +2594,7 @@ flowchart TB
 &lt;/ul&gt;
 &lt;h2 id="thingsee-toolbox-mobile-app"&gt;Thingsee Toolbox Mobile App&lt;/h2&gt;
 &lt;h3 id="download-and-installation"&gt;Download and Installation&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Download Thingsee Toolbox app:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Download Thingsee Toolbox app:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-environment/configuration/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee ENVIRONMENT sensors are preconfigured from the factory with optimal default settings for most applications. However, specific parameters can be adjusted remotely via Haltian IoT Studio or by contacting Haltian support for specialized configurations like Machine Usage Mode.&lt;/p&gt;
 &lt;h2 id="default-configuration"&gt;Default Configuration&lt;/h2&gt;
 &lt;h3 id="factory-settings"&gt;Factory Settings&lt;/h3&gt;
@@ -2656,7 +2656,7 @@ flowchart TB
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id="standard-operating-mode"&gt;Standard Operating Mode&lt;/h3&gt;
-&lt;p&gt;Default configuration suits:&lt;/p&gt;</description></item><item><title>Device Pilot</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/applications/device-pilot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/applications/device-pilot/</guid><description>&lt;p&gt;Device Pilot provides powerful analytics and dashboard capabilities for managing Thingsee IoT deployments at scale.&lt;/p&gt;
+&lt;p&gt;Default configuration suits:&lt;/p&gt;</description></item><item><title>Device Pilot</title><link>https://developer.haltian.io/thingsee-iot/applications/device-pilot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/applications/device-pilot/</guid><description>&lt;p&gt;Device Pilot provides powerful analytics and dashboard capabilities for managing Thingsee IoT deployments at scale.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://www.devicepilot.com/"&gt;DevicePilot&lt;/a&gt; is a third-party platform that integrates with Thingsee IoT to provide:&lt;/p&gt;
 &lt;ul&gt;
@@ -2673,7 +2673,7 @@ flowchart TB
 &lt;li&gt;Contact Haltian to configure data routing to DevicePilot&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="data-format"&gt;Data Format&lt;/h2&gt;
-&lt;p&gt;When Thingsee messages are sent to DevicePilot:&lt;/p&gt;</description></item><item><title>Gateway Profile (11000-11999)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/gateway-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/gateway-profile/</guid><description>&lt;h2 id="remote-commands-via-1402"&gt;Remote Commands (via 1402)&lt;/h2&gt;
+&lt;p&gt;When Thingsee messages are sent to DevicePilot:&lt;/p&gt;</description></item><item><title>Gateway Profile (11000-11999)</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/gateway-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/gateway-profile/</guid><description>&lt;h2 id="remote-commands-via-1402"&gt;Remote Commands (via 1402)&lt;/h2&gt;
 &lt;p&gt;Gateway devices support the following remote commands through the generic command interface (dataId 1402):&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -2716,7 +2716,7 @@ flowchart TB
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id="heartbeat-monitoring"&gt;Heartbeat Monitoring&lt;/h2&gt;
 &lt;h3 id="gateway-heartbeat-summary-11200"&gt;Gateway Heartbeat Summary (11200)&lt;/h3&gt;
-&lt;p&gt;Aggregated heartbeat status for all connected sensors.&lt;/p&gt;</description></item><item><title>WebSocket</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/websocket/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/websocket/</guid><description>&lt;p&gt;Thingsee Cloud can connect to WebSocket servers to deliver real-time IoT data. This is useful for applications requiring push-based data delivery without polling.&lt;/p&gt;
+&lt;p&gt;Aggregated heartbeat status for all connected sensors.&lt;/p&gt;</description></item><item><title>WebSocket</title><link>https://developer.haltian.io/thingsee-iot/integrations/websocket/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/websocket/</guid><description>&lt;p&gt;Thingsee Cloud can connect to WebSocket servers to deliver real-time IoT data. This is useful for applications requiring push-based data delivery without polling.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
 flowchart TB
@@ -2754,7 +2754,7 @@ flowchart TB
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#8f5902;font-style:italic"&gt;// Your processing logic here
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="2-configure-authentication-optional"&gt;2. Configure Authentication (Optional)&lt;/h3&gt;
-&lt;p&gt;If your WebSocket requires authentication:&lt;/p&gt;</description></item><item><title>Environment Profile (12000-12999)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/environment-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/environment-profile/</guid><description>&lt;p&gt;These messages are used by devices reporting environmental sensor values.&lt;/p&gt;
+&lt;p&gt;If your WebSocket requires authentication:&lt;/p&gt;</description></item><item><title>Environment Profile (12000-12999)</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/environment-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/environment-profile/</guid><description>&lt;p&gt;These messages are used by devices reporting environmental sensor values.&lt;/p&gt;
 &lt;h2 id="sensor-data-messages"&gt;Sensor Data Messages&lt;/h2&gt;
 &lt;h3 id="weather-info-12100"&gt;Weather Info (12100)&lt;/h3&gt;
 &lt;p&gt;Reports environmental conditions from the device&amp;rsquo;s sensors.&lt;/p&gt;
@@ -2772,7 +2772,7 @@ flowchart TB
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;&amp;#34;lght&amp;#34;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;:&lt;/span&gt; &lt;span style="color:#0000cf;font-weight:bold"&gt;270&lt;/span&gt; &lt;span style="color:#8f5902;font-style:italic"&gt;// Light level
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="magneto-switch-info-12101"&gt;Magneto Switch Info (12101)&lt;/h3&gt;
-&lt;p&gt;Hall sensor for detecting doors, windows, or other magnetic field changes.&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/specifications/</guid><description>&lt;h2 id="general-specifications"&gt;General Specifications&lt;/h2&gt;
+&lt;p&gt;Hall sensor for detecting doors, windows, or other magnetic field changes.&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/sensors/haltian-radar/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/haltian-radar/specifications/</guid><description>&lt;h2 id="general-specifications"&gt;General Specifications&lt;/h2&gt;
 &lt;h3 id="product-information"&gt;Product Information&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -2864,7 +2864,7 @@ flowchart TB
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id="environmental-protection"&gt;Environmental Protection&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;IP68 certification:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;IP68 certification:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/sensors/thingsee-air/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-air/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Model&lt;/strong&gt;: Thingsee AIR&lt;br&gt;
 &lt;strong&gt;Product Code&lt;/strong&gt;: TBD&lt;br&gt;
 &lt;strong&gt;Manufacturer&lt;/strong&gt;: Haltian Oy, Finland&lt;br&gt;
@@ -2921,7 +2921,7 @@ flowchart TB
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Performance Notes:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Performance Notes:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/sensors/thingsee-count/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-count/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Thingsee COUNT&lt;/strong&gt; is a USB-powered people counting sensor using Time-of-Flight (ToF) laser technology for directional counting in doorways and passageways.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Primary features:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2943,7 +2943,7 @@ flowchart TB
 &lt;li&gt;&lt;strong&gt;Distance accuracy&lt;/strong&gt;: ±1-5% typical (millimeter precision)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Detection range&lt;/strong&gt;: 0-2100mm vertical (floor to ceiling)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Advantages:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Advantages:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-environment/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Model&lt;/strong&gt;: Thingsee ENVIRONMENT&lt;br&gt;
 &lt;strong&gt;Product Code&lt;/strong&gt;: TBD&lt;br&gt;
 &lt;strong&gt;Manufacturer&lt;/strong&gt;: Haltian Oy, Finland&lt;br&gt;
@@ -3031,7 +3031,7 @@ flowchart TB
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Accuracy specification ±5% RH is typical for this sensor class. Suitable for comfort monitoring and general environmental tracking. Not suitable for precision metrology applications.&lt;/p&gt;</description></item><item><title>Splunk</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/splunk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/splunk/</guid><description>&lt;p&gt;Splunk is a powerful platform for searching, monitoring, and analyzing machine-generated data. Integrating Thingsee with Splunk enables advanced analytics on your IoT sensor data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Accuracy specification ±5% RH is typical for this sensor class. Suitable for comfort monitoring and general environmental tracking. Not suitable for precision metrology applications.&lt;/p&gt;</description></item><item><title>Splunk</title><link>https://developer.haltian.io/thingsee-iot/integrations/splunk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/splunk/</guid><description>&lt;p&gt;Splunk is a powerful platform for searching, monitoring, and analyzing machine-generated data. Integrating Thingsee with Splunk enables advanced analytics on your IoT sensor data.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
 flowchart TB
@@ -3061,7 +3061,7 @@ flowchart TB
 &lt;li&gt;Note your HEC endpoint and token&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="2-request-integration"&gt;2. Request Integration&lt;/h3&gt;
-&lt;p&gt;Contact Haltian with:&lt;/p&gt;</description></item><item><title>Presence Profile (13000-13999)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/presence-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/presence-profile/</guid><description>&lt;p&gt;These messages are used by devices reporting presence, occupancy, and visitor counter data.&lt;/p&gt;
+&lt;p&gt;Contact Haltian with:&lt;/p&gt;</description></item><item><title>Presence Profile (13000-13999)</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/presence-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/presence-profile/</guid><description>&lt;p&gt;These messages are used by devices reporting presence, occupancy, and visitor counter data.&lt;/p&gt;
 &lt;h2 id="sensor-data-messages"&gt;Sensor Data Messages&lt;/h2&gt;
 &lt;h3 id="movement-count-13100"&gt;Movement Count (13100)&lt;/h3&gt;
 &lt;p&gt;Reports detected movements since the last report.&lt;/p&gt;
@@ -3086,7 +3086,7 @@ flowchart TB
 &lt;/table&gt;
 &lt;p&gt;The time interval between reports may be configurable. Your cloud system should track the configured interval to interpret the count correctly.&lt;/p&gt;
 &lt;h3 id="occupancy-count-13102"&gt;Occupancy Count (13102)&lt;/h3&gt;
-&lt;p&gt;Reports how many times the area has been occupied.&lt;/p&gt;</description></item><item><title>ThingsBoard</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/thingsboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/thingsboard/</guid><description>&lt;p&gt;&lt;a href="https://thingsboard.io/"&gt;ThingsBoard&lt;/a&gt; is an open-source IoT platform for device management, data collection, processing, and visualization.&lt;/p&gt;
+&lt;p&gt;Reports how many times the area has been occupied.&lt;/p&gt;</description></item><item><title>ThingsBoard</title><link>https://developer.haltian.io/thingsee-iot/integrations/thingsboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/thingsboard/</guid><description>&lt;p&gt;&lt;a href="https://thingsboard.io/"&gt;ThingsBoard&lt;/a&gt; is an open-source IoT platform for device management, data collection, processing, and visualization.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
 flowchart TB
@@ -3116,7 +3116,7 @@ flowchart TB
 &lt;li&gt;Configure endpoint settings&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="2-create-uplink-converter"&gt;2. Create Uplink Converter&lt;/h3&gt;
-&lt;p&gt;ThingsBoard requires an uplink converter to transform Thingsee messages into ThingsBoard format.&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/haltian-radar/troubleshooting/</guid><description>&lt;h2 id="troubleshooting-overview"&gt;Troubleshooting Overview&lt;/h2&gt;
+&lt;p&gt;ThingsBoard requires an uplink converter to transform Thingsee messages into ThingsBoard format.&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/sensors/haltian-radar/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/haltian-radar/troubleshooting/</guid><description>&lt;h2 id="troubleshooting-overview"&gt;Troubleshooting Overview&lt;/h2&gt;
 &lt;p&gt;This guide addresses common issues with Haltian RADAR sensors and provides step-by-step solutions.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Quick troubleshooting approach:&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -3130,7 +3130,7 @@ flowchart TB
 &lt;/div&gt;
 &lt;h2 id="detection-issues"&gt;Detection Issues&lt;/h2&gt;
 &lt;h3 id="sensor-reports-occupied-when-space-is-empty-false-positive"&gt;Sensor Reports &amp;ldquo;Occupied&amp;rdquo; When Space is Empty (False Positive)&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Symptoms:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-air/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Symptoms:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/sensors/thingsee-air/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-air/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
 &lt;h3 id="basic-checks"&gt;Basic Checks&lt;/h3&gt;
 &lt;p&gt;Before detailed troubleshooting:&lt;/p&gt;
 &lt;ul&gt;
@@ -3147,7 +3147,7 @@ flowchart TB
 &lt;li&gt;&lt;strong&gt;Single flash on power-on&lt;/strong&gt;: Normal operation startup&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;No continuous LED&lt;/strong&gt;: Normal (preserves battery life)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Unlike gateways, sensors do not have constant LED indication. This is by design to maximize battery life.&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Unlike gateways, sensors do not have constant LED indication. This is by design to maximize battery life.&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/sensors/thingsee-count/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-count/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
 &lt;h3 id="sensor-health-checklist"&gt;Sensor Health Checklist&lt;/h3&gt;
 &lt;p&gt;Before detailed troubleshooting, verify these basics:&lt;/p&gt;
 &lt;p&gt;✅ &lt;strong&gt;Power:&lt;/strong&gt;&lt;/p&gt;
@@ -3165,7 +3165,7 @@ flowchart TB
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Passageway width ≤ 1000mm&lt;/li&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Sensor centered above passageway&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;✅ &lt;strong&gt;Network:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-environment/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
+&lt;p&gt;✅ &lt;strong&gt;Network:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/sensors/thingsee-environment/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-environment/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
 &lt;h3 id="basic-checks"&gt;Basic Checks&lt;/h3&gt;
 &lt;p&gt;Before detailed troubleshooting:&lt;/p&gt;
 &lt;ul&gt;
@@ -3180,7 +3180,7 @@ flowchart TB
 &lt;li&gt;&lt;strong&gt;Single flash on power-on&lt;/strong&gt;: Normal operation startup&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;No continuous LED&lt;/strong&gt;: Normal (battery conservation)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Sensors do not have constant LED indication to maximize battery life.&lt;/p&gt;</description></item><item><title>Machine Usage Profile (16000-16999)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/machine-usage-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/machine-usage-profile/</guid><description>&lt;h2 id="sensor-data-messages"&gt;Sensor Data Messages&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Sensors do not have constant LED indication to maximize battery life.&lt;/p&gt;</description></item><item><title>Machine Usage Profile (16000-16999)</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/machine-usage-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/machine-usage-profile/</guid><description>&lt;h2 id="sensor-data-messages"&gt;Sensor Data Messages&lt;/h2&gt;
 &lt;h3 id="vibration-info-16100"&gt;Vibration Info (16100)&lt;/h3&gt;
 &lt;p&gt;Reports vibration characteristics during the measurement period.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;{&lt;/span&gt;
@@ -3272,7 +3272,7 @@ flowchart TB
 &lt;hr&gt;
 &lt;h2 id="configuration-messages"&gt;Configuration Messages&lt;/h2&gt;
 &lt;h3 id="accelerometer-sensor-configuration-16200"&gt;Accelerometer Sensor Configuration (16200)&lt;/h3&gt;
-&lt;p&gt;Configure accelerometer behavior and reporting thresholds. Sent with &lt;code&gt;tsmEv: 30&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Wirepas</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/wirepas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/wirepas/</guid><description>&lt;p&gt;Thingsee uses &lt;a href="https://www.wirepas.com/"&gt;Wirepas Mesh&lt;/a&gt; for low-power, scalable wireless sensor networks. This page explains how Wirepas technology works within Thingsee deployments.&lt;/p&gt;
+&lt;p&gt;Configure accelerometer behavior and reporting thresholds. Sent with &lt;code&gt;tsmEv: 30&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Wirepas</title><link>https://developer.haltian.io/thingsee-iot/integrations/wirepas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/wirepas/</guid><description>&lt;p&gt;Thingsee uses &lt;a href="https://www.wirepas.com/"&gt;Wirepas Mesh&lt;/a&gt; for low-power, scalable wireless sensor networks. This page explains how Wirepas technology works within Thingsee deployments.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Wirepas is one of the most robust and scalable IoT mesh networking technologies available. Thingsee products use &lt;strong&gt;Wirepas 5.0&lt;/strong&gt; as the default mesh networking protocol.&lt;/p&gt;
 &lt;h2 id="how-wirepas-works"&gt;How Wirepas Works&lt;/h2&gt;
@@ -3304,7 +3304,7 @@ flowchart TB
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Thingsee sensors use Nordic nRF52-series chips with 2.4 GHz radio.&lt;/p&gt;</description></item><item><title>Distance Profile (17000-17999)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/distance-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/distance-profile/</guid><description>&lt;h2 id="sensor-data-messages"&gt;Sensor Data Messages&lt;/h2&gt;
+&lt;p&gt;Thingsee sensors use Nordic nRF52-series chips with 2.4 GHz radio.&lt;/p&gt;</description></item><item><title>Distance Profile (17000-17999)</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/distance-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/distance-profile/</guid><description>&lt;h2 id="sensor-data-messages"&gt;Sensor Data Messages&lt;/h2&gt;
 &lt;h3 id="distance-info-17100"&gt;Distance Info (17100)&lt;/h3&gt;
 &lt;p&gt;Basic distance measurement in millimeters.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;{&lt;/span&gt;
@@ -3329,7 +3329,7 @@ flowchart TB
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;&amp;#34;numberOfSPADs&amp;#34;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;:&lt;/span&gt; &lt;span style="color:#a40000"&gt;Number&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#8f5902;font-style:italic"&gt;// optional debug
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;&amp;#34;signalPerSPAD&amp;#34;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;:&lt;/span&gt; &lt;span style="color:#a40000"&gt;Number&lt;/span&gt; &lt;span style="color:#8f5902;font-style:italic"&gt;// optional debug
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Measured distance is reported when it differs from the previous value by more than the configured threshold. Otherwise, values are reported at the configured reporting interval.&lt;/p&gt;</description></item><item><title>Wapice IoT-Ticket</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/wapice-iot-ticket/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/wapice-iot-ticket/</guid><description>&lt;p&gt;&lt;a href="https://www.iot-ticket.com/"&gt;Wapice IoT-Ticket&lt;/a&gt; provides a rapid way to get both IoT sensor devices and a full-featured dashboard running.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Measured distance is reported when it differs from the previous value by more than the configured threshold. Otherwise, values are reported at the configured reporting interval.&lt;/p&gt;</description></item><item><title>Wapice IoT-Ticket</title><link>https://developer.haltian.io/thingsee-iot/integrations/wapice-iot-ticket/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/wapice-iot-ticket/</guid><description>&lt;p&gt;&lt;a href="https://www.iot-ticket.com/"&gt;Wapice IoT-Ticket&lt;/a&gt; provides a rapid way to get both IoT sensor devices and a full-featured dashboard running.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
 flowchart TB
@@ -3359,7 +3359,7 @@ flowchart TB
 &lt;li&gt;Thingsee will forward data to your dashboard&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="if-you-dont-have-a-wapice-account"&gt;If You Don&amp;rsquo;t Have a Wapice Account&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Option 1:&lt;/strong&gt; Contact &lt;a href="https://www.iot-ticket.com/"&gt;iot-ticket.com&lt;/a&gt; to get started&lt;/p&gt;</description></item><item><title>Angle Profile (18000-18999)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/angle-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/angle-profile/</guid><description>&lt;h2 id="sensor-data-messages"&gt;Sensor Data Messages&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Option 1:&lt;/strong&gt; Contact &lt;a href="https://www.iot-ticket.com/"&gt;iot-ticket.com&lt;/a&gt; to get started&lt;/p&gt;</description></item><item><title>Angle Profile (18000-18999)</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/angle-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/angle-profile/</guid><description>&lt;h2 id="sensor-data-messages"&gt;Sensor Data Messages&lt;/h2&gt;
 &lt;h3 id="angular-position-info-18100"&gt;Angular Position Info (18100)&lt;/h3&gt;
 &lt;p&gt;Reports the current angular position of the sensor.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;{&lt;/span&gt;
@@ -3435,7 +3435,7 @@ flowchart TB
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Profile values:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Parse Platform</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/parse-platform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/parse-platform/</guid><description>&lt;p&gt;&lt;a href="https://parseplatform.org/"&gt;Parse Platform&lt;/a&gt; is an open-source application stack that provides an alternative to Google Firebase. Parse can be self-hosted or used as a managed service.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Profile values:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Parse Platform</title><link>https://developer.haltian.io/thingsee-iot/integrations/parse-platform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/parse-platform/</guid><description>&lt;p&gt;&lt;a href="https://parseplatform.org/"&gt;Parse Platform&lt;/a&gt; is an open-source application stack that provides an alternative to Google Firebase. Parse can be self-hosted or used as a managed service.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
 flowchart TB
@@ -3475,7 +3475,7 @@ flowchart TB
 &lt;/table&gt;
 &lt;h2 id="integration-methods"&gt;Integration Methods&lt;/h2&gt;
 &lt;h3 id="method-1-direct-document-creation"&gt;Method 1: Direct Document Creation&lt;/h3&gt;
-&lt;p&gt;Send each Thingsee message as a Parse document:&lt;/p&gt;</description></item><item><title>Air Quality Profile (24000-24999)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/air-quality-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/apis/message-profiles/air-quality-profile/</guid><description>&lt;h2 id="sensor-data-messages"&gt;Sensor Data Messages&lt;/h2&gt;
+&lt;p&gt;Send each Thingsee message as a Parse document:&lt;/p&gt;</description></item><item><title>Air Quality Profile (24000-24999)</title><link>https://developer.haltian.io/thingsee-iot/apis/message-profiles/air-quality-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/apis/message-profiles/air-quality-profile/</guid><description>&lt;h2 id="sensor-data-messages"&gt;Sensor Data Messages&lt;/h2&gt;
 &lt;h3 id="carbon-dioxide-level-24100"&gt;Carbon Dioxide Level (24100)&lt;/h3&gt;
 &lt;p&gt;Reports the latest CO2 measurement.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;{&lt;/span&gt;
@@ -3551,7 +3551,7 @@ flowchart TB
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>InfluxDB</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/influxdb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/influxdb/</guid><description>&lt;p&gt;&lt;a href="https://www.influxdata.com/"&gt;InfluxDB&lt;/a&gt; is a purpose-built time series platform for IoT analytics and monitoring.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>InfluxDB</title><link>https://developer.haltian.io/thingsee-iot/integrations/influxdb/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/influxdb/</guid><description>&lt;p&gt;&lt;a href="https://www.influxdata.com/"&gt;InfluxDB&lt;/a&gt; is a purpose-built time series platform for IoT analytics and monitoring.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
 flowchart TB
@@ -3585,7 +3585,7 @@ flowchart TB
 &lt;li&gt;Bucket name&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="data-schema"&gt;Data Schema&lt;/h2&gt;
-&lt;p&gt;Thingsee Cloud converts messages to InfluxDB line protocol:&lt;/p&gt;</description></item><item><title>Custom Integration</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/custom-integration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/custom-integration/</guid><description>&lt;p&gt;Thingsee can be integrated with any custom cloud endpoint. This option provides maximum flexibility for specialized requirements.&lt;/p&gt;
+&lt;p&gt;Thingsee Cloud converts messages to InfluxDB line protocol:&lt;/p&gt;</description></item><item><title>Custom Integration</title><link>https://developer.haltian.io/thingsee-iot/integrations/custom-integration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/custom-integration/</guid><description>&lt;p&gt;Thingsee can be integrated with any custom cloud endpoint. This option provides maximum flexibility for specialized requirements.&lt;/p&gt;
 &lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
 &lt;p&gt;Custom integrations are case-by-case configurations that may incur additional costs. Contact Haltian to discuss your requirements.&lt;/p&gt;
 &lt;/div&gt;
@@ -3659,7 +3659,7 @@ flowchart TB
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id="message-format"&gt;Message Format&lt;/h3&gt;
-&lt;p&gt;While Thingsee Message format is strongly recommended, customizations are possible:&lt;/p&gt;</description></item><item><title>Open MQTT Data (Demo)</title><link>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/open-mqtt-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/thingsee-iot/integrations/open-mqtt-data/</guid><description>&lt;p&gt;Want to see real Thingsee data? Connect to our open MQTT data stream from live office sensors.&lt;/p&gt;
+&lt;p&gt;While Thingsee Message format is strongly recommended, customizations are possible:&lt;/p&gt;</description></item><item><title>Open MQTT Data (Demo)</title><link>https://developer.haltian.io/thingsee-iot/integrations/open-mqtt-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/integrations/open-mqtt-data/</guid><description>&lt;p&gt;Want to see real Thingsee data? Connect to our open MQTT data stream from live office sensors.&lt;/p&gt;
 &lt;h2 id="quick-start"&gt;Quick Start&lt;/h2&gt;
 &lt;p&gt;Connect to the open MQTT broker:&lt;/p&gt;
 &lt;table&gt;
@@ -3694,7 +3694,7 @@ flowchart TB
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mosquitto_sub -h live-data.haltian.com -p &lt;span style="color:#0000cf;font-weight:bold"&gt;1883&lt;/span&gt; -t &lt;span style="color:#4e9a06"&gt;&amp;#34;cloudext/json/pr/fi/office/{tuid}/#&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Replace &lt;code&gt;{tuid}&lt;/code&gt; with a device identifier from the demo sensors below.&lt;/p&gt;
 &lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Client ID&lt;/div&gt;
-&lt;p&gt;Use a randomized MQTT client ID to avoid conflicts with other connected users.&lt;/p&gt;</description></item><item><title/><link>https://haltian.github.io/dev-doc-site/devices/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/readme/</guid><description>&lt;h1 id="devices-section---documentation-templates-and-guidelines"&gt;Devices Section - Documentation Templates and Guidelines&lt;/h1&gt;
+&lt;p&gt;Use a randomized MQTT client ID to avoid conflicts with other connected users.&lt;/p&gt;</description></item><item><title/><link>https://developer.haltian.io/devices/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/readme/</guid><description>&lt;h1 id="devices-section---documentation-templates-and-guidelines"&gt;Devices Section - Documentation Templates and Guidelines&lt;/h1&gt;
 &lt;p&gt;This README documents the standardized templates and guidelines for all device documentation in the &lt;code&gt;/devices/&lt;/code&gt; section. All device pages must follow these templates for consistency.&lt;/p&gt;
 &lt;h2 id="directory-structure"&gt;Directory Structure&lt;/h2&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;devices/

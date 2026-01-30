@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee Gateway Global on Haltian Developer Documentation</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/</link><description>Recent content in Thingsee Gateway Global on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/installation/</guid><description>&lt;h2 id="before-you-begin"&gt;Before You Begin&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee Gateway Global on Haltian Developer Documentation</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/</link><description>Recent content in Thingsee Gateway Global on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/devices/gateways/thingsee-gateway-global/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/installation/</guid><description>&lt;h2 id="before-you-begin"&gt;Before You Begin&lt;/h2&gt;
 &lt;h3 id="package-contents-verification"&gt;Package Contents Verification&lt;/h3&gt;
 &lt;p&gt;Verify you have received all components:&lt;/p&gt;
 &lt;ul&gt;
@@ -20,7 +20,7 @@
 &lt;h2 id="sim-card-installation"&gt;SIM Card Installation&lt;/h2&gt;
 &lt;h3 id="before-powering-on"&gt;Before Powering On&lt;/h3&gt;
 &lt;div class="alert alert-danger" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Critical&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;ALWAYS insert SIM card BEFORE powering on gateway.&lt;/strong&gt; Inserting SIM while powered can damage the SIM slot.&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/operation/</guid><description>&lt;h2 id="normal-operation"&gt;Normal Operation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;ALWAYS insert SIM card BEFORE powering on gateway.&lt;/strong&gt; Inserting SIM while powered can damage the SIM slot.&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/operation/</guid><description>&lt;h2 id="normal-operation"&gt;Normal Operation&lt;/h2&gt;
 &lt;h3 id="startup-sequence"&gt;Startup Sequence&lt;/h3&gt;
 &lt;p&gt;Gateway boot process typically takes 60-90 seconds:&lt;/p&gt;
 &lt;ol&gt;
@@ -60,7 +60,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Operational&lt;/strong&gt; (90+ seconds)&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/specifications/</guid><description>&lt;h2 id="product-information"&gt;Product Information&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Operational&lt;/strong&gt; (90+ seconds)&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/specifications/</guid><description>&lt;h2 id="product-information"&gt;Product Information&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -175,7 +175,7 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;LTE Cat M1 Frequency Bands:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/gateways/thingsee-gateway-global/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist"&gt;Quick Diagnostic Checklist&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;LTE Cat M1 Frequency Bands:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/thingsee-gateway-global/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist"&gt;Quick Diagnostic Checklist&lt;/h2&gt;
 &lt;p&gt;Before detailed troubleshooting:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled="" type="checkbox"&gt; Power LED illuminated (power connected)&lt;/li&gt;

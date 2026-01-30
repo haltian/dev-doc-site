@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee COUNT on Haltian Developer Documentation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/</link><description>Recent content in Thingsee COUNT on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee COUNT on Haltian Developer Documentation</title><link>https://developer.haltian.io/devices/sensors/thingsee-count/</link><description>Recent content in Thingsee COUNT on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/devices/sensors/thingsee-count/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/devices/sensors/thingsee-count/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-count/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
  &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Ys1HiVMJCys?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
  &lt;/div&gt;
@@ -13,7 +13,7 @@
 &lt;li&gt;Download Thingsee Toolbox app (iOS/Android) for configuration&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="planning-sensor-placement"&gt;Planning Sensor Placement&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Key Considerations:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Operation</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/operation/</guid><description>&lt;h2 id="how-time-of-flight-tof-detection-works"&gt;How Time-of-Flight (ToF) Detection Works&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Key Considerations:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Operation</title><link>https://developer.haltian.io/devices/sensors/thingsee-count/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-count/operation/</guid><description>&lt;h2 id="how-time-of-flight-tof-detection-works"&gt;How Time-of-Flight (ToF) Detection Works&lt;/h2&gt;
 &lt;h3 id="laser-based-distance-measurement"&gt;Laser-Based Distance Measurement&lt;/h3&gt;
 &lt;p&gt;Thingsee COUNT uses &lt;strong&gt;Time-of-Flight (ToF) laser technology&lt;/strong&gt; to detect people moving through doorways.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Detection principle:&lt;/strong&gt;&lt;/p&gt;
@@ -26,7 +26,7 @@
 &lt;li&gt;&lt;strong&gt;Direction determination&lt;/strong&gt;: Sequence of distance changes determines entry vs. exit&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="tof-vs-pir-technology"&gt;ToF vs. PIR Technology&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Time-of-Flight advantages over PIR (Passive Infrared):&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/configuration/</guid><description>&lt;h2 id="configuration-overview"&gt;Configuration Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Time-of-Flight advantages over PIR (Passive Infrared):&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Configuration</title><link>https://developer.haltian.io/devices/sensors/thingsee-count/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-count/configuration/</guid><description>&lt;h2 id="configuration-overview"&gt;Configuration Overview&lt;/h2&gt;
 &lt;p&gt;Thingsee COUNT configuration is performed using the &lt;strong&gt;Thingsee Toolbox mobile app&lt;/strong&gt; (iOS/Android). The primary configuration is &lt;strong&gt;entry direction&lt;/strong&gt; (IN vs. OUT), which determines how the sensor interprets people passing through the doorway.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Configuration method:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -41,7 +41,7 @@
 &lt;/ul&gt;
 &lt;h2 id="thingsee-toolbox-mobile-app"&gt;Thingsee Toolbox Mobile App&lt;/h2&gt;
 &lt;h3 id="download-and-installation"&gt;Download and Installation&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Download Thingsee Toolbox app:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Download Thingsee Toolbox app:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Specifications</title><link>https://developer.haltian.io/devices/sensors/thingsee-count/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-count/specifications/</guid><description>&lt;h2 id="product-overview"&gt;Product Overview&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Thingsee COUNT&lt;/strong&gt; is a USB-powered people counting sensor using Time-of-Flight (ToF) laser technology for directional counting in doorways and passageways.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Primary features:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -63,7 +63,7 @@
 &lt;li&gt;&lt;strong&gt;Distance accuracy&lt;/strong&gt;: ±1-5% typical (millimeter precision)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Detection range&lt;/strong&gt;: 0-2100mm vertical (floor to ceiling)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Advantages:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/devices/sensors/thingsee-count/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Advantages:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/devices/sensors/thingsee-count/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/sensors/thingsee-count/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics"&gt;Quick Diagnostics&lt;/h2&gt;
 &lt;h3 id="sensor-health-checklist"&gt;Sensor Health Checklist&lt;/h3&gt;
 &lt;p&gt;Before detailed troubleshooting, verify these basics:&lt;/p&gt;
 &lt;p&gt;✅ &lt;strong&gt;Power:&lt;/strong&gt;&lt;/p&gt;

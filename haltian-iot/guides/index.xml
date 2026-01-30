@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guides on Haltian Developer Documentation</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/guides/</link><description>Recent content in Guides on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://haltian.github.io/dev-doc-site/haltian-iot/guides/index.xml" rel="self" type="application/rss+xml"/><item><title>Subscribe to MQTT Data Stream</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/guides/mqtt-subscription/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/guides/mqtt-subscription/</guid><description>&lt;p&gt;This guide shows you how to subscribe to Haltian IoT MQTT data stream using Python. You&amp;rsquo;ll learn to connect, authenticate, and process incoming sensor measurements.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guides on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/guides/</link><description>Recent content in Guides on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/guides/index.xml" rel="self" type="application/rss+xml"/><item><title>Subscribe to MQTT Data Stream</title><link>https://developer.haltian.io/haltian-iot/guides/mqtt-subscription/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/mqtt-subscription/</guid><description>&lt;p&gt;This guide shows you how to subscribe to Haltian IoT MQTT data stream using Python. You&amp;rsquo;ll learn to connect, authenticate, and process incoming sensor measurements.&lt;/p&gt;
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Python 3.7 or later&lt;/li&gt;
@@ -40,7 +40,7 @@
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
-&lt;p&gt;Demo credentials provide read-only access to Haltian&amp;rsquo;s sales demo environment. For production use, obtain credentials from your Haltian IoT Studio organization.&lt;/p&gt;</description></item><item><title>Identify Device by QR Code</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/guides/qr-code-identification/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/guides/qr-code-identification/</guid><description>&lt;p&gt;Every Haltian device has a QR code containing its unique identifier (TUID). This guide shows how to query device information from Haltian IoT using QR code data.&lt;/p&gt;
+&lt;p&gt;Demo credentials provide read-only access to Haltian&amp;rsquo;s sales demo environment. For production use, obtain credentials from your Haltian IoT Studio organization.&lt;/p&gt;</description></item><item><title>Identify Device by QR Code</title><link>https://developer.haltian.io/haltian-iot/guides/qr-code-identification/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/qr-code-identification/</guid><description>&lt;p&gt;Every Haltian device has a QR code containing its unique identifier (TUID). This guide shows how to query device information from Haltian IoT using QR code data.&lt;/p&gt;
 &lt;h2 id="understanding-device-identifiers"&gt;Understanding Device Identifiers&lt;/h2&gt;
 &lt;p&gt;Haltian devices use two types of identifiers:&lt;/p&gt;
 &lt;table&gt;
@@ -64,7 +64,7 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;The TUID is physically readable from the device, while the UUID is used in MQTT topics and API responses.&lt;/p&gt;</description></item><item><title>Working with Occupancy Data</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/guides/occupancy-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/guides/occupancy-data/</guid><description>&lt;p&gt;This guide explains how to work with Haltian IoT&amp;rsquo;s occupancy data, including device groups and the Occupancy Data Engine (ODE).&lt;/p&gt;
+&lt;p&gt;The TUID is physically readable from the device, while the UUID is used in MQTT topics and API responses.&lt;/p&gt;</description></item><item><title>Working with Occupancy Data</title><link>https://developer.haltian.io/haltian-iot/guides/occupancy-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/occupancy-data/</guid><description>&lt;p&gt;This guide explains how to work with Haltian IoT&amp;rsquo;s occupancy data, including device groups and the Occupancy Data Engine (ODE).&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Haltian IoT provides occupancy intelligence through:&lt;/p&gt;
 &lt;ul&gt;
@@ -72,7 +72,7 @@
 &lt;li&gt;&lt;strong&gt;Occupancy Data Engine (ODE)&lt;/strong&gt; - Backend service that processes sensor data into occupancy metrics&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="device-groups"&gt;Device Groups&lt;/h2&gt;
-&lt;p&gt;Device groups act as virtual devices that combine measurements from multiple physical sensors. They&amp;rsquo;re commonly used for:&lt;/p&gt;</description></item><item><title>Position Data Best Practices</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/guides/position-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/guides/position-data/</guid><description>&lt;p&gt;This guide provides best practices for working with position data from Haltian IoT devices, including asset tags, locators, and presence sensors.&lt;/p&gt;
+&lt;p&gt;Device groups act as virtual devices that combine measurements from multiple physical sensors. They&amp;rsquo;re commonly used for:&lt;/p&gt;</description></item><item><title>Position Data Best Practices</title><link>https://developer.haltian.io/haltian-iot/guides/position-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/position-data/</guid><description>&lt;p&gt;This guide provides best practices for working with position data from Haltian IoT devices, including asset tags, locators, and presence sensors.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Haltian IoT provides several types of position data:&lt;/p&gt;
 &lt;table&gt;
@@ -107,7 +107,7 @@
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="device-identifiers"&gt;Device Identifiers&lt;/h2&gt;
-&lt;p&gt;When working with position data, understand the device identifiers:&lt;/p&gt;</description></item><item><title>Measurement Types Reference</title><link>https://haltian.github.io/dev-doc-site/haltian-iot/guides/measurement-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://haltian.github.io/dev-doc-site/haltian-iot/guides/measurement-types/</guid><description>&lt;p&gt;This page provides a complete reference of all measurement types available in Haltian IoT, including their descriptions, value formats, and typical use cases.&lt;/p&gt;
+&lt;p&gt;When working with position data, understand the device identifiers:&lt;/p&gt;</description></item><item><title>Measurement Types Reference</title><link>https://developer.haltian.io/haltian-iot/guides/measurement-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/measurement-types/</guid><description>&lt;p&gt;This page provides a complete reference of all measurement types available in Haltian IoT, including their descriptions, value formats, and typical use cases.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Measurements are sensor data values sent by Haltian IoT devices. Each measurement has:&lt;/p&gt;
 &lt;ul&gt;
