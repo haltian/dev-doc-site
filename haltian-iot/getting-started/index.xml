@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting Started on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/getting-started/</link><description>Recent content in Getting Started on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Platform Overview</title><link>https://developer.haltian.io/haltian-iot/getting-started/platform-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/getting-started/platform-overview/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Haltian IoT is a versatile, cloud-based, and self-host capable IoT data-collection platform.&lt;/p&gt;
+&lt;p&gt;The platform primarily supports the Wirepas ecosystem IoT devices but is also equipped to integrate other radio technologies and third-party devices through project-specific integrations.&lt;/p&gt;
+&lt;p&gt;It offers a comprehensive set of APIs, tools, and services designed to facilitate the development of IoT solutions.&lt;/p&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;, &amp;#39;themeVariables&amp;#39;: {&amp;#39;primaryColor&amp;#39;:&amp;#39;#73f9c1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#ff8862&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#f6fafa&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;textColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;edgeLabelBackground&amp;#39;:&amp;#39;#ffffff&amp;#39;}}}%%
+flowchart BT
+ subgraph DeviceLayer[&amp;#34;Devices&amp;#34;]
+ subgraph Devices[&amp;#34;Sensors&amp;#34;]
+ direction LR
+ D1[&amp;#34;&amp;lt;b&amp;gt;Presence&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Sensors&amp;lt;/i&amp;gt;&amp;#34;]
+ D2[&amp;#34;&amp;lt;b&amp;gt;Environmental&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Sensors&amp;lt;/i&amp;gt;&amp;#34;]
+ D3[&amp;#34;&amp;lt;b&amp;gt;Distance&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Sensors&amp;lt;/i&amp;gt;&amp;#34;]
+ D4[&amp;#34;&amp;lt;b&amp;gt;Orientation&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Sensors&amp;lt;/i&amp;gt;&amp;#34;]
+ D5[&amp;#34;&amp;lt;b&amp;gt;Beam&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Sensors&amp;lt;/i&amp;gt;&amp;#34;]
+ end
+
+ subgraph Mesh[&amp;#34;Mesh Network&amp;#34;]
+ direction LR
+ WM[&amp;#34;&amp;lt;b&amp;gt;Wirepas Mesh 5.3&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Protocol&amp;lt;/i&amp;gt;&amp;#34;]
+ WM2[&amp;#34;&amp;lt;b&amp;gt;Wirepas Mesh 5.0&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Protocol&amp;lt;/i&amp;gt;&amp;#34;]
+ WM3[&amp;#34;&amp;lt;b&amp;gt;Wirepas Mesh 3.4&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Protocol&amp;lt;/i&amp;gt;&amp;#34;]
+ end
+
+ subgraph Network[&amp;#34;Gateways&amp;#34;]
+ direction LR
+ GW[&amp;#34;&amp;lt;b&amp;gt;Thingsee Global&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;LTE Cat M1&amp;lt;/i&amp;gt;&amp;#34;]
+ GW2[&amp;#34;&amp;lt;b&amp;gt;Haltian IoT XS&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;LTE and LAN&amp;lt;/i&amp;gt;&amp;#34;]
+ GW3[&amp;#34;&amp;lt;b&amp;gt;Haltian IoT N8&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;LTE and LAN&amp;lt;/i&amp;gt;&amp;#34;]
+ end
+ end
+
+ subgraph Platform[&amp;#34;Haltian IoT Platform&amp;#34;]
+ direction TB
+ Core[&amp;#34;&amp;lt;b&amp;gt;Core Services&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Kubernetes&amp;lt;/i&amp;gt;&amp;#34;]
+ DB[&amp;#34;&amp;lt;b&amp;gt;Data Store&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Time-Series DB&amp;lt;/i&amp;gt;&amp;#34;]
+ Core --&amp;gt; DB
+ 
+ subgraph APIs[&amp;#34;Haltian IoT APIs&amp;#34;]
+ direction LR
+ MQTT[&amp;#34;&amp;lt;b&amp;gt;Stream API&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;MQTT&amp;lt;/i&amp;gt;&amp;#34;]
+ GQL[&amp;#34;&amp;lt;b&amp;gt;Service API&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;GraphQL&amp;lt;/i&amp;gt;&amp;#34;]
+ DATA[&amp;#34;&amp;lt;b&amp;gt;Data API&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Parquet&amp;lt;/i&amp;gt;&amp;#34;]
+ end
+ 
+ subgraph DataProc[&amp;#34;Data Processing&amp;#34;]
+ direction LR
+ DS[&amp;#34;&amp;lt;b&amp;gt;Data Storage&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Operative Data&amp;lt;/i&amp;gt;&amp;#34;]
+ DE1[&amp;#34;&amp;lt;b&amp;gt;Data Engine&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Position&amp;lt;/i&amp;gt;&amp;#34;]
+ DE2[&amp;#34;&amp;lt;b&amp;gt;Data Engine&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Occupancy&amp;lt;/i&amp;gt;&amp;#34;]
+ end
+ 
+ DB --&amp;gt; MQTT &amp;amp; GQL &amp;amp; DATA
+ end
+
+ subgraph Clients[&amp;#34;Clients Layer&amp;#34;]
+ subgraph Applications[&amp;#34;Applications&amp;#34;]
+ direction LR
+ Studio[&amp;#34;&amp;lt;b&amp;gt;Studio Apps&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Web &amp;amp; Mobile&amp;lt;/i&amp;gt;&amp;#34;]
+ EndUser[&amp;#34;&amp;lt;b&amp;gt;End-User Apps&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Client Applications&amp;lt;/i&amp;gt;&amp;#34;]
+ end
+ subgraph Clouds[&amp;#34;External Services&amp;#34;]
+ direction LR
+ Analytics[&amp;#34;&amp;lt;b&amp;gt;Analytics&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Batch Processing&amp;lt;/i&amp;gt;&amp;#34;]
+ DataLake[&amp;#34;&amp;lt;b&amp;gt;Data Lakes&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Cloud Storage&amp;lt;/i&amp;gt;&amp;#34;]
+ AIML[&amp;#34;&amp;lt;b&amp;gt;AI/ML&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;ML Models&amp;lt;/i&amp;gt;&amp;#34;]
+ end
+ end
+
+ D1 &amp;amp; D2 &amp;amp; D3 &amp;amp; D4 &amp;amp; D5 --&amp;gt; WM
+ WM --&amp;gt; GW &amp;amp; GW2 &amp;amp; GW3
+ GW &amp;amp; GW2 &amp;amp; GW3 --&amp;gt; Core
+ Studio --&amp;gt; GQL
+ EndUser --&amp;gt; MQTT &amp;amp; GQL
+ EndUser --&amp;gt; Analytics &amp;amp; DataLake &amp;amp; AIML
+ Analytics --&amp;gt; DATA
+ DataLake --&amp;gt; MQTT
+
+ %% Device layer styling
+ style DeviceLayer fill:#f6fafa,stroke:#143633,stroke-width:3px,color:#143633
+ style Devices fill:#f6fafa,stroke:#143633,stroke-width:2px,color:#143633
+ style D1 fill:#ff8862,stroke:#143633,stroke-width:2px,color:#fff
+ style D2 fill:#ff8862,stroke:#143633,stroke-width:2px,color:#fff
+ style D3 fill:#ff8862,stroke:#143633,stroke-width:2px,color:#fff
+ style D4 fill:#ff8862,stroke:#143633,stroke-width:2px,color:#fff
+ style D5 fill:#ff8862,stroke:#143633,stroke-width:2px,color:#fff
+ 
+ %% Network styling
+ style Network fill:#f6fafa,stroke:#143633,stroke-width:2px,color:#143633
+ style GW fill:#73f9c1,stroke:#143633,stroke-width:2px,color:#143633
+ 
+ %% Platform styling
+ style Platform fill:#f6fafa,stroke:#143633,stroke-width:3px,color:#143633
+ style Core fill:#73f9c1,stroke:#143633,stroke-width:2px,color:#143633
+ style DB fill:#ff8862,stroke:#143633,stroke-width:2px,color:#fff
+ 
+ %% API styling
+ style APIs fill:#cfe3e0,stroke:#143633,stroke-width:3px,color:#143633
+ style MQTT fill:#73f9c1,stroke:#143633,stroke-width:2px,color:#143633
+ style GQL fill:#73f9c1,stroke:#143633,stroke-width:2px,color:#143633
+ style DATA fill:#73f9c1,stroke:#143633,stroke-width:2px,color:#143633
+ 
+ %% Clients styling
+ style Clients fill:#f6fafa,stroke:#143633,stroke-width:3px,color:#143633
+ style Applications fill:#fff,stroke:#143633,stroke-width:2px,color:#143633
+ style Clouds fill:#fff,stroke:#143633,stroke-width:2px,color:#143633
+ style Studio fill:#ff8862,stroke:#143633,stroke-width:2px,color:#fff
+ style EndUser fill:#ff8862,stroke:#143633,stroke-width:2px,color:#fff
+ style Analytics fill:#cfe3e0,stroke:#143633,stroke-width:2px,color:#143633
+ style DataLake fill:#cfe3e0,stroke:#143633,stroke-width:2px,color:#143633
+ style AIML fill:#cfe3e0,stroke:#143633,stroke-width:2px,color:#143633&lt;/pre&gt;
+&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Platform Evolution&lt;/div&gt;
+&lt;p&gt;Haltian IoT can be described as &amp;ldquo;Thingsee 2.0&amp;rdquo; - it adds new features and concepts over our existing Thingsee Operations Cloud. The platform also incorporates designs from Haltian Empathic Building, particularly around data concepts at spaces and asset levels.&lt;/p&gt;</description></item></channel></rss>

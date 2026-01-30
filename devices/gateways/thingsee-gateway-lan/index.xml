@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee GATEWAY LAN on Haltian Developer Documentation</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-lan/</link><description>Recent content in Thingsee GATEWAY LAN on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/devices/gateways/thingsee-gateway-lan/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/devices/gateways/thingsee-gateway-lan/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/gateways/thingsee-gateway-lan/installation/</guid><description>&lt;h2 id="video-tutorial"&gt;Video Tutorial&lt;/h2&gt;
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"&gt;
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sx6UoHfS9qw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+&lt;h2 id="download-pdf"&gt;Download PDF&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://4233666.fs1.hubspotusercontent-na1.net/hubfs/4233666/User%20Guides/Thingsee_GATEWAY_LAN_UG_v.24.04.pdf"&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="note-before-installation"&gt;Note before installation&lt;/h2&gt;
+&lt;p&gt;Install the gateway to a secure location. In public places, install the gateway behind locked doors.
+To ensure strong enough signal strength for data delivery, keep the maximum distance between mesh network devices
+under 20m.&lt;/p&gt;
+&lt;p&gt;If the distance between a measuring sensor and the gateway is &amp;gt; 20m or if the sensors are separated by a fire door or other thick building materials, use extra sensors as routers.&lt;/p&gt;</description></item></channel></rss>

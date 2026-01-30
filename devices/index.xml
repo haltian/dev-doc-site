@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Devices on Haltian Developer Documentation</title><link>https://developer.haltian.io/devices/</link><description>Recent content in Devices on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/devices/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://developer.haltian.io/devices/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/devices/readme/</guid><description>&lt;h1 id="devices-section---documentation-templates-and-guidelines"&gt;Devices Section - Documentation Templates and Guidelines&lt;/h1&gt;
+&lt;p&gt;This README documents the standardized templates and guidelines for all device documentation in the &lt;code&gt;/devices/&lt;/code&gt; section. All device pages must follow these templates for consistency.&lt;/p&gt;
+&lt;h2 id="directory-structure"&gt;Directory Structure&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;devices/
+├── sensors/ # Independent sensor devices
+├── gateways/ # Network gateways
+├── accessories/ # Device accessories (not standalone)
+├── technical-reference/ # CBOR, protocols, specifications
+└── wirepas-ecosystem/ # Wirepas-compatible devices
+ └── third-party/ # Third-party vendor devices
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="device-page-template"&gt;Device Page Template&lt;/h2&gt;
+&lt;p&gt;All sensor and gateway pages follow this structure:&lt;/p&gt;</description></item></channel></rss>

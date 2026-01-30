@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Concepts on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/concepts/</link><description>Recent content in Concepts on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/concepts/index.xml" rel="self" type="application/rss+xml"/><item><title>Roles and Access Management</title><link>https://developer.haltian.io/haltian-iot/concepts/roles-and-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/concepts/roles-and-access/</guid><description>&lt;p&gt;Haltian IoT Platform implements Role-Based Access Control (RBAC) for both user accounts and API access, providing fine-grained permission management across the platform.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The platform implements a hierarchical RBAC system with five distinct roles, each designed for specific use cases and responsibilities. Access control operates at two primary scopes: &lt;strong&gt;Organization&lt;/strong&gt; and &lt;strong&gt;Space&lt;/strong&gt;, allowing fine-grained permission management.&lt;/p&gt;
+&lt;h2 id="user-roles"&gt;User Roles&lt;/h2&gt;
+&lt;p&gt;The platform provides five predefined roles with increasing levels of access:&lt;/p&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;, &amp;#39;themeVariables&amp;#39;: {&amp;#39;primaryColor&amp;#39;:&amp;#39;#73f9c1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#ff8862&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#f6fafa&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;textColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;edgeLabelBackground&amp;#39;:&amp;#39;#ffffff&amp;#39;}}}%%
+graph TD
+ A([System Admin]) --&amp;gt;|Full system access| B([Platform])
+ C([Organization Manager]) --&amp;gt;|Organization scope| D([Organization])
+ E([Space Designer]) --&amp;gt;|Space scope| F([Spaces])
+ G([Asset Installer]) --&amp;gt;|Asset scope| H([Assets/Devices])
+ I([Data Viewer]) --&amp;gt;|Read-only| J([Data])
+ 
+ D --&amp;gt;|Contains| F
+ F --&amp;gt;|Contains| H
+ 
+ style A fill:#ff8862,stroke:#143633,stroke-width:3px,color:#fff
+ style B fill:#f6fafa,stroke:#143633,stroke-width:2px,color:#143633
+ style C fill:#ff8862,stroke:#143633,stroke-width:2px,color:#fff
+ style D fill:#f6fafa,stroke:#143633,stroke-width:2px,color:#143633
+ style E fill:#73f9c1,stroke:#143633,stroke-width:2px,color:#143633
+ style F fill:#f6fafa,stroke:#143633,stroke-width:2px,color:#143633
+ style G fill:#73f9c1,stroke:#143633,stroke-width:2px,color:#143633
+ style H fill:#f6fafa,stroke:#143633,stroke-width:2px,color:#143633
+ style I fill:#cfe3e0,stroke:#143633,stroke-width:2px,color:#143633
+ style J fill:#f6fafa,stroke:#143633,stroke-width:2px,color:#143633&lt;/pre&gt;
+&lt;h3 id="role-descriptions"&gt;Role Descriptions&lt;/h3&gt;
+&lt;h4 id="1-system-admin"&gt;1. System Admin&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scope&lt;/strong&gt;: Entire platform&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: System-wide administration&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Permissions&lt;/strong&gt;: Full access to all organizations and system configuration&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Case&lt;/strong&gt;: Haltian platform administrators&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="2-organization-manager"&gt;2. Organization Manager&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scope&lt;/strong&gt;: Organization-wide&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: Manage organization users, devices, and structural data&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Permissions&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;View all organization data (devices, tags, structures)&lt;/li&gt;
+&lt;li&gt;Manage user accounts within the organization&lt;/li&gt;
+&lt;li&gt;Create accounts for installers and other roles&lt;/li&gt;
+&lt;li&gt;Manage keywords used in the organization&lt;/li&gt;
+&lt;li&gt;Site/building/floor/zone level management&lt;/li&gt;
+&lt;li&gt;Full GraphQL API access (read/write)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Case&lt;/strong&gt;: Organization administrators, facility managers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="3-space-designer"&gt;3. Space Designer&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scope&lt;/strong&gt;: Specific spaces (or organization-wide if assigned at org level)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: Manage organization infrastructure&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Permissions&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;View all organization data (devices, tags, structures)&lt;/li&gt;
+&lt;li&gt;Site/building/floor/zone level management&lt;/li&gt;
+&lt;li&gt;Limited write access compared to Manager&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Case&lt;/strong&gt;: Architects, space planners, design teams&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="4-asset-installer"&gt;4. Asset Installer&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scope&lt;/strong&gt;: Site-level assets and devices&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: Install and maintain devices/tags at site level&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Permissions&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;View, add, and edit site-level devices and tags&lt;/li&gt;
+&lt;li&gt;Limited to assigned sites&lt;/li&gt;
+&lt;li&gt;Cannot manage users or organization structure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Case&lt;/strong&gt;: Field technicians, installation teams&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="5-data-viewer"&gt;5. Data Viewer&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scope&lt;/strong&gt;: Site-level data (read-only)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: View site-level devices and measurements&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Permissions&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Read-only access to site-level devices and tags&lt;/li&gt;
+&lt;li&gt;Limited GraphQL API access (queries only)&lt;/li&gt;
+&lt;li&gt;Cannot modify any data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Case&lt;/strong&gt;: Dashboard users, report viewers, stakeholders&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="access-control-scopes"&gt;Access Control Scopes&lt;/h2&gt;
+&lt;p&gt;The RBAC system operates at two distinct scopes:&lt;/p&gt;</description></item><item><title>Glossary</title><link>https://developer.haltian.io/haltian-iot/concepts/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/concepts/glossary/</guid><description>&lt;h2 id="a"&gt;A&lt;/h2&gt;
+&lt;h3 id="api"&gt;API&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Application Programming Interface&lt;/strong&gt; - A set of protocols and tools for building software applications. Haltian IoT provides GraphQL and MQTT APIs.&lt;/p&gt;
+&lt;h3 id="asset"&gt;Asset&lt;/h3&gt;
+&lt;p&gt;An object that serves a purpose for a use case. Assets are objects to which data sources (like sensors) are attached. An asset can be statically assigned to a single space or dynamically travel between spaces.&lt;/p&gt;
+&lt;h2 id="b"&gt;B&lt;/h2&gt;
+&lt;h3 id="beacon"&gt;BEACON&lt;/h3&gt;
+&lt;p&gt;An operating mode of the Haltian EH Locator that does not route tag messages to other Haltian EH Locators/Haltian IoT Gateways, but is used to increase tag positioning accuracy.&lt;/p&gt;</description></item></channel></rss>

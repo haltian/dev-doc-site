@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data API (Parquet) on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/</link><description>Recent content in Data API (Parquet) on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/apis/data-api/index.xml" rel="self" type="application/rss+xml"/><item><title>Folder Structure</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/folder-structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/folder-structure/</guid><description>&lt;h2 id="directory-layout"&gt;Directory Layout&lt;/h2&gt;
+&lt;p&gt;Parquet files are organized in a predictable hierarchy within your S3 bucket:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;downloads/parquet/
+└── {organizationId}/ # Your organization UUID
+ ├── device/
+ │ └── {year}/
+ │ └── {month}/
+ │ └── {year}_{month}_{day}_{hour}_{entityType}.parquet
+ ├── deviceGroup/
+ ├── deviceGroupDevices/
+ ├── deviceKeyword/
+ ├── measurementAmbientTemperature/
+ ├── measurementBatteryPercentage/
+ ├── measurementBatteryVoltage/
+ ├── measurementBootCount/
+ ├── measurementCO2/
+ ├── measurementDirectionalMovement/
+ ├── measurementDistance/
+ ├── measurementOccupancySeconds/
+ ├── measurementOccupancyStatus/
+ ├── measurementOccupantsCount/
+ ├── measurementPosition/
+ ├── measurementPositionZone/
+ ├── measurementTVOC/
+ ├── organization/
+ ├── space/
+ └── zone/
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="entity-folders"&gt;Entity Folders&lt;/h2&gt;
+&lt;p&gt;Each entity type has its own top-level folder:&lt;/p&gt;</description></item><item><title>Schema Reference</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/schema-reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/schema-reference/</guid><description>&lt;h2 id="data-types"&gt;Data Types&lt;/h2&gt;
+&lt;p&gt;All Parquet files use these Apache Arrow/Parquet data types:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Type&lt;/th&gt;
+ &lt;th&gt;Description&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;string&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;UTF-8 encoded text&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;int8&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;8-bit signed integer&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;int32&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;32-bit signed integer&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;uint32&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;32-bit unsigned integer&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;float&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;32-bit floating point&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;decimal128(10, 0)&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;128-bit decimal, precision 10, scale 0&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;timestamp[ms, tz=UTC]&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Millisecond-precision UTC timestamp&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="entity-schemas"&gt;Entity Schemas&lt;/h2&gt;
+&lt;h3 id="organization"&gt;Organization&lt;/h3&gt;
+&lt;p&gt;Organization metadata.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Column&lt;/th&gt;
+ &lt;th&gt;Type&lt;/th&gt;
+ &lt;th style="text-align: center"&gt;Nullable&lt;/th&gt;
+ &lt;th&gt;Description&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;id&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;string&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;✗&lt;/td&gt;
+ &lt;td&gt;Unique identifier (UUID)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;name&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;string&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;✗&lt;/td&gt;
+ &lt;td&gt;Organization name&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;createdTs&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;timestamp&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;✗&lt;/td&gt;
+ &lt;td&gt;Creation timestamp&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;updatedTs&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;timestamp&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;✓&lt;/td&gt;
+ &lt;td&gt;Last update timestamp&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id="device"&gt;Device&lt;/h3&gt;
+&lt;p&gt;IoT device inventory and properties.&lt;/p&gt;</description></item><item><title>Integration Examples</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/integration-examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/integration-examples/</guid><description>&lt;h2 id="python-with-pandas"&gt;Python with Pandas&lt;/h2&gt;
+&lt;p&gt;Read Parquet files directly into pandas DataFrames:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;import&lt;/span&gt; &lt;span style="color:#000"&gt;pandas&lt;/span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;as&lt;/span&gt; &lt;span style="color:#000"&gt;pd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8f5902;font-style:italic"&gt;# Read a single file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000"&gt;df&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#000"&gt;pd&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;read_parquet&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;device/2026/01/2026_01_28_08_device.parquet&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8f5902;font-style:italic"&gt;# Read all files in a directory&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;import&lt;/span&gt; &lt;span style="color:#000"&gt;glob&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000"&gt;files&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#000"&gt;glob&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;glob&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;measurementOccupancyStatus/2026/01/*.parquet&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000"&gt;df&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#000"&gt;pd&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;concat&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;([&lt;/span&gt;&lt;span style="color:#000"&gt;pd&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;read_parquet&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;f&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;for&lt;/span&gt; &lt;span style="color:#000"&gt;f&lt;/span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;in&lt;/span&gt; &lt;span style="color:#000"&gt;files&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8f5902;font-style:italic"&gt;# Filter by time range&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000"&gt;df_filtered&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#000"&gt;df&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;[(&lt;/span&gt;&lt;span style="color:#000"&gt;df&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;[&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;ts&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;]&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;&amp;gt;=&lt;/span&gt; &lt;span style="color:#4e9a06"&gt;&amp;#39;2026-01-01&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;&amp;amp;&lt;/span&gt; &lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;&lt;span style="color:#000"&gt;df&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;[&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;ts&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;]&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;&amp;lt;&lt;/span&gt; &lt;span style="color:#4e9a06"&gt;&amp;#39;2026-02-01&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="python-with-pyarrow"&gt;Python with PyArrow&lt;/h2&gt;
+&lt;p&gt;For better performance with large datasets:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#204a87;font-weight:bold"&gt;import&lt;/span&gt; &lt;span style="color:#000"&gt;pyarrow.parquet&lt;/span&gt; &lt;span style="color:#204a87;font-weight:bold"&gt;as&lt;/span&gt; &lt;span style="color:#000"&gt;pq&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8f5902;font-style:italic"&gt;# Read with column selection&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000"&gt;table&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#000"&gt;pq&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;read_table&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#4e9a06"&gt;&amp;#39;measurementAmbientTemperature/2026/01/&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000"&gt;columns&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;[&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;deviceId&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#4e9a06"&gt;&amp;#39;ts&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#4e9a06"&gt;&amp;#39;ambientTemperature&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8f5902;font-style:italic"&gt;# Convert to pandas&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000"&gt;df&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#000"&gt;table&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;to_pandas&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8f5902;font-style:italic"&gt;# Read with row filtering (predicate pushdown)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000"&gt;table&lt;/span&gt; &lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#000"&gt;pq&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#000"&gt;read_table&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#4e9a06"&gt;&amp;#39;device/2026/01/&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#000"&gt;filters&lt;/span&gt;&lt;span style="color:#ce5c00;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;[(&lt;/span&gt;&lt;span style="color:#4e9a06"&gt;&amp;#39;installationStatus&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#4e9a06"&gt;&amp;#39;=&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;,&lt;/span&gt; &lt;span style="color:#4e9a06"&gt;&amp;#39;installed&amp;#39;&lt;/span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#000;font-weight:bold"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="duckdb"&gt;DuckDB&lt;/h2&gt;
+&lt;p&gt;Query Parquet files directly with SQL:&lt;/p&gt;</description></item><item><title>Azure Integration</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/azure-integration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/azure-integration/</guid><description>&lt;p&gt;This guide provides step-by-step instructions for integrating Azure with Haltian IoT to automatically retrieve Parquet files from AWS S3 and upload them to your Azure infrastructure.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The integration uses an Azure Function App to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;List and retrieve new Parquet files from the Haltian IoT S3 bucket&lt;/li&gt;
+&lt;li&gt;Authenticate using Microsoft Entra ID (Azure AD)&lt;/li&gt;
+&lt;li&gt;Upload files to your chosen destination&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;: &amp;#39;base&amp;#39;, &amp;#39;themeVariables&amp;#39;: { &amp;#39;primaryColor&amp;#39;: &amp;#39;#73F9C1&amp;#39;, &amp;#39;primaryTextColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;primaryBorderColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;lineColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;secondaryColor&amp;#39;: &amp;#39;#F6FAFA&amp;#39;, &amp;#39;tertiaryColor&amp;#39;: &amp;#39;#ffffff&amp;#39;, &amp;#39;background&amp;#39;: &amp;#39;#ffffff&amp;#39;, &amp;#39;mainBkg&amp;#39;: &amp;#39;#73F9C1&amp;#39;, &amp;#39;secondBkg&amp;#39;: &amp;#39;#F6FAFA&amp;#39; }}}%%
+flowchart TB
+ subgraph &amp;#34;Haltian IoT&amp;#34;
+ S3[&amp;#34;AWS S3 Bucket&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Parquet Files&amp;lt;/i&amp;gt;&amp;#34;]
+ end
+ 
+ subgraph &amp;#34;Customer Azure&amp;#34;
+ FUNC[&amp;#34;Azure Function App&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Scheduled Transfer&amp;lt;/i&amp;gt;&amp;#34;]
+ 
+ subgraph &amp;#34;Destination Options&amp;#34;
+ ONELAKE[&amp;#34;Microsoft Fabric&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;OneLake&amp;lt;/i&amp;gt;&amp;#34;]
+ STORAGE[&amp;#34;Azure Storage Account&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Blob Storage&amp;lt;/i&amp;gt;&amp;#34;]
+ end
+ end
+ 
+ S3 --&amp;gt;|&amp;#34;List &amp;amp; Get Objects&amp;#34;| FUNC
+ FUNC --&amp;gt;|&amp;#34;DFS API&amp;#34;| ONELAKE
+ FUNC --&amp;gt;|&amp;#34;Blob Service&amp;#34;| STORAGE&lt;/pre&gt;
+&lt;h2 id="destination-options"&gt;Destination Options&lt;/h2&gt;
+&lt;p&gt;Choose the destination that fits your analytics infrastructure:&lt;/p&gt;</description></item></channel></rss>

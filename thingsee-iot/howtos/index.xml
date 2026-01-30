@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>How-tos on Haltian Developer Documentation</title><link>https://developer.haltian.io/thingsee-iot/howtos/</link><description>Recent content in How-tos on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/thingsee-iot/howtos/index.xml" rel="self" type="application/rss+xml"/><item><title>Deployment Groups</title><link>https://developer.haltian.io/thingsee-iot/howtos/deployment-groups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/howtos/deployment-groups/</guid><description>&lt;p&gt;Deployment Groups are a powerful feature for organizing and managing your Thingsee IoT devices. They enable bulk operations, targeted updates, and efficient data routing.&lt;/p&gt;
+&lt;h2 id="what-are-deployment-groups"&gt;What Are Deployment Groups?&lt;/h2&gt;
+&lt;p&gt;A &lt;strong&gt;DeploymentGroup&lt;/strong&gt; (groupId) is a logical collection of devices. Every Thingsee device belongs to a single deployment group. When devices are manufactured, they start as &amp;ldquo;unassigned&amp;rdquo; and can be assigned to groups during installation.&lt;/p&gt;
+&lt;h2 id="use-cases"&gt;Use Cases&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Use Case&lt;/th&gt;
+ &lt;th&gt;Benefit&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Location grouping&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Organize by building, floor, or zone&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Update management&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Roll out firmware to specific groups&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Data routing&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Subscribe to MQTT topics by group&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Maintenance windows&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Schedule updates per group&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="group-naming-convention"&gt;Group Naming Convention&lt;/h2&gt;
+&lt;p&gt;Deployment groups follow this naming structure:&lt;/p&gt;</description></item><item><title>Installing Thingsee AIR</title><link>https://developer.haltian.io/thingsee-iot/howtos/install-thingsee-air/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/howtos/install-thingsee-air/</guid><description>&lt;p&gt;Thingsee AIR detects carbon dioxide (CO₂), total volatile organic compounds (TVOC), temperature, humidity, and barometric pressure. This guide covers proper installation for accurate measurements.&lt;/p&gt;
+&lt;h2 id="specifications"&gt;Specifications&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Parameter&lt;/th&gt;
+ &lt;th&gt;Value&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Environment&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Indoor use only&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Humidity&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;&amp;lt; 85% RH (non-condensing)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Temperature&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;+5°C to +50°C&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Power&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;2× AA batteries (Varta Industrial Pro 1.5V LR06 recommended)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Mounting&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Wall-mounted, 1.4m - 1.8m height&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Network&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Wirepas mesh, max 20m between devices&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="sensor-calibration"&gt;Sensor Calibration&lt;/h2&gt;
+&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Calibration Period&lt;/div&gt;
+&lt;p&gt;The sensor requires calibration time before providing accurate readings:&lt;/p&gt;</description></item><item><title>Unreal Engine Integration</title><link>https://developer.haltian.io/thingsee-iot/howtos/unreal-engine/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/thingsee-iot/howtos/unreal-engine/</guid><description>&lt;p&gt;Connect live IoT data to Epic&amp;rsquo;s Unreal Engine for next-level visualizations, gamification experiences, and impressive demos.&lt;/p&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Connecting Thingsee IoT data to Unreal Engine enables:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AR/VR visualizations&lt;/strong&gt; of sensor data&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Digital twins&lt;/strong&gt; with live data feeds&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gamified dashboards&lt;/strong&gt; for engaging presentations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interactive demos&lt;/strong&gt; for marketing events&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
+&lt;p&gt;This integration is ideal for demos and development. For production deployments, consider dedicated dashboard solutions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="architecture"&gt;Architecture&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;%%{init: {&amp;#39;theme&amp;#39;:&amp;#39;base&amp;#39;,&amp;#39;themeVariables&amp;#39;:{&amp;#39;primaryColor&amp;#39;:&amp;#39;#73F9C1&amp;#39;,&amp;#39;primaryTextColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;primaryBorderColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;lineColor&amp;#39;:&amp;#39;#143633&amp;#39;,&amp;#39;secondaryColor&amp;#39;:&amp;#39;#C7FDE6&amp;#39;,&amp;#39;tertiaryColor&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBkg&amp;#39;:&amp;#39;#F6FAFA&amp;#39;,&amp;#39;clusterBorder&amp;#39;:&amp;#39;#143633&amp;#39;}}}%%
+flowchart TB
+ subgraph Visualization[&amp;#34;Visualization&amp;#34;]
+ ACTOR[Your Actor]
+ UE[Unreal Engine]
+ end
+ 
+ WS[WebSocket Server]
+ T[Thingsee Cloud]
+ 
+ T --&amp;gt;|HTTP POST| WS
+ WS --&amp;gt;|WebSocket| UE
+ UE --&amp;gt; ACTOR&lt;/pre&gt;
+&lt;h2 id="requirements"&gt;Requirements&lt;/h2&gt;
+&lt;h3 id="software"&gt;Software&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Component&lt;/th&gt;
+ &lt;th&gt;Version&lt;/th&gt;
+ &lt;th&gt;Notes&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Unreal Engine&lt;/td&gt;
+ &lt;td&gt;4.25+&lt;/td&gt;
+ &lt;td&gt;Download from Epic Games&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;EasyWebsocket Plugin&lt;/td&gt;
+ &lt;td&gt;Latest&lt;/td&gt;
+ &lt;td&gt;Paid plugin from Marketplace&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;VARest Plugin&lt;/td&gt;
+ &lt;td&gt;Latest&lt;/td&gt;
+ &lt;td&gt;Free plugin for JSON handling&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="data-pipeline"&gt;Data Pipeline&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;WebSocket server&lt;/strong&gt; (e.g., Node.js) to receive Thingsee data&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Thingsee Cloud integration&lt;/strong&gt; configured to forward data to your WebSocket server&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Data Format&lt;/div&gt;
+&lt;p&gt;The WebSocket must receive data in Thingsee Message JSON Array format. Don&amp;rsquo;t transform the payload.&lt;/p&gt;</description></item></channel></rss>
