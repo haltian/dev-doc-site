@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee COUNT on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/</link><description>Recent content in Thingsee COUNT on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/installation/</guid><description>&lt;h2 id="video-tutorial">Video Tutorial&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Ys1HiVMJCys?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="before-installation">Before Installation&lt;/h2>
+&lt;h3 id="prerequisites">Prerequisites&lt;/h3>
+&lt;ul>
+&lt;li>Ensure Thingsee Gateway is installed and operational (LED blinking green)&lt;/li>
+&lt;li>Verify power outlet available near installation location&lt;/li>
+&lt;li>Plan sensor locations to maintain mesh network coverage (&amp;lt; 20m between nodes)&lt;/li>
+&lt;li>Identify doorways or passages to monitor (max 1000mm width, 2100mm height)&lt;/li>
+&lt;li>Download Thingsee Toolbox app (iOS/Android) for configuration&lt;/li>
+&lt;/ul>
+&lt;h3 id="planning-sensor-placement">Planning Sensor Placement&lt;/h3>
+&lt;p>&lt;strong>Key Considerations:&lt;/strong>&lt;/p></description></item><item><title>Operation</title><link>https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/operation/</guid><description>&lt;h2 id="how-time-of-flight-tof-detection-works">How Time-of-Flight (ToF) Detection Works&lt;/h2>
+&lt;h3 id="laser-based-distance-measurement">Laser-Based Distance Measurement&lt;/h3>
+&lt;p>Thingsee COUNT uses &lt;strong>Time-of-Flight (ToF) laser technology&lt;/strong> to detect people moving through doorways.&lt;/p>
+&lt;p>&lt;strong>Detection principle:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Laser emission&lt;/strong>: Sensor emits infrared laser pulses downward&lt;/li>
+&lt;li>&lt;strong>Reflection&lt;/strong>: Laser bounces off objects (people, floor) beneath sensor&lt;/li>
+&lt;li>&lt;strong>Time measurement&lt;/strong>: Sensor measures time for laser to return&lt;/li>
+&lt;li>&lt;strong>Distance calculation&lt;/strong>: Time-of-flight converted to distance (height of object)&lt;/li>
+&lt;li>&lt;strong>Object detection&lt;/strong>: Changes in distance indicate person passing through&lt;/li>
+&lt;li>&lt;strong>Direction determination&lt;/strong>: Sequence of distance changes determines entry vs. exit&lt;/li>
+&lt;/ol>
+&lt;h3 id="tof-vs-pir-technology">ToF vs. PIR Technology&lt;/h3>
+&lt;p>&lt;strong>Time-of-Flight advantages over PIR (Passive Infrared):&lt;/strong>&lt;/p></description></item><item><title>Configuration</title><link>https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/configuration/</guid><description>&lt;h2 id="configuration-overview">Configuration Overview&lt;/h2>
+&lt;p>Thingsee COUNT configuration is performed using the &lt;strong>Thingsee Toolbox mobile app&lt;/strong> (iOS/Android). The primary configuration is &lt;strong>entry direction&lt;/strong> (IN vs. OUT), which determines how the sensor interprets people passing through the doorway.&lt;/p>
+&lt;p>&lt;strong>Configuration method:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Scan QR code on sensor with Thingsee Toolbox app&lt;/li>
+&lt;li>Select IN or OUT based on sensor placement&lt;/li>
+&lt;li>Settings applied immediately to sensor&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>No remote configuration:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Unlike some Haltian sensors (RADAR, ENTRYWAY with remote config), Thingsee COUNT requires &lt;strong>local configuration&lt;/strong> via Toolbox app&lt;/li>
+&lt;li>Must be physically present with smartphone/tablet to configure&lt;/li>
+&lt;/ul>
+&lt;h2 id="thingsee-toolbox-mobile-app">Thingsee Toolbox Mobile App&lt;/h2>
+&lt;h3 id="download-and-installation">Download and Installation&lt;/h3>
+&lt;p>&lt;strong>Download Thingsee Toolbox app:&lt;/strong>&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/specifications/</guid><description>&lt;h2 id="product-overview">Product Overview&lt;/h2>
+&lt;p>&lt;strong>Thingsee COUNT&lt;/strong> is a USB-powered people counting sensor using Time-of-Flight (ToF) laser technology for directional counting in doorways and passageways.&lt;/p>
+&lt;p>&lt;strong>Primary features:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Time-of-Flight (ToF) laser distance measurement&lt;/li>
+&lt;li>Directional people counting (entries and exits)&lt;/li>
+&lt;li>USB 5V powered (continuous power required, no battery)&lt;/li>
+&lt;li>Wirepas Mesh network connectivity&lt;/li>
+&lt;li>Maximum 1000mm passageway width&lt;/li>
+&lt;li>Indoor use, cradle mounting system&lt;/li>
+&lt;/ul>
+&lt;h2 id="detection-technology">Detection Technology&lt;/h2>
+&lt;h3 id="time-of-flight-tof-sensor">Time-of-Flight (ToF) Sensor&lt;/h3>
+&lt;p>&lt;strong>Technology:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Type&lt;/strong>: ToF laser distance measurement&lt;/li>
+&lt;li>&lt;strong>Laser class&lt;/strong>: Class 1 laser (eye-safe under normal use)&lt;/li>
+&lt;li>&lt;strong>Wavelength&lt;/strong>: Infrared (IR) laser (typically 850-940nm, invisible to human eye)&lt;/li>
+&lt;li>&lt;strong>Detection principle&lt;/strong>: Measures time for laser pulse to reflect off objects (people, floor)&lt;/li>
+&lt;li>&lt;strong>Distance accuracy&lt;/strong>: ±1-5% typical (millimeter precision)&lt;/li>
+&lt;li>&lt;strong>Detection range&lt;/strong>: 0-2100mm vertical (floor to ceiling)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Advantages:&lt;/strong>&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/archive/thingsee-count/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics">Quick Diagnostics&lt;/h2>
+&lt;h3 id="sensor-health-checklist">Sensor Health Checklist&lt;/h3>
+&lt;p>Before detailed troubleshooting, verify these basics:&lt;/p>
+&lt;p>✅ &lt;strong>Power:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> USB cable connected to sensor cradle&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> USB power adapter plugged into active outlet&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Outlet not controlled by light switch (check switch positions)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Power adapter LED lit (if equipped with indicator)&lt;/li>
+&lt;/ul>
+&lt;p>✅ &lt;strong>Installation:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Sensor securely attached to cradle (springs facing upward, snap sound heard)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Cradle firmly mounted (tape adhesion good, or screws tight)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> ToF sensor lens clean (no dust, dirt, or condensation)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Passageway width ≤ 1000mm&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Sensor centered above passageway&lt;/li>
+&lt;/ul>
+&lt;p>✅ &lt;strong>Network:&lt;/strong>&lt;/p></description></item></channel></rss>

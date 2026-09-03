@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee ENVIRONMENT on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/</link><description>Recent content in Thingsee ENVIRONMENT on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/installation/</guid><description>&lt;h2 id="video-tutorial">Video Tutorial&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hlQ9cVhRADA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="before-installation">Before Installation&lt;/h2>
+&lt;h3 id="prerequisites">Prerequisites&lt;/h3>
+&lt;ul>
+&lt;li>Thingsee Gateway is installed and operational (LED blinking green)&lt;/li>
+&lt;li>Installation surface is clean and dry&lt;/li>
+&lt;li>Plan sensor locations considering measurement types needed&lt;/li>
+&lt;/ul>
+&lt;h3 id="network-coverage">Network Coverage&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Maximum distance&lt;/strong>: 20m between sensors or to gateway&lt;/li>
+&lt;li>Use intermediate sensors as routers for distances &amp;gt; 20m&lt;/li>
+&lt;li>Account for signal attenuation from fire doors, thick walls, metal structures, and dense building materials&lt;/li>
+&lt;/ul>
+&lt;h3 id="sensor-capabilities">Sensor Capabilities&lt;/h3>
+&lt;p>Thingsee ENVIRONMENT combines multiple sensor types in one device:&lt;/p></description></item><item><title>Operation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/operation/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee ENVIRONMENT operates continuously once installed, automatically measuring environmental parameters, motion, and magnetic field changes. This multipurpose sensor combines six sensor types, each with specific monitoring capabilities and applications.&lt;/p>
+&lt;h2 id="automatic-operation">Automatic Operation&lt;/h2>
+&lt;h3 id="normal-operation">Normal Operation&lt;/h3>
+&lt;p>Once powered on and connected to Wirepas mesh network, Thingsee ENVIRONMENT:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Measures continuously&lt;/strong> - All sensors active (temperature, humidity, pressure, light, accelerometer, magnetic switch)&lt;/li>
+&lt;li>&lt;strong>Reports changes&lt;/strong> - Event-driven when thresholds exceeded&lt;/li>
+&lt;li>&lt;strong>Sends periodic updates&lt;/strong> - Hourly heartbeat regardless of changes&lt;/li>
+&lt;li>&lt;strong>Manages power automatically&lt;/strong> - Optimizes battery life&lt;/li>
+&lt;li>&lt;strong>Self-heals network&lt;/strong> - Reconnects after temporary disruptions&lt;/li>
+&lt;/ol>
+&lt;h3 id="no-manual-intervention-required">No Manual Intervention Required&lt;/h3>
+&lt;ul>
+&lt;li>Fully autonomous operation&lt;/li>
+&lt;li>Automatic network reconnection&lt;/li>
+&lt;li>Self-adjusting for network conditions&lt;/li>
+&lt;li>Event-driven efficient reporting&lt;/li>
+&lt;/ul>
+&lt;h2 id="measurement-parameters">Measurement Parameters&lt;/h2>
+&lt;h3 id="temperature">Temperature&lt;/h3>
+&lt;p>&lt;strong>Range&lt;/strong>: -40°C to +85°C&lt;br>
+&lt;strong>Operating Range&lt;/strong>: -20°C to +50°C (battery specification)&lt;br>
+&lt;strong>Accuracy&lt;/strong>: ±0.3°C&lt;br>
+&lt;strong>Event Threshold&lt;/strong>: 0.5°C absolute change (default)&lt;/p></description></item><item><title>Configuration</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/configuration/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee ENVIRONMENT sensors are preconfigured from the factory with optimal default settings for most applications. However, specific parameters can be adjusted remotely via a Haltian application or by contacting Haltian support for specialized configurations like Machine Usage Mode.&lt;/p>
+&lt;h2 id="default-configuration">Default Configuration&lt;/h2>
+&lt;h3 id="factory-settings">Factory Settings&lt;/h3>
+&lt;p>Out-of-the-box configuration:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Default Value&lt;/th>
+ &lt;th>Purpose&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Measurement interval&lt;/td>
+ &lt;td>5 minutes&lt;/td>
+ &lt;td>Continuous monitoring&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Temperature threshold&lt;/td>
+ &lt;td>0.5°C&lt;/td>
+ &lt;td>Sensitive change detection&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Humidity threshold&lt;/td>
+ &lt;td>2% RH&lt;/td>
+ &lt;td>Standard comfort monitoring&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Pressure threshold&lt;/td>
+ &lt;td>20 hPa&lt;/td>
+ &lt;td>Weather/HVAC changes&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Light threshold&lt;/td>
+ &lt;td>10,000 lux&lt;/td>
+ &lt;td>On/off detection&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Accelerometer&lt;/td>
+ &lt;td>Position/orientation&lt;/td>
+ &lt;td>Standard mode&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Magnetic switch&lt;/td>
+ &lt;td>State change counting&lt;/td>
+ &lt;td>Open/close tracking&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Report interval (heartbeat)&lt;/td>
+ &lt;td>1 hour&lt;/td>
+ &lt;td>Regular status updates&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Battery report interval&lt;/td>
+ &lt;td>6 hours&lt;/td>
+ &lt;td>Power monitoring&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="standard-operating-mode">Standard Operating Mode&lt;/h3>
+&lt;p>Default configuration suits:&lt;/p></description></item><item><title>Data Output</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/uplink-messages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/uplink-messages/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee ENVIRONMENT produces measurement data that you can access through the &lt;strong>Haltian IoT Platform&lt;/strong> — receive JSON measurements via MQTT Stream API or query via GraphQL Data API.&lt;/p>
+&lt;p>This page documents the measurement types, payload formats, and how to access the data.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Self-hosted Wirepas gateway?&lt;/div>
+&lt;p>If you operate your own gateways and decode raw mesh messages, see the &lt;a href="../cbor-reference/uplink/">CBOR Uplink Reference&lt;/a> for the binary message specification.&lt;/p>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="haltian-iot-measurements">Haltian IoT Measurements&lt;/h2>
+&lt;p>The ENVIRONMENT sensor produces the following measurement types depending on its &lt;a href="../configuration/">configured operating mode&lt;/a>:&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/specifications/</guid><description>&lt;h2 id="product-overview">Product Overview&lt;/h2>
+&lt;p>&lt;strong>Model&lt;/strong>: Thingsee ENVIRONMENT&lt;br>
+&lt;strong>Product Code&lt;/strong>: TSPD04&lt;br>
+&lt;strong>Device Model&lt;/strong>: &lt;code>com.haltian.device.tsen04&lt;/code>&lt;br>
+&lt;strong>Manufacturer&lt;/strong>: Haltian Oy, Finland&lt;br>
+&lt;strong>Purpose&lt;/strong>: Multipurpose environmental sensor with temperature, humidity, pressure, light, motion, and magnetic switch&lt;/p>
+&lt;h2 id="measurement-specifications">Measurement Specifications&lt;/h2>
+&lt;h3 id="temperature-sensor">Temperature Sensor&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Technology&lt;/td>
+ &lt;td>Digital semiconductor sensor&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Measurement Range&lt;/td>
+ &lt;td>-40°C to +85°C&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Operating Range&lt;/td>
+ &lt;td>-20°C to +50°C (battery specification)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Recommended Range&lt;/td>
+ &lt;td>-20°C to +50°C&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Accuracy&lt;/td>
+ &lt;td>±0.3°C&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Resolution&lt;/td>
+ &lt;td>0.01°C&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Response Time (t63)&lt;/td>
+ &lt;td>&amp;lt; 10 seconds (in air)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Long-term Stability&lt;/td>
+ &lt;td>&amp;lt; 0.03°C/year&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="humidity-relative-humidity-sensor">Humidity (Relative Humidity) Sensor&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Technology&lt;/td>
+ &lt;td>Capacitive polymer sensor&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Measurement Range&lt;/td>
+ &lt;td>0 - 100% RH&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Accuracy&lt;/td>
+ &lt;td>±5% RH&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Resolution&lt;/td>
+ &lt;td>0.1% RH&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Response Time (t63)&lt;/td>
+ &lt;td>&amp;lt; 8 seconds&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Hysteresis&lt;/td>
+ &lt;td>±1% RH&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Long-term Stability&lt;/td>
+ &lt;td>&amp;lt; 0.5% RH/year&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Note&lt;/strong>: Accuracy specification ±5% RH is typical for this sensor class. Suitable for comfort monitoring and general environmental tracking. Not suitable for precision metrology applications.&lt;/p></description></item><item><title>Device Configuration Commands</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/downlink-messages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/downlink-messages/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee ENVIRONMENT is configured remotely through the &lt;strong>Service API (GraphQL)&lt;/strong> — named commands with built-in validation and automatic encoding.&lt;/p>
+&lt;p>This page documents the available commands and provides ready-to-use examples. For detailed parameter explanations, tuning guidance, and configuration scenarios, see &lt;a href="../configuration/">Configuration&lt;/a>.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Self-hosted Wirepas gateway?&lt;/div>
+&lt;p>If you operate your own gateways and send raw mesh commands, see the &lt;a href="../cbor-reference/downlink/">CBOR Downlink Reference&lt;/a> for the binary command specification.&lt;/p>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="identifying-your-device">Identifying Your Device&lt;/h2>
+&lt;p>The exact command names depend on your device model. Check the serial number prefix on your device:&lt;/p></description></item><item><title>LONGLIFE Variant</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/longlife/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/longlife/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee ENVIRONMENT LONGLIFE is a factory-bundled kit combining the standard Thingsee ENVIRONMENT multipurpose sensor with the Thingsee POWERCOVER extended battery pack, sold as a single SKU for deployments where multi-year, maintenance-free operation is the priority.&lt;/p>
+&lt;p>This page documents only what differs from the standard ENVIRONMENT. For everything else — installation steps, configuration parameters, message formats, measurement specifications — see the links in &lt;a href="#unchanged-from-standard-environment">Unchanged from Standard ENVIRONMENT&lt;/a> below.&lt;/p>
+&lt;h2 id="what-longlife-changes">What LONGLIFE Changes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Standard ENVIRONMENT&lt;/th>
+ &lt;th>ENVIRONMENT LONGLIFE&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Power source&lt;/td>
+ &lt;td>2× AAA alkaline (own)&lt;/td>
+ &lt;td>POWERCOVER: 3× AA Lithium (primary sensor batteries removed)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Optional external power&lt;/td>
+ &lt;td>—&lt;/td>
+ &lt;td>Micro-USB 5V/500mA (via POWERCOVER)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Expected battery life&lt;/td>
+ &lt;td>Up to 5 years (standard mode) / up to 4 years (machine usage mode)&lt;/td>
+ &lt;td>Up to 10 years&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>IP rating&lt;/td>
+ &lt;td>IP30&lt;/td>
+ &lt;td>IP30 (unchanged — sensor housing rating is unaffected by POWERCOVER)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Weight&lt;/td>
+ &lt;td>35 g with batteries / ~20 g without&lt;/td>
+ &lt;td>107 g (with batteries)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Overall dimensions&lt;/td>
+ &lt;td>35 × 35 × 15 mm (sensor only)&lt;/td>
+ &lt;td>Sensor 35 × 35 × 15 mm + POWERCOVER 68 × 55 × 30 mm (attached as a single unit)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="why-the-battery-swap">Why the battery swap&lt;/h3>
+&lt;p>POWERCOVER replaces the sensor&amp;rsquo;s own AAA batteries entirely — when POWERCOVER is attached, the sensor&amp;rsquo;s internal battery compartment is left empty and POWERCOVER becomes the sole power source. This is what extends battery life from ~4–5 years to up to 10 years.&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-environment/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostics">Quick Diagnostics&lt;/h2>
+&lt;h3 id="basic-checks">Basic Checks&lt;/h3>
+&lt;p>Before detailed troubleshooting:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Batteries installed correctly (polarity matched)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> LED flashed on battery installation&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Gateway operational (green blinking LED)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Sensor within 20m of gateway or another sensor&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> At least one heartbeat interval (1 hour) has passed&lt;/li>
+&lt;/ul>
+&lt;h3 id="led-indicators">LED Indicators&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Single flash on power-on&lt;/strong>: Normal operation startup&lt;/li>
+&lt;li>&lt;strong>No continuous LED&lt;/strong>: Normal (battery conservation)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Note&lt;/strong>: Sensors do not have constant LED indication to maximize battery life.&lt;/p></description></item></channel></rss>

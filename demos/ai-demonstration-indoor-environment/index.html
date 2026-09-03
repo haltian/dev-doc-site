@@ -1,0 +1,312 @@
+<!doctype html><html itemscope itemtype=http://schema.org/WebPage lang=en class=no-js><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><link rel="shortcut icon" href=/favicons/favicon.ico><link rel=apple-touch-icon href=/favicons/apple-touch-icon-180x180.png sizes=180x180><link rel=icon type=image/png href=/favicons/favicon-16x16.png sizes=16x16><link rel=icon type=image/png href=/favicons/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/favicons/android-36x36.png sizes=36x36><link rel=icon type=image/png href=/favicons/android-48x48.png sizes=48x48><link rel=icon type=image/png href=/favicons/android-72x72.png sizes=72x72><link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96><link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144><link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192><title>AI Ready Data Demonstration - Indoor Environmental Quality | Haltian Developer Documentation</title><meta name=description content="Multi-metric heatmap showing CO₂, TVOC, and temperature patterns from a Thingsee AIR sensor"><meta property="og:url" content="https://developer.haltian.io/demos/ai-demonstration-indoor-environment/"><meta property="og:site_name" content="Haltian Developer Documentation"><meta property="og:title" content="AI Ready Data Demonstration - Indoor Environmental Quality"><meta property="og:description" content="Multi-metric heatmap showing CO₂, TVOC, and temperature patterns from a Thingsee AIR sensor"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="demos"><meta property="article:modified_time" content="2026-06-25T08:57:01+03:00"><meta property="og:image" content="https://developer.haltian.io/images/social-card.svg"><meta itemprop=name content="AI Ready Data Demonstration - Indoor Environmental Quality"><meta itemprop=description content="Multi-metric heatmap showing CO₂, TVOC, and temperature patterns from a Thingsee AIR sensor"><meta itemprop=dateModified content="2026-06-25T08:57:01+03:00"><meta itemprop=wordCount content="624"><meta itemprop=image content="https://developer.haltian.io/images/social-card.svg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://developer.haltian.io/images/social-card.svg"><meta name=twitter:title content="AI Ready Data Demonstration - Indoor Environmental Quality"><meta name=twitter:description content="Multi-metric heatmap showing CO₂, TVOC, and temperature patterns from a Thingsee AIR sensor"><link rel=preload href=/scss/main.min.6651d11c014e18471c007db7fb56f3158d3aca6c5d4a6d29d72308a97178befe.css as=style integrity="sha256-ZlHRHAFOGEccAH23+1bzFY06ymxdSm0p1yMIqXF4vv4=" crossorigin=anonymous><link href=/scss/main.min.6651d11c014e18471c007db7fb56f3158d3aca6c5d4a6d29d72308a97178befe.css rel=stylesheet integrity="sha256-ZlHRHAFOGEccAH23+1bzFY06ymxdSm0p1yMIqXF4vv4=" crossorigin=anonymous><script src=https://code.jquery.com/jquery-3.7.1.min.js integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin=anonymous></script><script defer src=https://unpkg.com/lunr@2.3.9/lunr.min.js integrity=sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli crossorigin=anonymous></script><script>(function(){var e="G-E40FYM8N9M",t="analytics_consent",n=navigator.doNotTrack==="1"||window.doNotTrack==="1";function c(){return document.cookie.split(";").some(function(e){return e.trim().startsWith(t+"=granted")})}function s(e){var n=new Date;n.setFullYear(n.getFullYear()+1),document.cookie=t+"="+e+";path=/;expires="+n.toUTCString()+";SameSite=Lax"}function o(){window["ga-disable-"+e]=!0}function i(){if(window["ga-disable-"+e]=!1,window._gaLoaded){window.dataLayer=window.dataLayer||[];function t(){dataLayer.push(arguments)}t("config",e,{anonymize_ip:!0});return}window._gaLoaded=!0;var n=document.createElement("script");n.async=!0,n.src="https://www.googletagmanager.com/gtag/js?id="+e,document.head.appendChild(n),window.dataLayer=window.dataLayer||[];function t(){dataLayer.push(arguments)}t("js",new Date),t("config",e,{anonymize_ip:!0})}function l(){o(),document.cookie="_ga=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT",document.cookie="_ga_"+e.replace("G-","")+"=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT"}function a(){var e=document.getElementById("cookie-consent-banner");e&&(e.style.display="flex")}function r(){var e=document.getElementById("cookie-consent-banner");e&&(e.style.display="none")}n?o():c()?i():document.cookie.indexOf(t+"=denied")===-1&&document.addEventListener("DOMContentLoaded",a),window.acceptAnalytics=function(){n||(s("granted"),i()),r()},window.denyAnalytics=function(){s("denied"),l(),r()},window.reopenConsentBanner=function(e){e.preventDefault(),a()}})()</script><meta property="og:image" content="https://developer.haltian.io/images/social-card.svg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name=twitter:image content="https://developer.haltian.io/images/social-card.svg"><meta name=twitter:card content="summary_large_image"><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","name":"Haltian Developer Documentation","url":"https:\/\/developer.haltian.io\/","description":"Haltian IoT platform documentation - APIs, device guides, and integration tutorials for enterprise IoT solutions.","publisher":{"@type":"Organization","name":"Haltian","url":"https://haltian.com","logo":{"@type":"ImageObject","url":"https:\/\/developer.haltian.io\/logo.png"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/developer.haltian.io\/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"TechArticle","headline":"AI Ready Data Demonstration - Indoor Environmental Quality","description":"Multi-metric heatmap showing CO₂, TVOC, and temperature patterns from a Thingsee AIR sensor\n","url":"https:\/\/developer.haltian.io\/demos\/ai-demonstration-indoor-environment\/","datePublished":"0001-01-01","dateModified":"2026-06-25","author":{"@type":"Organization","name":"Haltian"},"publisher":{"@type":"Organization","name":"Haltian","logo":{"@type":"ImageObject","url":"https:\/\/developer.haltian.io\/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/developer.haltian.io\/demos\/ai-demonstration-indoor-environment\/"}}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/developer.haltian.io\/"},{"@type":"ListItem","position":2,"name":"Haltian Developer Documentation","item":"https:\/\/developer.haltian.io\/"},{"@type":"ListItem","position":3,"name":"Demos","item":"https:\/\/developer.haltian.io\/demos\/"},{"@type":"ListItem","position":4,"name":"AI Ready Data Demonstration - Indoor Environmental Quality","item":"https:\/\/developer.haltian.io\/demos\/ai-demonstration-indoor-environment\/"}]}</script><meta name=author content="Haltian"><meta name=publisher content="Haltian"><link rel=canonical href=https://developer.haltian.io/demos/ai-demonstration-indoor-environment/><link rel=alternate hreflang=en href=https://developer.haltian.io/demos/ai-demonstration-indoor-environment/><link rel=alternate hreflang=x-default href=https://developer.haltian.io/demos/ai-demonstration-indoor-environment/></head><body class=td-page><header><nav class="td-navbar navbar navbar-expand-lg navbar-dark bg-primary"><div class=container-fluid><a class=navbar-brand href=/><img src=https://developer.haltian.io/logo.png alt="Haltian Developer Documentation" height=28 class="d-inline-block align-top">
+</a><button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarNav aria-controls=navbarNav aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarNav><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/demos/>Demos</a></li><li class=nav-item><a class=nav-link href=/haltian-iot/getting-started/>Getting Started</a></li><li class=nav-item><a class=nav-link href=/haltian-iot/>Haltian IoT</a></li><li class=nav-item><a class=nav-link href=/haltian-iot/apis/>APIs</a></li><li class=nav-item><a class=nav-link href=/haltian-iot/devices/>Devices</a></li></ul><div class="td-search td-search--offline"><div class=td-search__icon></div><input type=search name=q class="td-search__input form-control" placeholder='Search this site…' aria-label='Search this site…' autocomplete=off data-offline-search-index-json-src=/offline-search-index.a1dd3aabc4a1507111c6adc430c73107.json data-offline-search-base-href=/ data-offline-search-max-results=10></div></div></div></nav></header><div class="container-fluid td-outer"><div class=td-main data-bs-spy=scroll data-bs-target=.td-toc data-bs-root-margin="0px 0px -10%"><div class="row flex-xl-nowrap"><aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none"><script>$(function(){$("#td-section-nav a").removeClass("active"),$("#td-section-nav #m-demosai-demonstration-indoor-environment").addClass("active"),$("#td-section-nav #m-demosai-demonstration-indoor-environment-li span").addClass("td-sidebar-nav-active-item"),$("#td-section-nav #m-demosai-demonstration-indoor-environment").parents("li").addClass("active-path"),$("#td-section-nav li.active-path").addClass("show"),$("#td-section-nav li.active-path").children("input").prop("checked",!0),$("#td-section-nav #m-demosai-demonstration-indoor-environment-li").siblings("li").addClass("show"),$("#td-section-nav #m-demosai-demonstration-indoor-environment-li").children("ul").children("li").addClass("show"),$("#td-sidebar-menu").toggleClass("d-none")})</script><div id=td-sidebar-menu class="td-sidebar__inner d-none"><form class="td-sidebar__search d-flex align-items-center"><div class="td-search td-search--offline"><div class=td-search__icon></div><input type=search name=q class="td-search__input form-control" placeholder='Search this site…' aria-label='Search this site…' autocomplete=off data-offline-search-index-json-src=/offline-search-index.a1dd3aabc4a1507111c6adc430c73107.json data-offline-search-base-href=/ data-offline-search-max-results=10></div><button class="btn btn-link td-sidebar__toggle" type=button data-bs-toggle=collapse data-bs-target=#td-section-nav aria-controls=td-section-nav aria-expanded=false aria-label="Toggle section navigation"></button></form><nav class="td-sidebar-nav collapse foldable-nav" id=td-section-nav><ul class="td-sidebar-nav__section pe-md-3 ul-0"><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-demos-li><a href=/demos/ class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id=m-demos><span>Demos</span></a><ul class=ul-1><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-demosai-demonstration-meeting-room-occupancy-li><input type=checkbox id=m-demosai-demonstration-meeting-room-occupancy-check>
+<label for=m-demosai-demonstration-meeting-room-occupancy-check><a href=/demos/ai-demonstration-meeting-room-occupancy/ title="AI Ready Data Demonstration - Meeting Room Occupancy" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-demosai-demonstration-meeting-room-occupancy><span>AI Ready Data - Demo 1</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-demosai-demonstration-indoor-environment-li><input type=checkbox id=m-demosai-demonstration-indoor-environment-check>
+<label for=m-demosai-demonstration-indoor-environment-check><a href=/demos/ai-demonstration-indoor-environment/ title="AI Ready Data Demonstration - Indoor Environmental Quality" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-demosai-demonstration-indoor-environment><span>AI Ready Data - Demo 2</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-demosdevice-explorer-li><input type=checkbox id=m-demosdevice-explorer-check>
+<label for=m-demosdevice-explorer-check><a href=/demos/device-explorer/ title="Service API — Device Explorer" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-demosdevice-explorer><span>Service API Demo</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-demosmqtt-live-stream-li><input type=checkbox id=m-demosmqtt-live-stream-check>
+<label for=m-demosmqtt-live-stream-check><a href=/demos/mqtt-live-stream/ title="Stream API — MQTT Live Stream" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-demosmqtt-live-stream><span>Stream API Demo</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-demosparquet-data-demo-li><input type=checkbox id=m-demosparquet-data-demo-check>
+<label for=m-demosparquet-data-demo-check><a href=/demos/parquet-data-demo/ class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-demosparquet-data-demo><span>Parquet Data Demo</span></a></label></li></ul></li></ul></nav></div></aside><aside class=td-sidebar-toc><div class="td-page-meta ms-2 pb-1 pt-2 mb-0"></div><div class=td-toc data-proofer-ignore><div class=td-toc-title><span class=td-toc-title__text>On this page</span>
+<a class=td-toc-title__link title="Top of page" href=#></a></div><nav id=TableOfContents><ul><li><a href=#what-you-can-build>What You Can Build</a></li><li><a href=#about-this-demo>About This Demo</a><ul><li><a href=#metrics-shown>Metrics Shown</a></li><li><a href=#color-scales>Color Scales</a></li><li><a href=#data-source>Data Source</a></li></ul></li><li><a href=#build-this-with-ai>Build This with AI</a></li></ul></nav></div></aside><main class="col-12 col-md-9 col-xl-8 ps-md-5" role=main><nav aria-label=breadcrumb class=td-breadcrumbs><ol class=breadcrumb><li class=breadcrumb-item><a href=/demos/>Demos</a></li><li class="breadcrumb-item active" aria-current=page>AI Ready Data - Demo 2</li></ol></nav><div class=td-content><h1>AI Ready Data Demonstration - Indoor Environmental Quality</h1><div class=lead>Multi-metric heatmap showing CO₂, TVOC, and temperature patterns from a Thingsee AIR sensor</div><header class=article-meta></header><p>This demo visualizes <strong>three environmental metrics</strong> from the Taika Meeting Room for a workweek in January 2026. Each metric gets its own heatmap strip with a continuous color gradient — revealing patterns that a single composite score would hide. All data is loaded directly from the Haltian IoT Data API.</p><h2 id=what-you-can-build>What You Can Build</h2><p>Our platform delivers structured, <strong>AI-ready data</strong> — you bring your preferred tools. Feed it to ChatGPT, Power BI, Python, or any analytics platform and build exactly what your facility needs. This page includes an AI prompt you can copy — <a href=#build-this-with-ai>jump to prompt →</a></p><div class="alert alert-warning" role=alert><div class="h4 alert-heading" role=heading>Learn More</div><p>This demo uses environmental data from a Thingsee AIR sensor on the Haltian IoT platform. Learn how to access this data programmatically via the <a href=/haltian-iot/apis/data-api/>Data API</a>.</p></div><div class="alert alert-info" role=alert><div class="h4 alert-heading" role=heading>AI made Example</div><p>The visualization below was built by AI in minutes using Haltian IoT data — it is not a Haltian product.</p></div><style>:root{--haltian-radiant-green:#73F9C1;--haltian-nordic-water:#143633;--haltian-nordic-water-light:#2E4C49;--haltian-clay-orange:#FF8862;--haltian-grey-white:#F6FAFA;--haltian-light-green:#C7FDE6}.env-demo{background:var(--haltian-nordic-water);border-radius:12px;padding:24px;margin:20px 0;color:#fff;font-family:montserrat,sans-serif}.demo-header{text-align:center;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--haltian-nordic-water-light)}.demo-header h2{color:var(--haltian-radiant-green);margin:0 0 8px;font-size:1.5rem}.demo-header p{color:rgba(255,255,255,.7);margin:0;font-size:.9rem}.demo-status{background:var(--haltian-nordic-water-light);border:1px solid rgba(115,249,193,.3);border-radius:8px;padding:12px 16px;margin-bottom:20px;font-size:.9rem;color:var(--haltian-radiant-green)}.demo-status.error{background:rgba(239,68,68,.2);border-color:rgba(239,68,68,.3);color:#fca5a5}.insights-panel{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:24px}.insight-card{background:var(--haltian-nordic-water-light);border-radius:8px;padding:14px 16px;border-left:3px solid var(--haltian-radiant-green)}.insight-card.warning{border-left-color:var(--haltian-clay-orange)}.insight-card .insight-title{font-size:.7rem;text-transform:uppercase;letter-spacing:.5px;color:rgba(255,255,255,.5);margin-bottom:4px}.insight-card .insight-value{font-size:1.1rem;font-weight:700;color:var(--haltian-radiant-green)}.insight-card.warning .insight-value{color:var(--haltian-clay-orange)}.insight-card .insight-detail{font-size:.75rem;color:rgba(255,255,255,.6);margin-top:2px}.metric-strip{background:var(--haltian-nordic-water-light);border-radius:8px;padding:16px 20px;margin-bottom:12px;border:1px solid rgba(115,249,193,.15)}.metric-strip-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.metric-strip-title{color:var(--haltian-radiant-green);font-size:1rem;font-weight:600}.metric-strip-stats{display:flex;gap:16px;font-size:.75rem}.metric-strip-stats span{color:rgba(255,255,255,.6)}.metric-strip-stats .stat-num{color:#fff;font-weight:600}.strip-grid{display:grid;grid-template-columns:70px repeat(9,1fr);gap:2px;font-size:.75rem}.strip-header{background:rgba(115,249,193,8%);padding:6px 4px;text-align:center;font-weight:600;color:rgba(255,255,255,.6);font-size:.65rem}.strip-day-label{padding:6px 8px;font-weight:500;color:rgba(255,255,255,.7);display:flex;align-items:center;font-size:.75rem}.strip-cell{padding:6px 2px;text-align:center;min-height:32px;display:flex;align-items:center;justify-content:center;border-radius:3px;font-size:.7rem;color:#fff;font-weight:500;position:relative;cursor:pointer;transition:transform .1s,box-shadow .1s}.strip-cell:hover{transform:scale(1.15);box-shadow:0 2px 8px rgba(0,0,0,.4);z-index:10}.strip-cell .cell-tip{display:none;position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#0a1a18;border:1px solid var(--haltian-radiant-green);border-radius:4px;padding:6px 10px;font-size:.7rem;white-space:nowrap;z-index:100;margin-bottom:4px;box-shadow:0 4px 12px rgba(0,0,0,.6);color:#fff}.strip-cell:hover .cell-tip{display:block}.strip-cell.no-data{background:rgba(255,255,255,3%);color:rgba(255,255,255,.2);cursor:default}.strip-cell.no-data:hover{transform:none;box-shadow:none}.strip-legend{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:.7rem;color:rgba(255,255,255,.5)}.strip-legend-bar{flex:1;height:8px;border-radius:4px;max-width:200px}.thresholds-section{background:var(--haltian-nordic-water-light);border-radius:8px;padding:20px;margin-top:20px;border:1px solid rgba(115,249,193,.15)}.thresholds-section h3{color:var(--haltian-radiant-green);margin:0 0 16px;font-size:1.1rem;font-weight:500}.thresholds-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.threshold-card{background:rgba(0,0,0,.2);border-radius:6px;padding:12px}.threshold-card h4{color:var(--haltian-radiant-green);margin:0 0 8px;font-size:.85rem}.threshold-row{display:flex;justify-content:space-between;padding:3px 0;font-size:.75rem;border-bottom:1px solid rgba(255,255,255,5%)}.threshold-row:last-child{border-bottom:none}.threshold-level{color:rgba(255,255,255,.6);display:flex;align-items:center;gap:6px}.threshold-range{color:rgba(255,255,255,.9)}.threshold-dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex-shrink:0}.data-source{margin-top:24px;padding-top:16px;border-top:1px solid var(--haltian-nordic-water-light);font-size:.8rem;color:rgba(255,255,255,.5);text-align:center}.data-source a{color:var(--haltian-radiant-green)}</style><div class=env-demo><div class=demo-header><h2>🌡️ Indoor Environment — Metric Strips</h2><p>Taika Meeting Room • Week of Jan 20–24, 2026 • Office Hours 8:00–16:00 EET</p></div><div class=demo-status id=loadingStatus>⏳ Loading environmental data...</div><div class=insights-panel id=insightsPanel style=display:none></div><div id=metricStrips></div><div class=thresholds-section id=thresholdsSection style=display:none><h3>📋 Quality Thresholds Reference</h3><div class=thresholds-grid><div class=threshold-card><h4>💨 CO₂ (ppm)</h4><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:#73f9c1></span>Excellent</span><span class=threshold-range>&lt; 800</span></div><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:#c7fde6></span>Good</span><span class=threshold-range>800 – 1000</span></div><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:gold></span>Fair</span><span class=threshold-range>1000 – 1500</span></div><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:#ff8862></span>Poor</span><span class=threshold-range>> 1500</span></div></div><div class=threshold-card><h4>🌬️ TVOC (ppb)</h4><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:#73f9c1></span>Excellent</span><span class=threshold-range>&lt; 220</span></div><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:#c7fde6></span>Good</span><span class=threshold-range>220 – 660</span></div><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:gold></span>Fair</span><span class=threshold-range>660 – 2200</span></div><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:#ff8862></span>Poor</span><span class=threshold-range>> 2200</span></div></div><div class=threshold-card><h4>🌡️ Temperature (°C)</h4><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:#73f9c1></span>Excellent</span><span class=threshold-range>21 – 23</span></div><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:#c7fde6></span>Good</span><span class=threshold-range>20 – 24</span></div><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:gold></span>Fair</span><span class=threshold-range>18 – 25</span></div><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:#6ec6ff></span>Too cold</span><span class=threshold-range>&lt; 18</span></div><div class=threshold-row><span class=threshold-level><span class=threshold-dot style=background:#ff8862></span>Too warm</span><span class=threshold-range>> 25</span></div></div></div></div><div class=data-source>🌡️ Device: Thingsee AIR (Meeting Room Taika) •
+Data source: <a href=../parquet-data-demo/>Haltian Sample Dataset</a></div></div><script type=module>
+import { parquetRead } from 'https://cdn.jsdelivr.net/npm/hyparquet/+esm';
+import { compressors } from 'https://cdn.jsdelivr.net/npm/hyparquet-compressors/+esm';
+
+const BASE_URL = 'https://raw.githubusercontent.com/haltian/dev-demos/main/haltiansalesdemo-parquet';
+const DEVICE_ID = '047a3542-d213-4e2b-9106-821b71739332'; // Thingsee AIR - Meeting Room Taika
+
+// Week to display: Jan 20-24 2026 (Mon-Fri)
+const WEEK_DAYS = [
+    { day: 20, label: 'Mon 20' },
+    { day: 21, label: 'Tue 21' },
+    { day: 22, label: 'Wed 22' },
+    { day: 23, label: 'Thu 23' },
+    { day: 24, label: 'Fri 24' }
+];
+
+// Metric configurations
+const METRICS = [
+    {
+        key: 'co2',
+        parquet: 'measurementCO2',
+        field: 'co2',
+        title: '💨 CO₂ — Carbon Dioxide',
+        unit: 'ppm',
+        min: 400,
+        max: 1500,
+        gradient: 'linear-gradient(to right, #73F9C1, #C7FDE6 30%, #FFD700 60%, #FF8862)',
+        colorFn: (val, min, max) => {
+            // Green < 800, yellow-green 800-1000, yellow 1000-1500, orange > 1500
+            if (val < 800) return `rgba(115, 249, 193, ${0.4 + (val - 400) / 400 * 0.3})`;
+            if (val < 1000) { const t = (val - 800) / 200; return `rgba(${115 + 140*t}, ${249 - 34*t}, ${193 - 143*t}, 0.8)`; }
+            if (val < 1500) { const t = (val - 1000) / 500; return `rgba(255, ${215 - 79*t}, ${50 + 48*t}, 0.85)`; }
+            return 'rgba(255, 136, 98, 0.95)';
+        }
+    },
+    {
+        key: 'tvoc',
+        parquet: 'measurementTVOC',
+        field: 'tvoc',
+        title: '🌬️ TVOC — Volatile Organic Compounds',
+        unit: 'ppb',
+        min: 0,
+        max: 2200,
+        gradient: 'linear-gradient(to right, #73F9C1, #C7FDE6 20%, #FFD700 50%, #FF8862)',
+        colorFn: (val, min, max) => {
+            if (val < 220) return `rgba(115, 249, 193, ${0.4 + val / 220 * 0.3})`;
+            if (val < 660) { const t = (val - 220) / 440; return `rgba(${115 + 140*t}, ${249 - 34*t}, ${193 - 143*t}, 0.8)`; }
+            if (val < 2200) { const t = (val - 660) / 1540; return `rgba(255, ${215 - 79*t}, ${50 + 48*t}, 0.85)`; }
+            return 'rgba(255, 136, 98, 0.95)';
+        }
+    },
+    {
+        key: 'temperature',
+        parquet: 'measurementAmbientTemperature',
+        field: 'ambientTemperature',
+        title: '🌡️ Temperature',
+        unit: '°C',
+        min: 18,
+        max: 26,
+        gradient: 'linear-gradient(to right, #6EC6FF, #73F9C1 30%, #73F9C1 55%, #FFD700 75%, #FF8862)',
+        colorFn: (val) => {
+            // Cold blue < 20, green 20-24, warm orange > 24
+            if (val < 20) { const t = Math.max(0, (val - 18) / 2); return `rgba(110, 198, 255, ${0.5 + (1-t)*0.4})`; }
+            if (val <= 23) return `rgba(115, 249, 193, ${0.5 + (val-20)/3 * 0.3})`;
+            if (val <= 24) { const t = (val - 23); return `rgba(${115 + 140*t}, ${249 - 34*t}, ${193 - 143*t}, 0.75)`; }
+            if (val <= 25) { const t = (val - 24); return `rgba(255, ${215 - 79*t}, ${50 + 48*t}, 0.85)`; }
+            return 'rgba(255, 136, 98, 0.9)';
+        }
+    },
+];
+
+function setStatus(message, type = 'info') {
+    const el = document.getElementById('loadingStatus');
+    el.className = 'demo-status' + (type !== 'info' ? ' ' + type : '');
+    el.textContent = message;
+}
+
+async function loadParquet(url) {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Failed: ${response.status}`);
+    const arrayBuffer = await response.arrayBuffer();
+    let rows = [];
+    await parquetRead({
+        file: arrayBuffer,
+        compressors,
+        rowFormat: 'object',
+        onComplete: data => { rows = data; }
+    });
+    return rows;
+}
+
+async function loadEnvironmentData() {
+    try {
+        setStatus('⏳ Loading environmental sensor data...');
+        
+        // hourlyData[metricKey][dayIndex][hourIndex] = [values]
+        const hourlyData = {};
+        METRICS.forEach(m => { hourlyData[m.key] = {}; });
+        
+        let totalLoaded = 0;
+        let totalAttempted = 0;
+        
+        for (const metric of METRICS) {
+            setStatus(`⏳ Loading ${metric.key} data...`);
+            
+            for (let di = 0; di < WEEK_DAYS.length; di++) {
+                const { day } = WEEK_DAYS[di];
+                const dayStr = String(day).padStart(2, '0');
+                
+                const hourPromises = [];
+                for (let hour = 6; hour < 15; hour++) { // UTC 6-14 = EET 8-16
+                    const hourStr = String(hour).padStart(2, '0');
+                    const url = `${BASE_URL}/${metric.parquet}/2026/01/2026_01_${dayStr}_${hourStr}_${metric.parquet}.parquet`;
+                    
+                    totalAttempted++;
+                    hourPromises.push(
+                        loadParquet(url)
+                            .then(data => {
+                                totalLoaded++;
+                                return { hourIdx: hour - 6, data: data.filter(d => d.deviceId === DEVICE_ID) };
+                            })
+                            .catch(() => ({ hourIdx: hour - 6, data: [] }))
+                    );
+                }
+                
+                const results = await Promise.all(hourPromises);
+                hourlyData[metric.key][di] = {};
+                
+                for (const r of results) {
+                    const values = r.data.map(row => row[metric.field]).filter(v => v !== undefined && v !== null);
+                    if (values.length > 0) {
+                        hourlyData[metric.key][di][r.hourIdx] = values;
+                    }
+                }
+            }
+        }
+        
+        setStatus('🔨 Building metric strip visualizations...');
+        
+        // Calculate averages and stats for each metric
+        const metricStats = {};
+        const metricAverages = {}; // metricAverages[key][dayIdx][hourIdx] = avg
+        
+        for (const metric of METRICS) {
+            let allValues = [];
+            let maxVal = -Infinity, minVal = Infinity;
+            let maxHour = '', minHour = '';
+            metricAverages[metric.key] = {};
+            
+            for (let di = 0; di < WEEK_DAYS.length; di++) {
+                metricAverages[metric.key][di] = {};
+                for (let hi = 0; hi < 9; hi++) {
+                    const vals = hourlyData[metric.key][di]?.[hi];
+                    if (vals && vals.length > 0) {
+                        const avg = vals.reduce((a, b) => a + b, 0) / vals.length;
+                        metricAverages[metric.key][di][hi] = avg;
+                        allValues.push(avg);
+                        if (avg > maxVal) { maxVal = avg; maxHour = `${WEEK_DAYS[di].label} ${8 + hi}:00`; }
+                        if (avg < minVal) { minVal = avg; minHour = `${WEEK_DAYS[di].label} ${8 + hi}:00`; }
+                    }
+                }
+            }
+            
+            const overall = allValues.length > 0 ? allValues.reduce((a, b) => a + b, 0) / allValues.length : null;
+            metricStats[metric.key] = { avg: overall, max: maxVal, min: minVal, maxHour, minHour, count: allValues.length };
+        }
+        
+        // Render insight cards
+        const insightsHtml = buildInsights(metricStats);
+        document.getElementById('insightsPanel').innerHTML = insightsHtml;
+        document.getElementById('insightsPanel').style.display = 'grid';
+        
+        // Render metric strips
+        let stripsHtml = '';
+        for (const metric of METRICS) {
+            stripsHtml += buildMetricStrip(metric, metricAverages[metric.key], metricStats[metric.key]);
+        }
+        document.getElementById('metricStrips').innerHTML = stripsHtml;
+        document.getElementById('thresholdsSection').style.display = 'block';
+        
+        setStatus(`✅ Loaded ${totalLoaded}/${totalAttempted} files • 3 metrics × 5 days × 9 hours`);
+        
+    } catch (error) {
+        console.error('Environment demo error:', error);
+        setStatus('❌ Error: ' + error.message, 'error');
+    }
+}
+
+function buildInsights(stats) {
+    const cards = [];
+    
+    // Highest CO2
+    if (stats.co2.max > -Infinity) {
+        const isWarning = stats.co2.max >= 1000;
+        cards.push(`<div class="insight-card ${isWarning ? 'warning' : ''}">
+            <div class="insight-title">Peak CO₂</div>
+            <div class="insight-value">${Math.round(stats.co2.max)} ppm</div>
+            <div class="insight-detail">${stats.co2.maxHour}</div>
+        </div>`);
+    }
+    
+    // Average temperature
+    if (stats.temperature.avg !== null) {
+        const isOptimal = stats.temperature.avg >= 21 && stats.temperature.avg <= 23;
+        cards.push(`<div class="insight-card">
+            <div class="insight-title">Avg Temperature</div>
+            <div class="insight-value">${stats.temperature.avg.toFixed(1)} °C</div>
+            <div class="insight-detail">${isOptimal ? 'Optimal comfort range' : 'Outside optimal (21–23°C)'}</div>
+        </div>`);
+    }
+    
+    // TVOC average
+    if (stats.tvoc.avg !== null) {
+        const isWarning = stats.tvoc.avg >= 660;
+        cards.push(`<div class="insight-card ${isWarning ? 'warning' : ''}">
+            <div class="insight-title">Avg TVOC</div>
+            <div class="insight-value">${Math.round(stats.tvoc.avg)} ppb</div>
+            <div class="insight-detail">${stats.tvoc.avg < 220 ? 'Excellent air purity' : stats.tvoc.avg < 660 ? 'Good air purity' : 'Needs ventilation'}</div>
+        </div>`);
+    }
+    
+    return cards.join('');
+}
+
+function buildMetricStrip(metric, dayData, stats) {
+    let html = `<div class="metric-strip">`;
+    html += `<div class="metric-strip-header">`;
+    html += `<span class="metric-strip-title">${metric.title}</span>`;
+    html += `<div class="metric-strip-stats">`;
+    if (stats.avg !== null) {
+        html += `<span>Avg: <span class="stat-num">${metric.key === 'temperature' ? stats.avg.toFixed(1) : Math.round(stats.avg)} ${metric.unit}</span></span>`;
+        html += `<span>Min: <span class="stat-num">${metric.key === 'temperature' ? stats.min.toFixed(1) : Math.round(stats.min)}</span></span>`;
+        html += `<span>Max: <span class="stat-num">${metric.key === 'temperature' ? stats.max.toFixed(1) : Math.round(stats.max)}</span></span>`;
+    }
+    html += `</div></div>`;
+    
+    // Grid
+    html += `<div class="strip-grid">`;
+    // Header row
+    html += `<div class="strip-header"></div>`;
+    for (let h = 8; h <= 16; h++) {
+        html += `<div class="strip-header">${h}:00</div>`;
+    }
+    
+    // Data rows
+    for (let di = 0; di < WEEK_DAYS.length; di++) {
+        html += `<div class="strip-day-label">${WEEK_DAYS[di].label}</div>`;
+        for (let hi = 0; hi < 9; hi++) {
+            const avg = dayData[di]?.[hi];
+            if (avg !== undefined) {
+                const color = metric.colorFn(avg);
+                const displayVal = metric.key === 'temperature' ? avg.toFixed(1) : Math.round(avg);
+                html += `<div class="strip-cell" style="background: ${color};">${displayVal}<div class="cell-tip">${WEEK_DAYS[di].label} ${8+hi}:00 — ${displayVal} ${metric.unit}</div></div>`;
+            } else {
+                html += `<div class="strip-cell no-data">—</div>`;
+            }
+        }
+    }
+    
+    html += `</div>`;
+    
+    // Legend bar
+    html += `<div class="strip-legend">`;
+    html += `<span>${metric.min} ${metric.unit}</span>`;
+    html += `<div class="strip-legend-bar" style="background: ${metric.gradient};"></div>`;
+    html += `<span>${metric.max} ${metric.unit}</span>`;
+    html += `</div>`;
+    
+    html += `</div>`;
+    return html;
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadEnvironmentData);
+} else {
+    loadEnvironmentData();
+}
+</script><h2 id=about-this-demo>About This Demo</h2><p>This visualization shows <strong>three separate environmental metrics</strong> from a single Thingsee AIR sensor, each with its own color scale and patterns. Unlike a composite score that flattens everything into one number, the metric strips let you:</p><ul><li><strong>See each metric&rsquo;s story independently</strong> — TVOC might be stable while CO₂ fluctuates</li><li><strong>Spot time patterns</strong> — &ldquo;CO₂ spikes every afternoon at 14:00&rdquo; vs &ldquo;temperature rises after lunch&rdquo;</li><li><strong>Compare across days</strong> — is Wednesday consistently worse than Monday?</li><li><strong>Identify the root cause</strong> — not just &ldquo;air quality was poor&rdquo; but specifically &ldquo;humidity was too low&rdquo;</li></ul><h3 id=metrics-shown>Metrics Shown</h3><table><thead><tr><th>Metric</th><th>What It Tells You</th><th>Actionable Insight</th></tr></thead><tbody><tr><td><strong>CO₂</strong></td><td>Ventilation effectiveness</td><td>&ldquo;Open windows&rdquo; or &ldquo;check HVAC schedule&rdquo;</td></tr><tr><td><strong>TVOC</strong></td><td>Air purity (cleaning products, off-gassing)</td><td>&ldquo;Increase fresh air intake&rdquo;</td></tr><tr><td><strong>Temperature</strong></td><td>Thermal comfort</td><td>&ldquo;Adjust thermostat&rdquo; or &ldquo;check sun exposure&rdquo;</td></tr></tbody></table><h3 id=color-scales>Color Scales</h3><p>Each metric uses a <strong>continuous gradient</strong> mapped to its own optimal range:</p><ul><li><strong>Green</strong> = optimal range for that metric</li><li><strong>Yellow/Orange</strong> = outside comfort zone, needs attention</li><li><strong>Blue</strong> (temperature only) = too cold</li></ul><h3 id=data-source>Data Source</h3><ul><li><strong>Device</strong>: Thingsee AIR (Meeting Room Taika, 1st Floor, Oulu Headquarter)</li><li><strong>Measurement Types</strong>: <code>measurementCO2</code>, <code>measurementTVOC</code>, <code>measurementAmbientTemperature</code></li><li><strong>Time Period</strong>: January 20–24, 2026 (one workweek)</li><li><strong>Resolution</strong>: Hourly averages during office hours (8:00–16:00 EET)</li></ul><p>All data processing happens in your browser using <a href=https://github.com/hyparam/hyparquet>hyparquet</a> — no server required.</p><hr><h2 id=build-this-with-ai>Build This with AI</h2><p>Want to recreate this demo or build your own variation? Copy this prompt to your AI coding assistant:</p><pre tabindex=0><code>You are an indoor environment analytics expert. Build me a multi-metric environment dashboard.
+
+Step 1: Read the Haltian IoT data documentation at https://developer.haltian.io/haltian-iot/apis/data-api/ to understand the data model.
+
+Step 2: Study the implementation at https://developer.haltian.io/demos/ai-demonstration-indoor-environment/ including:
+- The metric strip layout (3 separate heatmaps stacked vertically)
+- The continuous color gradient approach (not bucketed scores)
+- The insight cards highlighting peak/min values with timestamps
+
+Step 3: Build me a multi-metric indoor environment dashboard using your preferred technology stack.
+
+Key requirements:
+- Load CO₂, TVOC, and temperature data from Parquet files
+- Display each metric as its own strip heatmap with a continuous color gradient
+- Show actual values in cells (not scores/letters)
+- Each metric uses its own color scale appropriate to its range
+- Include insight callouts: peak CO₂, avg temperature, avg TVOC
+- Show min/max/avg stats per metric
+- Hover reveals exact value + timestamp
+- Thresholds: CO₂ (&lt;800/1000/1500 ppm), TVOC (&lt;220/660/2200 ppb), Temp (21-23/20-24/18-25 °C)
+</code></pre><div class="text-muted mt-5 pt-3 border-top"><div class="td-page-meta ms-2 pb-1 pt-2 mb-0"></div></div></div></main></div></div><footer class="td-footer row d-print-none"><div class=container-fluid><div class="row mx-md-2"><div class="td-footer__left col-6 col-sm-4 order-sm-1"></div><div class="td-footer__right col-6 col-sm-4 order-sm-3"><ul class=td-footer__links-list><li class=td-footer__links-item data-bs-toggle=tooltip title="Contact Support" aria-label="Contact Support"><a href=mailto:support@haltian.com aria-label="Contact Support" target=_blank rel=noopener><i class="fa fa-envelope"></i></a></li><li class=td-footer__links-item data-bs-toggle=tooltip title="Product Feedback" aria-label="Product Feedback"><a href=/haltian-iot/contact/ aria-label="Product Feedback"><i class="fa fa-lightbulb"></i></a></li><li class=td-footer__links-item data-bs-toggle=tooltip title="Haltian Website" aria-label="Haltian Website"><a href=https://haltian.com aria-label="Haltian Website" target=_blank rel=noopener><i class="fa fa-globe"></i></a></li><li class=td-footer__links-item data-bs-toggle=tooltip title=GitHub aria-label=GitHub><a href=https://github.com/haltian aria-label=GitHub target=_blank rel=noopener><i class="fab fa-github"></i></a></li></ul></div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2"><span class=td-footer__copyright>&copy;
+2026
+<span class=td-footer__authors>Haltian</span></span><span class=td-footer__all_rights_reserved>All Rights Reserved</span>
+<span class=ms-2><a href=https://haltian.com/privacy target=_blank rel=noopener>Privacy Policy</a></span>
+<span class=ms-2><a href=# onclick=reopenConsentBanner(event)>Cookie Settings</a></span><p class="mb-0 mt-2 text-white-50 small">This documentation is AI-assisted and reviewed by Haltian staff.</p></div></div></div></footer><div id=cookie-consent-banner class=cookie-consent-banner style=display:none role=dialog aria-label="Cookie consent"><p>We use analytics cookies to understand how you use our documentation. No personal data is shared with third parties for advertising.</p><div class=cookie-consent-actions><button onclick=acceptAnalytics() class="btn btn-sm btn-primary">Accept</button>
+<button onclick=denyAnalytics() class="btn btn-sm btn-outline-light">Decline</button></div></div></div><script src=/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js integrity="sha256-xg3gPtUqNAEvMww+GMUmQm7JfvqYIr7frb8U/+kXvD4=" crossorigin=anonymous></script><script defer src=/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js integrity="sha256-JFdv+f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin=anonymous></script><script src=/js/tabpane-persist.js></script></body></html>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee PRESENCE on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/</link><description>Recent content in Thingsee PRESENCE on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation Guide</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/installation/</guid><description>&lt;h2 id="video-tutorial">Video Tutorial&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/35B_peJpTUs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="before-installation">Before Installation&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Ensure gateway is operational&lt;/strong> - Verify Wirepas gateway is installed and connected (LED blinking green)&lt;/li>
+&lt;li>&lt;strong>Identify the sensor&lt;/strong> - Scan QR code with Thingsee Toolbox app or QR reader&lt;/li>
+&lt;li>&lt;strong>Plan sensor placement&lt;/strong> - Review detection area charts for your installation height&lt;/li>
+&lt;li>&lt;strong>Select appropriate dome&lt;/strong> - Choose Visitor Counter or Occupancy dome if needed&lt;/li>
+&lt;/ol>
+&lt;h2 id="installation-steps">Installation Steps&lt;/h2>
+&lt;h3 id="1-remove-battery-tab">1. Remove Battery Tab&lt;/h3>
+&lt;ul>
+&lt;li>Carefully pull out the battery security tab&lt;/li>
+&lt;li>LED indicator (red) will flash once&lt;/li>
+&lt;li>If no LED flash within 2 minutes, tap sensor against palm&lt;/li>
+&lt;li>If no events within 5 minutes, re-install batteries&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-clean-surface">2. Clean Surface&lt;/h3>
+&lt;ul>
+&lt;li>Clean attachment surface with IPA solvent (isopropyl alcohol)&lt;/li>
+&lt;li>Ensure surface is dry before mounting&lt;/li>
+&lt;/ul>
+&lt;h3 id="3-attach-sensor">3. Attach Sensor&lt;/h3>
+&lt;ul>
+&lt;li>Remove tape&amp;rsquo;s paper cover from sensor backside&lt;/li>
+&lt;li>Push sensor firmly against surface for minimum 5 seconds&lt;/li>
+&lt;li>Wipe sensor with dry, clean cloth&lt;/li>
+&lt;/ul>
+&lt;h2 id="detection-capability">Detection Capability&lt;/h2>
+&lt;h3 id="height-dependent-detection-area">Height-Dependent Detection Area&lt;/h3>
+&lt;p>Thingsee PRESENCE detection capability changes based on installation height. The chart below shows different detection zones at various heights.&lt;/p></description></item><item><title>Thingsee PRESENCE Configuration</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/configuration/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This page helps you configure Thingsee PRESENCE for your specific deployment scenario. Find your use case below, apply the configuration, and you&amp;rsquo;re done.&lt;/p>
+&lt;p>Configuration is done through the &lt;a href="https://developer.haltian.io/haltian-iot/apis/service-api/">Service API (GraphQL)&lt;/a> using two commands:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>&lt;code>SetDeviceConfiguration&lt;/code>&lt;/strong> — sets mode, sensitivity, LED, and idle reporting&lt;/li>
+&lt;li>&lt;strong>&lt;code>SetReportInterval&lt;/code>&lt;/strong> — sets how often the sensor reports during active periods&lt;/li>
+&lt;/ul>
+&lt;p>For raw CBOR/Wirepas commands (self-hosted gateway operators), see &lt;a href="../downlink-messages/">Configuration Commands&lt;/a>.&lt;/p>
+&lt;hr>
+&lt;h2 id="quick-use-case-selector">Quick Use Case Selector&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Use Case&lt;/th>
+ &lt;th>Mode&lt;/th>
+ &lt;th>Key Setting&lt;/th>
+ &lt;th>Jump To&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Meeting room occupancy&lt;/td>
+ &lt;td>Mode 1&lt;/td>
+ &lt;td>threshold: 150&lt;/td>
+ &lt;td>&lt;a href="#meeting-room-occupancy">Meeting Room&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Desk/workspace monitoring&lt;/td>
+ &lt;td>Mode 1&lt;/td>
+ &lt;td>threshold: 800&lt;/td>
+ &lt;td>&lt;a href="#desk-workspace-occupancy">Desk Occupancy&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Doorway people counting&lt;/td>
+ &lt;td>Mode 2&lt;/td>
+ &lt;td>reportInterval: 60&lt;/td>
+ &lt;td>&lt;a href="#doorway-people-counting">Doorway Counting&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Corridor/lobby traffic&lt;/td>
+ &lt;td>Mode 2&lt;/td>
+ &lt;td>reportInterval: 120&lt;/td>
+ &lt;td>&lt;a href="#corridor-lobby-traffic">Corridor Traffic&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Restroom occupancy&lt;/td>
+ &lt;td>Mode 1&lt;/td>
+ &lt;td>passiveReportInterval: 1800&lt;/td>
+ &lt;td>&lt;a href="#restroom-occupancy">Restroom&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Installation &amp;amp; testing&lt;/td>
+ &lt;td>Either&lt;/td>
+ &lt;td>enableLed: 1&lt;/td>
+ &lt;td>&lt;a href="#installation-testing">Testing&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="meeting-room-occupancy">Meeting Room Occupancy&lt;/h2>
+&lt;p>&lt;strong>Goal:&lt;/strong> Know whether a meeting room is occupied or vacant. Integrate with booking systems.&lt;/p></description></item><item><title>Operation Guide</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/operation/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee PRESENCE supports two distinct operating modes configured via the Service API. Each mode produces different measurement types with different reporting behavior, network traffic characteristics, and optimal use cases.&lt;/p>
+&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">Important&lt;/div>
+&lt;p>&lt;strong>Data Latency:&lt;/strong> There&amp;rsquo;s always a delay from measurement to alerts. Measurement results are sent in predefined intervals (e.g., 1 minute) and time is needed for data to travel through the network and be processed in the cloud service. This sensor is not suitable for real-time applications requiring instant alerts.&lt;/p></description></item><item><title>Technical Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/specifications/</guid><description>&lt;h2 id="environmental-specifications">Environmental Specifications&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Notes&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Operating Temperature&lt;/td>
+ &lt;td>-20°C to +50°C&lt;/td>
+ &lt;td>Full functionality across range&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Operating Humidity&lt;/td>
+ &lt;td>0% to 100% RH&lt;/td>
+ &lt;td>Non-condensing&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Storage Temperature&lt;/td>
+ &lt;td>0°C to +25°C&lt;/td>
+ &lt;td>Long-term storage recommendation&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Storage Humidity&lt;/td>
+ &lt;td>45% to 60% RH&lt;/td>
+ &lt;td>Non-condensing, controlled environment&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>IP Rating&lt;/td>
+ &lt;td>IP40&lt;/td>
+ &lt;td>Basic dust protection, not water-resistant&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="environmental-considerations">Environmental Considerations&lt;/h3>
+&lt;p>&lt;strong>Temperature Performance:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Optimal detection: 15-25°C ambient temperature&lt;/li>
+&lt;li>Reduced reliability when ambient approaches body temperature (~36°C)&lt;/li>
+&lt;li>Cold environments may require lower detection threshold&lt;/li>
+&lt;li>Avoid locations with rapid temperature changes&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Humidity Impact:&lt;/strong>&lt;/p></description></item><item><title>Troubleshooting &amp; Maintenance</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/troubleshooting/</guid><description>&lt;h2 id="installation-issues">Installation Issues&lt;/h2>
+&lt;h3 id="led-not-flashing-on-battery-installation">LED Not Flashing on Battery Installation&lt;/h3>
+&lt;p>&lt;strong>Symptoms:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Red LED doesn&amp;rsquo;t flash when battery tab removed&lt;/li>
+&lt;li>No indication of power&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Possible Causes:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Battery tab not fully removed&lt;/li>
+&lt;li>Batteries inserted incorrectly&lt;/li>
+&lt;li>Batteries depleted or defective&lt;/li>
+&lt;li>Sensor malfunction&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Solutions:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Verify battery tab completely removed&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Pull tab fully out&lt;/li>
+&lt;li>Check no plastic remains blocking contacts&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Check battery polarity&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Verify +/- orientation matches markings&lt;/li>
+&lt;li>Ensure batteries seated properly&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Try new batteries&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Use recommended: Varta Industrial Pro 1.5V AAA LR06&lt;/li>
+&lt;li>Test batteries with multimeter (should read &amp;gt;1.4V each)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Tap sensor against palm&lt;/strong>&lt;/p></description></item><item><title>Data Output</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/uplink-messages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/uplink-messages/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee PRESENCE produces measurement data that you can access through the &lt;strong>Haltian IoT Platform&lt;/strong> — receive JSON measurements via MQTT Stream API or query via GraphQL Data API.&lt;/p>
+&lt;p>This page documents the measurement types, payload formats, and how to access the data.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Self-hosted Wirepas gateway?&lt;/div>
+&lt;p>If you operate your own gateways and decode raw mesh messages, see the &lt;a href="../cbor-reference/uplink/">CBOR Uplink Reference&lt;/a> for the binary message specification.&lt;/p>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="haltian-iot-measurements">Haltian IoT Measurements&lt;/h2>
+&lt;p>The PRESENCE sensor produces the following measurement types depending on its &lt;a href="../configuration/#parameter-reference">configured operating mode&lt;/a>:&lt;/p></description></item><item><title>Device Configuration Commands</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/downlink-messages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/downlink-messages/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee PRESENCE is configured remotely through the &lt;strong>Service API (GraphQL)&lt;/strong> — named commands with built-in validation and automatic encoding.&lt;/p>
+&lt;p>This page documents the available commands and provides ready-to-use examples. For detailed parameter explanations, tuning guidance, and configuration scenarios, see &lt;a href="../configuration/">Configuration&lt;/a>.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Self-hosted Wirepas gateway?&lt;/div>
+&lt;p>If you operate your own gateways and send raw mesh commands, see the &lt;a href="../cbor-reference/downlink/">CBOR Downlink Reference&lt;/a> for the binary command specification.&lt;/p>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="service-api-commands">Service API Commands&lt;/h2>
+&lt;p>The Service API provides named configuration commands that handle CBOR encoding, delivery, and validation automatically. Use these through the &lt;a href="https://developer.haltian.io/haltian-iot/apis/service-api/">Service API (GraphQL)&lt;/a>.&lt;/p></description></item><item><title>LONGLIFE Variant</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/longlife/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-presence/longlife/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee PRESENCE LONGLIFE is a factory-bundled kit combining the standard Thingsee PRESENCE sensor with the Thingsee POWERCOVER extended battery pack, sold as a single SKU for deployments where multi-year, maintenance-free operation is the priority.&lt;/p>
+&lt;p>This page documents only what differs from the standard PRESENCE. For everything else — installation steps, configuration parameters, message formats, detection behaviour — see the links in &lt;a href="#unchanged-from-standard-presence">Unchanged from Standard PRESENCE&lt;/a> below.&lt;/p>
+&lt;h2 id="what-longlife-changes">What LONGLIFE Changes&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Standard PRESENCE&lt;/th>
+ &lt;th>PRESENCE LONGLIFE&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Power source&lt;/td>
+ &lt;td>2× AAA alkaline (own)&lt;/td>
+ &lt;td>POWERCOVER: 3× AA Lithium (primary sensor batteries removed)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Optional external power&lt;/td>
+ &lt;td>—&lt;/td>
+ &lt;td>Micro-USB 5V/500mA (via POWERCOVER)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Expected battery life&lt;/td>
+ &lt;td>Up to 4 years&lt;/td>
+ &lt;td>Up to 10 years&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>IP rating&lt;/td>
+ &lt;td>IP40&lt;/td>
+ &lt;td>IP40 (unchanged — both sensor and POWERCOVER are IP40)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Weight&lt;/td>
+ &lt;td>37 g (with batteries)&lt;/td>
+ &lt;td>110 g (with batteries)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Overall dimensions&lt;/td>
+ &lt;td>54 × 35 × 17 mm (sensor only)&lt;/td>
+ &lt;td>Sensor 54 × 35 × 17 mm + POWERCOVER 68 × 55 × 30 mm (attached as a single unit)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="why-the-battery-swap">Why the battery swap&lt;/h3>
+&lt;p>POWERCOVER replaces the sensor&amp;rsquo;s own AAA batteries entirely — when POWERCOVER is attached, the sensor&amp;rsquo;s internal battery compartment is left empty and POWERCOVER becomes the sole power source. This is what extends battery life from ~4 years to up to 10 years.&lt;/p></description></item></channel></rss>

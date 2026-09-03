@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Power BI Integration on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/integrations/power-bi/</link><description>Recent content in Power BI Integration on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/integrations/power-bi/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy OneLake Infrastructure</title><link>https://developer.haltian.io/haltian-iot/integrations/power-bi/deploy-onelake/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/integrations/power-bi/deploy-onelake/</guid><description>&lt;p>This guide deploys the Microsoft Fabric and OneLake infrastructure required to receive Parquet files from the Haltian IoT Data API. After completing this guide, proceed to &lt;a href="../deploy-function-app/">Deploy Function App&lt;/a> to set up the automated data transfer.&lt;/p>
+&lt;h2 id="download-source-files">Download Source Files&lt;/h2>
+&lt;p>Download all Terraform files for this module:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>File&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/onelake/main.tf">main.tf&lt;/a>&lt;/td>
+ &lt;td>Azure AD application, service principal, client secret&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/onelake/fabric.tf">fabric.tf&lt;/a>&lt;/td>
+ &lt;td>Fabric Capacity resource&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/onelake/onelake.tf">onelake.tf&lt;/a>&lt;/td>
+ &lt;td>Fabric Workspace and Lakehouse&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/onelake/resource-group.tf">resource-group.tf&lt;/a>&lt;/td>
+ &lt;td>Resource group (optional)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/onelake/variables.tf">variables.tf&lt;/a>&lt;/td>
+ &lt;td>Input variables&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/onelake/outputs.tf">outputs.tf&lt;/a>&lt;/td>
+ &lt;td>Module outputs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/onelake/output-function-config-template.tf">output-function-config-template.tf&lt;/a>&lt;/td>
+ &lt;td>Auto-generate Function App tfvars&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/onelake/providers.tf">providers.tf&lt;/a>&lt;/td>
+ &lt;td>Provider requirements&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>Place all files in a directory (e.g., &lt;code>infra/onelake/&lt;/code>) before running Terraform.&lt;/p></description></item><item><title>Deploy Storage Account</title><link>https://developer.haltian.io/haltian-iot/integrations/power-bi/deploy-storage-account/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/integrations/power-bi/deploy-storage-account/</guid><description>&lt;p>This guide deploys an Azure Storage Account as the destination for Parquet files from the Haltian IoT Data API. This is a simpler and more cost-effective alternative to OneLake. After completing this guide, proceed to &lt;a href="../deploy-function-app/">Deploy Function App&lt;/a>.&lt;/p>
+&lt;h2 id="download-source-files">Download Source Files&lt;/h2>
+&lt;p>Download all Terraform files for this module:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>File&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/storageaccount/main.tf">main.tf&lt;/a>&lt;/td>
+ &lt;td>Storage account, containers, access policies&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/storageaccount/variables.tf">variables.tf&lt;/a>&lt;/td>
+ &lt;td>Input variables&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/storageaccount/outputs.tf">outputs.tf&lt;/a>&lt;/td>
+ &lt;td>Module outputs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/storageaccount/output-function-config-template.tf">output-function-config-template.tf&lt;/a>&lt;/td>
+ &lt;td>Auto-generate Function App tfvars&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/infra/storageaccount/providers.tf">providers.tf&lt;/a>&lt;/td>
+ &lt;td>Provider requirements&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>Place all files in a directory (e.g., &lt;code>infra/storageaccount/&lt;/code>) before running Terraform.&lt;/p></description></item><item><title>Deploy Function App</title><link>https://developer.haltian.io/haltian-iot/integrations/power-bi/deploy-function-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/integrations/power-bi/deploy-function-app/</guid><description>&lt;p>This guide deploys the Azure Function App that automatically copies Parquet files from the Haltian IoT Data API S3 bucket to your chosen Azure destination. You must complete either &lt;a href="../deploy-onelake/">Deploy OneLake&lt;/a> or &lt;a href="../deploy-storage-account/">Deploy Storage Account&lt;/a> before proceeding.&lt;/p>
+&lt;h2 id="download-source-files">Download Source Files&lt;/h2>
+&lt;p>You need both the &lt;strong>Terraform module&lt;/strong> and the &lt;strong>Python function source&lt;/strong>:&lt;/p>
+&lt;h3 id="terraform-module">Terraform Module&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>File&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/azure-function/terraform/main.tf">main.tf&lt;/a>&lt;/td>
+ &lt;td>Function App, App Service Plan, Storage, App Insights&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/azure-function/terraform/fabric-access.tf">fabric-access.tf&lt;/a>&lt;/td>
+ &lt;td>Fabric workspace role assignment&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/azure-function/terraform/variables.tf">variables.tf&lt;/a>&lt;/td>
+ &lt;td>Input variables&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/azure-function/terraform/outputs.tf">outputs.tf&lt;/a>&lt;/td>
+ &lt;td>Module outputs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://developer.haltian.io/downloads/power-bi-parquet/azure-function/terraform/providers.tf">providers.tf&lt;/a>&lt;/td>
+ &lt;td>Provider requirements&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>Place in &lt;code>azure-function/terraform/&lt;/code>.&lt;/p></description></item><item><title>Connect Power BI</title><link>https://developer.haltian.io/haltian-iot/integrations/power-bi/connect-power-bi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/integrations/power-bi/connect-power-bi/</guid><description>&lt;p>This guide shows how to connect Power BI Desktop to the Parquet data imported by the Azure Function, create data tables, set up relationships, and build visualizations. Choose the section matching your deployment path.&lt;/p>
+&lt;h2 id="option-a-connect-from-onelake-lakehouse">Option A: Connect from OneLake (Lakehouse)&lt;/h2>
+&lt;h3 id="prepare-lakehouse-tables">Prepare Lakehouse Tables&lt;/h3>
+&lt;p>Before Power BI can use the data, convert the raw Parquet files in your Lakehouse into tables.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Go to &lt;a href="https://app.fabric.microsoft.com/">https://app.fabric.microsoft.com/&lt;/a> and open your Workspace → Lakehouse&lt;/p>
+&lt;p>&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/integrations/power-bi/prepare-lakehouse/img_7.png" alt="Select Workspace">&lt;/p></description></item><item><title>Configuration Reference</title><link>https://developer.haltian.io/haltian-iot/integrations/power-bi/configuration-reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/integrations/power-bi/configuration-reference/</guid><description>&lt;p>This page documents all Terraform variables across the three deployment modules. Use this as a quick reference when configuring &lt;code>terraform.tfvars&lt;/code> files.&lt;/p>
+&lt;h2 id="onelake-module-infraonelake">OneLake Module (&lt;code>infra/onelake&lt;/code>)&lt;/h2>
+&lt;h3 id="required-variables">Required Variables&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Variable&lt;/th>
+ &lt;th>Type&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>subscription_id&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td>Azure subscription ID (auto-detected if not set)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="optional-variables">Optional Variables&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Variable&lt;/th>
+ &lt;th>Type&lt;/th>
+ &lt;th>Default&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>prefix&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td>—&lt;/td>
+ &lt;td>Short prefix for resource names (3–10 chars). Derived from &lt;code>resource_group_name&lt;/code> if not set&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>resource_group_name&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td>&lt;code>{prefix}-rg&lt;/code>&lt;/td>
+ &lt;td>Resource group name&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>create_resource_group&lt;/code>&lt;/td>
+ &lt;td>bool&lt;/td>
+ &lt;td>&lt;code>false&lt;/code>&lt;/td>
+ &lt;td>Create a new resource group&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>location&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td>&lt;code>westeurope&lt;/code>&lt;/td>
+ &lt;td>Azure region&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fabric_tenant_id&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td>auto&lt;/td>
+ &lt;td>Azure AD tenant ID&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>create_fabric_capacity&lt;/code>&lt;/td>
+ &lt;td>bool&lt;/td>
+ &lt;td>&lt;code>true&lt;/code>&lt;/td>
+ &lt;td>Create new Fabric capacity&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fabric_capacity_sku&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td>&lt;code>F2&lt;/code>&lt;/td>
+ &lt;td>Capacity SKU: F2, F4, F8, F16, F32, F64&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fabric_capacity_admin_emails&lt;/code>&lt;/td>
+ &lt;td>list(string)&lt;/td>
+ &lt;td>&lt;code>[]&lt;/code>&lt;/td>
+ &lt;td>Admin emails (defaults to current user)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>existing_fabric_capacity_id&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td>—&lt;/td>
+ &lt;td>Use existing capacity instead of creating&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fabric_workspace_fqn&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td>&lt;code>{prefix}-workspace&lt;/code>&lt;/td>
+ &lt;td>Workspace display name&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fabric_lakehouse_name&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td>&lt;code>{prefix}lakehouse&lt;/code>&lt;/td>
+ &lt;td>Lakehouse name&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>one_lake_subpath&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td>&lt;code>&amp;quot;&amp;quot;&lt;/code>&lt;/td>
+ &lt;td>Subpath under &lt;code>/Files/&lt;/code> in lakehouse&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>create_custom_onelake_app&lt;/code>&lt;/td>
+ &lt;td>bool&lt;/td>
+ &lt;td>&lt;code>true&lt;/code>&lt;/td>
+ &lt;td>Create Azure AD app for OneLake auth&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>assign_directory_roles&lt;/code>&lt;/td>
+ &lt;td>bool&lt;/td>
+ &lt;td>&lt;code>true&lt;/code>&lt;/td>
+ &lt;td>Assign directory roles (requires Global Admin)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>assign_graph_permissions&lt;/code>&lt;/td>
+ &lt;td>bool&lt;/td>
+ &lt;td>&lt;code>true&lt;/code>&lt;/td>
+ &lt;td>Assign Graph API permissions (requires Global Admin)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>create_custom_roles&lt;/code>&lt;/td>
+ &lt;td>bool&lt;/td>
+ &lt;td>&lt;code>true&lt;/code>&lt;/td>
+ &lt;td>Create custom Azure roles&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>create_workspace_role_assignment&lt;/code>&lt;/td>
+ &lt;td>bool&lt;/td>
+ &lt;td>&lt;code>true&lt;/code>&lt;/td>
+ &lt;td>Grant workspace access to service principal&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>upload_type&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td>&lt;code>onelake&lt;/code>&lt;/td>
+ &lt;td>Upload destination: &lt;code>onelake&lt;/code> or &lt;code>storageaccount&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="outputs">Outputs&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Output&lt;/th>
+ &lt;th>Sensitive&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>resource_group_name&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Resource group name&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>location&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Azure region&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>subscription_id&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Azure subscription ID&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fabric_tenant_id&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Azure AD tenant ID&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>prefix&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Resource naming prefix&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>onelake_dfs_path&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>OneLake DFS path for the lakehouse&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>onelake_app_client_id&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Custom OneLake app client ID&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>onelake_app_client_secret&lt;/code>&lt;/td>
+ &lt;td>&lt;strong>Yes&lt;/strong>&lt;/td>
+ &lt;td>Custom OneLake app client secret&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fabric_capacity_id&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Fabric capacity resource ID&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fabric_workspace_id&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Fabric workspace GUID&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fabric_lakehouse_id&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Fabric lakehouse GUID&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fabric_workspace_name&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Workspace display name&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fabric_lakehouse_name&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Lakehouse display name&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>function_app_template_tfvars&lt;/code>&lt;/td>
+ &lt;td>No&lt;/td>
+ &lt;td>Pre-filled tfvars for Function App module&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="storage-account-module-infrastorageaccount">Storage Account Module (&lt;code>infra/storageaccount&lt;/code>)&lt;/h2>
+&lt;h3 id="optional-variables-1">Optional Variables&lt;/h3>
+&lt;p>All variables have defaults or are optional.&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/integrations/power-bi/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/integrations/power-bi/troubleshooting/</guid><description>&lt;h2 id="azure-function-app">Azure Function App&lt;/h2>
+&lt;h3 id="function-not-triggering-on-schedule">Function not triggering on schedule&lt;/h3>
+&lt;p>&lt;strong>Symptoms:&lt;/strong> Function doesn&amp;rsquo;t execute automatically.&lt;/p>
+&lt;p>&lt;strong>Solutions:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Verify the Function App is started (not stopped): &lt;strong>Azure Portal → Function App → Overview → Start&lt;/strong>&lt;/li>
+&lt;li>Check &lt;code>COPY_PARQUET_SCHEDULE&lt;/code> is set correctly in Application Settings&lt;/li>
+&lt;li>Verify CRON syntax includes the seconds field (6 parts, not 5): &lt;code>0 */15 * * * *&lt;/code>&lt;/li>
+&lt;li>Check Application Insights for startup errors&lt;/li>
+&lt;li>Restart the Function App:
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>az functionapp restart --name &amp;lt;&lt;span style="color:#204a87;font-weight:bold">function&lt;/span>-app-name&amp;gt; --resource-group &amp;lt;rg-name&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;h3 id="function-app-fails-to-start">Function App fails to start&lt;/h3>
+&lt;p>&lt;strong>Symptoms:&lt;/strong> Deployed but doesn&amp;rsquo;t execute or functions don&amp;rsquo;t appear.&lt;/p></description></item></channel></rss>

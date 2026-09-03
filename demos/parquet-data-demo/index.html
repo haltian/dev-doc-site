@@ -1,0 +1,253 @@
+<!doctype html><html itemscope itemtype=http://schema.org/WebPage lang=en class=no-js><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><link rel="shortcut icon" href=/favicons/favicon.ico><link rel=apple-touch-icon href=/favicons/apple-touch-icon-180x180.png sizes=180x180><link rel=icon type=image/png href=/favicons/favicon-16x16.png sizes=16x16><link rel=icon type=image/png href=/favicons/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/favicons/android-36x36.png sizes=36x36><link rel=icon type=image/png href=/favicons/android-48x48.png sizes=48x48><link rel=icon type=image/png href=/favicons/android-72x72.png sizes=72x72><link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96><link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144><link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192><title>Parquet Data Demo | Haltian Developer Documentation</title><meta name=description content="Interactive browser-based exploration of Parquet datasets showing building hierarchy, device inventory, and measurement types"><meta property="og:url" content="https://developer.haltian.io/demos/parquet-data-demo/"><meta property="og:site_name" content="Haltian Developer Documentation"><meta property="og:title" content="Parquet Data Demo"><meta property="og:description" content="Interactive browser-based exploration of Parquet datasets showing building hierarchy, device inventory, and measurement types"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="demos"><meta property="article:modified_time" content="2026-06-23T12:32:44+03:00"><meta property="og:image" content="https://developer.haltian.io/images/social-card.svg"><meta itemprop=name content="Parquet Data Demo"><meta itemprop=description content="Interactive browser-based exploration of Parquet datasets showing building hierarchy, device inventory, and measurement types"><meta itemprop=dateModified content="2026-06-23T12:32:44+03:00"><meta itemprop=wordCount content="610"><meta itemprop=image content="https://developer.haltian.io/images/social-card.svg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://developer.haltian.io/images/social-card.svg"><meta name=twitter:title content="Parquet Data Demo"><meta name=twitter:description content="Interactive browser-based exploration of Parquet datasets showing building hierarchy, device inventory, and measurement types"><link rel=preload href=/scss/main.min.6651d11c014e18471c007db7fb56f3158d3aca6c5d4a6d29d72308a97178befe.css as=style integrity="sha256-ZlHRHAFOGEccAH23+1bzFY06ymxdSm0p1yMIqXF4vv4=" crossorigin=anonymous><link href=/scss/main.min.6651d11c014e18471c007db7fb56f3158d3aca6c5d4a6d29d72308a97178befe.css rel=stylesheet integrity="sha256-ZlHRHAFOGEccAH23+1bzFY06ymxdSm0p1yMIqXF4vv4=" crossorigin=anonymous><script src=https://code.jquery.com/jquery-3.7.1.min.js integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin=anonymous></script><script defer src=https://unpkg.com/lunr@2.3.9/lunr.min.js integrity=sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli crossorigin=anonymous></script><script>(function(){var e="G-E40FYM8N9M",t="analytics_consent",n=navigator.doNotTrack==="1"||window.doNotTrack==="1";function c(){return document.cookie.split(";").some(function(e){return e.trim().startsWith(t+"=granted")})}function s(e){var n=new Date;n.setFullYear(n.getFullYear()+1),document.cookie=t+"="+e+";path=/;expires="+n.toUTCString()+";SameSite=Lax"}function o(){window["ga-disable-"+e]=!0}function i(){if(window["ga-disable-"+e]=!1,window._gaLoaded){window.dataLayer=window.dataLayer||[];function t(){dataLayer.push(arguments)}t("config",e,{anonymize_ip:!0});return}window._gaLoaded=!0;var n=document.createElement("script");n.async=!0,n.src="https://www.googletagmanager.com/gtag/js?id="+e,document.head.appendChild(n),window.dataLayer=window.dataLayer||[];function t(){dataLayer.push(arguments)}t("js",new Date),t("config",e,{anonymize_ip:!0})}function l(){o(),document.cookie="_ga=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT",document.cookie="_ga_"+e.replace("G-","")+"=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT"}function a(){var e=document.getElementById("cookie-consent-banner");e&&(e.style.display="flex")}function r(){var e=document.getElementById("cookie-consent-banner");e&&(e.style.display="none")}n?o():c()?i():document.cookie.indexOf(t+"=denied")===-1&&document.addEventListener("DOMContentLoaded",a),window.acceptAnalytics=function(){n||(s("granted"),i()),r()},window.denyAnalytics=function(){s("denied"),l(),r()},window.reopenConsentBanner=function(e){e.preventDefault(),a()}})()</script><meta property="og:image" content="https://developer.haltian.io/images/social-card.svg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name=twitter:image content="https://developer.haltian.io/images/social-card.svg"><meta name=twitter:card content="summary_large_image"><script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","name":"Haltian Developer Documentation","url":"https:\/\/developer.haltian.io\/","description":"Haltian IoT platform documentation - APIs, device guides, and integration tutorials for enterprise IoT solutions.","publisher":{"@type":"Organization","name":"Haltian","url":"https://haltian.com","logo":{"@type":"ImageObject","url":"https:\/\/developer.haltian.io\/logo.png"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/developer.haltian.io\/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"TechArticle","headline":"Parquet Data Demo","description":"Interactive browser-based exploration of Parquet datasets showing building hierarchy, device inventory, and measurement types\n","url":"https:\/\/developer.haltian.io\/demos\/parquet-data-demo\/","datePublished":"0001-01-01","dateModified":"2026-06-23","author":{"@type":"Organization","name":"Haltian"},"publisher":{"@type":"Organization","name":"Haltian","logo":{"@type":"ImageObject","url":"https:\/\/developer.haltian.io\/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/developer.haltian.io\/demos\/parquet-data-demo\/"}}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/developer.haltian.io\/"},{"@type":"ListItem","position":2,"name":"Haltian Developer Documentation","item":"https:\/\/developer.haltian.io\/"},{"@type":"ListItem","position":3,"name":"Demos","item":"https:\/\/developer.haltian.io\/demos\/"},{"@type":"ListItem","position":4,"name":"Parquet Data Demo","item":"https:\/\/developer.haltian.io\/demos\/parquet-data-demo\/"}]}</script><meta name=author content="Haltian"><meta name=publisher content="Haltian"><link rel=canonical href=https://developer.haltian.io/demos/parquet-data-demo/><link rel=alternate hreflang=en href=https://developer.haltian.io/demos/parquet-data-demo/><link rel=alternate hreflang=x-default href=https://developer.haltian.io/demos/parquet-data-demo/></head><body class=td-page><header><nav class="td-navbar navbar navbar-expand-lg navbar-dark bg-primary"><div class=container-fluid><a class=navbar-brand href=/><img src=https://developer.haltian.io/logo.png alt="Haltian Developer Documentation" height=28 class="d-inline-block align-top">
+</a><button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarNav aria-controls=navbarNav aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarNav><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/demos/>Demos</a></li><li class=nav-item><a class=nav-link href=/haltian-iot/getting-started/>Getting Started</a></li><li class=nav-item><a class=nav-link href=/haltian-iot/>Haltian IoT</a></li><li class=nav-item><a class=nav-link href=/haltian-iot/apis/>APIs</a></li><li class=nav-item><a class=nav-link href=/haltian-iot/devices/>Devices</a></li></ul><div class="td-search td-search--offline"><div class=td-search__icon></div><input type=search name=q class="td-search__input form-control" placeholder='Search this site…' aria-label='Search this site…' autocomplete=off data-offline-search-index-json-src=/offline-search-index.a1dd3aabc4a1507111c6adc430c73107.json data-offline-search-base-href=/ data-offline-search-max-results=10></div></div></div></nav></header><div class="container-fluid td-outer"><div class=td-main data-bs-spy=scroll data-bs-target=.td-toc data-bs-root-margin="0px 0px -10%"><div class="row flex-xl-nowrap"><aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none"><script>$(function(){$("#td-section-nav a").removeClass("active"),$("#td-section-nav #m-demosparquet-data-demo").addClass("active"),$("#td-section-nav #m-demosparquet-data-demo-li span").addClass("td-sidebar-nav-active-item"),$("#td-section-nav #m-demosparquet-data-demo").parents("li").addClass("active-path"),$("#td-section-nav li.active-path").addClass("show"),$("#td-section-nav li.active-path").children("input").prop("checked",!0),$("#td-section-nav #m-demosparquet-data-demo-li").siblings("li").addClass("show"),$("#td-section-nav #m-demosparquet-data-demo-li").children("ul").children("li").addClass("show"),$("#td-sidebar-menu").toggleClass("d-none")})</script><div id=td-sidebar-menu class="td-sidebar__inner d-none"><form class="td-sidebar__search d-flex align-items-center"><div class="td-search td-search--offline"><div class=td-search__icon></div><input type=search name=q class="td-search__input form-control" placeholder='Search this site…' aria-label='Search this site…' autocomplete=off data-offline-search-index-json-src=/offline-search-index.a1dd3aabc4a1507111c6adc430c73107.json data-offline-search-base-href=/ data-offline-search-max-results=10></div><button class="btn btn-link td-sidebar__toggle" type=button data-bs-toggle=collapse data-bs-target=#td-section-nav aria-controls=td-section-nav aria-expanded=false aria-label="Toggle section navigation"></button></form><nav class="td-sidebar-nav collapse foldable-nav" id=td-section-nav><ul class="td-sidebar-nav__section pe-md-3 ul-0"><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-demos-li><a href=/demos/ class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id=m-demos><span>Demos</span></a><ul class=ul-1><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-demosai-demonstration-meeting-room-occupancy-li><input type=checkbox id=m-demosai-demonstration-meeting-room-occupancy-check>
+<label for=m-demosai-demonstration-meeting-room-occupancy-check><a href=/demos/ai-demonstration-meeting-room-occupancy/ title="AI Ready Data Demonstration - Meeting Room Occupancy" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-demosai-demonstration-meeting-room-occupancy><span>AI Ready Data - Demo 1</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-demosai-demonstration-indoor-environment-li><input type=checkbox id=m-demosai-demonstration-indoor-environment-check>
+<label for=m-demosai-demonstration-indoor-environment-check><a href=/demos/ai-demonstration-indoor-environment/ title="AI Ready Data Demonstration - Indoor Environmental Quality" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-demosai-demonstration-indoor-environment><span>AI Ready Data - Demo 2</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-demosdevice-explorer-li><input type=checkbox id=m-demosdevice-explorer-check>
+<label for=m-demosdevice-explorer-check><a href=/demos/device-explorer/ title="Service API — Device Explorer" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-demosdevice-explorer><span>Service API Demo</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-demosmqtt-live-stream-li><input type=checkbox id=m-demosmqtt-live-stream-check>
+<label for=m-demosmqtt-live-stream-check><a href=/demos/mqtt-live-stream/ title="Stream API — MQTT Live Stream" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-demosmqtt-live-stream><span>Stream API Demo</span></a></label></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-demosparquet-data-demo-li><input type=checkbox id=m-demosparquet-data-demo-check>
+<label for=m-demosparquet-data-demo-check><a href=/demos/parquet-data-demo/ class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id=m-demosparquet-data-demo><span>Parquet Data Demo</span></a></label></li></ul></li></ul></nav></div></aside><aside class=td-sidebar-toc><div class="td-page-meta ms-2 pb-1 pt-2 mb-0"></div><div class=td-toc data-proofer-ignore><div class=td-toc-title><span class=td-toc-title__text>On this page</span>
+<a class=td-toc-title__link title="Top of page" href=#></a></div><nav id=TableOfContents><ul><li><a href=#data-structure>Data Structure</a><ul><li><a href=#key-entities>Key Entities</a></li><li><a href=#relationships>Relationships</a></li></ul></li><li><a href=#how-it-works>How It Works</a></li><li><a href=#measurement-data>Measurement Data</a></li><li><a href=#build-this-with-ai>Build This with AI</a></li></ul></nav></div></aside><main class="col-12 col-md-9 col-xl-8 ps-md-5" role=main><nav aria-label=breadcrumb class=td-breadcrumbs><ol class=breadcrumb><li class=breadcrumb-item><a href=/demos/>Demos</a></li><li class="breadcrumb-item active" aria-current=page>Parquet Data Demo</li></ol></nav><div class=td-content><h1>Parquet Data Demo</h1><div class=lead>Interactive browser-based exploration of Parquet datasets showing building hierarchy, device inventory, and measurement types</div><header class=article-meta></header><p>This demo loads <strong>real data</strong> directly from Parquet files and displays the organizational hierarchy. All data is fetched and processed in your browser using <a href=https://github.com/hyparam/hyparquet>hyparquet</a>.</p><div class="alert alert-info" role=alert><div class="h4 alert-heading" role=heading>Learn More</div><p>This demo showcases data from the Haltian IoT platform. Learn how to access this data programmatically via the <a href=/haltian-iot/apis/data-api/>Data API</a>.</p></div><div class="alert alert-success" role=alert><div class="h4 alert-heading" role=heading>Build Your Own</div>This page includes an <strong>AI prompt</strong> you can copy to recreate or customize this demo with your preferred AI assistant. <a href=#build-this-with-ai>Jump to prompt →</a></div><style>:root{--haltian-radiant-green:#73F9C1;--haltian-nordic-water:#143633;--haltian-nordic-water-light:#2E4C49;--haltian-clay-orange:#FF8862;--haltian-grey-white:#F6FAFA}.demo-browser{background:var(--haltian-nordic-water);border-radius:12px;padding:24px;margin:20px 0;color:#fff;font-family:montserrat,sans-serif}.demo-header{text-align:center;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--haltian-nordic-water-light)}.demo-header h2{color:var(--haltian-radiant-green);margin:0 0 8px;font-size:1.5rem}.demo-header p{color:rgba(255,255,255,.7);margin:0;font-size:.9rem}.demo-status{background:var(--haltian-nordic-water-light);border:1px solid rgba(115,249,193,.3);border-radius:8px;padding:12px 16px;margin-bottom:20px;font-size:.9rem;color:var(--haltian-radiant-green)}.demo-status.error{background:rgba(239,68,68,.2);border-color:rgba(239,68,68,.3);color:#fca5a5}.demo-status.success{background:rgba(115,249,193,.15);border-color:rgba(115,249,193,.4);color:var(--haltian-radiant-green)}.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-bottom:24px}.stat-card{background:var(--haltian-nordic-water-light);border-radius:8px;padding:16px;text-align:center;border:1px solid rgba(115,249,193,.2)}.stat-value{font-size:2rem;font-weight:700;color:var(--haltian-radiant-green);line-height:1;margin-bottom:4px}.stat-value.location{color:var(--haltian-clay-orange)}.stat-value.building{color:#60a5fa}.stat-value.floor{color:#a78bfa}.stat-value.zone{color:var(--haltian-radiant-green)}.stat-label{font-size:.75rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.5px}.tree-section{background:var(--haltian-nordic-water-light);border-radius:8px;padding:20px;margin-bottom:20px;border:1px solid rgba(115,249,193,.15)}.tree-section h3{color:var(--haltian-radiant-green);margin:0 0 16px;font-size:1.1rem;font-weight:500}.tree-view{font-family:ui-monospace,SFMono-Regular,sf mono,Menlo,Monaco,Consolas,monospace;font-size:.85rem;line-height:1.8}.tree-item{padding:2px 0;display:flex;align-items:center}.tree-org{color:#fff;font-weight:600}.tree-location{color:var(--haltian-clay-orange)}.tree-building{color:#60a5fa}.tree-floor{color:#a78bfa}.tree-zone{color:var(--haltian-radiant-green)}.tree-icon{margin-right:8px;width:20px;text-align:center}.tree-indent-1{padding-left:28px}.tree-indent-2{padding-left:56px}.tree-indent-3{padding-left:84px}.tree-indent-4{padding-left:112px}.tree-connector{color:rgba(255,255,255,.3);margin-right:4px}.tree-meta{color:rgba(255,255,255,.4);font-size:.75rem;margin-left:8px}.data-types-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}.measurements-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(max-width:600px){.measurements-grid{grid-template-columns:1fr}}.data-type-card{background:rgba(115,249,193,5%);border-radius:8px;padding:12px 16px;border:1px solid rgba(115,249,193,.15)}.data-type-card.measurement{padding:10px 14px}.data-type-name{font-weight:600;color:#fff;margin-bottom:4px}.data-type-name.measurement{font-size:.85rem;margin-bottom:2px}.data-type-count{font-size:.85rem;color:rgba(255,255,255,.6)}.data-type-count.measurement{font-size:.75rem}.device-models-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(max-width:600px){.device-models-grid{grid-template-columns:1fr}}.device-model-card{background:rgba(255,136,98,8%);border-radius:8px;padding:10px 14px;border:1px solid rgba(255,136,98,.2);display:flex;justify-content:space-between;align-items:center}.device-model-name{font-size:.85rem;font-weight:500;color:#fff;font-family:ui-monospace,SFMono-Regular,sf mono,Menlo,Monaco,Consolas,monospace}.device-model-count{font-size:1rem;font-weight:700;color:var(--haltian-clay-orange);background:rgba(255,136,98,.15);padding:2px 10px;border-radius:12px;min-width:32px;text-align:center}.keywords-list{display:flex;flex-wrap:wrap;gap:8px}.keyword-tag{background:rgba(115,249,193,.1);border:1px solid rgba(115,249,193,.3);border-radius:16px;padding:6px 14px;display:inline-flex;align-items:center;gap:8px;font-size:.85rem}.keyword-name{color:var(--haltian-radiant-green);font-weight:500}.keyword-count{background:rgba(115,249,193,.2);color:#fff;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600}.data-source{margin-top:24px;padding-top:16px;border-top:1px solid var(--haltian-nordic-water-light);font-size:.8rem;color:rgba(255,255,255,.5);text-align:center}.data-source a{color:var(--haltian-radiant-green)}</style><div class=demo-browser><div class=demo-header><h2>🗂️ Parquet Data Browser</h2><p>Building Hierarchy from Haltian Sample Dataset</p></div><div class=demo-status id=loadingStatus>⏳ Loading data from Parquet files...</div><div class=stats-grid><div class=stat-card><div class="stat-value location" id=statLocations>—</div><div class=stat-label>Locations</div></div><div class=stat-card><div class="stat-value building" id=statBuildings>—</div><div class=stat-label>Buildings</div></div><div class=stat-card><div class="stat-value floor" id=statFloors>—</div><div class=stat-label>Floors</div></div><div class=stat-card><div class="stat-value zone" id=statZones>—</div><div class=stat-label>Zones</div></div></div><div class=tree-section><h3>🏗️ Building Hierarchy</h3><div class=tree-view id=hierarchyTree><div style=color:rgba(255,255,255,.3)>Loading hierarchy...</div></div></div><div class=tree-section><h3>📊 Entity Data Types</h3><div class=data-types-grid id=entityTypesGrid><div class=data-type-card><div class=data-type-name style=color:rgba(255,255,255,.3)>Loading...</div></div></div></div><div class=tree-section><h3>📈 Measurement Data Types</h3><div class=measurements-grid id=measurementTypesGrid><div class="data-type-card measurement"><div class="data-type-name measurement" style=color:rgba(255,255,255,.3)>Loading...</div></div></div></div><div class=tree-section><h3>📡 Device Models</h3><div class=device-models-grid id=deviceModelsGrid><div class=device-model-card><div class=device-model-name style=color:rgba(255,255,255,.3)>Loading...</div></div></div></div><div class=tree-section><h3>🏷️ Device Keywords</h3><div class=keywords-list id=keywordsList><div class=keyword-tag><span class=keyword-name style=color:rgba(255,255,255,.3)>Loading...</span></div></div></div><div class=data-source>📊 Data source: <a href=/haltian-iot/apis/data-api/sample-data/>Haltian Sample Dataset</a> •
+Loaded via hyparquet</div></div><script type=module>
+import { parquetRead } from 'https://cdn.jsdelivr.net/npm/hyparquet/+esm';
+import { compressors } from 'https://cdn.jsdelivr.net/npm/hyparquet-compressors/+esm';
+
+const BASE_URL = 'https://raw.githubusercontent.com/haltian/dev-demos/main/haltiansalesdemo-parquet';
+
+// Status helper
+function setStatus(message, type = 'info') {
+    const el = document.getElementById('loadingStatus');
+    el.className = 'demo-status' + (type !== 'info' ? ' ' + type : '');
+    el.textContent = message;
+}
+
+// Fetch and parse parquet file - returns array of row objects
+async function loadParquet(url) {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Failed to fetch ${url}: ${response.status}`);
+    const arrayBuffer = await response.arrayBuffer();
+
+    let rows = [];
+    await parquetRead({
+        file: arrayBuffer,
+        compressors,
+        rowFormat: 'object',
+        onComplete: data => { rows = data; }
+    });
+    return rows;
+}
+
+async function loadBrowser() {
+    try {
+        setStatus('⏳ Loading organization data...');
+
+        // Load all entity data in parallel
+        const [organization, spaces, zones, devices, deviceKeywords] = await Promise.all([
+            loadParquet(`${BASE_URL}/organization/2026/01/2026_01_01_00_organization.parquet`),
+            loadParquet(`${BASE_URL}/space/2026/01/2026_01_01_00_space.parquet`),
+            loadParquet(`${BASE_URL}/zone/2026/01/2026_01_01_00_zone.parquet`),
+            loadParquet(`${BASE_URL}/device/2026/01/2026_01_01_00_device.parquet`),
+            loadParquet(`${BASE_URL}/deviceKeyword/2026/01/2026_01_01_00_deviceKeyword.parquet`)
+        ]);
+
+        setStatus('🔨 Building hierarchy...');
+
+        // Categorize spaces by type
+        const locations = spaces.filter(s => s.type === 'location');
+        const buildings = spaces.filter(s => s.type === 'building');
+        const floors = spaces.filter(s => s.type === 'floor');
+
+        // Update stats
+        document.getElementById('statLocations').textContent = locations.length;
+        document.getElementById('statBuildings').textContent = buildings.length;
+        document.getElementById('statFloors').textContent = floors.length;
+        document.getElementById('statZones').textContent = zones.length;
+
+        // Build lookup maps
+        const spaceMap = {};
+        spaces.forEach(s => spaceMap[s.id] = s);
+
+        // Build tree HTML
+        let treeHtml = '';
+
+        // Organization root
+        const org = organization[0];
+        treeHtml += `<div class="tree-item tree-org"><span class="tree-icon">🏢</span><strong>${org.name}</strong></div>`;
+
+        // Sort locations alphabetically
+        locations.sort((a, b) => a.name.localeCompare(b.name));
+
+        locations.forEach(location => {
+            treeHtml += `<div class="tree-item tree-indent-1 tree-location"><span class="tree-connector">├─</span><span class="tree-icon">📍</span>${location.name}</div>`;
+
+            // Find buildings in this location
+            const locationBuildings = buildings.filter(b => b.parentSpaceId === location.id);
+            locationBuildings.sort((a, b) => a.name.localeCompare(b.name));
+
+            locationBuildings.forEach(building => {
+                treeHtml += `<div class="tree-item tree-indent-2 tree-building"><span class="tree-connector">├─</span><span class="tree-icon">🏗️</span>${building.name}</div>`;
+
+                // Find floors in this building
+                const buildingFloors = floors.filter(f => f.parentSpaceId === building.id);
+                buildingFloors.sort((a, b) => a.name.localeCompare(b.name));
+
+                buildingFloors.forEach(floor => {
+                    // Find zones on this floor
+                    const floorZones = zones.filter(z => z.spaceId === floor.id);
+                    const zoneCount = floorZones.length;
+
+                    treeHtml += `<div class="tree-item tree-indent-3 tree-floor"><span class="tree-connector">├─</span><span class="tree-icon">🏠</span>${floor.name}<span class="tree-meta">${zoneCount} zone${zoneCount !== 1 ? 's' : ''}</span></div>`;
+
+                    // Sort and display zones
+                    floorZones.sort((a, b) => a.name.localeCompare(b.name));
+                    floorZones.forEach(zone => {
+                        treeHtml += `<div class="tree-item tree-indent-4 tree-zone"><span class="tree-connector">└─</span><span class="tree-icon">📌</span>${zone.name}</div>`;
+                    });
+                });
+            });
+        });
+
+        document.getElementById('hierarchyTree').innerHTML = treeHtml;
+
+        // Entity data types
+        const entityTypes = [
+            { name: 'organization', icon: '🏢', desc: 'Organization info' },
+            { name: 'space', icon: '📍', desc: 'Locations, buildings, floors' },
+            { name: 'zone', icon: '📌', desc: 'Monitored areas' },
+            { name: 'device', icon: '📡', desc: 'Sensor devices' },
+            { name: 'deviceGroup', icon: '📦', desc: 'Device groupings' }
+        ];
+
+        document.getElementById('entityTypesGrid').innerHTML = entityTypes.map(dt => `
+            <div class="data-type-card">
+                <div class="data-type-name">${dt.icon} ${dt.name}</div>
+                <div class="data-type-count">${dt.desc}</div>
+            </div>
+        `).join('');
+
+        // Measurement data types
+        const measurementTypes = [
+            { name: 'measurementOccupancyStatus', icon: '👤', desc: 'Presence detection' },
+            { name: 'measurementOccupancySeconds', icon: '⏱️', desc: 'Time occupied' },
+            { name: 'measurementOccupantsCount', icon: '👥', desc: 'People count' },
+            { name: 'measurementAmbientTemperature', icon: '🌡️', desc: 'Temperature' },
+            { name: 'measurementBatteryVoltage', icon: '🔋', desc: 'Battery voltage' },
+            { name: 'measurementCO2', icon: '💨', desc: 'CO₂ levels' },
+            { name: 'measurementDistance', icon: '📏', desc: 'Distance sensors' },
+            { name: 'measurementPosition', icon: '🗺️', desc: 'Asset locations' },
+            { name: 'measurementPositionZone', icon: '📍', desc: 'Zone presence' },
+            { name: 'measurementTVOC', icon: '🌬️', desc: 'Air quality' }
+        ];
+
+        document.getElementById('measurementTypesGrid').innerHTML = measurementTypes.map(dt => `
+            <div class="data-type-card measurement">
+                <div class="data-type-name measurement">${dt.icon} ${dt.name}</div>
+                <div class="data-type-count measurement">${dt.desc}</div>
+            </div>
+        `).join('');
+
+        // Count devices by model
+        const modelCounts = {};
+        devices.forEach(d => {
+            if (d.model) {
+                modelCounts[d.model] = (modelCounts[d.model] || 0) + 1;
+            }
+        });
+
+        // Sort by count (descending), then by name
+        const sortedModels = Object.entries(modelCounts)
+            .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+        // Render device models with counts
+        document.getElementById('deviceModelsGrid').innerHTML = sortedModels.map(([model, count]) => `
+            <div class="device-model-card">
+                <div class="device-model-name">${model}</div>
+                <div class="device-model-count">${count}</div>
+            </div>
+        `).join('');
+
+        // Count devices by keyword
+        const keywordCounts = {};
+        deviceKeywords.forEach(dk => {
+            if (dk.keyword) {
+                keywordCounts[dk.keyword] = (keywordCounts[dk.keyword] || 0) + 1;
+            }
+        });
+
+        // Sort keywords by count (descending), then alphabetically
+        const sortedKeywords = Object.entries(keywordCounts)
+            .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+        // Render keywords with counts
+        document.getElementById('keywordsList').innerHTML = sortedKeywords.map(([keyword, count]) => `
+            <div class="keyword-tag">
+                <span class="keyword-name">${keyword}</span>
+                <span class="keyword-count">${count}</span>
+            </div>
+        `).join('');
+
+        setStatus(`✅ Loaded ${spaces.length} spaces, ${zones.length} zones, ${devices.length} devices, and ${deviceKeywords.length} keywords`, 'success');
+
+    } catch (error) {
+        console.error('Browser error:', error);
+        setStatus('❌ Error loading data: ' + error.message, 'error');
+    }
+}
+
+// Load when page is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadBrowser);
+} else {
+    loadBrowser();
+}
+</script><h2 id=data-structure>Data Structure</h2><p>The parquet dataset uses a hierarchical structure to represent physical locations:</p><pre tabindex=0><code>Organization (haltiansalesdemo)
+├── Space (type: location) - e.g., &#34;Oulu Headquarter&#34;, &#34;Helsinki Factory&#34;
+│   └── Space (type: building) - e.g., &#34;Yrttipellontie 1&#34;, &#34;Factory&#34;
+│       └── Space (type: floor) - e.g., &#34;3rd floor&#34;, &#34;Ground Floor&#34;
+│           └── Zone - e.g., &#34;Meeting Room Taika&#34;, &#34;Cafeteria&#34;
+</code></pre><h3 id=key-entities>Key Entities</h3><table><thead><tr><th>Entity</th><th>Description</th><th>Key Fields</th></tr></thead><tbody><tr><td><code>organization</code></td><td>Top-level tenant</td><td><code>id</code>, <code>name</code></td></tr><tr><td><code>space</code></td><td>Physical location hierarchy</td><td><code>id</code>, <code>name</code>, <code>type</code>, <code>parentSpaceId</code>, <code>positionGlobal</code></td></tr><tr><td><code>zone</code></td><td>Monitored area within a floor</td><td><code>id</code>, <code>name</code>, <code>spaceId</code>, <code>polygonGlobal</code></td></tr><tr><td><code>device</code></td><td>IoT sensor</td><td><code>id</code>, <code>tuid</code>, <code>deviceGroupId</code></td></tr></tbody></table><h3 id=relationships>Relationships</h3><ul><li><strong>space.parentSpaceId</strong> → parent space (location → building → floor)</li><li><strong>zone.spaceId</strong> → the floor this zone is on</li><li><strong>device.deviceGroupId</strong> → device group for organization</li><li>All entities share <strong>organizationId</strong> for multi-tenant support</li></ul><h2 id=how-it-works>How It Works</h2><p>This browser uses <strong><a href=https://github.com/hyparam/hyparquet>hyparquet</a></strong>, a pure JavaScript parquet reader:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#204a87;font-weight:700>import</span> <span style=color:#000;font-weight:700>{</span> <span style=color:#000>parquetRead</span> <span style=color:#000;font-weight:700>}</span> <span style=color:#000>from</span> <span style=color:#4e9a06>&#39;https://cdn.jsdelivr.net/npm/hyparquet/+esm&#39;</span><span style=color:#000;font-weight:700>;</span>
+</span></span><span style=display:flex><span><span style=color:#204a87;font-weight:700>import</span> <span style=color:#000;font-weight:700>{</span> <span style=color:#000>compressors</span> <span style=color:#000;font-weight:700>}</span> <span style=color:#000>from</span> <span style=color:#4e9a06>&#39;https://cdn.jsdelivr.net/npm/hyparquet-compressors/+esm&#39;</span><span style=color:#000;font-weight:700>;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// Fetch and parse parquet file - returns array of row objects
+</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#204a87;font-weight:700>async</span> <span style=color:#204a87;font-weight:700>function</span> <span style=color:#000>loadParquet</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>url</span><span style=color:#000;font-weight:700>)</span> <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>response</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#204a87;font-weight:700>await</span> <span style=color:#000>fetch</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>url</span><span style=color:#000;font-weight:700>);</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>arrayBuffer</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#204a87;font-weight:700>await</span> <span style=color:#000>response</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>arrayBuffer</span><span style=color:#000;font-weight:700>();</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>let</span> <span style=color:#000>rows</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#000;font-weight:700>[];</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>await</span> <span style=color:#000>parquetRead</span><span style=color:#000;font-weight:700>({</span>
+</span></span><span style=display:flex><span>        <span style=color:#000>file</span><span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#000>arrayBuffer</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#000>compressors</span><span style=color:#000;font-weight:700>,</span>  <span style=color:#8f5902;font-style:italic>// Adds ZSTD, gzip, brotli, lz4 support
+</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span>        <span style=color:#000>rowFormat</span><span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#4e9a06>&#39;object&#39;</span><span style=color:#000;font-weight:700>,</span>  <span style=color:#8f5902;font-style:italic>// Return {columnName: value} instead of [value]
+</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span>        <span style=color:#000>onComplete</span><span style=color:#ce5c00;font-weight:700>:</span> <span style=color:#000>data</span> <span style=color:#000;font-weight:700>=&gt;</span> <span style=color:#000;font-weight:700>{</span> <span style=color:#000>rows</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#000>data</span><span style=color:#000;font-weight:700>;</span> <span style=color:#000;font-weight:700>}</span>
+</span></span><span style=display:flex><span>    <span style=color:#000;font-weight:700>});</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>return</span> <span style=color:#000>rows</span><span style=color:#000;font-weight:700>;</span>
+</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// Load multiple files in parallel
+</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#204a87;font-weight:700>const</span> <span style=color:#000;font-weight:700>[</span><span style=color:#000>spaces</span><span style=color:#000;font-weight:700>,</span> <span style=color:#000>zones</span><span style=color:#000;font-weight:700>]</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#204a87;font-weight:700>await</span> <span style=color:#204a87>Promise</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>all</span><span style=color:#000;font-weight:700>([</span>
+</span></span><span style=display:flex><span>    <span style=color:#000>loadParquet</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>`</span><span style=color:#4e9a06>${</span><span style=color:#000>BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/space/2026/01/2026_01_01_00_space.parquet`</span><span style=color:#000;font-weight:700>),</span>
+</span></span><span style=display:flex><span>    <span style=color:#000>loadParquet</span><span style=color:#000;font-weight:700>(</span><span style=color:#4e9a06>`</span><span style=color:#4e9a06>${</span><span style=color:#000>BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/zone/2026/01/2026_01_01_00_zone.parquet`</span><span style=color:#000;font-weight:700>)</span>
+</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>]);</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic>// Build hierarchy from relationships
+</span></span></span><span style=display:flex><span><span style=color:#8f5902;font-style:italic></span><span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>buildings</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#000>spaces</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>filter</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>s</span> <span style=color:#000;font-weight:700>=&gt;</span> <span style=color:#000>s</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>type</span> <span style=color:#ce5c00;font-weight:700>===</span> <span style=color:#4e9a06>&#39;building&#39;</span><span style=color:#000;font-weight:700>);</span>
+</span></span><span style=display:flex><span><span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>floors</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#000>spaces</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>filter</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>s</span> <span style=color:#000;font-weight:700>=&gt;</span> <span style=color:#000>s</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>type</span> <span style=color:#ce5c00;font-weight:700>===</span> <span style=color:#4e9a06>&#39;floor&#39;</span><span style=color:#000;font-weight:700>);</span>
+</span></span><span style=display:flex><span><span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>floorsInBuilding</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#000>floors</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>filter</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>f</span> <span style=color:#000;font-weight:700>=&gt;</span> <span style=color:#000>f</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>parentSpaceId</span> <span style=color:#ce5c00;font-weight:700>===</span> <span style=color:#000>building</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>id</span><span style=color:#000;font-weight:700>);</span>
+</span></span><span style=display:flex><span><span style=color:#204a87;font-weight:700>const</span> <span style=color:#000>zonesOnFloor</span> <span style=color:#ce5c00;font-weight:700>=</span> <span style=color:#000>zones</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>filter</span><span style=color:#000;font-weight:700>(</span><span style=color:#000>z</span> <span style=color:#000;font-weight:700>=&gt;</span> <span style=color:#000>z</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>spaceId</span> <span style=color:#ce5c00;font-weight:700>===</span> <span style=color:#000>floor</span><span style=color:#000;font-weight:700>.</span><span style=color:#000>id</span><span style=color:#000;font-weight:700>);</span>
+</span></span></code></pre></div><h2 id=measurement-data>Measurement Data</h2><p>Beyond entity data, the dataset includes time-series measurements:</p><table><thead><tr><th>Type</th><th>Description</th><th>Update Frequency</th></tr></thead><tbody><tr><td><code>measurementOccupancyStatus</code></td><td>Binary presence (0/1)</td><td>Real-time</td></tr><tr><td><code>measurementOccupancySeconds</code></td><td>Time spent in zone</td><td>Aggregated</td></tr><tr><td><code>measurementOccupantsCount</code></td><td>People count</td><td>Real-time</td></tr><tr><td><code>measurementAmbientTemperature</code></td><td>Temperature (°C)</td><td>Periodic</td></tr><tr><td><code>measurementCO2</code></td><td>CO₂ concentration (ppm)</td><td>Periodic</td></tr><tr><td><code>measurementDistance</code></td><td>Distance sensor readings</td><td>Real-time</td></tr><tr><td><code>measurementPosition</code></td><td>Asset GPS coordinates</td><td>Real-time</td></tr></tbody></table><p>See <a href=/haltian-iot/apis/data-api/sample-data/>Sample Data</a> for file naming conventions and download links.</p><hr><h2 id=build-this-with-ai>Build This with AI</h2><p>Want to recreate this demo or build your own variation? Copy this prompt to your AI coding assistant (Claude, ChatGPT, GitHub Copilot, etc.):</p><pre tabindex=0><code>You are a data visualization specialist. I need you to build an interactive Parquet data browser for IoT data.
+
+Step 1: Read the Haltian IoT data documentation at https://developer.haltian.io/haltian-iot/apis/data-api/ to understand the data model and relationships.
+
+Step 2: Carefully study the complete implementation at https://developer.haltian.io/demos/parquet-data-demo/ including:
+- All entity types and their schemas described on the page
+- The data organization hierarchy (buildings → floors → zones → devices)
+- The visualization patterns used for each section
+
+Step 3: Build me the same interactive data browser using your preferred technology stack (Python with pandas, JavaScript, Jupyter notebook, or other).
+
+Focus on displaying the hierarchical relationships clearly and making it easy to explore the data structure.
+</code></pre><p>Feel free to modify the prompt to add custom features like data export, advanced filtering, or relationship visualization!</p><div class="text-muted mt-5 pt-3 border-top"><div class="td-page-meta ms-2 pb-1 pt-2 mb-0"></div></div></div></main></div></div><footer class="td-footer row d-print-none"><div class=container-fluid><div class="row mx-md-2"><div class="td-footer__left col-6 col-sm-4 order-sm-1"></div><div class="td-footer__right col-6 col-sm-4 order-sm-3"><ul class=td-footer__links-list><li class=td-footer__links-item data-bs-toggle=tooltip title="Contact Support" aria-label="Contact Support"><a href=mailto:support@haltian.com aria-label="Contact Support" target=_blank rel=noopener><i class="fa fa-envelope"></i></a></li><li class=td-footer__links-item data-bs-toggle=tooltip title="Product Feedback" aria-label="Product Feedback"><a href=/haltian-iot/contact/ aria-label="Product Feedback"><i class="fa fa-lightbulb"></i></a></li><li class=td-footer__links-item data-bs-toggle=tooltip title="Haltian Website" aria-label="Haltian Website"><a href=https://haltian.com aria-label="Haltian Website" target=_blank rel=noopener><i class="fa fa-globe"></i></a></li><li class=td-footer__links-item data-bs-toggle=tooltip title=GitHub aria-label=GitHub><a href=https://github.com/haltian aria-label=GitHub target=_blank rel=noopener><i class="fab fa-github"></i></a></li></ul></div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2"><span class=td-footer__copyright>&copy;
+2026
+<span class=td-footer__authors>Haltian</span></span><span class=td-footer__all_rights_reserved>All Rights Reserved</span>
+<span class=ms-2><a href=https://haltian.com/privacy target=_blank rel=noopener>Privacy Policy</a></span>
+<span class=ms-2><a href=# onclick=reopenConsentBanner(event)>Cookie Settings</a></span><p class="mb-0 mt-2 text-white-50 small">This documentation is AI-assisted and reviewed by Haltian staff.</p></div></div></div></footer><div id=cookie-consent-banner class=cookie-consent-banner style=display:none role=dialog aria-label="Cookie consent"><p>We use analytics cookies to understand how you use our documentation. No personal data is shared with third parties for advertising.</p><div class=cookie-consent-actions><button onclick=acceptAnalytics() class="btn btn-sm btn-primary">Accept</button>
+<button onclick=denyAnalytics() class="btn btn-sm btn-outline-light">Decline</button></div></div></div><script src=/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js integrity="sha256-xg3gPtUqNAEvMww+GMUmQm7JfvqYIr7frb8U/+kXvD4=" crossorigin=anonymous></script><script defer src=/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js integrity="sha256-JFdv+f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin=anonymous></script><script src=/js/tabpane-persist.js></script></body></html>

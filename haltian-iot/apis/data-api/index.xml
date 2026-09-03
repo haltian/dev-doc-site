@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data API (Parquet) on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/</link><description>Recent content in Data API (Parquet) on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/apis/data-api/index.xml" rel="self" type="application/rss+xml"/><item><title>Sample Data</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/sample-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/sample-data/</guid><description>&lt;h2 id="live-sample-dataset">Live Sample Dataset&lt;/h2>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Legacy format&lt;/div>
+&lt;p>This sample dataset was exported with the &lt;strong>legacy&lt;/strong> Parquet exporter and uses old column names (e.g., &lt;code>ts&lt;/code>, &lt;code>status&lt;/code>, &lt;code>model&lt;/code>, &lt;code>organizationId&lt;/code>). Production data from the current exporter (v1) uses updated names (&lt;code>measuredAt&lt;/code>, &lt;code>isOccupied&lt;/code>, &lt;code>modelType&lt;/code>) and no longer includes &lt;code>organizationId&lt;/code>. See the &lt;a href="../parquet-exporter-migration/">Migration Guide&lt;/a> for the full column mapping. This page will be updated with v1 sample data in a future release.&lt;/p>
+&lt;/div>
+&lt;p>We provide a complete sample dataset from Haltian&amp;rsquo;s Oulu office that you can explore directly in your browser. This data includes real sensor readings from meeting rooms, demonstrating the full capabilities of the Parquet export format.&lt;/p></description></item><item><title>Data Export Integration</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/parquet-exporter-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/parquet-exporter-usage/</guid><description>&lt;p>The Data Export Integration controls how Haltian IoT exports data as Parquet files to AWS S3. You configure it through the GraphQL API — there is exactly &lt;strong>one integration per organization&lt;/strong>.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>Your user account must have the &lt;strong>&lt;code>manager&lt;/code>&lt;/strong> or &lt;strong>&lt;code>sysoperator&lt;/code>&lt;/strong> role within the organization.&lt;/p>
+&lt;h2 id="fields">Fields&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Field&lt;/th>
+ &lt;th>Type&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>id&lt;/code>&lt;/td>
+ &lt;td>UUID&lt;/td>
+ &lt;td>Read-only. Unique identifier of the integration.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>description&lt;/code>&lt;/td>
+ &lt;td>String&lt;/td>
+ &lt;td>A label for the integration. Maximum 100 characters.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>dataExportState&lt;/code>&lt;/td>
+ &lt;td>String&lt;/td>
+ &lt;td>Controls whether exports run. See &lt;a href="#states">States&lt;/a>.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>metadataExportInterval&lt;/code>&lt;/td>
+ &lt;td>Int&lt;/td>
+ &lt;td>How often (in minutes) to export full entity snapshots. Min &lt;code>15&lt;/code>, max &lt;code>1440&lt;/code>.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>measurementExportInterval&lt;/code>&lt;/td>
+ &lt;td>Int&lt;/td>
+ &lt;td>How often (in minutes) to export time-windowed sensor data. Min &lt;code>15&lt;/code>, max &lt;code>1440&lt;/code>.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>stateMessage&lt;/code>&lt;/td>
+ &lt;td>String&lt;/td>
+ &lt;td>Read-only. Set by the system when &lt;code>dataExportState&lt;/code> is &lt;code>error&lt;/code>.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>createdAt&lt;/code>&lt;/td>
+ &lt;td>Timestamp&lt;/td>
+ &lt;td>Read-only. When the integration was created.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>updatedAt&lt;/code>&lt;/td>
+ &lt;td>Timestamp&lt;/td>
+ &lt;td>Read-only. When the integration was last updated.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="states">States&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Value&lt;/th>
+ &lt;th>Meaning&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>active&lt;/code>&lt;/td>
+ &lt;td>Exports are running on the configured schedule.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>inactive&lt;/code>&lt;/td>
+ &lt;td>Exports are paused. No data is written to S3.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>error&lt;/code>&lt;/td>
+ &lt;td>Exports are paused due to a persistent failure. The &lt;code>stateMessage&lt;/code> field contains details. Setting state to &lt;code>error&lt;/code> manually has the same effect as &lt;code>inactive&lt;/code>. To resume, set state back to &lt;code>active&lt;/code>.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="enable-exports">Enable Exports&lt;/h2>
+&lt;p>Create the integration with &lt;code>dataExportState: &amp;quot;active&amp;quot;&lt;/code> to start exporting immediately.&lt;/p></description></item><item><title>AWS SSO Setup</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/aws_sso_setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/aws_sso_setup/</guid><description>&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">ALPHA&lt;/div>
+&lt;p>This page is in &lt;strong>alpha&lt;/strong> status. The content may change without notice.&lt;/p>
+&lt;/div>
+&lt;p>This guide walks you through the one-time AWS SSO configuration, session sign-in, and access verification needed before you can browse or download Parquet files.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>AWS CLI v2&lt;/strong> installed (&lt;a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">install guide&lt;/a>)&lt;/li>
+&lt;li>Access to the Haltian Parquet S3 bucket via AWS SSO (Microsoft Entra ID)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Values provided by Haltian:&lt;/strong>&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Value&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>&amp;lt;BUCKET_NAME&amp;gt;&lt;/code>&lt;/td>
+ &lt;td>The name of the S3 bucket&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>{organizationId}&lt;/code>&lt;/td>
+ &lt;td>Your organisation UUID&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="1-configure-aws-sso-one-time-setup">1. Configure AWS SSO (one-time setup)&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>aws configure sso
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>When prompted, enter:&lt;/p></description></item><item><title>Downloading Parquet files with AWS CLI</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/parquet_aws_cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/parquet_aws_cli/</guid><description>&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">ALPHA&lt;/div>
+&lt;p>This page is in &lt;strong>alpha&lt;/strong> status. The content may change without notice.&lt;/p>
+&lt;/div>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Works on Windows, macOS, and Linux&lt;/div>
+&lt;p>The AWS CLI works identically on all platforms. Install from the &lt;a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">AWS CLI install guide&lt;/a>.
+On &lt;strong>Windows&lt;/strong>, use PowerShell or Command Prompt — the &lt;code>aws&lt;/code> commands are the same.&lt;/p>
+&lt;/div>
+&lt;h2 id="what-you-need-from-haltian">What You Need from Haltian&lt;/h2>
+&lt;p>Before you start, contact Haltian to receive the following credentials. &lt;strong>All three values are provided by Haltian&lt;/strong> — you cannot look them up yourself.&lt;/p></description></item><item><title>Accessing Parquet Files via IAM Role</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/parquet_iam_role/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/parquet_iam_role/</guid><description>&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">ALPHA&lt;/div>
+&lt;p>This page is in &lt;strong>alpha&lt;/strong> status. The content may change without notice.&lt;/p>
+&lt;/div>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">When to use this method&lt;/div>
+&lt;p>Use this guide if you need &lt;strong>programmatic or automated access&lt;/strong> from your own AWS account (e.g., scheduled pipelines, Kubernetes workloads, or custom applications). If you access data interactively using AWS SSO, see &lt;a href="../aws_sso_setup/">AWS SSO Setup&lt;/a> and &lt;a href="../parquet_aws_cli/">Download Parquet (AWS CLI)&lt;/a> instead.&lt;/p>
+&lt;/div>
+&lt;h2 id="how-it-works">How It Works&lt;/h2>
+&lt;p>Haltian stores data files in a private S3 bucket in Haltian&amp;rsquo;s AWS account. To let you read those files, you create an &lt;strong>IAM role&lt;/strong> in &lt;em>your&lt;/em> AWS account. You then share the role&amp;rsquo;s &lt;strong>ARN&lt;/strong> (Amazon Resource Name) with Haltian. Haltian adds that ARN to the bucket&amp;rsquo;s access policy, and from that point your code can assume the role to list and download files.&lt;/p></description></item><item><title>Folder Structure</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/folder-structure/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/folder-structure/</guid><description>&lt;h2 id="directory-layout">Directory Layout&lt;/h2>
+&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">Two active path formats&lt;/div>
+&lt;p>Both the old and new Parquet exporters are currently active and writing to the same S3 bucket under different prefixes. During the transition period, files for the same time period will exist in both locations. See &lt;a href="../parquet-exporter-usage/#schema-versioning">Schema Versioning&lt;/a> for details.&lt;/p>
+&lt;/div>
+&lt;h3 id="new-path-format-current">New path format (current)&lt;/h3>
+&lt;pre tabindex="0">&lt;code>parquet/
+└── v1/
+ └── {organizationId}/
+ ├── devices/
+ │ └── {year}/
+ │ └── {month}/
+ │ └── {YYYY_MM_DD_HHMM}_{YYYY_MM_DD_HHMM}_devices.parquet
+ ├── organizations/
+ ├── spaces/
+ ├── zones/
+ ├── deviceGroups/
+ ├── deviceGroupDevices/
+ ├── deviceKeywords/
+ ├── deviceNotes/
+ ├── measurementAmbientTemperature/
+ ├── measurementBatteryPercentage/
+ ├── measurementBatteryVoltage/
+ ├── measurementBootCount/
+ ├── measurementCO2/
+ ├── measurementDirectionalMovement/
+ ├── measurementDistance/
+ ├── measurementOccupancySeconds/
+ ├── measurementOccupancyStatus/
+ ├── measurementOccupantsCount/
+ ├── measurementPosition/
+ ├── measurementPositionZone/
+ ├── measurementSystemTemperature/
+ └── measurementTVOC/
+&lt;/code>&lt;/pre>&lt;h3 id="old-path-format-legacy">Old path format (legacy)&lt;/h3>
+&lt;pre tabindex="0">&lt;code>parquet/
+└── {organizationId}/
+ ├── device/
+ │ └── {year}/
+ │ └── {month}/
+ │ └── {YYYY_MM_DD_HH}_{dataType}.parquet
+ ├── deviceGroup/
+ ├── deviceGroupDevices/
+ ├── deviceKeyword/
+ ├── measurementAmbientTemperature/
+ ├── measurementBatteryPercentage/
+ ├── measurementBatteryVoltage/
+ ├── measurementBootCount/
+ ├── measurementCO2/
+ ├── measurementDirectionalMovement/
+ ├── measurementDistance/
+ ├── measurementOccupancySeconds/
+ ├── measurementOccupancyStatus/
+ ├── measurementOccupantsCount/
+ ├── measurementPosition/
+ ├── measurementPositionZone/
+ ├── measurementTVOC/
+ ├── organization/
+ ├── space/
+ └── zone/
+&lt;/code>&lt;/pre>&lt;h2 id="entity-folders">Entity Folders&lt;/h2>
+&lt;p>Each entity type has its own top-level folder. Folder names differ slightly between the old and new path formats (singular vs. plural):&lt;/p></description></item><item><title>Schema Reference</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/schema-reference-v1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/schema-reference-v1/</guid><description>&lt;h2 id="data-types">Data Types&lt;/h2>
+&lt;p>All Parquet files use these Apache Arrow/Parquet data types:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Type&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>string&lt;/code>&lt;/td>
+ &lt;td>UTF-8 encoded text&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>bool&lt;/code>&lt;/td>
+ &lt;td>Boolean (&lt;code>true&lt;/code> / &lt;code>false&lt;/code>)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>int64&lt;/code>&lt;/td>
+ &lt;td>64-bit signed integer&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>decimal128(38, 20)&lt;/code>&lt;/td>
+ &lt;td>128-bit decimal, precision 38, scale 20 (default for &lt;code>numeric&lt;/code> columns)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>decimal256&lt;/code>&lt;/td>
+ &lt;td>256-bit decimal (used when inferred precision exceeds 38)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>timestamp[us, tz=UTC]&lt;/code>&lt;/td>
+ &lt;td>Microsecond-precision UTC timestamp&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="entity-schemas">Entity Schemas&lt;/h2>
+&lt;h3 id="organization">Organization&lt;/h3>
+&lt;p>Organization metadata.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Column&lt;/th>
+ &lt;th>Type&lt;/th>
+ &lt;th style="text-align: center">Nullable&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>id&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td>Unique identifier (UUID)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>name&lt;/code>&lt;/td>
+ &lt;td>string&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td>Organization name&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>createdAt&lt;/code>&lt;/td>
+ &lt;td>timestamp&lt;/td>
+ &lt;td style="text-align: center">✗&lt;/td>
+ &lt;td>Creation timestamp&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>updatedAt&lt;/code>&lt;/td>
+ &lt;td>timestamp&lt;/td>
+ &lt;td style="text-align: center">✓&lt;/td>
+ &lt;td>Last update timestamp&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="device">Device&lt;/h3>
+&lt;p>IoT device inventory and properties.&lt;/p></description></item><item><title>Schema Reference (Legacy)</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/schema-reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/schema-reference/</guid><description>&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">Legacy Schema&lt;/div>
+&lt;p>This page documents the &lt;strong>old Parquet exporter&lt;/strong> schema. For the current exporter (v1), see the &lt;a href="../schema-reference-v1/">Schema Reference&lt;/a>. Key differences include renamed columns (&lt;code>ts&lt;/code> → &lt;code>measuredAt&lt;/code>, &lt;code>status&lt;/code> → &lt;code>isOccupied&lt;/code>, &lt;code>model&lt;/code> → &lt;code>modelType&lt;/code>), removal of &lt;code>organizationId&lt;/code> from all files, and removal of &lt;code>installationStatus&lt;/code>. See the &lt;a href="../parquet-exporter-migration/">Migration Guide&lt;/a> for the full list of changes.&lt;/p>
+&lt;/div>
+&lt;h2 id="data-types">Data Types&lt;/h2>
+&lt;p>All Parquet files use these Apache Arrow/Parquet data types:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Type&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>string&lt;/code>&lt;/td>
+ &lt;td>UTF-8 encoded text&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>int8&lt;/code>&lt;/td>
+ &lt;td>8-bit signed integer&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>int32&lt;/code>&lt;/td>
+ &lt;td>32-bit signed integer&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>uint32&lt;/code>&lt;/td>
+ &lt;td>32-bit unsigned integer&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>float&lt;/code>&lt;/td>
+ &lt;td>32-bit floating point&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>decimal128(10, 0)&lt;/code>&lt;/td>
+ &lt;td>128-bit decimal, precision 10, scale 0&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>timestamp[ms, tz=UTC]&lt;/code>&lt;/td>
+ &lt;td>Millisecond-precision UTC timestamp&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h2 id="entity-schemas">Entity Schemas&lt;/h2>
+&lt;h3 id="organization">Organization&lt;/h3>
+&lt;p>Organization metadata.&lt;/p></description></item><item><title>Integration Examples</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/integration-examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/integration-examples/</guid><description>&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">Two active path formats&lt;/div>
+&lt;p>Both the old and new Parquet exporters are currently writing to the same S3 bucket under different prefixes. The examples on this page use the new path format (&lt;code>parquet/v1/...&lt;/code>) and new column names. See &lt;a href="../parquet-exporter-migration/">Migration Guide&lt;/a> and &lt;a href="../folder-structure/">Folder Structure&lt;/a> for the differences.&lt;/p>
+&lt;/div>
+&lt;h2 id="python-with-pandas">Python with Pandas&lt;/h2>
+&lt;p>Read Parquet files directly into pandas DataFrames:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">pandas&lt;/span> &lt;span style="color:#204a87;font-weight:bold">as&lt;/span> &lt;span style="color:#000">pd&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Read a single file&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">df&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">pd&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">read_parquet&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;devices/2026/03/2026_03_20_0000_2026_03_20_0000_devices.parquet&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Read all files in a directory&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">import&lt;/span> &lt;span style="color:#000">glob&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">files&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">glob&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">glob&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;measurementOccupancyStatus/2026/03/*.parquet&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">df&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">pd&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">concat&lt;/span>&lt;span style="color:#000;font-weight:bold">([&lt;/span>&lt;span style="color:#000">pd&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">.&lt;/span>&lt;span style="color:#000">read_parquet&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">f&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> &lt;span style="color:#000">f&lt;/span> &lt;span style="color:#204a87;font-weight:bold">in&lt;/span> &lt;span style="color:#000">files&lt;/span>&lt;span style="color:#000;font-weight:bold">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic"># Filter by time range&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">df_filtered&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">df&lt;/span>&lt;span style="color:#000;font-weight:bold">[(&lt;/span>&lt;span style="color:#000">df&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;measuredAt&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;gt;=&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;2026-03-01&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">df&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;measuredAt&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">]&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;2026-04-01&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">)]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="python-with-pyarrow">Python with PyArrow&lt;/h2>
+&lt;p>For better performance with large datasets:&lt;/p></description></item><item><title>Web Data Access</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/web-data-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/web-data-access/</guid><description>&lt;p>Modern browsers can read Parquet files directly using JavaScript libraries. This enables building interactive analytics dashboards without any backend infrastructure.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Legacy sample data&lt;/div>
+&lt;p>The code examples on this page use the &lt;a href="../sample-data/">sample dataset&lt;/a>, which was exported with the &lt;strong>legacy&lt;/strong> Parquet exporter and uses old column names (e.g., &lt;code>ts&lt;/code>, &lt;code>status&lt;/code>, &lt;code>model&lt;/code>). Production data from the current exporter (v1) uses updated names (&lt;code>measuredAt&lt;/code>, &lt;code>isOccupied&lt;/code>, &lt;code>modelType&lt;/code>). See the &lt;a href="../parquet-exporter-migration/">Migration Guide&lt;/a> for the full mapping.&lt;/p></description></item><item><title>Migration Guide: Old to New Parquet Exporter</title><link>https://developer.haltian.io/haltian-iot/apis/data-api/parquet-exporter-migration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/data-api/parquet-exporter-migration/</guid><description>&lt;p>This page describes the differences between the old and new Parquet exporter. It covers breaking changes that require updates to your data pipelines, and new capabilities you can take advantage of.&lt;/p>
+&lt;h2 id="breaking-changes">Breaking Changes&lt;/h2>
+&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">Action required&lt;/div>
+&lt;p>The following changes affect all existing pipelines that read from the Parquet S3 bucket. You must update your S3 paths and column references before switching to the new exporter output.&lt;/p>
+&lt;/div>
+&lt;h3 id="1-s3-path-prefix-changed">1. S3 Path Prefix Changed&lt;/h3>
+&lt;p>The folder structure under the S3 bucket has changed. A schema version prefix (&lt;code>v1&lt;/code>) has been inserted after &lt;code>parquet/&lt;/code>.&lt;/p></description></item></channel></rss>

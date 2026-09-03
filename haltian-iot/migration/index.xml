@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Migrating from Thingsee IoT on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/migration/</link><description>Recent content in Migrating from Thingsee IoT on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/migration/index.xml" rel="self" type="application/rss+xml"/><item><title>Thingsee MQTT vs Haltian IoT MQTT</title><link>https://developer.haltian.io/haltian-iot/migration/mqtt-comparison/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/migration/mqtt-comparison/</guid><description>&lt;p>This guide provides a detailed comparison between Thingsee MQTT and Haltian IoT MQTT, helping you migrate your MQTT integrations.&lt;/p>
+&lt;h2 id="quick-comparison">Quick Comparison&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Aspect&lt;/th>
+ &lt;th>Thingsee MQTT&lt;/th>
+ &lt;th>Haltian IoT MQTT&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Authentication&lt;/td>
+ &lt;td>Client certificates (.pem, .key)&lt;/td>
+ &lt;td>API key (username/password)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Certificate Management&lt;/td>
+ &lt;td>Renewed by Haltian (12 months)&lt;/td>
+ &lt;td>Self-service via IoT Studio (90 days)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Device ID&lt;/td>
+ &lt;td>TUID (in path and data)&lt;/td>
+ &lt;td>UUID (in path only)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Topic Structure&lt;/td>
+ &lt;td>Flat with region codes&lt;/td>
+ &lt;td>Hierarchical with event types&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Data Format&lt;/td>
+ &lt;td>Complex JSON with metadata&lt;/td>
+ &lt;td>Streamlined JSON&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="authentication">Authentication&lt;/h2>
+&lt;h3 id="thingsee-mqtt">Thingsee MQTT&lt;/h3>
+&lt;ul>
+&lt;li>Uses client certificates (&lt;code>.pem&lt;/code> and &lt;code>.key&lt;/code> files)&lt;/li>
+&lt;li>Certificates provided by Haltian&lt;/li>
+&lt;li>No username or password required&lt;/li>
+&lt;li>TLS encryption with certificate validation&lt;/li>
+&lt;/ul>
+&lt;h3 id="haltian-iot-mqtt">Haltian IoT MQTT&lt;/h3>
+&lt;ul>
+&lt;li>Uses API key authentication&lt;/li>
+&lt;li>API Key ID as username, API Key Token as password&lt;/li>
+&lt;li>No client certificates needed&lt;/li>
+&lt;li>TLS encryption&lt;/li>
+&lt;/ul>
+&lt;h2 id="credentials-validity">Credentials Validity&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Platform&lt;/th>
+ &lt;th>Validity Period&lt;/th>
+ &lt;th>Renewal Method&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Thingsee&lt;/td>
+ &lt;td>12 months&lt;/td>
+ &lt;td>Haltian renews; old certs remain valid&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Haltian IoT&lt;/td>
+ &lt;td>90 days&lt;/td>
+ &lt;td>Self-service via IoT Studio; old token invalidated&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">Important&lt;/div>
+&lt;p>When a Haltian IoT API key token is refreshed, the previous token becomes invalid immediately.&lt;/p></description></item><item><title>Measurement Mapping</title><link>https://developer.haltian.io/haltian-iot/migration/measurement-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/migration/measurement-mapping/</guid><description>&lt;p>This page provides a complete mapping between &lt;strong>Thingsee IoT message profiles&lt;/strong> (tsmId + field) and the corresponding &lt;strong>Haltian IoT measurement types&lt;/strong>. Use this as a reference when migrating your data parsing, integrations, or analytics from Thingsee to Haltian IoT.&lt;/p>
+&lt;h2 id="how-to-read-this-table">How to Read This Table&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Column&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Thingsee tsmId&lt;/strong>&lt;/td>
+ &lt;td>The Thingsee message profile ID&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Thingsee Field&lt;/strong>&lt;/td>
+ &lt;td>The JSON field name in the Thingsee message payload&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Thingsee Devices&lt;/strong>&lt;/td>
+ &lt;td>Device models that send this message&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>HIoT Measurement Type&lt;/strong>&lt;/td>
+ &lt;td>The Haltian IoT measurement type name (used in GraphQL API)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>HIoT Query Field&lt;/strong>&lt;/td>
+ &lt;td>The field name used in GraphQL queries&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Unit&lt;/strong>&lt;/td>
+ &lt;td>Unit of measurement&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="key-differences">Key Differences&lt;/h2>
+&lt;p>In Thingsee IoT, a single message (e.g. tsmId &lt;code>12100&lt;/code>) can contain multiple sensor readings bundled together (&lt;code>temp&lt;/code>, &lt;code>humd&lt;/code>, &lt;code>airp&lt;/code>, &lt;code>lght&lt;/code>). Your application must parse the message type and extract relevant fields.&lt;/p></description></item><item><title>AI-Assisted Migration</title><link>https://developer.haltian.io/haltian-iot/migration/ai-migration-assistant/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/migration/ai-migration-assistant/</guid><description>&lt;p>Use these prompts with your preferred AI assistant (ChatGPT, Claude, Gemini, etc.) to get hands-on help migrating your integration code. Each prompt contains the full technical context needed — just paste your existing code at the end.&lt;/p>
+&lt;h2 id="how-to-use">How to Use&lt;/h2>
+&lt;div class="alert alert-danger" role="alert">&lt;div class="h4 alert-heading" role="heading">Security: Redact Credentials&lt;/div>
+&lt;p>Before pasting code into any AI tool, &lt;strong>remove or mask&lt;/strong> all sensitive values: API keys, passwords, tokens, certificates, private keys, connection strings, and internal hostnames. Replace them with synthetic placeholders (e.g. &lt;code>YOUR_API_KEY_HERE&lt;/code>, &lt;code>mqtt.example.com&lt;/code>).&lt;/p></description></item><item><title>Migration FAQ</title><link>https://developer.haltian.io/haltian-iot/migration/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/migration/faq/</guid><description>&lt;h2 id="do-my-thingsee-devices-need-hardware-replacement">Do my Thingsee devices need hardware replacement?&lt;/h2>
+&lt;p>No. Your existing Thingsee sensors and gateways continue to work on Haltian IoT. The migration happens at the cloud layer — gateways receive a firmware update that redirects their connection from Thingsee Operations Cloud to Haltian IoT. No physical device changes are needed.&lt;/p>
+&lt;p>For details, see &lt;a href="../#migration-process">Migration Process&lt;/a>.&lt;/p>
+&lt;h2 id="will-there-be-downtime-during-migration">Will there be downtime during migration?&lt;/h2>
+&lt;p>No. Each migration phase runs in parallel with your existing Thingsee setup. Data mirroring ensures your devices never stop reporting, and your current integrations keep working until you explicitly switch them over.&lt;/p></description></item></channel></rss>

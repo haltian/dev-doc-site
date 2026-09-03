@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian IoT Gateway N8 on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/</link><description>Recent content in Haltian IoT Gateway N8 on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/installation/</guid><description>&lt;h2 id="physical-installation">Physical Installation&lt;/h2>
+&lt;h3 id="mounting-options">Mounting Options&lt;/h3>
+&lt;p>The Gateway N8 supports multiple mounting configurations for different deployment scenarios.&lt;/p>
+&lt;h4 id="wall-mounting">Wall Mounting&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Mark Mounting Points&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Use mounting holes on rear panel as template&lt;/li>
+&lt;li>Spacing: 100mm horizontal, 60mm vertical&lt;/li>
+&lt;li>Ensure surface can support 500g load&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Install Mounting Screws&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Use 2 x M4 screws (not included)&lt;/li>
+&lt;li>Drill pilot holes for drywall/wood installations&lt;/li>
+&lt;li>Leave 2-3mm gap for mounting slots&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Secure Gateway&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Align mounting slots with screw heads&lt;/li>
+&lt;li>Slide gateway down to lock in place&lt;/li>
+&lt;li>Verify secure mounting before cable connection&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="desktop-placement">Desktop Placement&lt;/h4>
+&lt;ul>
+&lt;li>Place on flat, stable surface&lt;/li>
+&lt;li>Ensure adequate ventilation (10cm clearance on all sides)&lt;/li>
+&lt;li>Position away from heat sources and direct sunlight&lt;/li>
+&lt;/ul>
+&lt;h3 id="dimensional-requirements">Dimensional Requirements&lt;/h3>
+&lt;p>&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/devices/GatewayN8_measurements.png" alt="Gateway N8 dimensions">&lt;/p></description></item><item><title>Configuration</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/configuration/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The Gateway N8 can be configured for various network topologies and operational parameters. Configuration is performed through the Haltian IoT Studio web interface or via local access methods.&lt;/p>
+&lt;h2 id="network-configuration">Network Configuration&lt;/h2>
+&lt;h3 id="ethernet-configuration">Ethernet Configuration&lt;/h3>
+&lt;p>&lt;strong>DHCP Mode (Default):&lt;/strong>&lt;/p>
+&lt;p>The gateway obtains IP address automatically from DHCP server:&lt;/p>
+&lt;ol>
+&lt;li>Connect Ethernet cable to network&lt;/li>
+&lt;li>Gateway requests IP via DHCP&lt;/li>
+&lt;li>Registers with assigned IP address&lt;/li>
+&lt;li>Verifies connectivity to Haltian cloud&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Static IP Configuration:&lt;/strong>&lt;/p>
+&lt;p>For networks without DHCP or requiring fixed addresses, Haltian configures the following parameters upon request:&lt;/p></description></item><item><title>Operation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/operation/</guid><description>&lt;h2 id="normal-operation">Normal Operation&lt;/h2>
+&lt;h3 id="startup-sequence">Startup Sequence&lt;/h3>
+&lt;p>Gateway boot process typically takes 30-60 seconds:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Power On&lt;/strong> (0-5 seconds)&lt;/p>
+&lt;ul>
+&lt;li>Power LED illuminates&lt;/li>
+&lt;li>Hardware initialization&lt;/li>
+&lt;li>Self-test procedures&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Network Initialization&lt;/strong> (5-15 seconds)&lt;/p>
+&lt;ul>
+&lt;li>Network interfaces activate&lt;/li>
+&lt;li>DHCP request (if configured)&lt;/li>
+&lt;li>NTP synchronization&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Cloud Connection&lt;/strong> (15-30 seconds)&lt;/p>
+&lt;ul>
+&lt;li>TLS connection establishment&lt;/li>
+&lt;li>Authentication and registration&lt;/li>
+&lt;li>Certificate validation&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Wirepas Mesh Start&lt;/strong> (30-45 seconds)&lt;/p>
+&lt;ul>
+&lt;li>BLE radio initialization&lt;/li>
+&lt;li>Network scanning&lt;/li>
+&lt;li>Sink role activation&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Operational&lt;/strong> (45-60 seconds)&lt;/p>
+&lt;ul>
+&lt;li>Ready to route sensor data&lt;/li>
+&lt;li>LED indicates normal status&lt;/li>
+&lt;li>All services running&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="network-management">Network Management&lt;/h2>
+&lt;h3 id="wirepas-mesh-network">Wirepas Mesh Network&lt;/h3>
+&lt;p>&lt;strong>Network Formation:&lt;/strong>&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/specifications/</guid><description>&lt;h2 id="hardware-specifications">Hardware Specifications&lt;/h2>
+&lt;h3 id="processor">Processor&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Component&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Main CPU&lt;/strong>&lt;/td>
+ &lt;td>NXP i.MX 8M Nano Arm Cortex A53&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Architecture&lt;/strong>&lt;/td>
+ &lt;td>ARM 64-bit&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Cores&lt;/strong>&lt;/td>
+ &lt;td>Single core&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Clock Speed&lt;/strong>&lt;/td>
+ &lt;td>1500 MHz&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Co-processor&lt;/strong>&lt;/td>
+ &lt;td>Arm Cortex M7 @650MHz&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Use Case&lt;/strong>&lt;/td>
+ &lt;td>Low-power operations, real-time tasks&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="memory--storage">Memory &amp;amp; Storage&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Component&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>RAM&lt;/strong>&lt;/td>
+ &lt;td>1GB DDR4&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Storage&lt;/strong>&lt;/td>
+ &lt;td>8GB eMMC&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Expandable Storage&lt;/strong>&lt;/td>
+ &lt;td>MicroSD card slot (up to 128GB)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Boot Storage&lt;/strong>&lt;/td>
+ &lt;td>eMMC (primary), MicroSD (fallback)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="io-interfaces">I/O Interfaces&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Interface&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Notes&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>USB 2.0&lt;/strong>&lt;/td>
+ &lt;td>1 port&lt;/td>
+ &lt;td>Type-A connector&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Ethernet&lt;/strong>&lt;/td>
+ &lt;td>1 x RJ45 10/100/1000 Mbps&lt;/td>
+ &lt;td>Gigabit capable&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>BLE 5.0&lt;/strong>&lt;/td>
+ &lt;td>1 x nRF52833 SDR&lt;/td>
+ &lt;td>Wirepas compatible&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Expansion Header&lt;/strong>&lt;/td>
+ &lt;td>1 internal connector&lt;/td>
+ &lt;td>GPIO, UART, I2C&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Console Port&lt;/strong>&lt;/td>
+ &lt;td>Internal UART&lt;/td>
+ &lt;td>Debug and configuration&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="wireless-connectivity">Wireless Connectivity&lt;/h3>
+&lt;h4 id="wirepas-mesh-ble-50">Wirepas Mesh (BLE 5.0)&lt;/h4>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Feature&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Radio Chipset&lt;/strong>&lt;/td>
+ &lt;td>Nordic nRF52833&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Frequency&lt;/strong>&lt;/td>
+ &lt;td>2.4 GHz ISM band&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Channels&lt;/strong>&lt;/td>
+ &lt;td>0-39 (40 channels)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Sensitivity&lt;/strong>&lt;/td>
+ &lt;td>-95 dBm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>TX Power&lt;/strong>&lt;/td>
+ &lt;td>Up to +8 dBm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Range&lt;/strong>&lt;/td>
+ &lt;td>5-25m indoor, up to 100m LoS&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Max Sensors&lt;/strong>&lt;/td>
+ &lt;td>200-500 (depending on message rate)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h4 id="cellular-lte-version-only">Cellular (LTE Version Only)&lt;/h4>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Feature&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Technology&lt;/strong>&lt;/td>
+ &lt;td>LTE Cat 4 with 3G/2G fallback&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>LTE Bands&lt;/strong>&lt;/td>
+ &lt;td>Region-specific, see regional specs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>3G Bands&lt;/strong>&lt;/td>
+ &lt;td>UMTS/HSPA+&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>2G Bands&lt;/strong>&lt;/td>
+ &lt;td>GSM/GPRS/EDGE&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>SIM&lt;/strong>&lt;/td>
+ &lt;td>Micro SIM (3FF)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Antenna&lt;/strong>&lt;/td>
+ &lt;td>External SMA connector&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Max Download&lt;/strong>&lt;/td>
+ &lt;td>150 Mbps (LTE Cat 4)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Max Upload&lt;/strong>&lt;/td>
+ &lt;td>50 Mbps (LTE Cat 4)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>LTE Frequency Bands (Example - Verify for region):&lt;/strong>&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist">Quick Diagnostic Checklist&lt;/h2>
+&lt;p>Before detailed troubleshooting, verify these basics:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Power LED illuminated (power connected and working)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Network cable connected securely (Ethernet deployments)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Gateway appears in Haltian IoT Studio (cloud connected)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Firmware version is current (check for updates)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> No recent configuration changes (review change log)&lt;/li>
+&lt;/ul>
+&lt;h2 id="power-issues">Power Issues&lt;/h2>
+&lt;h3 id="gateway-wont-power-on">Gateway Won&amp;rsquo;t Power On&lt;/h3>
+&lt;p>&lt;strong>Symptom:&lt;/strong> No LEDs illuminate when power is connected.&lt;/p>
+&lt;p>&lt;strong>Possible Causes and Solutions:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>No Power to Gateway&lt;/strong>&lt;/p></description></item></channel></rss>

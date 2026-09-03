@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian EH Locator on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/</link><description>Recent content in Haltian EH Locator on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/index.xml" rel="self" type="application/rss+xml"/><item><title>Operation</title><link>https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/operation/</guid><description>&lt;h2 id="operating-modes">Operating Modes&lt;/h2>
+&lt;p>The EH Locator operates in two modes, configurable via &lt;strong>Haltian Field&lt;/strong>.&lt;/p>
+&lt;h3 id="router-mode">Router Mode&lt;/h3>
+&lt;p>In router mode, the EH Locator actively participates in the Wirepas mesh network:&lt;/p>
+&lt;ul>
+&lt;li>Receives and transmits BLE messages from asset tags and other routers&lt;/li>
+&lt;li>Transmits beacon messages every second (configurable) for positioning&lt;/li>
+&lt;li>Requires USB-C or sufficient light harvesting for continuous operation&lt;/li>
+&lt;li>Can operate up to &lt;strong>10 days&lt;/strong> on battery alone during power outages&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../images/eh-locator-router-mode-leds.png" alt="Router mode: Both Power LED and Network LED are green">&lt;/p></description></item><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/installation/</guid><description>&lt;h2 id="installation-overview">Installation Overview&lt;/h2>
+&lt;p>The Haltian EH Locator offers flexible installation options to suit various environments. This guide covers three primary mounting methods:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Indoor Light Mount&lt;/strong> - Attach to ceiling light fixtures using energy harvesting&lt;/li>
+&lt;li>&lt;strong>Cable Shelf Mount&lt;/strong> - Mount on cable management or ceiling infrastructure with USB-C power&lt;/li>
+&lt;li>&lt;strong>Wall Mount&lt;/strong> - Install on walls at recommended height with USB-C power&lt;/li>
+&lt;/ol>
+&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">Before Installation&lt;/div>
+&lt;p>Ensure the Haltian IoT Gateway is operational and connected before installing EH Locators. Locators require an active Wirepas mesh network to function properly.&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/specifications/</guid><description>&lt;h2 id="physical-characteristics">Physical Characteristics&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Dimensions&lt;/strong>&lt;/td>
+ &lt;td>142.4 mm × 90.4 mm × 12.4 mm (5.6&amp;quot; × 3.6&amp;quot; × 0.5&amp;quot;)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Weight&lt;/strong>&lt;/td>
+ &lt;td>138g / 4.86 oz (158g / 5.57 oz with bracket)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>IP Rating&lt;/strong>&lt;/td>
+ &lt;td>IP40 (indoor use only)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Usage&lt;/strong>&lt;/td>
+ &lt;td>Indoor use only&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img src="../images/eh-locator-dimensions.png" alt="Haltian EH Locator dimensions and measurements">&lt;/p>
+&lt;h2 id="electrical">Electrical&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Battery&lt;/strong>&lt;/td>
+ &lt;td>Li-ion 1,850 mAh&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Power Input&lt;/strong>&lt;/td>
+ &lt;td>USB-C 5V (or PoE-USB-C adapter)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Energy Harvesting&lt;/strong>&lt;/td>
+ &lt;td>Integrated solar panel (indoor/outdoor light)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Max TX Power&lt;/strong>&lt;/td>
+ &lt;td>+4 dBm&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="battery-life">Battery Life&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Operating Mode&lt;/th>
+ &lt;th>Battery Life (no external power)&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Router Mode&lt;/strong>&lt;/td>
+ &lt;td>Up to 10 days (fully charged battery)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Beacon Mode&lt;/strong>&lt;/td>
+ &lt;td>Up to 4 years (fully charged battery)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Battery&lt;/div>
+&lt;p>The internal battery is not user-replaceable. Contact Haltian support if battery replacement is needed.&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/troubleshooting/</guid><description>&lt;h2 id="power-led-issues">Power LED Issues&lt;/h2>
+&lt;h3 id="power-led-off-or-blinking-indoor-light-harvesting">Power LED off or blinking (indoor light harvesting)&lt;/h3>
+&lt;ul>
+&lt;li>Measure lux levels at installation height&lt;/li>
+&lt;li>Relocate to a brighter area (closer to light source)&lt;/li>
+&lt;li>Switch to USB-C power if light is insufficient&lt;/li>
+&lt;li>Check that solar panel is not blocked or obstructed&lt;/li>
+&lt;/ul>
+&lt;h3 id="power-led-off-when-using-usb-c">Power LED off when using USB-C&lt;/h3>
+&lt;ul>
+&lt;li>Verify USB-C cable is fully inserted&lt;/li>
+&lt;li>Test power adapter with another device&lt;/li>
+&lt;li>Check power outlet functionality&lt;/li>
+&lt;li>Try a different USB-C cable&lt;/li>
+&lt;li>Verify the power switch is in the ON position&lt;/li>
+&lt;/ul>
+&lt;h2 id="network-led-issues">Network LED Issues&lt;/h2>
+&lt;h3 id="network-led-blinking-red">Network LED blinking red&lt;/h3>
+&lt;p>&lt;strong>Network Error:&lt;/strong>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Integrations on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/integrations/</link><description>Recent content in Integrations on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/integrations/index.xml" rel="self" type="application/rss+xml"/><item><title>ThingsBoard Integration</title><link>https://developer.haltian.io/haltian-iot/integrations/thingsboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/integrations/thingsboard/</guid><description>&lt;span class="badge bg-haltian-clay-orange text-dark badge-status">Alpha&lt;/span>
+
+&lt;p>ThingsBoard is an open-source IoT platform for data collection, processing, visualization, and device management. This guide shows how to integrate Haltian IoT data with ThingsBoard.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>Haltian IoT MQTT credentials (API key ID and token)&lt;/li>
+&lt;li>ThingsBoard instance (Cloud or self-hosted)&lt;/li>
+&lt;li>Device ID mapping (UUID to physical device)&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Credentials&lt;/div>
+&lt;p>Contact &lt;a href="mailto:support@haltian.com">support@haltian.com&lt;/a> or your Haltian account manager for MQTT credentials.&lt;/p>
+&lt;/div>
+&lt;h2 id="architecture">Architecture&lt;/h2>
+&lt;pre class="mermaid">%%{init: {&amp;#39;theme&amp;#39;: &amp;#39;base&amp;#39;, &amp;#39;themeVariables&amp;#39;: {&amp;#39;primaryColor&amp;#39;: &amp;#39;#F6FAFA&amp;#39;, &amp;#39;primaryTextColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;primaryBorderColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;lineColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;secondaryColor&amp;#39;: &amp;#39;#C7FDE6&amp;#39;, &amp;#39;tertiaryColor&amp;#39;: &amp;#39;#73F9C1&amp;#39;, &amp;#39;clusterBkg&amp;#39;: &amp;#39;#ffffff&amp;#39;, &amp;#39;clusterBorder&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;edgeLabelBackground&amp;#39;: &amp;#39;#ffffff&amp;#39;}}}%%
+graph LR
+ A[Haltian Sensors] --&amp;gt; B[Haltian IoT Platform]
+ B --&amp;gt; C[MQTT Broker]
+ C --&amp;gt; D[ThingsBoard&amp;lt;br/&amp;gt;MQTT Integration]
+ D --&amp;gt; E[Uplink Converter]
+ E --&amp;gt; F[ThingsBoard&amp;lt;br/&amp;gt;Device Entities]
+ F --&amp;gt; G[Dashboards]
+ 
+ style B fill:#143633,stroke:#143633,color:#fff
+ style D fill:#73f9c1,stroke:#143633,color:#143633&lt;/pre>
+&lt;h2 id="step-1-create-uplink-converter">Step 1: Create Uplink Converter&lt;/h2>
+&lt;p>The uplink converter transforms Haltian IoT MQTT messages into ThingsBoard format.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CBOR Reference on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-air/cbor-reference/</link><description>Recent content in CBOR Reference on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-air/cbor-reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Uplink Messages</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-air/cbor-reference/uplink/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-air/cbor-reference/uplink/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This page documents the CBOR-encoded messages that Thingsee AIR transmits &lt;strong>from&lt;/strong> the sensor to the gateway over the Wirepas mesh network.&lt;/p>
+&lt;p>For the Haltian IoT Platform equivalent (JSON over MQTT/GraphQL), see &lt;a href="../../uplink-messages/">Data Output&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Wirepas endpoint:&lt;/strong> &lt;code>21/21&lt;/code>
+&lt;strong>MQTT topic:&lt;/strong> &lt;code>haltian-iot/wirepas/gw-event/received_data/{gateway-id}/sink1/{network-id}/21/21&lt;/code>&lt;/p>
+&lt;p>Each message is identified by &lt;code>tsmId&lt;/code> (message structure ID). Examples below are shown in both &lt;strong>JSON&lt;/strong> (decoded CBOR) and &lt;strong>CBOR&lt;/strong> (numeric indexes as transmitted on the wire).&lt;/p>
+&lt;hr>
+&lt;h2 id="carbon-dioxide-level-tsmid-24100">Carbon Dioxide Level (tsmId 24100)&lt;/h2>
+&lt;p>The primary air quality message. Reports current CO₂ concentration and measurement status.&lt;/p></description></item><item><title>Downlink Commands</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-air/cbor-reference/downlink/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-air/cbor-reference/downlink/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This page documents the CBOR-encoded commands sent &lt;strong>to&lt;/strong> Thingsee AIR over the Wirepas mesh network for device configuration.&lt;/p>
+&lt;p>For the Haltian IoT Platform equivalent (GraphQL Service API), see &lt;a href="../../downlink-messages/">Configuration Commands&lt;/a>.&lt;/p>
+&lt;h2 id="commandresponse-pattern">Command/Response Pattern&lt;/h2>
+&lt;p>All CBOR downlink messages follow the same pattern:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Send command&lt;/strong> — Set &lt;code>tsmEv: 30&lt;/code>, include &lt;code>tsmDstTuid&lt;/code> (target device) and &lt;code>transactionId&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Receive response&lt;/strong> — Sensor replies with &lt;code>tsmEv: 31&lt;/code>, same &lt;code>transactionId&lt;/code>, all fields populated with current values&lt;/li>
+&lt;li>&lt;strong>Verify&lt;/strong> — Compare response values against command to confirm settings applied&lt;/li>
+&lt;li>&lt;strong>Query only&lt;/strong> — Send with only header fields (no config parameters) to read current configuration&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Wirepas endpoint:&lt;/strong> &lt;code>21/21&lt;/code>&lt;/p></description></item></channel></rss>
