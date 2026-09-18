@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Guides &amp; Tutorials on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/guides/</link><description>Recent content in Guides &amp; Tutorials on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/guides/index.xml" rel="self" type="application/rss+xml"/><item><title>Building a Complete Application</title><link>https://developer.haltian.io/haltian-iot/guides/building-complete-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/building-complete-app/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This tutorial demonstrates how to build a complete Haltian IoT application that can:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Authenticate&lt;/strong> - Login and obtain access tokens&lt;/li>
+&lt;li>&lt;strong>Search&lt;/strong> - Find devices by name, serial number, or ID&lt;/li>
+&lt;li>&lt;strong>Display Data&lt;/strong> - Show device measurements and position&lt;/li>
+&lt;li>&lt;strong>Show Context&lt;/strong> - Display building/floor information when device is in a space&lt;/li>
+&lt;/ol>
+&lt;p>This tutorial provides complete, working GraphQL queries that any AI agent or developer can use to build a functional application.&lt;/p></description></item><item><title>MQTT API Key Management</title><link>https://developer.haltian.io/haltian-iot/guides/mqtt-api-key-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/mqtt-api-key-management/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>To receive real-time sensor data via MQTT, you need an &lt;strong>integration&lt;/strong> and an &lt;strong>API key&lt;/strong> linked to it. This guide shows how to create and manage these credentials programmatically using GraphQL mutations.&lt;/p>
+&lt;div class="alert alert-primary" role="alert">&lt;div class="h4 alert-heading" role="heading">Prerequisites&lt;/div>
+&lt;ul>
+&lt;li>A user account with &lt;strong>Organization Manager&lt;/strong> role&lt;/li>
+&lt;li>The GraphQL API endpoint: &lt;code>https://haltian-iot-api.eu.haltian.io/v1/graphql&lt;/code>&lt;/li>
+&lt;li>Familiarity with the &lt;a href="../../apis/service-api/authentication/">Service API authentication flow&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h2 id="workflow-overview">Workflow Overview&lt;/h2>
+&lt;pre class="mermaid">%%{init: {&amp;#39;theme&amp;#39;: &amp;#39;base&amp;#39;, &amp;#39;themeVariables&amp;#39;: {&amp;#39;primaryColor&amp;#39;: &amp;#39;#F6FAFA&amp;#39;, &amp;#39;primaryTextColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;primaryBorderColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;lineColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;secondaryColor&amp;#39;: &amp;#39;#C7FDE6&amp;#39;, &amp;#39;tertiaryColor&amp;#39;: &amp;#39;#73F9C1&amp;#39;, &amp;#39;clusterBkg&amp;#39;: &amp;#39;#ffffff&amp;#39;, &amp;#39;clusterBorder&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;edgeLabelBackground&amp;#39;: &amp;#39;#ffffff&amp;#39;}}}%%
+flowchart TB
+ A[&amp;#34;fa:fa-sign-in-alt Step 1: Authenticate&amp;#34;] --&amp;gt; B[&amp;#34;fa:fa-plug Step 2: Create Integration&amp;#34;]
+ B --&amp;gt; C[&amp;#34;fa:fa-key Step 3: Create API Key&amp;#34;]
+ C --&amp;gt; D[&amp;#34;fa:fa-user-shield Step 4: Assign MqttIntegrator Role&amp;#34;]
+ D --&amp;gt; E[&amp;#34;fa:fa-link Step 5: Link API Key to Integration&amp;#34;]
+ E --&amp;gt; F[&amp;#34;fa:fa-broadcast-tower Ready to connect via MQTT&amp;#34;]
+
+ style A fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style B fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style C fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style D fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style E fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style F fill:#73F9C1,stroke:#143633,stroke-width:2px,color:#143633&lt;/pre>
+&lt;p>The setup involves five steps. Steps 2–5 only need to be done once per integration. After that, you only need to &lt;a href="#step-6-refresh-api-key-token">refresh the API key token&lt;/a> before it expires.&lt;/p></description></item><item><title>Real-Time Data Streaming</title><link>https://developer.haltian.io/haltian-iot/guides/real-time-data-streaming/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/real-time-data-streaming/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This tutorial demonstrates how to connect to Haltian IoT&amp;rsquo;s MQTT stream and receive real-time sensor data. You will learn to:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Connect&lt;/strong> - Establish secure MQTT connection with authentication&lt;/li>
+&lt;li>&lt;strong>Subscribe&lt;/strong> - Listen to specific device measurements&lt;/li>
+&lt;li>&lt;strong>Process&lt;/strong> - Parse and handle incoming sensor data&lt;/li>
+&lt;li>&lt;strong>Handle Errors&lt;/strong> - Implement reconnection and error handling&lt;/li>
+&lt;/ol>
+&lt;p>This tutorial provides complete, working code that any AI agent or developer can use to implement real-time data streaming.&lt;/p></description></item><item><title>Device Lookup by QR Code</title><link>https://developer.haltian.io/haltian-iot/guides/device-lookup-by-qr-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/device-lookup-by-qr-code/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Every Haltian IoT device has a unique QR code that can be scanned to instantly retrieve device information. This tutorial demonstrates how to:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Scan&lt;/strong> - Capture QR code data from physical device&lt;/li>
+&lt;li>&lt;strong>Extract&lt;/strong> - Parse TUID (legacy Thingsee Unique Identifier) from QR data&lt;/li>
+&lt;li>&lt;strong>Query&lt;/strong> - Look up device details via GraphQL API&lt;/li>
+&lt;li>&lt;strong>Process&lt;/strong> - Handle device information and display/store results&lt;/li>
+&lt;/ol>
+&lt;p>This tutorial provides complete, production-ready code for integrating QR code device lookup into applications.&lt;/p></description></item><item><title>Real-Time Location System (RTLS)</title><link>https://developer.haltian.io/haltian-iot/guides/location-tracking/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/location-tracking/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Haltian IoT includes a Real-Time Location System (RTLS) based on the &lt;a href="https://haltian.com/products/real-time-location-system-rtls/">Haltian Inventory Tracking Solution (HITS)&lt;/a>. This guide covers how to work with position data in your integrations — querying device locations, streaming real-time position updates, and analyzing movement patterns.&lt;/p>
+&lt;p>The system consists of:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Haltian NANO Tags&lt;/strong> and compatible Wirepas-enabled tags attached to tracked assets&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/">Haltian EH Locators&lt;/a>&lt;/strong> providing the positioning infrastructure (energy-harvesting, no cabling)&lt;/li>
+&lt;li>&lt;strong>Haltian Positioning Engine&lt;/strong> calculating positions server-side from collected RSSI data&lt;/li>
+&lt;li>&lt;strong>Haltian IoT APIs&lt;/strong> delivering position data to your applications&lt;/li>
+&lt;/ul>
+&lt;p>For physical deployment and locator grid planning, see &lt;a href="https://developer.haltian.io/haltian-iot/guides/hits-installation-planning/">HITS Installation Planning&lt;/a>.&lt;/p></description></item><item><title>HITS Installation Planning</title><link>https://developer.haltian.io/haltian-iot/guides/hits-installation-planning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/guides/hits-installation-planning/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This guide covers how to plan and deploy the complete Haltian Inventory Tracking Solution (HITS) infrastructure across a facility. It explains the spatial rules for placing gateways, EH Locators, and NANO Tags to achieve optimal inventory tracking and positioning accuracy.&lt;/p>
+&lt;p>&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/guides/hits-devices-relative-size.png" alt="NANO Tag, EH Locator, and Gateway at relative sizes">&lt;/p>
+&lt;p>For individual device mounting instructions, see:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://developer.haltian.io/haltian-iot/devices/tags/haltian-eh-locator/installation/">EH Locator Installation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://developer.haltian.io/haltian-iot/devices/tags/haltian-nano-tag/">NANO Tag&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-n8/installation/">IoT Gateway N8 Installation&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>Before installing infrastructure devices:&lt;/p></description></item></channel></rss>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian Gateway XS on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/</link><description>Recent content in Haltian Gateway XS on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/installation/</guid><description>&lt;h2 id="before-you-begin">Before You Begin&lt;/h2>
+&lt;h3 id="package-contents">Package Contents&lt;/h3>
+&lt;p>Verify you have received all components:&lt;/p>
+&lt;ul>
+&lt;li>Haltian Gateway XS unit&lt;/li>
+&lt;li>12V DC power supply&lt;/li>
+&lt;li>Cellular antenna (SMA connector)&lt;/li>
+&lt;li>2.4 GHz radio antenna (SMA connector)&lt;/li>
+&lt;li>Mounting accessories (TBD)&lt;/li>
+&lt;/ul>
+&lt;h3 id="additional-requirements">Additional Requirements&lt;/h3>
+&lt;p>You will need:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Power outlet&lt;/strong>: Standard AC outlet appropriate for your region&lt;/li>
+&lt;li>&lt;strong>Network access&lt;/strong>: Cellular coverage at the installation site&lt;/li>
+&lt;li>&lt;strong>Tools&lt;/strong>: Screwdriver for mounting (if required)&lt;/li>
+&lt;/ul>
+&lt;h3 id="pre-configured-connectivity">Pre-Configured Connectivity&lt;/h3>
+&lt;p>Cellular connectivity and SIM card are configured by Haltian before delivery. The gateway connects to the cellular network automatically after power-on — no SIM installation or network configuration is required by the customer.&lt;/p></description></item><item><title>Configuration</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/configuration/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The Gateway XS is designed for minimal customer configuration. Cellular connectivity is pre-configured by Haltian before delivery, and no customer network configuration is required for the standard deployment.&lt;/p>
+&lt;h2 id="cellular-connectivity">Cellular Connectivity&lt;/h2>
+&lt;p>The LTE cellular connection is fully managed by Haltian:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>SIM card&lt;/strong>: Pre-installed and configured — no customer action required&lt;/li>
+&lt;li>&lt;strong>Network registration&lt;/strong>: Automatic on power-on&lt;/li>
+&lt;li>&lt;strong>APN settings&lt;/strong>: Pre-configured&lt;/li>
+&lt;li>&lt;strong>Connection management&lt;/strong>: Handled by gateway firmware&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Note&lt;/div>
+&lt;p>If you need to deploy the gateway in a location with specific network restrictions or requirements, contact Haltian support before installation.&lt;/p></description></item><item><title>Operation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/operation/</guid><description>&lt;h2 id="normal-operation">Normal Operation&lt;/h2>
+&lt;h3 id="startup-sequence">Startup Sequence&lt;/h3>
+&lt;p>Gateway boot process takes approximately 60–90 seconds:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Power On&lt;/strong> (0-5 seconds)&lt;/p>
+&lt;ul>
+&lt;li>Hardware initialization&lt;/li>
+&lt;li>Self-test procedures&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Network Initialization&lt;/strong> (5-30 seconds)&lt;/p>
+&lt;ul>
+&lt;li>Network interfaces activate&lt;/li>
+&lt;li>Cellular registration&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Cloud Connection&lt;/strong> (30-60 seconds)&lt;/p>
+&lt;ul>
+&lt;li>TLS connection establishment&lt;/li>
+&lt;li>Authentication and registration&lt;/li>
+&lt;li>NTP synchronization&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Wirepas Mesh Start&lt;/strong> (60-90 seconds)&lt;/p>
+&lt;ul>
+&lt;li>2.4 GHz radio initialization&lt;/li>
+&lt;li>Network scanning&lt;/li>
+&lt;li>Sink role activation&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Note&lt;/div>
+&lt;p>The Gateway XS does not have user-visible status LEDs. Monitor operational state through Haltian Studio.&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/specifications/</guid><description>&lt;h2 id="hardware">Hardware&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Component&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Main CPU&lt;/strong>&lt;/td>
+ &lt;td>NXP i.MX9352&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Architecture&lt;/strong>&lt;/td>
+ &lt;td>ARM Cortex-A55, dual-core&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Clock speed&lt;/strong>&lt;/td>
+ &lt;td>1.7 GHz&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>RAM&lt;/strong>&lt;/td>
+ &lt;td>1 GB&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Storage&lt;/strong>&lt;/td>
+ &lt;td>16 GB internal&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Operating system&lt;/strong>&lt;/td>
+ &lt;td>Embedded Linux (Debian-based)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="connectivity">Connectivity&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Feature&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Ethernet interface&lt;/strong>&lt;/td>
+ &lt;td>RJ45&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Ethernet availability&lt;/strong>&lt;/td>
+ &lt;td>Physical port reserved for planned customer-specific LAN access; not part of the standard deployment&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Cellular technology&lt;/strong>&lt;/td>
+ &lt;td>LTE Cat1bis&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Cellular module&lt;/strong>&lt;/td>
+ &lt;td>SIMCOM SIM7672&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>SIM&lt;/strong>&lt;/td>
+ &lt;td>Pre-installed and configured by Haltian&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Antenna connectors&lt;/strong>&lt;/td>
+ &lt;td>External, SMA connector&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Customer setup&lt;/strong>&lt;/td>
+ &lt;td>No customer network configuration required&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Short-range radio&lt;/strong>&lt;/td>
+ &lt;td>Nordic nRF52840, 2.4 GHz ISM band&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Protocol support&lt;/strong>&lt;/td>
+ &lt;td>Wirepas Mesh, installed by default; Gateway XS operates as a mesh sink&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="security">Security&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Feature&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Hardware security&lt;/strong>&lt;/td>
+ &lt;td>NXP EdgeLock Secure Enclave + Arm OP-TEE&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Boot&lt;/strong>&lt;/td>
+ &lt;td>Secure boot with signed firmware&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Communication security&lt;/strong>&lt;/td>
+ &lt;td>Encrypted (TLS) to backend services&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Firmware signing&lt;/strong>&lt;/td>
+ &lt;td>Haltian secure firmware layer&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="electrical-and-physical">Electrical and Physical&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Input voltage&lt;/strong>&lt;/td>
+ &lt;td>12V DC&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Power supply&lt;/strong>&lt;/td>
+ &lt;td>External adapter (included)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Connector&lt;/strong>&lt;/td>
+ &lt;td>DC barrel jack&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Antenna connectors&lt;/strong>&lt;/td>
+ &lt;td>2x SMA (cellular + 2.4 GHz)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Mounting&lt;/strong>&lt;/td>
+ &lt;td>Wall mount bracket supported&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="environmental">Environmental&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Operating temperature&lt;/strong>&lt;/td>
+ &lt;td>0°C to +60°C&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Storage temperature&lt;/strong>&lt;/td>
+ &lt;td>-40°C to +85°C&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Humidity&lt;/strong>&lt;/td>
+ &lt;td>5% to 95% non-condensing&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>IP rating&lt;/strong>&lt;/td>
+ &lt;td>IP20 (indoor use only)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="regulatory-and-conformity-information">Regulatory and Conformity Information&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Item&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Manufacturer&lt;/strong>&lt;/td>
+ &lt;td>Haltian Oy&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Product name&lt;/strong>&lt;/td>
+ &lt;td>Haltian Gateway XS&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Model / product code&lt;/strong>&lt;/td>
+ &lt;td>TGWXS&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Intended use&lt;/strong>&lt;/td>
+ &lt;td>Fixed indoor gateway for secure cellular connectivity and local device management&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Applicable directives&lt;/strong>&lt;/td>
+ &lt;td>RED 2014/53/EU, EMC Directive 2014/30/EU, RoHS Directive 2011/65/EU&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Standards&lt;/strong>&lt;/td>
+ &lt;td>EN 301 489-1, EN 301 489-17, EN 301 489-52, EN 55032, EN 55035, EN IEC 61000-6-2, EN IEC 61000-6-3&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Regional approvals&lt;/strong>&lt;/td>
+ &lt;td>CE, UKCA, FCC, ICES, KC, VCCI, RCM&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Test report&lt;/strong>&lt;/td>
+ &lt;td>CTHEMC_144144&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Certificate reference&lt;/strong>&lt;/td>
+ &lt;td>CTHEMC_144144C&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Test laboratory&lt;/strong>&lt;/td>
+ &lt;td>Hermon Laboratories Ltd.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Test period&lt;/strong>&lt;/td>
+ &lt;td>July 1–September 15, 2025&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Note&lt;/div>
+&lt;p>The regulatory approvals and standards listed above are intended as a support reference for deployment and customer review. Confirm the latest applicable approvals for a specific market and installation environment before commercial deployment.&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist">Quick Diagnostic Checklist&lt;/h2>
+&lt;p>Before detailed troubleshooting, verify these basics:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Power supply connected and power supply LED is on&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Both antennas properly installed (finger-tight, no wobble)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Gateway appears in Haltian Studio (cloud connected)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Firmware version is current (check for updates)&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Note&lt;/div>
+&lt;p>The Gateway XS does not have user-visible status LEDs. All diagnostics are performed through Haltian Studio.&lt;/p>
+&lt;/div>
+&lt;h2 id="gateway-not-appearing-online">Gateway Not Appearing Online&lt;/h2>
+&lt;p>&lt;strong>Symptom:&lt;/strong> Gateway does not show as Online in Haltian Studio within 5 minutes of power-on.&lt;/p></description></item></channel></rss>

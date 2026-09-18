@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee BEAM on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/</link><description>Recent content in Thingsee BEAM on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/installation/</guid><description>&lt;h2 id="video-tutorial">Video Tutorial&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ohE_J5d6rQk?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="before-installation">Before Installation&lt;/h2>
+&lt;h3 id="prerequisites">Prerequisites&lt;/h3>
+&lt;ul>
+&lt;li>Thingsee Gateway is installed and operational (LED blinking green)&lt;/li>
+&lt;li>Installation surface is clean and dry&lt;/li>
+&lt;li>Plan sensor locations to maintain mesh network coverage&lt;/li>
+&lt;/ul>
+&lt;h3 id="network-coverage">Network Coverage&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Maximum distance&lt;/strong>: 20m between sensors or to gateway&lt;/li>
+&lt;li>Use intermediate sensors as routers for distances &amp;gt; 20m&lt;/li>
+&lt;li>Account for signal attenuation from fire doors, thick walls, metal structures, and dense building materials&lt;/li>
+&lt;/ul>
+&lt;h3 id="sensor-capabilities">Sensor Capabilities&lt;/h3>
+&lt;p>Thingsee BEAM measures the distance between the sensor and any solid surface using a Time-of-Flight (ToF) laser.&lt;/p></description></item><item><title>Operation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/operation/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee BEAM operates continuously once installed, automatically measuring distance to the target surface and reporting changes. The sensor uses Time-of-Flight (ToF) laser technology to provide accurate fill-level data for dispensers, bins, shelves, and other applications.&lt;/p>
+&lt;h2 id="automatic-operation">Automatic Operation&lt;/h2>
+&lt;p>Once powered on and connected to the Wirepas mesh network, Thingsee BEAM:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Measures distance&lt;/strong> every 5 minutes (default)&lt;/li>
+&lt;li>&lt;strong>Reports changes&lt;/strong> when the distance exceeds the configured threshold&lt;/li>
+&lt;li>&lt;strong>Sends periodic updates&lt;/strong> every hour regardless of changes&lt;/li>
+&lt;li>&lt;strong>Manages power&lt;/strong> automatically for optimal battery life&lt;/li>
+&lt;li>&lt;strong>Self-heals&lt;/strong> network connections after temporary disruptions&lt;/li>
+&lt;/ol>
+&lt;p>No manual intervention is required — the sensor operates autonomously.&lt;/p></description></item><item><title>Configuration</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/configuration/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee BEAM sensors are preconfigured from the factory with optimal default settings for most fill-level monitoring applications. Configuration changes are performed remotely by Haltian support.&lt;/p>
+&lt;p>To request configuration changes, contact &lt;a href="mailto:support@haltian.com">support@haltian.com&lt;/a> with your sensor IDs and desired settings.&lt;/p>
+&lt;h2 id="default-configuration">Default Configuration&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Default Value&lt;/th>
+ &lt;th>Purpose&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Measurement interval&lt;/td>
+ &lt;td>300 s (5 minutes)&lt;/td>
+ &lt;td>Distance sampling frequency&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Report interval&lt;/td>
+ &lt;td>3600 s (1 hour)&lt;/td>
+ &lt;td>Heartbeat if no change detected&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ranging mode&lt;/td>
+ &lt;td>Short range (40–1300 mm)&lt;/td>
+ &lt;td>Default measurement range&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ranging timing budget&lt;/td>
+ &lt;td>50 ms&lt;/td>
+ &lt;td>Balance between accuracy and power&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ranging ROI&lt;/td>
+ &lt;td>X1=4, Y1=4, X2=11, Y2=11&lt;/td>
+ &lt;td>Default beam width&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Accelerometer&lt;/td>
+ &lt;td>Disabled&lt;/td>
+ &lt;td>Optional tilt detection&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Temperature&lt;/td>
+ &lt;td>Disabled&lt;/td>
+ &lt;td>Optional temperature reporting&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Network role&lt;/td>
+ &lt;td>Routing&lt;/td>
+ &lt;td>Participates in mesh routing&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="configurable-parameters">Configurable Parameters&lt;/h2>
+&lt;h3 id="measurement-and-reporting-intervals">Measurement and Reporting Intervals&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Range&lt;/th>
+ &lt;th>Default&lt;/th>
+ &lt;th>Impact&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Measurement interval&lt;/td>
+ &lt;td>10 s – 24 h&lt;/td>
+ &lt;td>300 s (5 min)&lt;/td>
+ &lt;td>How often the sensor measures distance&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Report interval&lt;/td>
+ &lt;td>600 s – 24 h&lt;/td>
+ &lt;td>3600 s (1 hour)&lt;/td>
+ &lt;td>How often the sensor reports when no change detected&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Battery life impact:&lt;/strong>&lt;/p></description></item><item><title>Data Output</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/uplink-messages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/uplink-messages/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee BEAM produces measurement data that you can access through the &lt;strong>Haltian IoT Platform&lt;/strong> — receive JSON measurements via MQTT Stream API or query via GraphQL Service API.&lt;/p>
+&lt;p>This page documents the measurement types, payload formats, and how to access the data.&lt;/p>
+&lt;hr>
+&lt;h2 id="haltian-iot-measurements">Haltian IoT Measurements&lt;/h2>
+&lt;p>The BEAM sensor produces the following measurement types:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Measurement Type&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="#distance">&lt;code>distance&lt;/code>&lt;/a>&lt;/td>
+ &lt;td>Distance to target surface in mm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#batterypercentage">&lt;code>batteryPercentage&lt;/code>&lt;/a>&lt;/td>
+ &lt;td>Remaining battery level&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="#deviceorientation">&lt;code>deviceOrientation&lt;/code>&lt;/a>&lt;/td>
+ &lt;td>Accelerometer data (when enabled)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="distance">distance&lt;/h3>
+&lt;p>Reports the measured distance from the sensor to the nearest solid surface.&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/specifications/</guid><description>&lt;h2 id="product-overview">Product Overview&lt;/h2>
+&lt;p>&lt;strong>Model&lt;/strong>: Thingsee BEAM
+&lt;strong>Product Code&lt;/strong>: TSTF04
+&lt;strong>Device Model&lt;/strong>: &lt;code>com.haltian.device.tstf04&lt;/code>
+&lt;strong>Manufacturer&lt;/strong>: Haltian Oy, Finland
+&lt;strong>Purpose&lt;/strong>: Wireless IoT sensor for short distance measurement using Time-of-Flight (ToF) laser&lt;/p>
+&lt;h2 id="distance-measurement-specifications">Distance Measurement Specifications&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Technology&lt;/td>
+ &lt;td>Time-of-Flight (ToF) laser&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Measurement Range&lt;/td>
+ &lt;td>40–4000 mm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Short Range Mode&lt;/td>
+ &lt;td>40–1300 mm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Long Range Mode&lt;/td>
+ &lt;td>Up to 4000 mm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Ranging Accuracy&lt;/td>
+ &lt;td>±25 mm max&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Beam Width (ROI)&lt;/td>
+ &lt;td>15–27° adjustable cone&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ROI Configuration&lt;/td>
+ &lt;td>16×16 matrix, minimum 4×4&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Installation Angle&lt;/td>
+ &lt;td>90° recommended, ±6° adjustable&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Minimum Distance&lt;/td>
+ &lt;td>40 mm from target surface&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Laser Class&lt;/td>
+ &lt;td>Class 1 (safe under all conditions of normal use)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>Test conditions&lt;/strong>: Solid, matte, white surface at 140 mm reference distance.&lt;/p></description></item><item><title>Configuration Commands</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/downlink-messages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/thingsee-beam/downlink-messages/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee BEAM is configured remotely through the &lt;strong>Service API (GraphQL)&lt;/strong> — named commands with built-in validation and automatic encoding.&lt;/p>
+&lt;p>Configuration changes can also be requested via &lt;a href="mailto:support@haltian.com">support@haltian.com&lt;/a> if you do not have direct API access.&lt;/p>
+&lt;hr>
+&lt;h2 id="service-api-commands">Service API Commands&lt;/h2>
+&lt;p>The Service API provides named configuration commands that handle CBOR encoding, delivery, and validation automatically. Use these through the &lt;a href="https://developer.haltian.io/haltian-iot/apis/service-api/">Service API (GraphQL)&lt;/a>.&lt;/p>
+&lt;h3 id="available-commands">Available Commands&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Command&lt;/th>
+ &lt;th>Purpose&lt;/th>
+ &lt;th>Parameters&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>SetReportAndMeasurementInterval&lt;/code>&lt;/td>
+ &lt;td>Set reporting and measurement frequency&lt;/td>
+ &lt;td>&lt;code>reportInterval&lt;/code>, &lt;code>measurementInterval&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>GetReportAndMeasurementInterval&lt;/code>&lt;/td>
+ &lt;td>Read current intervals&lt;/td>
+ &lt;td>—&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>SetDeviceConfiguration&lt;/code>&lt;/td>
+ &lt;td>Set sensor-specific parameters&lt;/td>
+ &lt;td>&lt;code>rangingMode&lt;/code>, &lt;code>rangingTimingBudget&lt;/code>, &lt;code>rangingROI&lt;/code>, &lt;code>accelerometer&lt;/code>, &lt;code>temperature&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>GetDeviceConfiguration&lt;/code>&lt;/td>
+ &lt;td>Read current device configuration&lt;/td>
+ &lt;td>—&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="setreportandmeasurementinterval">SetReportAndMeasurementInterval&lt;/h3>
+&lt;p>Configures how frequently the sensor takes measurements and reports data to the cloud.&lt;/p></description></item></channel></rss>
