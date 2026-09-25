@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>APIs on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/apis/</link><description>Recent content in APIs on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/apis/index.xml" rel="self" type="application/rss+xml"/><item><title>Measurement Types Reference</title><link>https://developer.haltian.io/haltian-iot/apis/measurement-types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/measurement-types/</guid><description>&lt;p>This page provides a complete reference of all measurement types available in Haltian IoT.&lt;/p>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Measurements are sensor data values sent by Haltian IoT devices. Each measurement entry contains:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>deviceId&lt;/strong> - UUID of the device that generated the measurement&lt;/li>
+&lt;li>&lt;strong>measuredAt&lt;/strong> - Timestamp when the measurement was taken (timestamptz)&lt;/li>
+&lt;li>&lt;strong>[measurementField]&lt;/strong> - The measurement value (type varies by measurement)&lt;/li>
+&lt;/ul>
+&lt;h2 id="environmental-measurements">Environmental Measurements&lt;/h2>
+&lt;h3 id="ambient_temperature">ambient_temperature&lt;/h3>
+&lt;p>Ambient air temperature from environment sensors.&lt;/p>
+&lt;p>&lt;strong>Schema Type:&lt;/strong> &lt;code>measurementAmbientTemperature&lt;/code>&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Property&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>GraphQL Field&lt;/td>
+ &lt;td>&lt;code>ambientTemperature&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Data Type&lt;/td>
+ &lt;td>&lt;code>numeric&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Unit&lt;/td>
+ &lt;td>Degrees Celsius (°C)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Typical Range&lt;/td>
+ &lt;td>-40 to +85&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;deviceId&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;550e8400-e29b-41d4-a716-446655440000&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;measuredAt&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;2026-02-05T10:30:00.000Z&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ambientTemperature&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">23.5&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="humidity">humidity&lt;/h3>
+&lt;p>Relative humidity percentage from environment sensors.&lt;/p></description></item></channel></rss>

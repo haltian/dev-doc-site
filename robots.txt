@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://developer.haltian.io/sitemap.xml
+
+# LLM/AI-friendly content
+# See https://developer.haltian.io/llms.txt for AI-readable site summary

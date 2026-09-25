@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Viking Slim Wirepas on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/wirepas-ecosystem/confidex-slim/</link><description>Recent content in Viking Slim Wirepas on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/wirepas-ecosystem/confidex-slim/index.xml" rel="self" type="application/rss+xml"/><item><title>Activation</title><link>https://developer.haltian.io/haltian-iot/devices/wirepas-ecosystem/confidex-slim/activation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/wirepas-ecosystem/confidex-slim/activation/</guid><description>&lt;h2 id="before-you-start">Before you start&lt;/h2>
+&lt;p>Make sure NFC is enabled on the phone used for activation. Use one of these supported setups:&lt;/p>
+&lt;ul>
+&lt;li>An NFC-capable iPhone with the Haltian Field app&lt;/li>
+&lt;li>An Android device with the NFC Tools app by Wakdev, or another NFC read/write application capable of writing a text record to the tag&lt;/li>
+&lt;/ul>
+&lt;p>There are two ways to activate the tag: using a magnet, or using a phone&amp;rsquo;s NFC functionality.&lt;/p>
+&lt;h2 id="activate-the-tag-with-a-magnet">Activate the tag with a magnet&lt;/h2>
+&lt;ol>
+&lt;li>Place a magnet at the middle of the front of the tag.&lt;/li>
+&lt;li>The tag LED blinks to indicate activation.&lt;/li>
+&lt;/ol>
+&lt;h2 id="activate-and-verify-with-the-haltian-field-app-ios">Activate and verify with the Haltian Field app (iOS)&lt;/h2>
+&lt;ol>
+&lt;li>Open the Haltian Field app and use its NFC tag function.&lt;/li>
+&lt;li>Select &lt;strong>Switch ON&lt;/strong> to activate the tag, or &lt;strong>Switch OFF&lt;/strong> to deactivate it.&lt;/li>
+&lt;li>Use &lt;strong>Read&lt;/strong> to check the current status reported by the tag.&lt;/li>
+&lt;/ol>
+&lt;h2 id="activate-the-tag-with-nfc-tools-android">Activate the tag with NFC Tools (Android)&lt;/h2>
+&lt;ol>
+&lt;li>Open NFC Tools on the Android device.&lt;/li>
+&lt;li>Hold the tag against the back of the phone so the app can read its technical data.&lt;/li>
+&lt;li>Open the &lt;strong>Write&lt;/strong> tab and select &lt;strong>Add a Record&lt;/strong>.&lt;/li>
+&lt;li>Select &lt;strong>Text&lt;/strong> and enter &lt;code>start&lt;/code> in lowercase.&lt;/li>
+&lt;li>Make sure there is no trailing space after &lt;code>start&lt;/code>.&lt;/li>
+&lt;li>Select &lt;strong>OK&lt;/strong>, then select &lt;strong>Write&lt;/strong>.&lt;/li>
+&lt;li>When the app displays &lt;strong>Approach NFC Tag&lt;/strong>, hold the tag against the back of the phone again.&lt;/li>
+&lt;li>Confirm the activation by checking that the tag LED flashes.&lt;/li>
+&lt;/ol>
+&lt;p>The NFC transmitter location varies between phone models, so move the tag across the back of the phone if it is not detected immediately.&lt;/p></description></item><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/wirepas-ecosystem/confidex-slim/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/wirepas-ecosystem/confidex-slim/installation/</guid><description>&lt;h2 id="before-installation">Before installation&lt;/h2>
+&lt;p>Verify that the HITS infrastructure is operating:&lt;/p>
+&lt;ul>
+&lt;li>The gateway is installed and started.&lt;/li>
+&lt;li>EH Locators are installed and started, with at least one Locator operating in &lt;strong>router&lt;/strong> mode within range.&lt;/li>
+&lt;li>The tag can communicate with the installed positioning infrastructure.&lt;/li>
+&lt;/ul>
+&lt;p>Keep the distance to the nearest installed tag below 20 m as a deployment guideline. During installation, avoid strong nearby RF sources such as Wi-Fi routers.&lt;/p>
+&lt;h2 id="choose-the-installation-location">Choose the installation location&lt;/h2>
+&lt;ul>
+&lt;li>Keep the installation temperature below +60 °C during operation.&lt;/li>
+&lt;li>Choose a location where the tag is protected from impacts.&lt;/li>
+&lt;li>Avoid placing the tag deep inside metal structures, which can reduce signal quality.&lt;/li>
+&lt;li>Use a dry, suitable mounting surface and appropriate mounting hardware.&lt;/li>
+&lt;/ul>
+&lt;p>The Confidex Slim tag is rated IP64: dust-tight and protected against splashing water. This rating does not make the tag suitable for immersion or high-pressure water exposure.&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/wirepas-ecosystem/confidex-slim/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/wirepas-ecosystem/confidex-slim/specifications/</guid><description>&lt;h2 id="confirmed-data">Confirmed data&lt;/h2>
+&lt;p>The following values are available in the Confidex Slim installation guide and the manufacturer product page.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Product name&lt;/td>
+ &lt;td>Viking Slim Wirepas&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Model ID&lt;/td>
+ &lt;td>&lt;code>com.confidex.device.viking-slim-wirepas&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Dimensions&lt;/td>
+ &lt;td>74.5 × 32 × 14.5 mm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Radio chipset&lt;/td>
+ &lt;td>Nordic Semiconductor nRF52832&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Frequency&lt;/td>
+ &lt;td>2.4 GHz&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Protocol&lt;/td>
+ &lt;td>Wirepas Mesh v5.2&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Battery&lt;/td>
+ &lt;td>Replaceable coin cell&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Configuration&lt;/td>
+ &lt;td>Remotely over the Wirepas mesh network, or manually via NFC&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Network role&lt;/td>
+ &lt;td>Anchor node or tag node in a Wirepas Massive network&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Protection rating&lt;/td>
+ &lt;td>IP64&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Recommended distance to nearest installed tag&lt;/td>
+ &lt;td>Less than 20 m&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Activation interface&lt;/td>
+ &lt;td>NFC&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="available-measurements">Available measurements&lt;/h2>
+&lt;p>The following measurement types are available for this device in the Haltian IoT inventory:&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/devices/wirepas-ecosystem/confidex-slim/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/wirepas-ecosystem/confidex-slim/troubleshooting/</guid><description>&lt;h2 id="the-phone-does-not-detect-the-tag">The phone does not detect the tag&lt;/h2>
+&lt;ul>
+&lt;li>Confirm that NFC is enabled.&lt;/li>
+&lt;li>Hold the tag against the back of the phone.&lt;/li>
+&lt;li>Move the tag across the phone because NFC transmitter locations vary by model.&lt;/li>
+&lt;li>On Android, confirm that NFC Tools is open.&lt;/li>
+&lt;/ul>
+&lt;h2 id="activation-does-not-complete">Activation does not complete&lt;/h2>
+&lt;ul>
+&lt;li>Enter exactly &lt;code>start&lt;/code> in lowercase.&lt;/li>
+&lt;li>Remove any trailing spaces from the text record.&lt;/li>
+&lt;li>Select &lt;strong>Write&lt;/strong> after creating the record.&lt;/li>
+&lt;li>Read the tag again and check whether the status is &lt;strong>On&lt;/strong>.&lt;/li>
+&lt;li>Repeat the read/write operation if necessary.&lt;/li>
+&lt;/ul>
+&lt;h2 id="the-led-does-not-flash">The LED does not flash&lt;/h2>
+&lt;p>Repeat the NFC write operation and hold the tag directly against the phone when the app displays &lt;strong>Approach NFC Tag&lt;/strong>.&lt;/p></description></item></channel></rss>

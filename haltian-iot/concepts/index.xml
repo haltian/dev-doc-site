@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Concepts on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/concepts/</link><description>Recent content in Concepts on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/concepts/index.xml" rel="self" type="application/rss+xml"/><item><title>Data Model</title><link>https://developer.haltian.io/haltian-iot/concepts/data-model/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/concepts/data-model/</guid><description>&lt;p>Haltian IoT organizes data in a hierarchical model that mirrors the physical world: organizations contain spaces, spaces contain zones, and devices are placed within spaces to produce measurements. This page explains each entity and how they relate.&lt;/p>
+&lt;h2 id="entity-overview">Entity Overview&lt;/h2>
+&lt;pre class="mermaid">%%{init: {&amp;#39;theme&amp;#39;: &amp;#39;base&amp;#39;, &amp;#39;themeVariables&amp;#39;: {&amp;#39;primaryColor&amp;#39;: &amp;#39;#F6FAFA&amp;#39;, &amp;#39;primaryTextColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;primaryBorderColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;lineColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;secondaryColor&amp;#39;: &amp;#39;#C7FDE6&amp;#39;, &amp;#39;tertiaryColor&amp;#39;: &amp;#39;#73F9C1&amp;#39;, &amp;#39;clusterBkg&amp;#39;: &amp;#39;#ffffff&amp;#39;, &amp;#39;clusterBorder&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;edgeLabelBackground&amp;#39;: &amp;#39;#ffffff&amp;#39;}}}%%
+flowchart TB
+ subgraph Org[&amp;#34;fa:fa-building Organization&amp;#34;]
+ direction TB
+ subgraph SpaceHierarchy[&amp;#34;Space Hierarchy&amp;#34;]
+ Location[&amp;#34;fa:fa-map-marker-alt Location&amp;#34;]
+ Building[&amp;#34;fa:fa-city Building&amp;#34;]
+ Floor[&amp;#34;fa:fa-layer-group Floor&amp;#34;]
+ Location --&amp;gt; Building --&amp;gt; Floor
+ end
+ subgraph ZoneLayer[&amp;#34;Zones&amp;#34;]
+ Zone[&amp;#34;fa:fa-vector-square Zone&amp;#34;]
+ end
+ Floor --&amp;gt; Zone
+ subgraph DeviceLayer[&amp;#34;Devices&amp;#34;]
+ Device[&amp;#34;fa:fa-microchip Device&amp;#34;]
+ DeviceGroup[&amp;#34;fa:fa-object-group Device Group&amp;#34;]
+ end
+ subgraph DataLayer[&amp;#34;Data&amp;#34;]
+ Measurement[&amp;#34;fa:fa-chart-line Measurement&amp;#34;]
+ end
+ Floor --- Device
+ Device --&amp;gt; DeviceGroup
+ Device --&amp;gt; Measurement
+ DeviceGroup --&amp;gt; Measurement
+ end
+
+ style Org fill:#ffffff,stroke:#143633,stroke-width:3px,color:#143633
+ style SpaceHierarchy fill:#ffffff,stroke:#143633,stroke-width:2px,color:#143633
+ style ZoneLayer fill:#ffffff,stroke:#143633,stroke-width:2px,color:#143633
+ style DeviceLayer fill:#ffffff,stroke:#143633,stroke-width:2px,color:#143633
+ style DataLayer fill:#ffffff,stroke:#143633,stroke-width:2px,color:#143633
+ style Location fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style Building fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style Floor fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style Zone fill:#C7FDE6,stroke:#143633,stroke-width:2px,color:#143633
+ style Device fill:#73F9C1,stroke:#143633,stroke-width:2px,color:#143633
+ style DeviceGroup fill:#73F9C1,stroke:#143633,stroke-width:2px,color:#143633
+ style Measurement fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633&lt;/pre>
+&lt;h2 id="organization">Organization&lt;/h2>
+&lt;p>An &lt;strong>organization&lt;/strong> is the top-level entity in Haltian IoT. Everything — spaces, devices, users, API keys — belongs to an organization.&lt;/p></description></item><item><title>Event-Based Measurements</title><link>https://developer.haltian.io/haltian-iot/concepts/event-based-measurements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/concepts/event-based-measurements/</guid><description>&lt;p>Haltian IoT measurements are &lt;strong>event-driven&lt;/strong>, not periodic time-series samples. This is the single most important concept for anyone consuming sensor data — whether through the &lt;a href="https://developer.haltian.io/haltian-iot/apis/stream-api/">Stream API&lt;/a>, the &lt;a href="https://developer.haltian.io/haltian-iot/apis/data-api/">Data API&lt;/a>, or the &lt;a href="https://developer.haltian.io/haltian-iot/apis/service-api/">Service API&lt;/a>.&lt;/p>
+&lt;h2 id="why-events-not-samples">Why Events, Not Samples?&lt;/h2>
+&lt;p>Traditional IoT platforms sample data at fixed intervals (e.g., every 60 seconds), producing a steady stream of readings whether or not anything changed. Haltian IoT takes a different approach: &lt;strong>devices report only when something meaningful happens&lt;/strong>.&lt;/p></description></item><item><title>Device Identity</title><link>https://developer.haltian.io/haltian-iot/concepts/device-identity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/concepts/device-identity/</guid><description>&lt;p>Every Haltian IoT device carries multiple identifiers, each used in different contexts. Understanding which identifier to use — and how to map between them — is essential for API integration, field installation, and data analysis.&lt;/p>
+&lt;h2 id="the-identity-problem">The Identity Problem&lt;/h2>
+&lt;p>A single sensor might be referenced as:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>&lt;code>TSPR04EZU31901021&lt;/code>&lt;/strong> on the QR code sticker&lt;/li>
+&lt;li>&lt;strong>&lt;code>15056570&lt;/code>&lt;/strong> in Wirepas mesh traffic&lt;/li>
+&lt;li>&lt;strong>&lt;code>a3b7c9d0-1234-5678-90ab-cdef01234567&lt;/code>&lt;/strong> in API responses and MQTT topics&lt;/li>
+&lt;/ul>
+&lt;p>These are all the same device. The platform maps between them, but you need to know which identifier to use in each context.&lt;/p></description></item><item><title>Indoor Positioning System</title><link>https://developer.haltian.io/haltian-iot/concepts/indoor-positioning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/concepts/indoor-positioning/</guid><description>&lt;p>The &lt;strong>Haltian Inventory Tracking Solution (HITS)&lt;/strong> provides real-time indoor positioning for tracking assets and devices within buildings. The system uses Wirepas mesh networks and RSSI-based patented positioning algorithms to calculate device positions, delivering location data through the platform&amp;rsquo;s standard APIs. Energy-harvesting locators enable wireless installation with no changes to existing buildings or networks.&lt;/p>
+&lt;h2 id="how-positioning-works">How Positioning Works&lt;/h2>
+&lt;pre class="mermaid">%%{init: {&amp;#39;theme&amp;#39;: &amp;#39;base&amp;#39;, &amp;#39;themeVariables&amp;#39;: {&amp;#39;primaryColor&amp;#39;: &amp;#39;#F6FAFA&amp;#39;, &amp;#39;primaryTextColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;primaryBorderColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;lineColor&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;secondaryColor&amp;#39;: &amp;#39;#C7FDE6&amp;#39;, &amp;#39;tertiaryColor&amp;#39;: &amp;#39;#73F9C1&amp;#39;, &amp;#39;clusterBkg&amp;#39;: &amp;#39;#ffffff&amp;#39;, &amp;#39;clusterBorder&amp;#39;: &amp;#39;#143633&amp;#39;, &amp;#39;edgeLabelBackground&amp;#39;: &amp;#39;#ffffff&amp;#39;}}}%%
+flowchart TB
+ subgraph North[&amp;#34;fa:fa-desktop Applications&amp;#34;]
+ Finder[&amp;#34;Haltian Finder&amp;#34;]
+ Studio[&amp;#34;Haltian IoT Studio&amp;#34;]
+ Custom[&amp;#34;Custom Applications&amp;#34;]
+ end
+
+ subgraph Cloud[&amp;#34;fa:fa-cloud Haltian IoT Cloud&amp;#34;]
+ Ingest[&amp;#34;Ingestion&amp;#34;]
+ PosEngine[&amp;#34;Haltian Positioning Engine&amp;#34;]
+ Store[&amp;#34;Data Store&amp;#34;]
+ StreamAPI[&amp;#34;Stream API&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;MQTT&amp;lt;/i&amp;gt;&amp;#34;]
+ ServiceAPI[&amp;#34;Service API&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;GraphQL&amp;lt;/i&amp;gt;&amp;#34;]
+ DataAPI[&amp;#34;Data API&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Parquet&amp;lt;/i&amp;gt;&amp;#34;]
+ Ingest --&amp;gt; PosEngine --&amp;gt; Store
+ Store --&amp;gt; StreamAPI
+ Store --&amp;gt; ServiceAPI
+ Store --&amp;gt; DataAPI
+ end
+
+ subgraph GW[&amp;#34;fa:fa-server Gateway&amp;#34;]
+ Sink[&amp;#34;Wirepas Sink&amp;#34;]
+ Proc[&amp;#34;Gateway Processor&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;CBOR → JSON&amp;lt;/i&amp;gt;&amp;#34;]
+ Sink --&amp;gt; Proc
+ end
+
+ subgraph South[&amp;#34;fa:fa-broadcast-tower Positioning Infrastructure&amp;#34;]
+ direction LR
+ L1[&amp;#34;EH Locator&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Router mode&amp;lt;/i&amp;gt;&amp;#34;]
+ L2[&amp;#34;EH Locator&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Beacon mode&amp;lt;/i&amp;gt;&amp;#34;]
+ L3[&amp;#34;EH Locator&amp;lt;br/&amp;gt;&amp;lt;i&amp;gt;Router mode&amp;lt;/i&amp;gt;&amp;#34;]
+ end
+
+ subgraph Tags[&amp;#34;fa:fa-tag Tracked Devices&amp;#34;]
+ direction LR
+ T1[&amp;#34;NANO Tag&amp;#34;]
+ T2[&amp;#34;NANO Tag&amp;#34;]
+ T3[&amp;#34;NANO Tag&amp;#34;]
+ end
+
+ T1 &amp;amp; T2 &amp;amp; T3 --&amp;gt;|&amp;#34;BLE DA&amp;lt;br/&amp;gt;broadcast&amp;#34;| L1 &amp;amp; L2 &amp;amp; L3
+ L1 &amp;amp; L3 --&amp;gt;|&amp;#34;Wirepas Mesh&amp;lt;br/&amp;gt;AES-128&amp;#34;| Sink
+ Proc --&amp;gt;|&amp;#34;LTE / Ethernet&amp;lt;br/&amp;gt;TLS&amp;#34;| Ingest
+ StreamAPI &amp;amp; ServiceAPI &amp;amp; DataAPI --&amp;gt; Finder &amp;amp; Studio &amp;amp; Custom
+
+ style North fill:#ffffff,stroke:#143633,stroke-width:2px,color:#143633
+ style Cloud fill:#ffffff,stroke:#143633,stroke-width:2px,color:#143633
+ style GW fill:#ffffff,stroke:#143633,stroke-width:2px,color:#143633
+ style South fill:#ffffff,stroke:#143633,stroke-width:2px,color:#143633
+ style Tags fill:#ffffff,stroke:#143633,stroke-width:2px,color:#143633
+ style PosEngine fill:#73F9C1,stroke:#143633,stroke-width:2px,color:#143633
+ style L1 fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style L2 fill:#C7FDE6,stroke:#143633,stroke-width:2px,color:#143633
+ style L3 fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style T1 fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style T2 fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style T3 fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style Sink fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style Proc fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style Ingest fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style Store fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style StreamAPI fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style ServiceAPI fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style DataAPI fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style Finder fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style Studio fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633
+ style Custom fill:#F6FAFA,stroke:#143633,stroke-width:2px,color:#143633&lt;/pre>
+&lt;p>Position calculation follows five steps:&lt;/p></description></item></channel></rss>
