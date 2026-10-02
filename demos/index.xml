@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Demos on Haltian Developer Documentation</title><link>https://developer.haltian.io/demos/</link><description>Recent content in Demos on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/demos/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Ready Data Demonstration - Meeting Room Occupancy</title><link>https://developer.haltian.io/demos/ai-demonstration-meeting-room-occupancy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/demos/ai-demonstration-meeting-room-occupancy/</guid><description>&lt;p>This demo visualizes &lt;strong>Taika Meeting room&lt;/strong> occupancy for the full month of January 2026. Data shows occupancy status during Finnish office hours (Monday-Friday, 8:00-16:00 EET/EEST). All data is loaded directly from the Haltian IoT Data API.&lt;/p>
+&lt;h2 id="what-you-can-build">What You Can Build&lt;/h2>
+&lt;p>Our platform delivers structured, &lt;strong>AI-ready data&lt;/strong> — you bring your preferred tools. Feed it to ChatGPT, Power BI, Python, or any analytics platform and build exactly what your facility needs. This page includes an AI prompt you can copy — &lt;a href="#build-this-with-ai">jump to prompt →&lt;/a>&lt;/p></description></item><item><title>AI Ready Data Demonstration - Indoor Environmental Quality</title><link>https://developer.haltian.io/demos/ai-demonstration-indoor-environment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/demos/ai-demonstration-indoor-environment/</guid><description>&lt;p>This demo visualizes &lt;strong>three environmental metrics&lt;/strong> from the Taika Meeting Room for a workweek in January 2026. Each metric gets its own heatmap strip with a continuous color gradient — revealing patterns that a single composite score would hide. All data is loaded directly from the Haltian IoT Data API.&lt;/p>
+&lt;h2 id="what-you-can-build">What You Can Build&lt;/h2>
+&lt;p>Our platform delivers structured, &lt;strong>AI-ready data&lt;/strong> — you bring your preferred tools. Feed it to ChatGPT, Power BI, Python, or any analytics platform and build exactly what your facility needs. This page includes an AI prompt you can copy — &lt;a href="#build-this-with-ai">jump to prompt →&lt;/a>&lt;/p></description></item><item><title>Service API — Device Explorer</title><link>https://developer.haltian.io/demos/device-explorer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/demos/device-explorer/</guid><description>&lt;p>This demo connects &lt;strong>directly to the Haltian IoT Service API&lt;/strong> (GraphQL) from your browser. Log in with demo credentials, search for devices by name or identifier, and explore their real-time data including measurements, metadata, and file attachments.&lt;/p>
+&lt;div class="alert alert-success" role="alert">&lt;div class="h4 alert-heading" role="heading">What You Can Build&lt;/div>
+&lt;p>This device explorer was &lt;strong>created by AI in minutes&lt;/strong> from Haltian IoT data. Our platform delivers structured, AI-ready data via GraphQL — you bring your preferred tools. Feed it to ChatGPT, Power BI, Python, or any analytics platform and build exactly what your facility needs. This page includes an AI prompt you can copy — &lt;a href="#build-this-with-ai">jump to prompt →&lt;/a>&lt;/p></description></item><item><title>Stream API — MQTT Live Stream</title><link>https://developer.haltian.io/demos/mqtt-live-stream/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/demos/mqtt-live-stream/</guid><description>&lt;p>This demo connects to the &lt;strong>Haltian IoT MQTT Stream&lt;/strong> and displays live sensor data as it arrives in real-time. Watch the actual MQTT topics and JSON payloads from sensors deployed in the Haltian Oulu office.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Learn More&lt;/div>
+&lt;p>This demo showcases the &lt;a href="https://developer.haltian.io/haltian-iot/apis/stream-api/">Stream API&lt;/a> — MQTT-based real-time data streaming. Each message shows the complete topic path and JSON payload structure. See the &lt;a href="https://developer.haltian.io/haltian-iot/guides/real-time-data-streaming/">Real-Time Data Streaming Guide&lt;/a> for implementation details.&lt;/p>
+&lt;/div>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Demo Mode&lt;/div>
+&lt;p>&lt;strong>This demo replays recorded sensor data&lt;/strong> from actual Haltian IoT devices deployed in the Oulu office. While the measurements are real and were originally captured via MQTT from the haltiansalesdemo broker, they are being replayed here to demonstrate what real-time MQTT data flow looks like. The topic structure and JSON payload format match the production Stream API exactly.&lt;/p></description></item><item><title>Parquet Data Demo</title><link>https://developer.haltian.io/demos/parquet-data-demo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/demos/parquet-data-demo/</guid><description>&lt;p>This demo loads &lt;strong>real data&lt;/strong> directly from Parquet files and displays the organizational hierarchy. All data is fetched and processed in your browser using &lt;a href="https://github.com/hyparam/hyparquet">hyparquet&lt;/a>.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Learn More&lt;/div>
+&lt;p>This demo showcases data from the Haltian IoT platform. Learn how to access this data programmatically via the &lt;a href="https://developer.haltian.io/haltian-iot/apis/data-api/">Data API&lt;/a>.&lt;/p>
+&lt;/div>
+&lt;div class="alert alert-success" role="alert">&lt;div class="h4 alert-heading" role="heading">Build Your Own&lt;/div>
+
+
+This page includes an &lt;strong>AI prompt&lt;/strong> you can copy to recreate or customize this demo with your preferred AI assistant. &lt;a href="#build-this-with-ai">Jump to prompt →&lt;/a>
+&lt;/div>
+
+&lt;style>
+/* Haltian Brand Colors */
+:root {
+ --haltian-radiant-green: #73F9C1;
+ --haltian-nordic-water: #143633;
+ --haltian-nordic-water-light: #2E4C49;
+ --haltian-clay-orange: #FF8862;
+ --haltian-grey-white: #F6FAFA;
+}
+.demo-browser {
+ background: var(--haltian-nordic-water);
+ border-radius: 12px;
+ padding: 24px;
+ margin: 20px 0;
+ color: #fff;
+ font-family: 'Montserrat', sans-serif;
+}
+.demo-header {
+ text-align: center;
+ margin-bottom: 24px;
+ padding-bottom: 16px;
+ border-bottom: 1px solid var(--haltian-nordic-water-light);
+}
+.demo-header h2 {
+ color: var(--haltian-radiant-green);
+ margin: 0 0 8px 0;
+ font-size: 1.5rem;
+}
+.demo-header p {
+ color: rgba(255,255,255,0.7);
+ margin: 0;
+ font-size: 0.9rem;
+}
+.demo-status {
+ background: var(--haltian-nordic-water-light);
+ border: 1px solid rgba(115, 249, 193, 0.3);
+ border-radius: 8px;
+ padding: 12px 16px;
+ margin-bottom: 20px;
+ font-size: 0.9rem;
+ color: var(--haltian-radiant-green);
+}
+.demo-status.error {
+ background: rgba(239, 68, 68, 0.2);
+ border-color: rgba(239, 68, 68, 0.3);
+ color: #fca5a5;
+}
+.demo-status.success {
+ background: rgba(115, 249, 193, 0.15);
+ border-color: rgba(115, 249, 193, 0.4);
+ color: var(--haltian-radiant-green);
+}
+.stats-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+ gap: 12px;
+ margin-bottom: 24px;
+}
+.stat-card {
+ background: var(--haltian-nordic-water-light);
+ border-radius: 8px;
+ padding: 16px;
+ text-align: center;
+ border: 1px solid rgba(115, 249, 193, 0.2);
+}
+.stat-value {
+ font-size: 2rem;
+ font-weight: 700;
+ color: var(--haltian-radiant-green);
+ line-height: 1;
+ margin-bottom: 4px;
+}
+.stat-value.location { color: var(--haltian-clay-orange); }
+.stat-value.building { color: #60a5fa; }
+.stat-value.floor { color: #a78bfa; }
+.stat-value.zone { color: var(--haltian-radiant-green); }
+.stat-label {
+ font-size: 0.75rem;
+ color: rgba(255,255,255,0.6);
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+}
+.tree-section {
+ background: var(--haltian-nordic-water-light);
+ border-radius: 8px;
+ padding: 20px;
+ margin-bottom: 20px;
+ border: 1px solid rgba(115, 249, 193, 0.15);
+}
+.tree-section h3 {
+ color: var(--haltian-radiant-green);
+ margin: 0 0 16px 0;
+ font-size: 1.1rem;
+ font-weight: 500;
+}
+.tree-view {
+ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, monospace;
+ font-size: 0.85rem;
+ line-height: 1.8;
+}
+.tree-item {
+ padding: 2px 0;
+ display: flex;
+ align-items: center;
+}
+.tree-org { color: #fff; font-weight: 600; }
+.tree-location { color: var(--haltian-clay-orange); }
+.tree-building { color: #60a5fa; }
+.tree-floor { color: #a78bfa; }
+.tree-zone { color: var(--haltian-radiant-green); }
+.tree-icon {
+ margin-right: 8px;
+ width: 20px;
+ text-align: center;
+}
+.tree-indent-1 { padding-left: 28px; }
+.tree-indent-2 { padding-left: 56px; }
+.tree-indent-3 { padding-left: 84px; }
+.tree-indent-4 { padding-left: 112px; }
+.tree-connector {
+ color: rgba(255,255,255,0.3);
+ margin-right: 4px;
+}
+.tree-meta {
+ color: rgba(255,255,255,0.4);
+ font-size: 0.75rem;
+ margin-left: 8px;
+}
+.data-types-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+ gap: 12px;
+}
+.measurements-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 10px;
+}
+@media (max-width: 600px) {
+ .measurements-grid {
+ grid-template-columns: 1fr;
+ }
+}
+.data-type-card {
+ background: rgba(115, 249, 193, 0.05);
+ border-radius: 8px;
+ padding: 12px 16px;
+ border: 1px solid rgba(115, 249, 193, 0.15);
+}
+.data-type-card.measurement {
+ padding: 10px 14px;
+}
+.data-type-name {
+ font-weight: 600;
+ color: #fff;
+ margin-bottom: 4px;
+}
+.data-type-name.measurement {
+ font-size: 0.85rem;
+ margin-bottom: 2px;
+}
+.data-type-count {
+ font-size: 0.85rem;
+ color: rgba(255,255,255,0.6);
+}
+.data-type-count.measurement {
+ font-size: 0.75rem;
+}
+.device-models-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 10px;
+}
+@media (max-width: 600px) {
+ .device-models-grid {
+ grid-template-columns: 1fr;
+ }
+}
+.device-model-card {
+ background: rgba(255, 136, 98, 0.08);
+ border-radius: 8px;
+ padding: 10px 14px;
+ border: 1px solid rgba(255, 136, 98, 0.2);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.device-model-name {
+ font-size: 0.85rem;
+ font-weight: 500;
+ color: #fff;
+ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, monospace;
+}
+.device-model-count {
+ font-size: 1rem;
+ font-weight: 700;
+ color: var(--haltian-clay-orange);
+ background: rgba(255, 136, 98, 0.15);
+ padding: 2px 10px;
+ border-radius: 12px;
+ min-width: 32px;
+ text-align: center;
+}
+.keywords-list {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+}
+.keyword-tag {
+ background: rgba(115, 249, 193, 0.1);
+ border: 1px solid rgba(115, 249, 193, 0.3);
+ border-radius: 16px;
+ padding: 6px 14px;
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ font-size: 0.85rem;
+}
+.keyword-name {
+ color: var(--haltian-radiant-green);
+ font-weight: 500;
+}
+.keyword-count {
+ background: rgba(115, 249, 193, 0.2);
+ color: #fff;
+ padding: 2px 8px;
+ border-radius: 10px;
+ font-size: 0.75rem;
+ font-weight: 600;
+}
+.data-source {
+ margin-top: 24px;
+ padding-top: 16px;
+ border-top: 1px solid var(--haltian-nordic-water-light);
+ font-size: 0.8rem;
+ color: rgba(255,255,255,0.5);
+ text-align: center;
+}
+.data-source a {
+ color: var(--haltian-radiant-green);
+}
+&lt;/style>
+&lt;div class="demo-browser">
+ &lt;div class="demo-header">
+ &lt;h2>🗂️ Parquet Data Browser&lt;/h2>
+ &lt;p>Building Hierarchy from Haltian Sample Dataset&lt;/p></description></item></channel></rss>

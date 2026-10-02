@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Technical Reference on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/technical-reference/</link><description>Recent content in Technical Reference on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/technical-reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Thingsee CBOR to JSON Conversion</title><link>https://developer.haltian.io/haltian-iot/devices/technical-reference/cbor-json-conversion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/technical-reference/cbor-json-conversion/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Thingsee sensors transmit data using &lt;strong>CBOR (Concise Binary Object Representation)&lt;/strong>, a compact binary format optimized for low-power wireless communication. Applications and cloud platforms consume this data as &lt;strong>JSON&lt;/strong>, requiring conversion at the gateway or backend level.&lt;/p>
+&lt;p>This guide provides:&lt;/p>
+&lt;ul>
+&lt;li>Complete CBOR-to-JSON mapping tables&lt;/li>
+&lt;li>Conversion examples with real sensor messages&lt;/li>
+&lt;li>Decoder implementations in Python and JavaScript&lt;/li>
+&lt;li>Wirepas endpoint configuration details&lt;/li>
+&lt;/ul>
+&lt;h3 id="why-cbor">Why CBOR?&lt;/h3>
+&lt;p>CBOR reduces message size by ~60-70% compared to JSON, which:&lt;/p></description></item><item><title>Gateway Binary Passthrough</title><link>https://developer.haltian.io/haltian-iot/devices/technical-reference/gateway-binary-passthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/technical-reference/gateway-binary-passthrough/</guid><description>&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Status&lt;/div>
+&lt;p>&lt;strong>Beta&lt;/strong> - This feature is in beta and available on Haltian IoT N8 Gateway only.&lt;/p>
+&lt;/div>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Gateway Binary Passthrough allows the N8 Gateway to deliver raw Wirepas device messages directly to a customer&amp;rsquo;s local MQTT broker, without Haltian IoT cloud processing.&lt;/p>
+&lt;p>This is ideal for &lt;strong>on-premises installations&lt;/strong> where you need:&lt;/p>
+&lt;ul>
+&lt;li>Local data processing without internet dependency&lt;/li>
+&lt;li>Low-latency access to raw sensor data&lt;/li>
+&lt;li>Data sovereignty within your network&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">See Also&lt;/div>
+&lt;p>For cloud-based binary passthrough via Haltian IoT MQTT, see &lt;a href="https://developer.haltian.io/haltian-iot/apis/stream-api/cloud-binary-passthrough/">Cloud Binary Passthrough&lt;/a>.&lt;/p></description></item></channel></rss>

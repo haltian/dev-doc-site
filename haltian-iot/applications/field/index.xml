@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian Field on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/applications/field/</link><description>Recent content in Haltian Field on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/applications/field/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started</title><link>https://developer.haltian.io/haltian-iot/applications/field/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/getting-started/</guid><description>&lt;h2 id="installation">Installation&lt;/h2>
+&lt;h3 id="android">Android&lt;/h3>
+&lt;p>Haltian Field for Android is available on the &lt;a href="https://play.google.com/store/apps/details?id=com.haltian.field">&lt;strong>Google Play Store&lt;/strong>&lt;/a>. Search for &amp;ldquo;Haltian Field&amp;rdquo; or use the direct link.&lt;/p>
+&lt;p>&lt;strong>Requirements:&lt;/strong> Android 15 (SDK 35) or later.&lt;/p>
+&lt;h3 id="ios">iOS&lt;/h3>
+&lt;p>Haltian Field for iOS is available on the &lt;a href="https://apps.apple.com/fi/app/haltian-field/id1640113554">&lt;strong>Apple App Store&lt;/strong>&lt;/a>. Search for &amp;ldquo;Haltian Field&amp;rdquo; or use the direct link.&lt;/p>
+&lt;p>&lt;strong>Requirements:&lt;/strong> iOS 26 or later.&lt;/p>
+&lt;h2 id="logging-in">Logging In&lt;/h2>
+&lt;p>When you open the app, you see the login screen with four fields:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Field&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;th>Example&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Host&lt;/strong>&lt;/td>
+ &lt;td>The Haltian IoT server URL&lt;/td>
+ &lt;td>&lt;code>eu.haltian.io&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Organization&lt;/strong>&lt;/td>
+ &lt;td>Your organization name&lt;/td>
+ &lt;td>&lt;code>mycompany&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Username&lt;/strong>&lt;/td>
+ &lt;td>Your email address&lt;/td>
+ &lt;td>&lt;code>user@company.com&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Password&lt;/strong>&lt;/td>
+ &lt;td>Your account password&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>Fill in all four fields and tap &lt;strong>Login&lt;/strong>. The app validates your credentials and loads your organization&amp;rsquo;s space hierarchy.&lt;/p></description></item><item><title>Search and Discovery</title><link>https://developer.haltian.io/haltian-iot/applications/field/search-and-discovery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/search-and-discovery/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The &lt;strong>Search&lt;/strong> tab is the primary way to find devices in Haltian Field. You can search by text, scan a QR code, or enter a numeric ID.&lt;/p>
+&lt;div style="margin:20px 0;">
+&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/applications/field/android_search.webp" alt="Android search screen" width="150" style="border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.15); border:1px solid #e0e0e0;">
+&lt;br>&lt;em>Android&lt;/em>
+&lt;/div>
+&lt;h2 id="text-search">Text Search&lt;/h2>
+&lt;p>Tap the search field and type any of the following:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Search By&lt;/th>
+ &lt;th>Example&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Device name&lt;/td>
+ &lt;td>&lt;code>Meeting Room Sensor&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Customer Label ID&lt;/td>
+ &lt;td>&lt;code>LABEL-001&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Vendor Serial&lt;/td>
+ &lt;td>&lt;code>TSE-12345678&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>External ID&lt;/td>
+ &lt;td>&lt;code>EXT-456&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>GIAI&lt;/td>
+ &lt;td>&lt;code>urn:epc:id:giai:...&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>The app shows &lt;strong>auto-suggestions&lt;/strong> as you type (after a brief delay). Tap a suggestion or press search to see full results.&lt;/p></description></item><item><title>Favorites and Recents</title><link>https://developer.haltian.io/haltian-iot/applications/field/favorites-and-recents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/favorites-and-recents/</guid><description>&lt;h2 id="favorites-dashboard">Favorites Dashboard&lt;/h2>
+&lt;p>The &lt;strong>Favorites&lt;/strong> tab is your personal dashboard for monitoring key device measurements at a glance.&lt;/p>
+&lt;div style="display:flex; gap:30px; margin:20px 0;">
+&lt;div style="text-align:center;">
+&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/applications/field/android_favorites.webp" alt="Android favorites" width="150" style="border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.15); border:1px solid #e0e0e0;">
+&lt;br>&lt;em>Android&lt;/em>
+&lt;/div>
+&lt;div style="text-align:center;">
+&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/applications/field/ios_favorites.webp" alt="iOS favorites" width="150" style="border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.15); border:1px solid #e0e0e0;">
+&lt;br>&lt;em>iOS&lt;/em>
+&lt;/div>
+&lt;/div>
+&lt;h3 id="what-favorites-show">What Favorites Show&lt;/h3>
+&lt;p>Each favorite card displays:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Measurement name&lt;/strong> (e.g., &amp;ldquo;Ambient Temperature&amp;rdquo;)&lt;/li>
+&lt;li>&lt;strong>Device name&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Latest value&lt;/strong> with unit&lt;/li>
+&lt;li>&lt;strong>Relative timestamp&lt;/strong> (e.g., &amp;ldquo;2h ago&amp;rdquo;)&lt;/li>
+&lt;li>&lt;strong>Min/max values&lt;/strong> from the last 24 hours (shown with ↓ and ↑ arrows)&lt;/li>
+&lt;li>&lt;strong>Sparkline chart&lt;/strong> — a miniature trend line (when 3 or more data points are available)&lt;/li>
+&lt;li>&lt;strong>Device thumbnail&lt;/strong> — if a photo has been uploaded to the device&lt;/li>
+&lt;/ul>
+&lt;p>Favorites are displayed as cards in a grid layout.&lt;/p></description></item><item><title>Device Details</title><link>https://developer.haltian.io/haltian-iot/applications/field/device-details/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/device-details/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The Device Details screen shows comprehensive information about a single device. Access it by tapping any device in search results, favorites, or recents.&lt;/p>
+&lt;div style="display:flex; gap:30px; margin:20px 0;">
+&lt;div style="text-align:center;">
+&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/applications/field/android_device_details.webp" alt="Android device details" width="150" style="border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.15); border:1px solid #e0e0e0;">
+&lt;br>&lt;em>Android&lt;/em>
+&lt;/div>
+&lt;div style="text-align:center;">
+&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/applications/field/ios_device_details.webp" alt="iOS device details" width="150" style="border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.15); border:1px solid #e0e0e0;">
+&lt;br>&lt;em>iOS&lt;/em>
+&lt;/div>
+&lt;/div>
+&lt;p>The top bar shows &lt;strong>Device Details&lt;/strong> with a back arrow and a &lt;strong>Configure&lt;/strong> button (visible to Installer, Designer, and Manager roles).&lt;/p>
+&lt;h2 id="device-name-and-status">Device Name and Status&lt;/h2>
+&lt;p>At the top of the screen you see:&lt;/p></description></item><item><title>Measurements</title><link>https://developer.haltian.io/haltian-iot/applications/field/measurements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/measurements/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Haltian Field displays real-time and historical sensor measurements for each device. The measurements shown on the &lt;a href="../device-details/">Device Details&lt;/a> screen depend on the selected device — the app automatically displays all measurement types that the device reports.&lt;/p>
+&lt;p>Different devices support different measurements. For example, an environmental sensor may show temperature, humidity, and CO₂ readings, while a presence sensor shows occupancy status and movement counts. Device health measurements like battery level and boot count are common across most device types.&lt;/p></description></item><item><title>File Attachments</title><link>https://developer.haltian.io/haltian-iot/applications/field/file-attachments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/file-attachments/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>You can attach files — typically photos — to any device. File attachments help document device installations, record site conditions, or provide visual reference for field teams.&lt;/p>
+&lt;h2 id="viewing-attachments">Viewing Attachments&lt;/h2>
+&lt;p>The &lt;strong>thumbnail image&lt;/strong> area on the Device Details screen shows the most recent photo. If multiple files are attached, you can browse through them.&lt;/p>
+&lt;h2 id="adding-a-photo">Adding a Photo&lt;/h2>
+&lt;h3 id="capture-with-camera">Capture with Camera&lt;/h3>
+&lt;ol>
+&lt;li>Tap the thumbnail area on the Device Details screen (or the &amp;ldquo;Tap to add photo&amp;rdquo; placeholder)&lt;/li>
+&lt;li>Select &lt;strong>Take Photo&lt;/strong>&lt;/li>
+&lt;li>The camera opens — frame the device and tap the shutter button&lt;/li>
+&lt;li>The photo is uploaded automatically&lt;/li>
+&lt;/ol>
+&lt;h3 id="upload-from-gallery">Upload from Gallery&lt;/h3>
+&lt;ol>
+&lt;li>Tap the thumbnail area on the Device Details screen&lt;/li>
+&lt;li>Select &lt;strong>Choose File&lt;/strong>&lt;/li>
+&lt;li>Pick an image from your device gallery&lt;/li>
+&lt;li>The file is uploaded automatically&lt;/li>
+&lt;/ol>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Note&lt;/div>
+&lt;p>Camera access requires granting the camera permission when prompted. The app works without camera access, but you cannot capture photos or scan QR codes.&lt;/p></description></item><item><title>Notes</title><link>https://developer.haltian.io/haltian-iot/applications/field/notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/notes/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Device notes let you record metadata, installation details, observations, or other important information about a device and the space where it is installed. For example, you can document mounting height, orientation, nearby equipment, or maintenance instructions.&lt;/p>
+&lt;p>Notes are visible to all users in your organization who can access the device. They are also available programmatically via the &lt;strong>GraphQL API&lt;/strong> and included in &lt;strong>Parquet data exports&lt;/strong>, making them useful for reporting and integration workflows.&lt;/p></description></item><item><title>Keywords</title><link>https://developer.haltian.io/haltian-iot/applications/field/keywords/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/keywords/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Keywords are tags you assign to devices to organize and categorize them. They help you group devices by function, location, project, or any custom criteria meaningful to your organization.&lt;/p>
+&lt;p>With keywords, users in your organization can quickly find sets of devices, identify device groups, and see the nature or other specific metadata of a device at a glance. Keywords are also available via the &lt;strong>APIs&lt;/strong> — for example, in &lt;strong>Parquet data exports&lt;/strong> — enabling filtering and grouping in external analytics tools.&lt;/p></description></item><item><title>Configuration</title><link>https://developer.haltian.io/haltian-iot/applications/field/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/configuration/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The Configuration screen lets you view and manage the settings of a device. Access it by tapping the &lt;strong>Configure&lt;/strong> button on the Device Details screen.&lt;/p>
+&lt;p>All users can view the current device configuration. Users with &lt;strong>Installer&lt;/strong>, &lt;strong>Designer&lt;/strong>, or &lt;strong>Manager&lt;/strong> roles can also modify settings and send configuration changes to the device.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Note&lt;/div>
+&lt;p>The configuration page is different for each device type. The available settings and options vary depending on the device model, so you may see different parameters for different devices.&lt;/p></description></item><item><title>AI-Assisted Features</title><link>https://developer.haltian.io/haltian-iot/applications/field/ai-features/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/ai-features/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Haltian Field uses AI image analysis to help you document devices faster. When you take a photo of a device or its installation site, the app can automatically generate an observation note or suggest relevant keywords — saving time during field visits.&lt;/p>
+&lt;p>AI features are available from the Device Details screen via dedicated action buttons.&lt;/p>
+&lt;h2 id="requirements">Requirements&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Requirement&lt;/th>
+ &lt;th>Details&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Roles&lt;/strong>&lt;/td>
+ &lt;td>Installer, Designer, Manager&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Prerequisite&lt;/strong>&lt;/td>
+ &lt;td>A photo attached to the device&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Data residency&lt;/strong>&lt;/td>
+ &lt;td>EU (processing by Mistral AI, Paris)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="ai-generated-notes">AI-Generated Notes&lt;/h2>
+&lt;p>The app can analyze a device photo and produce a brief observation note describing what it sees — such as the device mounting position, surrounding environment, or visible labels.&lt;/p></description></item><item><title>Map and Location</title><link>https://developer.haltian.io/haltian-iot/applications/field/map-and-location/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/map-and-location/</guid><description>&lt;h2 id="map-view">Map View&lt;/h2>
+&lt;p>The Device Details screen includes an interactive map showing where the device is located. The map appears in the &lt;strong>Location&lt;/strong> section when the device has coordinates.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Tap&lt;/strong> the map preview to expand it to fullscreen&lt;/li>
+&lt;li>&lt;strong>Pinch&lt;/strong> to zoom in and out&lt;/li>
+&lt;li>&lt;strong>Swipe&lt;/strong> to pan around&lt;/li>
+&lt;li>The device location is shown with a &lt;strong>pin&lt;/strong> on the map&lt;/li>
+&lt;/ul>
+&lt;p>You can switch between different map styles (light, dark, and other visual themes) depending on your preference.&lt;/p></description></item><item><title>Inventory by Keywords</title><link>https://developer.haltian.io/haltian-iot/applications/field/inventory-by-keywords/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/inventory-by-keywords/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The &lt;strong>Inventory by Keywords&lt;/strong> view lets you browse your entire device fleet organized by keyword tags. Instead of searching for individual devices, you select a keyword and see all devices with that tag — useful for checking groups of devices during field visits or audits.&lt;/p>
+&lt;h2 id="requirements">Requirements&lt;/h2>
+&lt;p>&lt;strong>Roles:&lt;/strong> Viewer, Installer, Designer, Manager&lt;/p>
+&lt;p>All roles can browse devices by keyword.&lt;/p>
+&lt;h2 id="accessing-the-keywords-inventory">Accessing the Keywords Inventory&lt;/h2>
+&lt;p>From the main navigation, open the &lt;strong>By keywords&lt;/strong> view under the Devices section. You see an alphabetical list of all keywords defined in your organization.&lt;/p></description></item><item><title>Device Groups</title><link>https://developer.haltian.io/haltian-iot/applications/field/device-groups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/device-groups/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Device groups let you organize devices into logical collections for bulk monitoring and configuration. Unlike keywords (which categorize devices by metadata), groups are explicit lists of devices you assemble for a specific purpose — such as a maintenance batch, a deployment phase, or a set of devices that share the same configuration.&lt;/p>
+&lt;h2 id="requirements">Requirements&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Action&lt;/th>
+ &lt;th>Required Role&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>View groups and members&lt;/td>
+ &lt;td>Viewer, Installer, Designer, Manager&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Create, edit, delete groups&lt;/td>
+ &lt;td>Installer, Designer, Manager&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Configure group devices&lt;/td>
+ &lt;td>Installer, Designer, Manager&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="accessing-device-groups">Accessing Device Groups&lt;/h2>
+&lt;p>From the main navigation, tap &lt;strong>Device groups&lt;/strong> under the Devices section. You see a list of all groups with device counts.&lt;/p></description></item><item><title>Health Check</title><link>https://developer.haltian.io/haltian-iot/applications/field/health-check/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/health-check/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The Health Check screen lets you rapidly validate devices in the field by scanning their QR codes. Point the camera at a device label and instantly see whether it&amp;rsquo;s online, its battery status, and where it&amp;rsquo;s located — without navigating through menus.&lt;/p>
+&lt;p>This is ideal for deployment verification, maintenance rounds, or troubleshooting connectivity issues on-site.&lt;/p>
+&lt;h2 id="requirements">Requirements&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Requirement&lt;/th>
+ &lt;th>Details&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Roles&lt;/strong>&lt;/td>
+ &lt;td>Installer, Designer, Manager&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Access&lt;/strong>&lt;/td>
+ &lt;td>Setup section in the sidebar navigation&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Hardware&lt;/strong>&lt;/td>
+ &lt;td>Camera access required for QR scanning&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="using-health-check">Using Health Check&lt;/h2>
+&lt;ol>
+&lt;li>Open the &lt;strong>Health Check&lt;/strong> screen from the Setup section in the sidebar&lt;/li>
+&lt;li>The camera occupies the top half of the screen&lt;/li>
+&lt;li>Point the camera at a device QR code or barcode&lt;/li>
+&lt;li>The result panel below shows the device status instantly&lt;/li>
+&lt;/ol>
+&lt;p>You can scan devices continuously — each new QR code replaces the previous result.&lt;/p></description></item><item><title>Device Installation</title><link>https://developer.haltian.io/haltian-iot/applications/field/device-installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/device-installation/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The Device Installation workflow lets you place devices onto specific floors in your space hierarchy. You select a floor, view its floor plan map with zones and already-installed devices, then add new devices by scanning their QR code or searching by name/ID. Each device is positioned on the map using a crosshair targeting system.&lt;/p>
+&lt;h2 id="requirements">Requirements&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Requirement&lt;/th>
+ &lt;th>Details&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Roles&lt;/strong>&lt;/td>
+ &lt;td>Installer, Designer, Manager&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Access&lt;/strong>&lt;/td>
+ &lt;td>Setup section → Devices in the sidebar navigation&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Prerequisites&lt;/strong>&lt;/td>
+ &lt;td>Floors defined in the space hierarchy; floor plan drawings uploaded (optional but recommended)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="step-1-select-a-floor">Step 1: Select a Floor&lt;/h2>
+&lt;p>When you open Device Installation from the Setup section, you see a list of all floors in your organization.&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/applications/field/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/field/troubleshooting/</guid><description>&lt;h2 id="login-issues">Login Issues&lt;/h2>
+&lt;h3 id="cannot-reach-server">Cannot reach server&lt;/h3>
+&lt;p>&lt;strong>Symptoms&lt;/strong>: &amp;ldquo;Network error: Cannot reach server&amp;rdquo; or &amp;ldquo;Connection timeout: Server is not responding&amp;rdquo; message on login.&lt;/p>
+&lt;p>&lt;strong>Solutions&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Verify the &lt;strong>Host&lt;/strong> URL is correct&lt;/li>
+&lt;li>Check your internet connection (WiFi or mobile data)&lt;/li>
+&lt;li>Try opening the Host URL in a web browser to confirm the server is reachable&lt;/li>
+&lt;li>If using a corporate network, check if a VPN is required&lt;/li>
+&lt;li>If the server is not responding, try again later or contact your administrator&lt;/li>
+&lt;/ol>
+&lt;h3 id="invalid-credentials">Invalid credentials&lt;/h3>
+&lt;p>&lt;strong>Symptoms&lt;/strong>: &amp;ldquo;Login failed: Invalid credentials or server error&amp;rdquo; message.&lt;/p></description></item></channel></rss>

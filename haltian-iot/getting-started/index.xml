@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting Started on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/getting-started/</link><description>Recent content in Getting Started on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Haltian IoT in 10 Minutes</title><link>https://developer.haltian.io/haltian-iot/getting-started/haltian-iot-in-10-minutes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/getting-started/haltian-iot-in-10-minutes/</guid><description>&lt;h2 id="what-is-haltian-iot">What is Haltian IoT?&lt;/h2>
+&lt;p>Haltian IoT turns physical spaces into data you can act on. Battery-powered sensors measure what happens in your buildings — whether a room is occupied, how many people pass through a door, how warm or stuffy the air is — and send it to the Haltian IoT cloud. From there you read it in a ready-made application, stream it into your own systems, or export it for analytics.&lt;/p></description></item><item><title>Demo Environment</title><link>https://developer.haltian.io/haltian-iot/getting-started/demo-environment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/getting-started/demo-environment/</guid><description>&lt;p>Haltian provides a public demo environment with live sensor data from the Haltian office in Oulu, Finland. Use these credentials to explore the platform, test API queries, and build proof-of-concept integrations before deploying your own organization.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Public credentials&lt;/div>
+&lt;p>These credentials are shared publicly. Do not store sensitive data in the demo organization — it is periodically reset.&lt;/p>
+&lt;/div>
+&lt;h2 id="demo-organization">Demo Organization&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Property&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Organization&lt;/strong>&lt;/td>
+ &lt;td>&lt;code>haltiansalesdemo&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Environment&lt;/strong>&lt;/td>
+ &lt;td>EU&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="application-access">Application Access&lt;/h2>
+&lt;p>Use the following credentials to log in to Haltian IoT Studio (web or mobile) and the Service API (GraphQL).&lt;/p></description></item><item><title>Glossary</title><link>https://developer.haltian.io/haltian-iot/getting-started/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/getting-started/glossary/</guid><description>&lt;h2 id="a">A&lt;/h2>
+&lt;h3 id="alpha">Alpha&lt;/h3>
+&lt;p>A release stage for limited testing. Features may be incomplete or change significantly, and are typically available through an API with no or minimal application UI. Alpha features are not recommended for production workloads.&lt;/p>
+&lt;h3 id="api">API&lt;/h3>
+&lt;p>&lt;strong>Application Programming Interface&lt;/strong> - An interface that lets software systems exchange data or perform operations. Haltian IoT&amp;rsquo;s core APIs include the GraphQL-based Service API, MQTT-based Stream API, and Parquet-based Data API.&lt;/p>
+&lt;h3 id="api-key">API Key&lt;/h3>
+&lt;p>A credential used by an application or integration to access an API. For MQTT Stream API connections, the API key ID is used as the username and its token as the password. The key&amp;rsquo;s permissions determine the data the client can access.&lt;/p></description></item></channel></rss>
