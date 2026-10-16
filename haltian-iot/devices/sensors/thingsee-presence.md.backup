@@ -1,0 +1,714 @@
+---
+title: "Thingsee PRESENCE"
+linkTitle: "PRESENCE"
+weight: 1
+type: docs
+description: >
+  PIR-based presence detection sensor for occupancy monitoring and visitor counting
+---
+
+## Overview
+
+Thingsee PRESENCE is a wireless sensor for measuring people presence throughout your facility. The sensor uses passive infrared (PIR) technology to detect heat source movement (human, animal, etc.) in an area and reports the indicative count of detections to the cloud.
+
+The device supports two distinct operating modes:
+- **Visitor Counting Mode** - Counts movements for traffic analysis
+- **Occupancy Mode** - Detects workspace or area occupancy status
+
+Thingsee PRESENCE connects via Wirepas Mesh network and requires a Wirepas-enabled gateway for cloud communication.
+
+![Thingsee PRESENCE sensor](/assets/images/haltian-iot/devices/PRESEN1-e1720705171415.jpg)
+
+![Sensor functionality diagram](/assets/images/haltian-iot/devices/image%20%282%29.png)
+
+## Key Features
+
+### Sensing and Detection
+- **PIR-based detection** - Privacy-friendly passive infrared technology
+- **Dual mode operation** - Occupancy or visitor counting modes
+- **34 movements per minute** - Maximum detection rate regardless of direction or distance
+- **Adjustable sensitivity** - Configure for different installation scenarios
+- **Height-dependent detection** - Cone-shaped detection area adapts to installation height
+
+### Power and Battery
+- **Long battery life** - Up to 4 years with standard firmware
+- **2x AAA batteries** - Replaceable alkaline batteries
+- **LED confirmation** - Optional visual feedback for installation verification
+
+### Physical
+- **Lightweight** - 37g including batteries
+- **IP40 rated** - Basic dust protection
+- **Temperature range** - -20°C to +50°C operating
+- **Humidity tolerance** - 0-100% RH non-condensing
+
+### Connectivity
+- **Wirepas Mesh** - 2.4GHz mesh network
+- **Radio sensitivity** - -95 dBm (BTLE)
+- **Low-power protocol** - Optimized for battery-operated sensors
+
+### Compliance
+- **Wide certifications** - CE, FCC, ISED, RoHS, RCM, MIC, UKCA, WPC ETA-SD, IMDA, KC, NOM, NYCE, IFT compliant
+
+### Installation Accessories
+- **Visitor Counter Dome** - Narrows detection beam for doorway counting
+- **Occupancy Dome** - Adjusts sensitivity for under-desk installations
+- **Mounting tape** - Adhesive backing for easy installation
+
+## Use Cases
+
+### Office Environments
+- **Desk occupancy monitoring** - Track workspace utilization for hot-desking
+- **Meeting room usage** - Monitor presence and usage levels
+- **Break room traffic** - Analyze usage patterns
+- **Space optimization** - Optimize space usage based on real data
+- **Energy savings** - Reduce consumption in unoccupied areas
+
+### Healthcare Facilities
+- **Patient room occupancy** - Monitor room usage
+- **Waiting area utilization** - Track patient flow
+- **Corridor traffic monitoring** - Identify busy periods
+- **Staff area usage** - Analyze staff facility usage
+
+### Retail Spaces
+- **Customer flow analysis** - Identify busiest times
+- **Department popularity** - Track which areas are most used
+- **Checkout area management** - Optimize staffing
+- **Store entrance counting** - Measure foot traffic
+
+### Educational Facilities
+- **Classroom occupancy** - Monitor room usage
+- **Library usage tracking** - Analyze space utilization
+- **Common area monitoring** - Track student activity
+- **Cafeteria traffic analysis** - Optimize service timing
+
+## Installation
+
+### Before Installation
+
+1. **Ensure gateway is operational** - Verify Wirepas gateway is installed and connected (LED blinking green)
+2. **Identify the sensor** - Scan QR code with Thingsee Toolbox app or QR reader
+3. **Plan sensor placement** - Review detection area charts for your installation height
+4. **Select appropriate dome** - Choose Visitor Counter or Occupancy dome if needed
+
+### Installation Steps
+
+1. **Remove battery tab**
+   - Carefully pull out the battery security tab
+   - LED indicator (red) will flash once
+   - If no LED flash within 2 minutes, tap sensor against palm
+   - If no events within 5 minutes, re-install batteries
+
+2. **Clean surface**
+   - Clean attachment surface with IPA solvent (isopropyl alcohol)
+   - Ensure surface is dry before mounting
+
+3. **Attach sensor**
+   - Remove tape's paper cover from sensor backside
+   - Push sensor firmly against surface for minimum 5 seconds
+   - Wipe sensor with dry, clean cloth
+
+### Visitor Counting Installation
+
+**Ceiling Installation:**
+- Place sensor in middle of door opening
+- Position 5-10 cm from wall
+- Ensure no obstacles between sensor and detection area
+
+**Door Opening Installation:**
+- Install at top middle of door opening
+- Orient sensor according to movement direction
+- Ensure clear line of sight to floor
+
+**Using Visitor Counter Dome:**
+- Dome narrows detection beam for accuracy
+- Detection area is narrowed relative to sensor's long side
+- Can be attached with screws for secure installation
+- Attachment clips alone sufficient for most installations
+
+**Detection Area Shape:**
+Detection area dimensions vary by installation height. See detection capability chart below.
+
+![Detection capability vs height](/assets/images/haltian-iot/devices/1024-471.png)
+
+### Workspace Occupancy Installation
+
+**Under-Table Installation:**
+- Install sensor under table as centered as possible
+- If table legs present, place sensor on user side of leg
+- Maintain 50mm gap between sensor and objects for maintenance access
+- Decrease sensitivity to avoid detections outside workspace
+
+**Using Occupancy Dome:**
+- Dome adjusts detection beam for under-desk use
+- Orient dome hole facing front for best accuracy
+- Can be attached with screws if needed
+- Cut off screw attachment parts if using clips only (do not damage clips)
+
+**Sensitivity Adjustment:**
+Reduce sensitivity to focus detection on workspace area only. This prevents false triggers from people walking near the desk.
+
+### Installation Guidelines
+
+![Sensor detection capabilities](/assets/images/haltian-iot/devices/800-1024.png)
+
+**Height-Dependent Detection Area:**
+
+The sensor's detection capability changes based on installation height:
+- **Cone-shaped detection zone** - Wider coverage at greater distances
+- **Adjustable sensitivity** - White lines in chart show sensitivity level effects
+- **Maximum 34 movements/minute** - Regardless of direction or distance
+
+**Factors Affecting Accuracy:**
+
+**PIR Technology Considerations:**
+- Detects changes in heat sources (moving humans)
+- Temperature difference between person and environment affects reliability
+- Small temperature differences reduce reliability significantly
+
+**Visitor Counting Accuracy Factors:**
+- Width of doorway (wider = more simultaneous passages)
+- People walking side-by-side
+- Standing or slowly moving lines
+- Cleaning and maintenance activities
+
+### Things to Avoid
+
+![Installation things to avoid](/assets/images/haltian-iot/devices/1024-903.png)
+
+**Avoid:**
+- ❌ Installation too high (excessively large detection area)
+- ❌ Direct sunlight exposure
+- ❌ Near heat sources (radiators, HVAC vents)
+- ❌ Areas with high ambient temperature variation
+- ❌ Locations with frequent thermal disturbances
+- ❌ Too close to traffic flow (people passing very near sensor)
+- ❌ Wide open areas with unpredictable movement patterns
+
+**Optimal Conditions:**
+- ✅ Controlled temperature environment
+- ✅ Clear detection zone without obstructions
+- ✅ Predictable traffic patterns
+- ✅ Appropriate installation height for use case
+- ✅ Good thermal contrast between people and environment
+
+### Installation Accessories
+
+**Visitor Counter Dome:**
+
+![Visitor counter dome](/assets/images/haltian-iot/devices/345-300-max.png)
+
+- For doorways and corridors
+- Narrows detection beam for accuracy
+- Easy snap-on installation
+- Optional screw attachment
+
+**Occupancy Dome:**
+
+![Workspace occupancy dome](/assets/images/haltian-iot/devices/333-300-max.png)
+
+- For under-table workspace detection
+- Reduces sensitivity area
+- Prevents unwanted detections outside workspace
+- Simple clip or screw attachment
+
+## Device Identifiers
+
+### Thingsee IoT Platform
+- **IMC (Internal Model Code)**: TSPR04
+- **Product family**: TSPR (Thingsee PRESENCE)
+- **Variant index**: 04
+
+### Haltian IoT Platform
+- **Device identifier**: TBD (reverse URL notation to be added in future documentation update)
+
+## Operating Modes
+
+The sensor supports two distinct operating modes configured via cloud API.
+
+### Visitor Counter Mode (Default)
+
+Reports indicative count of detected movements for traffic analysis.
+
+**Characteristics:**
+- **Measurement type** - Movement detection count
+- **Active reporting** - Every 1 minute when movement observed
+- **Idle reporting** - Every 1 hour if no movement detected
+- **Maximum count** - 34 events per minute
+- **Use cases** - Doorways, corridors, entrances
+
+**Message Flow:**
+1. Sensor detects movements during measurement interval
+2. At report interval (1 minute with movement, 1 hour without), sends message
+3. Cloud receives movement count for interval
+4. Counter resets for next measurement period
+
+**Accuracy Considerations:**
+- People walking side-by-side may count as single detection
+- Very slow movement may not trigger detection
+- Multiple people in close proximity may undercount
+
+### Occupancy Mode
+
+Reports workspace or area occupancy status using event-based messaging.
+
+**Characteristics:**
+- **Measurement type** - Occupancy status (occupied/vacant)
+- **Event reporting** - Every time status changes (occupied ↔ vacant)
+- **Idle reporting** - Every 1 hour if no status change
+- **Network efficiency** - Reduces Wirepas traffic compared to movement counting
+- **Use cases** - Desk occupancy, meeting rooms, individual spaces
+
+**Message Flow:**
+1. Sensor detects movement → state changes to "occupied"
+2. Occupied event sent immediately
+3. No movement for threshold period → state changes to "vacant"
+4. Vacant event sent immediately
+5. Periodic status update every 1 hour regardless of state
+
+**Advantages:**
+- Lower network traffic (only on state changes)
+- Reduced power consumption
+- Clear binary status (occupied/vacant)
+- Suitable for workspace management systems
+
+{{% alert title="Important" color="warning" %}}
+**Data Latency:** There's always a delay from measurement to alerts. Measurement results are sent in predefined intervals (e.g., 1 minute) and time is needed for data to travel through the network and be processed in the cloud service. This sensor is not suitable for real-time applications requiring instant alerts.
+{{% /alert %}}
+
+## Messages
+
+### Message 13100 - Movement Count Report
+
+**Profile:** Presence and Occupancy Profile (13000-13999)
+
+**Purpose:** Reports detection count since last report (Visitor Counter Mode)
+
+**Triggering:**
+- Every 1 minute when movement detected
+- Every 1 hour when no movement (passive interval)
+
+**Message Structure:**
+```json
+{
+  "tsmId": 13100,
+  "tsmEv": 10,
+  "tsmTs": 1492603998,
+  "tsmTuid": "TSPR04123456",
+  "moveCount": 7
+}
+```
+
+**Fields:**
+
+| Field | Type | Description |
+|-------|------|-------------|
+| tsmId | Integer | Message ID = 13100 (Movement count report) |
+| tsmEv | Integer | Event ID = 10 (Timed event) |
+| tsmTs | Integer | UTC timestamp when event occurred |
+| tsmTuid | String | Device serial number |
+| moveCount | Integer | Count of detections since last report (min=0, max=unlimited) |
+
+**Example Interpretation:**
+- Device TSPR04123456 detected 7 movements in the last measurement interval
+- Timestamp indicates when the interval completed
+- Counter has reset to 0 for next interval
+
+**Use Cases:**
+- Traffic counting in doorways
+- Visitor flow analysis
+- Area popularity tracking
+- Trend analysis over time
+
+### Message 13102 - Occupancy Status Report
+
+**Profile:** Presence and Occupancy Profile (13000-13999)
+
+**Purpose:** Reports how many times area was occupied and total duration (alternative occupancy reporting format)
+
+**Message Structure:**
+```json
+{
+  "tsmId": 13102,
+  "tsmEv": 7,
+  "tsmTs": 1492603998,
+  "tsmTuid": "TSPR04123456",
+  "count": 5,
+  "duration": 1800
+}
+```
+
+**Fields:**
+
+| Field | Type | Description |
+|-------|------|-------------|
+| tsmId | Integer | Message ID = 13102 (Occupancy status) |
+| tsmEv | Integer | Event ID = 7 (State change event) |
+| tsmTs | Integer | UTC timestamp |
+| tsmTuid | String | Device serial number |
+| count | Integer | Number of times area was occupied since last report (min=0) |
+| duration | Integer | Accumulated occupied time in seconds (min=0) |
+
+**Example Interpretation:**
+- Area was occupied 5 separate times since last report
+- Total occupied time = 1800 seconds (30 minutes)
+- Average occupancy duration = 360 seconds (6 minutes) per occurrence
+
+**Use Cases:**
+- Workspace utilization analysis
+- Meeting room booking efficiency
+- Time-based billing
+- Occupancy rate calculations
+
+## Configuration
+
+Configuration is performed via [Service API (GraphQL)](../../haltian-iot/apis/service-api/) or by sending downlink CBOR messages directly. Refer to [Thingsee PRESENCE Configuration](../thingsee-presence-configuration/) for complete parameter documentation.
+
+### Available Configurations
+
+- **Operating mode** - Visitor counting vs. occupancy detection
+- **Sensor sensitivity** - Detection threshold adjustment
+- **Report intervals** - Active and passive reporting frequency
+- **LED indication** - Enable/disable visual feedback
+- **Occupancy timeout** - Duration before area marked as vacant
+
+### Common Configuration Scenarios
+
+**High-traffic doorway:**
+- Mode: Visitor Counter (0)
+- Threshold: 150 (default sensitivity)
+- Report interval: 60 seconds
+- LED: Disabled
+
+**Under-desk occupancy:**
+- Mode: Occupancy (1)
+- Threshold: 800 (reduced sensitivity)
+- Report interval: 300 seconds
+- LED: Disabled
+- Use Occupancy Dome
+
+**Meeting room monitoring:**
+- Mode: Occupancy (1)
+- Threshold: 150 (default sensitivity)
+- Report interval: 300 seconds
+- Passive interval: 3600 seconds
+
+## Device-Specific Features
+
+### PIR Sensor Characteristics
+
+**Detection Principle:**
+- Passive infrared (PIR) sensor detects heat source movement
+- No emissions - completely passive monitoring
+- Privacy-friendly - no cameras or identifying data
+
+**Temperature Dependency:**
+- Requires thermal contrast between person and environment
+- Best performance: environment 15-25°C, person 36-37°C
+- Reduced performance when ambient temperature approaches body temperature
+- Small temperature differences significantly reduce reliability
+
+**Movement Requirements:**
+- Sensor detects movement, not static presence
+- Slow-moving individuals may not trigger detection
+- Stationary person will not be detected
+- Best suited for normal walking speeds
+
+### Detection Limitations
+
+**Counting Accuracy:**
+- **Multiple simultaneous passages** - People walking side-by-side may count as one
+- **Slow movement** - Very slow walkers may not trigger detection
+- **Dense crowds** - Standing/slow-moving queues reduce accuracy
+- **Wide doorways** - Accuracy decreases with doorway width
+
+**Environmental Factors:**
+- **Direct sunlight** - Thermal variations reduce accuracy
+- **Heat sources** - Radiators, HVAC vents cause false triggers
+- **Temperature changes** - Rapid ambient changes reduce sensitivity
+- **Installation height** - Too high creates excessively large detection area
+
+### Dome Accessories
+
+**Visitor Counter Dome:**
+- Physically narrows detection beam
+- Creates more accurate counting zone
+- Reduces false triggers from adjacent areas
+- Most effective for standard doorway widths (0.8-1.2m)
+
+**Occupancy Dome:**
+- Reduces detection area for focused monitoring
+- Prevents triggers from nearby walkways
+- Essential for under-desk installations
+- Allows lower sensitivity settings
+
+### LED Indicator
+
+**Purpose:**
+- Installation verification
+- Movement detection feedback
+- Troubleshooting aid
+
+**Behavior:**
+- Red flash on battery insertion
+- Optional flash on movement detection (configurable)
+- Can be disabled to conserve battery
+
+**Configuration:**
+- Enabled during installation for feedback
+- Typically disabled for production use
+- Battery life impact minimal when enabled
+
+## Technical Specifications
+
+### Environmental
+
+| Parameter | Specification |
+|-----------|--------------|
+| Operating Temperature | -20°C to +50°C |
+| Operating Humidity | 0% to 100% RH non-condensing |
+| Storage Temperature | 0°C to +25°C |
+| Storage Humidity | 45% to 60% RH non-condensing |
+| IP Rating | IP40 (dust protection) |
+
+### Power
+
+| Parameter | Specification |
+|-----------|--------------|
+| Battery Type | 2x AAA alkaline (replaceable) |
+| Recommended Battery | Varta Industrial Pro 1.5V AAA LR06 |
+| Expected Battery Life | Up to 4 years with standard firmware |
+| Factors Affecting Life | Report interval, movement frequency, LED usage, network density |
+
+### Physical
+
+| Parameter | Specification |
+|-----------|--------------|
+| Weight | 37g (including batteries) |
+| Mounting | Adhesive tape (included) |
+| Maintenance Access | 50mm clearance recommended |
+
+### Connectivity
+
+| Parameter | Specification |
+|-----------|--------------|
+| Network Protocol | Wirepas Mesh 2.4GHz |
+| Radio Sensitivity | -95 dBm (BTLE) |
+| Network Topology | Self-healing mesh |
+| Gateway Requirement | Wirepas-enabled gateway required |
+
+### Detection
+
+| Parameter | Specification |
+|-----------|--------------|
+| Sensor Type | Passive Infrared (PIR) |
+| Detection Technology | Heat source movement detection |
+| Maximum Detection Rate | 34 movements per minute |
+| Detection Range | Height-dependent (see chart) |
+| Detection Pattern | Cone-shaped |
+| Sensitivity | Adjustable via configuration |
+
+### Certifications
+
+CE, FCC, ISED, RoHS, RCM, MIC, UKCA, WPC ETA-SD, IMDA, KC, NOM, NYCE, IFT compliant
+
+## Troubleshooting
+
+### LED Not Flashing on Battery Installation
+
+**Possible Causes:**
+- Battery tab not fully removed
+- Batteries inserted incorrectly
+- Batteries depleted
+
+**Solutions:**
+1. Verify battery tab completely removed
+2. Check battery polarity (+/- orientation)
+3. Try new batteries (Varta Industrial Pro recommended)
+4. Tap sensor against palm firmly
+5. Wait up to 5 minutes for first network connection
+6. If still no flash, remove and re-insert batteries
+
+### No Messages in Cloud
+
+**Possible Causes:**
+- Gateway not operational
+- Sensor not joined to network
+- Network ID mismatch
+- Default report interval (1 hour) not elapsed
+
+**Solutions:**
+1. Verify gateway LED blinking green (operational)
+2. Check gateway has internet connectivity
+3. Confirm sensor and gateway on same Wirepas network ID
+4. Wait at least 1 hour for first message (default passive interval)
+5. Trigger movement to force active report (1 minute interval)
+6. Use Thingsee Toolbox app to verify sensor is transmitting
+7. Contact support@haltian.com if issues persist
+
+### Inaccurate Counting
+
+**Possible Causes:**
+- Installation height too high
+- People walking side-by-side
+- Doorway too wide
+- Temperature contrast insufficient
+- Nearby heat sources
+
+**Solutions:**
+1. Lower installation height for narrower detection area
+2. Use Visitor Counter Dome to focus beam
+3. Avoid installations in doorways wider than 1.5m
+4. Ensure environment temperature 15-25°C
+5. Move sensor away from radiators, HVAC vents
+6. Test during normal traffic (not during cleaning/maintenance)
+7. Consider installing multiple sensors for wide openings
+
+### False Occupancy Triggers (Desk Monitoring)
+
+**Possible Causes:**
+- Sensitivity too high
+- Detection area too wide
+- People walking nearby
+- No Occupancy Dome installed
+
+**Solutions:**
+1. Reduce sensitivity (increase threshold to 800)
+2. Install Occupancy Dome to narrow detection
+3. Reposition sensor away from walkways
+4. Ensure 50mm clearance from table legs/objects
+5. Center sensor under desk for optimal coverage
+6. Test sensitivity during normal office hours
+
+### Short Battery Life
+
+**Possible Causes:**
+- High movement frequency
+- Short report intervals
+- LED enabled
+- Dense network (many hops to gateway)
+- Frequent configuration changes
+
+**Solutions:**
+1. Increase report intervals (default: 60s active, 3600s passive)
+2. Disable LED indicator
+3. Optimize gateway placement to reduce network hops
+4. Use mode 2 (event-based movement reporting) instead of mode 0
+5. Avoid unnecessary configuration changes
+6. Use recommended batteries: Varta Industrial Pro 1.5V AAA
+
+### Sensor Not Detecting Movement
+
+**Possible Causes:**
+- Batteries depleted
+- Sensor in wrong mode
+- Sensitivity too low
+- Obstruction in detection path
+- Temperature contrast insufficient
+
+**Solutions:**
+1. Replace batteries (check voltage >1.3V per battery)
+2. Verify operating mode via Service API
+3. Increase sensitivity (decrease threshold to 150)
+4. Remove obstructions between sensor and monitored area
+5. Ensure environment temperature differs from body temperature
+6. Verify sensor not exposed to direct sunlight
+7. Test with deliberate movement directly under sensor
+
+## Maintenance
+
+### Battery Replacement
+
+**When to Replace:**
+- Battery level alerts from cloud
+- Sensor stops reporting
+- LED no longer flashes
+- Typically every 2-4 years depending on usage
+
+**Replacement Procedure:**
+1. Order replacement batteries (Varta Industrial Pro 1.5V AAA LR06 recommended)
+2. Open sensor enclosure
+3. Remove depleted batteries
+4. Insert new batteries (observe polarity +/-)
+5. LED should flash red once
+6. Sensor will reboot and rejoin network (may take 2-5 minutes)
+7. Verify messages in cloud after 5 minutes
+
+**Battery Selection:**
+- **Recommended:** Varta Industrial Pro 1.5V AAA LR06 alkaline
+- **Acceptable:** High-quality alkaline AAA batteries
+- **Not recommended:** Rechargeable NiMH (lower voltage affects performance)
+- **Not recommended:** Low-cost alkaline (shorter lifespan, poor cold performance)
+
+### Cleaning
+
+**Surface Cleaning:**
+- Wipe with dry, clean, lint-free cloth
+- For stubborn dirt: slightly damp cloth with water only
+- Dry immediately after damp cleaning
+- Do not use solvents, chemicals, or abrasive cleaners
+- Avoid getting moisture in battery compartment
+
+**Frequency:**
+- As needed when visibly dirty
+- Recommended: quarterly in dusty environments
+- More frequent in high-traffic areas
+
+### Dome Maintenance
+
+**Visitor Counter / Occupancy Dome:**
+- Check for cracks or damage quarterly
+- Clean with dry cloth
+- Verify secure attachment
+- Replace if damaged (order through sales)
+
+### Inspection Schedule
+
+**Monthly:**
+- Verify sensor still reporting to cloud
+- Check for physical damage
+- Ensure dome (if present) secure
+
+**Quarterly:**
+- Clean sensor surface
+- Verify LED still functional (if enabled)
+- Check mounting adhesion
+
+**Annually:**
+- Full functionality test
+- Review placement effectiveness
+- Consider sensitivity adjustment based on seasonal changes
+
+## Support and Resources
+
+### Technical Support
+- **Email:** support@haltian.com
+- **Documentation:** [How-To Guides](../../../haltian-iot/howtos/)
+- **API Reference:** [Service API](../../../haltian-iot/apis/service-api/)
+
+### Installation Resources
+- **Configuration Guide:** [Thingsee PRESENCE Configuration](../thingsee-presence-configuration/)
+- **CBOR Decoding:** [CBOR to JSON Conversion](../../technical-reference/cbor-json-conversion/)
+- **Message Profiles:** [Presence and Occupancy Profile](../../../thingsee-iot/api/profiles/presence-and-occupancy-profile-13000-13999/)
+- **Video Tutorial:** [Installation video](../../../thingsee-iot/devices/thingsee-presence/index.html)
+
+### Ordering
+- **Sensors:** Contact sales for bulk orders
+- **Accessories:** Visitor Counter Dome, Occupancy Dome available
+- **Batteries:** Varta Industrial Pro 1.5V AAA LR06 (customer sourced)
+
+### Downloads
+- **User Guide PDF:** [Thingsee PRESENCE User Guide](https://4233666.fs1.hubspotusercontent-na1.net/hubfs/4233666/User%20Guides/Thingsee_PRESENCE_UG_v.24.05.pdf)
+
+## Related Devices
+
+- [Thingsee RADAR](../thingsee-radar/) - Radar-based occupancy detection for longer ranges
+- [Thingsee COUNT](../thingsee-count/) - Time-of-flight based people counting
+- [Thingsee ENVIRONMENT](../thingsee-environment/) - Environmental monitoring with optional motion sensor
+
+## Related Documentation
+
+- [Thingsee PRESENCE Configuration](../thingsee-presence-configuration/) - Complete configuration parameter reference
+- [CBOR to JSON Conversion](../../technical-reference/cbor-json-conversion/) - Message decoding guide
+- [Binary Passthrough API](../../../haltian-iot/apis/binary-passthrough/) - Direct CBOR message access
+- [Service API (GraphQL)](../../../haltian-iot/apis/service-api/) - Device management and querying
+- [Presence and Occupancy Profile](../../../thingsee-iot/api/profiles/presence-and-occupancy-profile-13000-13999/) - Complete message profile documentation
