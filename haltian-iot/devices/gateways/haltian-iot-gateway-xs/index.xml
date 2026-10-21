@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian Gateway XS on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/</link><description>Recent content in Haltian Gateway XS on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/index.xml" rel="self" type="application/rss+xml"/><item><title>Connectivity Options</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/connectivity-options/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/connectivity-options/</guid><description>&lt;h2 id="choose-a-backhaul">Choose a Backhaul&lt;/h2>
+&lt;p>Gateway XS uses either Haltian-managed cellular connectivity or wired LAN for its cloud connection. Choose the backhaul before installation.&lt;/p>
+&lt;h3 id="cellular-standard-option">Cellular: Standard Option&lt;/h3>
+&lt;p>Haltian preconfigures the SIM and cellular connection for the standard deployment. Install the antennas and connect power; the gateway connects automatically. No customer network configuration is required.&lt;/p>
+&lt;p>Confirm LTE coverage at the installation site before mounting. See &lt;a href="../installation/">Installation&lt;/a> and &lt;a href="../configuration/">Configuration&lt;/a>.&lt;/p>
+&lt;h3 id="wired-lan-customer-specific-alternative">Wired LAN: Customer-Specific Alternative&lt;/h3>
+&lt;p>Use LAN when cellular is unavailable or the deployment&amp;rsquo;s IT or security requirements call for a wired connection. LAN is available for customer-specific deployments; contact &lt;a href="mailto:support@haltian.com">Haltian support&lt;/a> before installation to confirm service scope and network requirements.&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/specifications/</guid><description>&lt;h2 id="hardware">Hardware&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Component&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Main CPU&lt;/strong>&lt;/td>
+ &lt;td>NXP i.MX9352&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Architecture&lt;/strong>&lt;/td>
+ &lt;td>ARM Cortex-A55, dual-core&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Clock speed&lt;/strong>&lt;/td>
+ &lt;td>1.7 GHz&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>RAM&lt;/strong>&lt;/td>
+ &lt;td>1 GB&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Storage&lt;/strong>&lt;/td>
+ &lt;td>16 GB internal&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Operating system&lt;/strong>&lt;/td>
+ &lt;td>Embedded Linux (Debian-based)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="connectivity">Connectivity&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Feature&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Ethernet interface&lt;/strong>&lt;/td>
+ &lt;td>RJ45&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Ethernet availability&lt;/strong>&lt;/td>
+ &lt;td>Supported for customer-specific LAN deployments&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Cellular technology&lt;/strong>&lt;/td>
+ &lt;td>LTE Cat1bis&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Cellular module&lt;/strong>&lt;/td>
+ &lt;td>SIMCOM SIM7672&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>SIM&lt;/strong>&lt;/td>
+ &lt;td>Pre-installed and configured by Haltian&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Antenna connectors&lt;/strong>&lt;/td>
+ &lt;td>External, SMA connector&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Customer setup&lt;/strong>&lt;/td>
+ &lt;td>No customer network configuration required for standard cellular deployment; LAN deployments require customer network setup&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Short-range radio&lt;/strong>&lt;/td>
+ &lt;td>Nordic nRF52840, 2.4 GHz ISM band&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Protocol support&lt;/strong>&lt;/td>
+ &lt;td>Wirepas Mesh, installed by default; Gateway XS operates as a mesh sink&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="cellular-bands">Cellular bands&lt;/h3>
+&lt;p>Gateway XS supports the following LTE frequency bands through its LTE Cat1bis modem. Band support does not guarantee service with every operator or at every deployment location; confirm coverage and operator compatibility before deployment.&lt;/p></description></item><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/installation/</guid><description>&lt;h2 id="before-you-begin">Before You Begin&lt;/h2>
+&lt;h3 id="choose-a-backhaul">Choose a Backhaul&lt;/h3>
+&lt;p>Gateway XS uses either cellular or wired LAN for its cloud connection. Choose the backhaul and confirm its requirements before installation and mounting.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Cellular (standard deployment):&lt;/strong> Haltian pre-configures the SIM and connectivity. Confirm LTE coverage at the installation site.&lt;/li>
+&lt;li>&lt;strong>Wired LAN (customer-specific deployment):&lt;/strong> Confirm availability and approved network settings with Haltian before installation. Haltian delivers a unique console password for each gateway to the customer during the delivery phase; have the password for this gateway before setup. Configure Ethernet after power-up using the &lt;a href="../lan-setup/">LAN Setup Console guide&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="package-contents">Package Contents&lt;/h3>
+&lt;p>Verify you have received all components:&lt;/p></description></item><item><title>LAN Setup</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/lan-setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/lan-setup/</guid><description>&lt;h2 id="before-you-begin">Before You Begin&lt;/h2>
+&lt;p>The LAN Setup Console is a text-based tool built into Gateway XS. Connect to it over the serial interface using a computer and terminal program. SSH, Telnet, and a web browser cannot access the console.&lt;/p>
+&lt;p>You need:&lt;/p>
+&lt;ul>
+&lt;li>A powered-on Gateway XS&lt;/li>
+&lt;li>A data-capable micro-USB cable connected to the front &lt;strong>DBG&lt;/strong> port. Do not use the USB-C port.&lt;/li>
+&lt;li>A USB-A to USB-C adapter or cable if needed&lt;/li>
+&lt;li>The CP210x USB-to-UART driver. Download the appropriate driver from &lt;a href="https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads">Silicon Labs&lt;/a>. On Windows, use the CP210x Universal Windows Driver. macOS may already include the driver.&lt;/li>
+&lt;li>A serial terminal: Terminal on macOS, or PuTTY (or similar) on Windows&lt;/li>
+&lt;li>The unique console password for this gateway, delivered by Haltian to the customer during the delivery phase. Have the password before starting setup.&lt;/li>
+&lt;/ul>
+&lt;h2 id="1-find-the-serial-port">1. Find the Serial Port&lt;/h2>
+&lt;h3 id="macos">macOS&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Open Terminal (Applications &amp;gt; Utilities &amp;gt; Terminal).&lt;/p></description></item><item><title>Configuration</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/configuration/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The Gateway XS is designed for minimal customer configuration. For the standard cellular deployment, Haltian pre-configures connectivity before delivery, and no customer network configuration is required. For wired Ethernet deployments, see &lt;a href="../connectivity-options/">Connectivity Options&lt;/a> and &lt;a href="../lan-setup/">LAN Setup&lt;/a>.&lt;/p>
+&lt;h2 id="device-details">Device Details&lt;/h2>
+&lt;p>Use &lt;a href="https://developer.haltian.io/haltian-iot/applications/field/">Haltian Field&lt;/a> or &lt;a href="https://developer.haltian.io/haltian-iot/applications/iot-studio-web/">Haltian Studio (Web)&lt;/a> to maintain device details:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Device name&lt;/strong>: Assign a descriptive name that identifies the device&amp;rsquo;s location or purpose.&lt;/li>
+&lt;li>&lt;strong>Images&lt;/strong>: Add or update a photo of the device or its installation.&lt;/li>
+&lt;li>&lt;strong>Notes&lt;/strong>: Record installation details, configuration information, maintenance history, or other observations.&lt;/li>
+&lt;li>&lt;strong>Keywords&lt;/strong>: Assign tags to categorize and find the device.&lt;/li>
+&lt;/ul>
+&lt;p>Editing the device name, images, notes, and keywords requires the &lt;strong>Installer&lt;/strong>, &lt;strong>Designer&lt;/strong>, or &lt;strong>Manager&lt;/strong> role. See the &lt;a href="https://developer.haltian.io/haltian-iot/applications/">Haltian IoT Applications&lt;/a> overview, &lt;a href="https://developer.haltian.io/haltian-iot/applications/iot-studio-web/device-details/">Studio Device Details&lt;/a>, or &lt;a href="https://developer.haltian.io/haltian-iot/applications/field/device-details/">Field Device Details&lt;/a> for app-specific instructions.&lt;/p></description></item><item><title>Operation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/operation/</guid><description>&lt;h2 id="normal-operation">Normal Operation&lt;/h2>
+&lt;h3 id="startup-sequence">Startup Sequence&lt;/h3>
+&lt;p>Gateway boot process takes approximately 60–90 seconds:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Power On&lt;/strong> (0-5 seconds)&lt;/p>
+&lt;ul>
+&lt;li>Hardware initialization&lt;/li>
+&lt;li>Self-test procedures&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Network Initialization&lt;/strong> (5-30 seconds)&lt;/p>
+&lt;ul>
+&lt;li>Network interfaces activate&lt;/li>
+&lt;li>Cellular registration&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Cloud Connection&lt;/strong> (30-60 seconds)&lt;/p>
+&lt;ul>
+&lt;li>TLS connection establishment&lt;/li>
+&lt;li>Authentication and registration&lt;/li>
+&lt;li>NTP synchronization&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Wirepas Mesh Start&lt;/strong> (60-90 seconds)&lt;/p>
+&lt;ul>
+&lt;li>2.4 GHz radio initialization&lt;/li>
+&lt;li>Network scanning&lt;/li>
+&lt;li>Sink role activation&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>Use the &lt;a href="../installation/#status-leds">status LEDs&lt;/a> for connection indicators. Use Haltian Studio to confirm the gateway&amp;rsquo;s online status and review its last-seen time.&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist">Quick Diagnostic Checklist&lt;/h2>
+&lt;p>Before detailed troubleshooting, verify these basics:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Power supply connected and power supply indicator is on&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Both antennas properly installed (finger-tight, no wobble)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Gateway appears in Haltian Studio (cloud connected)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Firmware version is current (check for updates)&lt;/li>
+&lt;/ul>
+&lt;p>Check the gateway&amp;rsquo;s &lt;a href="../installation/#status-leds">status LEDs&lt;/a> alongside Haltian Studio. For wired LAN diagnostics, use the &lt;a href="../lan-setup/">LAN Setup Console&lt;/a>.&lt;/p>
+&lt;h2 id="gateway-not-appearing-online">Gateway Not Appearing Online&lt;/h2>
+&lt;p>&lt;strong>Symptom:&lt;/strong> Gateway does not show as Online in Haltian Studio within 5 minutes of power-on.&lt;/p></description></item><item><title>FAQ</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/haltian-iot-gateway-xs/faq/</guid><description>&lt;h2 id="connectivity-options">Connectivity options&lt;/h2>
+&lt;h3 id="which-backhaul-options-does-gateway-xs-support">Which backhaul options does Gateway XS support?&lt;/h3>
+&lt;p>Gateway XS supports two cloud backhaul options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Cellular&lt;/strong>: Haltian-managed LTE Cat1bis connectivity&lt;/li>
+&lt;li>&lt;strong>LAN&lt;/strong>: Wired Ethernet connectivity for customer-specific deployments&lt;/li>
+&lt;/ul>
+&lt;p>A deployment uses either cellular or LAN as its cloud backhaul according to the deployment requirements.&lt;/p>
+&lt;h3 id="is-lan-connectivity-available-for-gateway-xs">Is LAN connectivity available for Gateway XS?&lt;/h3>
+&lt;p>Yes. LAN connectivity is available for customer-specific deployments. Contact Haltian before deployment to confirm the service scope and approved network requirements.&lt;/p></description></item></channel></rss>

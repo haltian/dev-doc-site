@@ -1,0 +1,15 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#F6FAFA', 'primaryTextColor': '#143633', 'primaryBorderColor': '#143633', 'lineColor': '#143633', 'secondaryColor': '#C7FDE6', 'tertiaryColor': '#73F9C1', 'actorBkg': '#F6FAFA', 'actorBorder': '#143633', 'actorTextColor': '#143633', 'noteBkgColor': '#C7FDE6', 'noteBorderColor': '#143633', 'noteTextColor': '#143633', 'signalColor': '#143633'}}}%%
+sequenceDiagram
+    participant S as Haltian Sensors
+    participant GW as Gateway
+    participant H as Haltian Cloud
+    participant ODE as Occupancy Processing
+    participant API as Microsoft Graph API
+    participant U as Teams / Outlook
+
+    S->>GW: Occupancy measurements
+    GW->>H: Forward via MQTT/HTTPS
+    H->>ODE: Validated events
+    Note over ODE: Single device: direct mapping<br/>Device group: Occupancy Data Engine
+    ODE->>API: Occupancy state update
+    API->>U: Room/desk availability

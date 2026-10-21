@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Thingsee Gateway Global on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/thingsee-gateway-global/</link><description>Recent content in Thingsee Gateway Global on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/gateways/thingsee-gateway-global/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/thingsee-gateway-global/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/thingsee-gateway-global/installation/</guid><description>&lt;h2 id="video-tutorial">Video Tutorial&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sx6UoHfS9qw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h2 id="before-you-begin">Before You Begin&lt;/h2>
+&lt;h3 id="package-contents-verification">Package Contents Verification&lt;/h3>
+&lt;p>Verify you have received all components:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Thingsee Gateway Global gateway unit (with pre-installed SIM card)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Micro USB power cable&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Quick Start Guide&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">Important&lt;/div>
+&lt;p>&lt;strong>Power Adapter Not Included:&lt;/strong> You need a standard 5V USB power adapter. Minimum 1A required, 2A recommended for stable operation.&lt;/p></description></item><item><title>Operation</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/thingsee-gateway-global/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/thingsee-gateway-global/operation/</guid><description>&lt;h2 id="normal-operation">Normal Operation&lt;/h2>
+&lt;h3 id="startup-sequence">Startup Sequence&lt;/h3>
+&lt;p>Gateway boot process typically takes 60-90 seconds:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Power On&lt;/strong> (0-5 seconds)&lt;/p>
+&lt;ul>
+&lt;li>Power LED illuminates&lt;/li>
+&lt;li>Hardware initialization&lt;/li>
+&lt;li>Self-test procedures&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Cellular Connection&lt;/strong> (5-60 seconds)&lt;/p>
+&lt;ul>
+&lt;li>SIM card detection&lt;/li>
+&lt;li>Network search and registration&lt;/li>
+&lt;li>Carrier authentication&lt;/li>
+&lt;li>Data connection establishment&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Cloud Registration&lt;/strong> (30-90 seconds)&lt;/p>
+&lt;ul>
+&lt;li>HTTPS connection to Haltian cloud&lt;/li>
+&lt;li>Certificate-based authentication&lt;/li>
+&lt;li>Gateway registration/check-in&lt;/li>
+&lt;li>Synchronize configuration&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Wirepas Mesh Start&lt;/strong> (60-90 seconds)&lt;/p>
+&lt;ul>
+&lt;li>BLE radio initialization&lt;/li>
+&lt;li>Network scanning&lt;/li>
+&lt;li>Sink role activation&lt;/li>
+&lt;li>Ready for sensor connections&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Operational&lt;/strong> (90+ seconds)&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/thingsee-gateway-global/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/thingsee-gateway-global/specifications/</guid><description>&lt;h2 id="product-information">Product Information&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Product Name&lt;/strong>&lt;/td>
+ &lt;td>Thingsee Gateway Global&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Vendor&lt;/strong>&lt;/td>
+ &lt;td>Haltian Oy&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Product Type&lt;/strong>&lt;/td>
+ &lt;td>Wirepas mesh gateway with cellular connectivity&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Internal Model Code (IMC)&lt;/strong>&lt;/td>
+ &lt;td>TSGW06&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Device ID Format&lt;/strong>&lt;/td>
+ &lt;td>TSGW06 + Product Serial Number&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="hardware-specifications">Hardware Specifications&lt;/h2>
+&lt;h3 id="wireless-connectivity">Wireless Connectivity&lt;/h3>
+&lt;h4 id="wirepas-mesh-ble">Wirepas Mesh (BLE)&lt;/h4>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Feature&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Technology&lt;/strong>&lt;/td>
+ &lt;td>Bluetooth Low Energy (BLE)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Wirepas Version&lt;/strong>&lt;/td>
+ &lt;td>5.x&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Frequency&lt;/strong>&lt;/td>
+ &lt;td>2.4 GHz ISM band&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Channels&lt;/strong>&lt;/td>
+ &lt;td>40 channels (0-39)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Radio Sensitivity&lt;/strong>&lt;/td>
+ &lt;td>-95 dBm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>TX Power&lt;/strong>&lt;/td>
+ &lt;td>+8 dBm (6.3 mW)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Range&lt;/strong>&lt;/td>
+ &lt;td>5-25m indoor, up to 100m line-of-sight&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Max Sensors&lt;/strong>&lt;/td>
+ &lt;td>200-500 (message rate dependent)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h4 id="cellular-connectivity">Cellular Connectivity&lt;/h4>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Feature&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Technology&lt;/strong>&lt;/td>
+ &lt;td>LTE Cat M1 with 2G fallback&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>LTE Cat M1 Bands&lt;/strong>&lt;/td>
+ &lt;td>Region-specific, see band details below&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>2G GSM Bands&lt;/strong>&lt;/td>
+ &lt;td>850, 900, 1800, 1900 MHz&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>SIM Format&lt;/strong>&lt;/td>
+ &lt;td>Micro SIM (3FF)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Antenna&lt;/strong>&lt;/td>
+ &lt;td>Internal&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Max Download&lt;/strong>&lt;/td>
+ &lt;td>375 kbps (LTE Cat M1)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Max Upload&lt;/strong>&lt;/td>
+ &lt;td>375 kbps (LTE Cat M1)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>LTE Cat M1 Frequency Bands:&lt;/strong>&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/devices/gateways/thingsee-gateway-global/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/gateways/thingsee-gateway-global/troubleshooting/</guid><description>&lt;h2 id="quick-diagnostic-checklist">Quick Diagnostic Checklist&lt;/h2>
+&lt;p>Before detailed troubleshooting:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Power LED illuminated (power connected)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Cellular LED status (solid = good, blinking = searching)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Gateway appears in Haltian IoT Studio&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Check cellular coverage in area (test with mobile phone)&lt;/li>
+&lt;/ul>
+&lt;h2 id="power-issues">Power Issues&lt;/h2>
+&lt;h3 id="gateway-wont-power-on">Gateway Won&amp;rsquo;t Power On&lt;/h3>
+&lt;p>&lt;strong>Symptom:&lt;/strong> No LEDs illuminate when USB power connected.&lt;/p>
+&lt;p>&lt;strong>Diagnostic Steps:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Verify Power Adapter&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Test adapter with different device (phone, etc.)&lt;/li>
+&lt;li>Check adapter rating: 5V, minimum 1A&lt;/li>
+&lt;li>Try different power adapter if available&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Check USB Cable&lt;/strong>&lt;/p></description></item></channel></rss>
