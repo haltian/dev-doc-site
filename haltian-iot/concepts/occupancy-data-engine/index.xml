@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Occupancy Data Engine on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/concepts/occupancy-data-engine/</link><description>Recent content in Occupancy Data Engine on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/concepts/occupancy-data-engine/index.xml" rel="self" type="application/rss+xml"/><item><title>Reset Logic</title><link>https://developer.haltian.io/haltian-iot/concepts/occupancy-data-engine/reset-logic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/concepts/occupancy-data-engine/reset-logic/</guid><description>&lt;h2 id="why-resets-are-needed">Why Resets Are Needed&lt;/h2>
+&lt;p>Entryway sensors are not 100% accurate. Occasionally they miss an entry or exit — for example, when two people walk through a doorway simultaneously. These small errors accumulate over time:&lt;/p>
+&lt;ul>
+&lt;li>Day 1: Misses 1 exit → shows 1 person at night when room is empty&lt;/li>
+&lt;li>Day 2: All counts are off by 1, misses another exit → shows 2 people at night&lt;/li>
+&lt;li>Day 3: Drift continues growing&lt;/li>
+&lt;/ul>
+&lt;p>Resets correct this drift by setting the count back to zero when the engine determines the space is empty.&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/concepts/occupancy-data-engine/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/concepts/occupancy-data-engine/troubleshooting/</guid><description>&lt;h2 id="no-occupancy-data-from-device-group">No Occupancy Data from Device Group&lt;/h2>
+&lt;ul>
+&lt;li>Verify the device group has been created and contains member devices (query &lt;code>deviceGroupDevices&lt;/code> for the group)&lt;/li>
+&lt;li>Check that member sensors are active and sending data — the Occupancy Data Engine starts processing automatically when sensors report measurements&lt;/li>
+&lt;li>Confirm the member sensors are supported types (Entryway or Presence sensors) — other device types are ignored by the engine&lt;/li>
+&lt;/ul>
+&lt;h2 id="incorrect-occupancy-counts">Incorrect Occupancy Counts&lt;/h2>
+&lt;ul>
+&lt;li>Check sensor installation and positioning — Entryway sensors must be correctly aligned with the doorway direction&lt;/li>
+&lt;li>Review the inactivity reset period — if it&amp;rsquo;s too long, count drift accumulates before correction&lt;/li>
+&lt;li>For mixed groups, verify that Presence sensors accurately detect when the space is empty, as this affects inactivity reset triggering&lt;/li>
+&lt;li>Use a manual reset via the API to immediately correct the count&lt;/li>
+&lt;/ul>
+&lt;h2 id="count-never-resets">Count Never Resets&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Entryway-only groups:&lt;/strong> Verify the inactivity period is configured and that there are actual periods of inactivity (no entries or exits) longer than the configured threshold&lt;/li>
+&lt;li>&lt;strong>Mixed groups:&lt;/strong> The reset requires all Presence sensors to report not occupied &lt;strong>and&lt;/strong> no movement detections &lt;strong>and&lt;/strong> no activity for the configured period — check that Presence sensors are correctly reporting empty state&lt;/li>
+&lt;li>&lt;strong>Presence-only groups:&lt;/strong> These do not use inactivity resets — they self-correct when all sensors report not occupied. If the group stays occupied, check individual sensor status&lt;/li>
+&lt;/ul>
+&lt;h2 id="mixed-group-shows-occupied-when-room-is-empty">Mixed Group Shows Occupied When Room Is Empty&lt;/h2>
+&lt;ul>
+&lt;li>Check if any Presence sensor has a stale &lt;code>occupied&lt;/code> reading — the engine uses the more recent signal per sensor, but if a sensor stops reporting, its last value persists&lt;/li>
+&lt;li>Verify that &lt;code>movementDetections&lt;/code> values are being updated — a stuck non-zero value keeps the group occupied&lt;/li>
+&lt;li>A manual reset clears the device group state, but the issue returns if the sensor continues reporting stale data. Check sensor connectivity&lt;/li>
+&lt;/ul>
+&lt;h2 id="count-shows-negative-values">Count Shows Negative Values&lt;/h2>
+&lt;p>Negative people counts can occur when more exits than entries are detected (e.g., someone enters through an unmonitored door). This is expected behavior — the engine preserves negative values for transparency but treats them as zero when determining occupancy status. The count corrects at the next inactivity or manual reset.&lt;/p></description></item></channel></rss>

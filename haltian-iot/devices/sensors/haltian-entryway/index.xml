@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian ENTRYWAY on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/</link><description>Recent content in Haltian ENTRYWAY on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/installation/</guid><description>&lt;figure>&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/devices/Entryway_above_door.png"
+ alt="Haltian ENTRYWAY mounted above a door">&lt;figcaption>
+ &lt;p>Haltian ENTRYWAY installed above a doorframe&lt;/p>
+ &lt;/figcaption>
+&lt;/figure>
+
+&lt;h2 id="quick-reference">Quick Reference&lt;/h2>
+&lt;p>Use this section as an on-site checklist. For detailed instructions, continue to the relevant installation method below.&lt;/p>
+&lt;div class="alert alert-danger" role="alert">&lt;div class="h4 alert-heading" role="heading">Critical Placement Rules&lt;/div>
+&lt;p>These rules are mandatory for all doorframe installations. Violating any rule will degrade counting accuracy or cause false counts.&lt;/p>
+&lt;ol>
+&lt;li>Maximum 1 cm from doorframe edge — The sensor must be flush with the bottom edge of the doorframe. A gap larger than 1 cm shifts the detection zone.&lt;/li>
+&lt;li>Never install on the door-swing side — Mount the sensor on the opposite side from where the door opens. Door movement triggers false counts.&lt;/li>
+&lt;li>Ceiling: minimum 1 meter from obstructions — When ceiling-mounted, the sensor must be at least 1 meter from any doorframe, wall, or beam.&lt;/li>
+&lt;/ol>
+&lt;/div>
+&lt;h3 id="installation-checklist">Installation Checklist&lt;/h3>
+&lt;p>&lt;strong>Pre-Installation:&lt;/strong>&lt;/p></description></item><item><title>Operation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/operation/</guid><description>&lt;h2 id="how-3-pir-detection-works">How 3-PIR Detection Works&lt;/h2>
+&lt;h3 id="patented-triple-passive-infrared-technology">Patented Triple Passive Infrared Technology&lt;/h3>
+&lt;p>The Haltian ENTRYWAY uses &lt;strong>three Passive Infrared (PIR) sensors&lt;/strong> in a patented configuration to detect people moving through doorways.&lt;/p>
+&lt;p>&lt;strong>Detection principle:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Three PIR beams&lt;/strong>: Sensor has three parallel PIR detection zones across passageway&lt;/li>
+&lt;li>&lt;strong>Heat detection&lt;/strong>: PIR sensors detect infrared radiation (heat) emitted by human bodies&lt;/li>
+&lt;li>&lt;strong>Sequential triggering&lt;/strong>: Person walking through triggers beams sequentially (Beam 1 → Beam 2 → Beam 3)&lt;/li>
+&lt;li>&lt;strong>Direction determination&lt;/strong>: Order of beam triggering determines direction (entry vs. exit)&lt;/li>
+&lt;li>&lt;strong>Count increment&lt;/strong>: Entry or exit counter increments&lt;/li>
+&lt;/ol>
+&lt;h3 id="pir-beam-configuration">PIR Beam Configuration&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Three parallel beams&lt;/strong>: Spaced to cover passageway width (up to 1600mm)&lt;/li>
+&lt;li>&lt;strong>Horizontal detection zones&lt;/strong>: Beams oriented across passageway (perpendicular to traffic flow)&lt;/li>
+&lt;li>&lt;strong>Thermal sensitivity&lt;/strong>: Detects difference between body heat (~36-37°C) and ambient temperature&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Complete passage requirement:&lt;/strong>&lt;/p></description></item><item><title>Configuration</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/configuration/</guid><description>&lt;h2 id="configuration-overview">Configuration Overview&lt;/h2>
+&lt;p>Haltian ENTRYWAY sensors are &lt;strong>remotely configurable&lt;/strong> via &lt;strong>Haltian IoT&lt;/strong>. This allows adjusting key parameters without physical access to the sensor.&lt;/p>
+&lt;p>&lt;strong>Key configurable parameters:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Entry direction&lt;/strong>: Which side is &amp;ldquo;entry&amp;rdquo; vs. &amp;ldquo;exit&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>Measurement interval&lt;/strong>: How often sensor reports during active period&lt;/li>
+&lt;li>&lt;strong>Reporting interval (idle)&lt;/strong>: How often sensor reports when no movement detected&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Note&lt;/div>
+&lt;p>Configuration changes require access to Haltian IoT. Contact Haltian support if you need assistance with remote configuration.&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/specifications/</guid><description>&lt;h2 id="general-specifications">General Specifications&lt;/h2>
+&lt;h3 id="product-information">Product Information&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Product name&lt;/strong>&lt;/td>
+ &lt;td>Haltian ENTRYWAY&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Model&lt;/strong>&lt;/td>
+ &lt;td>ENTRYWAY&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Manufacturer&lt;/strong>&lt;/td>
+ &lt;td>Haltian Oy&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Use case&lt;/strong>&lt;/td>
+ &lt;td>People counting for doorways and passages&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Technology&lt;/strong>&lt;/td>
+ &lt;td>Patented 3-PIR (Passive Infrared) sensors&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="physical-specifications">Physical Specifications&lt;/h2>
+&lt;h3 id="dimensions-and-weight">Dimensions and Weight&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Length&lt;/strong>&lt;/td>
+ &lt;td>110 mm (approximate)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Width&lt;/strong>&lt;/td>
+ &lt;td>65 mm (approximate)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Height&lt;/strong>&lt;/td>
+ &lt;td>35 mm (approximate)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Weight&lt;/strong>&lt;/td>
+ &lt;td>166 grams (with batteries)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Mounting&lt;/strong>&lt;/td>
+ &lt;td>Doorframe, ceiling, wall (multiple methods)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="enclosure">Enclosure&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Material&lt;/strong>&lt;/td>
+ &lt;td>Plastic housing&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Color&lt;/strong>&lt;/td>
+ &lt;td>White/light gray (typically)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>IP rating&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>Not IP-rated&lt;/strong> (indoor use only)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Environmental protection&lt;/strong>&lt;/td>
+ &lt;td>Standard indoor enclosure&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="environmental-suitability">Environmental Suitability&lt;/h3>
+&lt;p>&lt;strong>Indoor use only:&lt;/strong>&lt;/p></description></item><item><title>Data Output</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/uplink-messages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/uplink-messages/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Haltian ENTRYWAY produces measurement data that you can access through the &lt;strong>Haltian IoT Platform&lt;/strong> — receive JSON measurements via MQTT Stream API or query via GraphQL Service API.&lt;/p>
+&lt;p>This page documents the measurement types, payload formats, and how to access the data.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Self-hosted Wirepas gateway?&lt;/div>
+&lt;p>If you operate your own gateways and decode raw mesh messages, see the &lt;a href="../cbor-reference/uplink/">CBOR Uplink Reference&lt;/a> for the binary message specification.&lt;/p>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="haltian-iot-measurements">Haltian IoT Measurements&lt;/h2>
+&lt;p>The ENTRYWAY sensor produces the following measurement types:&lt;/p></description></item><item><title>Device Configuration Commands</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/downlink-messages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/downlink-messages/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Haltian ENTRYWAY is configured remotely through the &lt;strong>Service API (GraphQL)&lt;/strong> — named commands with built-in validation and automatic encoding.&lt;/p>
+&lt;p>This page documents the available commands and provides ready-to-use examples. For detailed parameter explanations and configuration scenarios, see &lt;a href="../configuration/">Configuration&lt;/a>.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Self-hosted Wirepas gateway?&lt;/div>
+&lt;p>If you operate your own gateways and send raw mesh commands, see the &lt;a href="../cbor-reference/downlink/">CBOR Downlink Reference&lt;/a> for the binary command specification.&lt;/p>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="service-api-commands">Service API Commands&lt;/h2>
+&lt;p>The Service API provides named configuration commands that handle CBOR encoding, delivery, and validation automatically. Use these through the &lt;a href="https://developer.haltian.io/haltian-iot/apis/service-api/">Service API (GraphQL)&lt;/a>.&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/troubleshooting/</guid><description>&lt;h2 id="troubleshooting-overview">Troubleshooting Overview&lt;/h2>
+&lt;p>This guide addresses common issues with Haltian ENTRYWAY sensors and provides step-by-step solutions.&lt;/p>
+&lt;p>&lt;strong>Quick troubleshooting approach:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Identify the problem (symptoms)&lt;/li>
+&lt;li>Check common causes (this guide)&lt;/li>
+&lt;li>Verify configuration (IoT Studio)&lt;/li>
+&lt;li>Contact support if unresolved&lt;/li>
+&lt;/ol>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Support Available&lt;/div>
+&lt;p>If you can&amp;rsquo;t resolve the issue using this guide, contact Haltian support: &lt;a href="mailto:support@haltian.com">support@haltian.com&lt;/a>. Include sensor ID, problem description, and troubleshooting steps already attempted.&lt;/p>
+&lt;/div>
+&lt;h2 id="counting-accuracy-issues">Counting Accuracy Issues&lt;/h2>
+&lt;p>&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/devices/entryway-detection-errors.png" alt="Common detection errors">&lt;/p>
+&lt;h3 id="counts-lower-than-expected-missed-detections">Counts Lower Than Expected (Missed Detections)&lt;/h3>
+&lt;p>&lt;strong>Symptoms:&lt;/strong>&lt;/p></description></item><item><title>FAQ</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-entryway/faq/</guid><description>&lt;p>This FAQ answers common questions about Haltian ENTRYWAY. For step-by-step diagnosis of counting, connectivity, and battery issues, see &lt;a href="../troubleshooting/">Troubleshooting&lt;/a>.&lt;/p>
+&lt;h2 id="product-basics">Product Basics&lt;/h2>
+&lt;h3 id="what-is-haltian-entryway">What is Haltian ENTRYWAY?&lt;/h3>
+&lt;p>Haltian ENTRYWAY is a wireless, privacy-first people-counting sensor based on patented bi-directional 3-PIR detection. It counts directional movement through doorways and passages, reporting entries and exits without cameras or personal data collection.&lt;/p>
+&lt;h3 id="how-is-entryway-different-from-a-presence-sensor">How is ENTRYWAY different from a Presence sensor?&lt;/h3>
+&lt;p>ENTRYWAY measures directional movement: how many people enter and exit a space. A Presence sensor reports binary occupancy: whether a space is occupied or unoccupied.&lt;/p></description></item></channel></rss>
