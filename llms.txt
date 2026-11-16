@@ -1,0 +1,55 @@
+# Haltian Developer Documentation
+
+> Haltian IoT platform documentation - APIs, device guides, and integration tutorials for enterprise IoT solutions.
+
+## About
+
+This is the official developer documentation for Haltian IoT, a next-generation IoT platform providing secure, scalable device connectivity and data services for smart building and workplace applications.
+
+**Company:** Haltian  
+**Website:** https://haltian.com  
+**Documentation URL:** https://developer.haltian.io
+
+## Main Sections
+
+### Haltian IoT Platform (/haltian-iot/)
+The core platform documentation covering:
+- **Getting Started** - Platform overview, architecture, and quick start guides
+- **Devices** - Sensors, gateways, tags, and ecosystem device documentation
+- **APIs** - Comprehensive API documentation:
+  - Service API (GraphQL) - Device management, configuration, and data queries
+  - Stream API (MQTT) - Real-time data streaming and subscriptions
+  - Data API (Parquet) - Bulk data export for analytics and data lakes
+- **Concepts** - Organizations, spaces, devices, roles, and data models
+- **Applications** - Haltian IoT Studio (Web/iOS/Android) and Haltian Finder
+- **Integrations** - Microsoft Places, ThingsBoard, and third-party platforms
+- **Tutorials** - Step-by-step guides for building applications
+Hardware documentation for Haltian's IoT device portfolio:
+- **Sensors** - Environment, presence, and occupancy sensors
+- **Gateways** - Network gateways including Haltian IoT Gateway N8
+- **Tags** - Asset tracking tags including Haltian Nano Tag
+- **Wirepas Ecosystem** - Wirepas mesh network devices and third-party integrations
+- **Technical Reference** - Specifications, protocols, and configuration guides
+
+### Demos (/demos/)
+Interactive demonstrations and sample applications showcasing platform capabilities.
+
+## Key Technologies
+
+- **GraphQL** - Primary API protocol for device management
+- **MQTT** - Real-time streaming protocol for sensor data
+- **Apache Parquet** - Columnar format for bulk data export
+- **Wirepas** - Mesh networking protocol for sensors
+- **BLE** - Bluetooth Low Energy for device provisioning
+
+## Target Audience
+
+- IoT developers and system integrators
+- Smart building solution architects
+- Workplace technology administrators
+- Data engineers working with sensor data
+
+## Contact
+
+- **Technical Support:** support@haltian.com
+- **GitHub:** https://github.com/haltian

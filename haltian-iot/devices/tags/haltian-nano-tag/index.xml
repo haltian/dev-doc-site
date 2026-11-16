@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian NANO Tag on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/tags/haltian-nano-tag/</link><description>Recent content in Haltian NANO Tag on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/tags/haltian-nano-tag/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/tags/haltian-nano-tag/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/tags/haltian-nano-tag/installation/</guid><description>&lt;h2 id="before-installation">Before installation&lt;/h2>
+&lt;ul>
+&lt;li>Ensure the Haltian gateway and EH Locators are installed and started, with at least one Locator in router mode.&lt;/li>
+&lt;li>Keep the distance to the nearest installed tag below 20 m as a deployment guideline.&lt;/li>
+&lt;li>During installation, avoid strong nearby RF sources such as Wi-Fi routers.&lt;/li>
+&lt;li>Keep the installation temperature below +50 °C.&lt;/li>
+&lt;/ul>
+&lt;h2 id="activate-and-mount-the-tag">Activate and mount the tag&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Remove the battery insulation strip.&lt;/strong> The tag activates automatically and connects to the nearest Locator in router mode. Before mounting, you can verify the tag appears in the virtual infrastructure (Haltian IoT Cloud or Studio).&lt;/li>
+&lt;li>&lt;strong>Remove the adhesive tape&amp;rsquo;s protective liner.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Press the tag against the surface&lt;/strong> for at least 5 seconds. The surface must be clean, dry, dust-free, and grease-free — use alcohol or isopropanol if needed.&lt;/li>
+&lt;/ol>
+&lt;figure>&lt;img src="../images/nano-tag-activation-strip.jpg"
+ alt="Removing the battery insulation strip to activate the tag, and exposing the mounting adhesive tape">&lt;figcaption>
+ &lt;p>Remove the insulation strip, then expose the mounting tape&lt;/p></description></item><item><title>Operation</title><link>https://developer.haltian.io/haltian-iot/devices/tags/haltian-nano-tag/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/tags/haltian-nano-tag/operation/</guid><description>&lt;h2 id="motion-aware-reporting">Motion-Aware Reporting&lt;/h2>
+&lt;p>The NANO Tag operates in two modes based on movement detection:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Mode&lt;/th>
+ &lt;th>Behavior&lt;/th>
+ &lt;th>Default Interval&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Static&lt;/strong>&lt;/td>
+ &lt;td>Tag at rest, minimal reporting&lt;/td>
+ &lt;td>Every 24 hours&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Dynamic&lt;/strong>&lt;/td>
+ &lt;td>Movement detected, frequent updates&lt;/td>
+ &lt;td>Every 2 minutes&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>State Transitions:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Movement detected&lt;/strong> → Immediate position report → Switch to dynamic mode&lt;/li>
+&lt;li>&lt;strong>Continuous motion&lt;/strong> → Report every 2 minutes while moving&lt;/li>
+&lt;li>&lt;strong>Motion stops&lt;/strong> → Final position report → Return to static mode&lt;/li>
+&lt;/ol>
+&lt;p>Both cadence and motion sensitivity are configurable via Haltian Operations Cloud.&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/tags/haltian-nano-tag/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/tags/haltian-nano-tag/specifications/</guid><description>&lt;h2 id="physical">Physical&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Dimensions&lt;/td>
+ &lt;td>25.4 × 12.7 × 7.2 mm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Weight&lt;/td>
+ &lt;td>3 g&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Housing material&lt;/td>
+ &lt;td>PC+ABS&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>IP rating&lt;/td>
+ &lt;td>IP40 (indoor use)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Color&lt;/td>
+ &lt;td>White&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="environmental">Environmental&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Operating temperature&lt;/td>
+ &lt;td>0°C to +50°C&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Operating humidity&lt;/td>
+ &lt;td>15% to 85% RH (non-condensing)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Storage temperature&lt;/td>
+ &lt;td>-20°C to +60°C&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="electronics">Electronics&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Component&lt;/th>
+ &lt;th>Specification&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>SoC&lt;/td>
+ &lt;td>EFR32BG22 (BLE)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Accelerometer&lt;/td>
+ &lt;td>LIS2DW12&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Antenna&lt;/td>
+ &lt;td>Internal PWB strip line (~+0.4 dBi)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Protocol&lt;/td>
+ &lt;td>Wirepas 5.2 Direct Advertisement&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="power">Power&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Battery type&lt;/td>
+ &lt;td>CR1025 × 2&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Battery life&lt;/td>
+ &lt;td>Up to 5 years (typical inventory use)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Replaceable&lt;/td>
+ &lt;td>No (sealed unit)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">Battery Life Considerations&lt;/div>
+&lt;p>Battery life varies significantly based on usage:&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/devices/tags/haltian-nano-tag/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/tags/haltian-nano-tag/troubleshooting/</guid><description>&lt;h2 id="tag-not-reporting">Tag Not Reporting&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Check battery&lt;/strong> - Query battery level via API&lt;/li>
+&lt;li>&lt;strong>Verify coverage&lt;/strong> - Ensure sufficient EH Locators in area&lt;/li>
+&lt;li>&lt;strong>Check motion&lt;/strong> - Static tags report infrequently by design&lt;/li>
+&lt;li>&lt;strong>Network status&lt;/strong> - Verify gateway connectivity&lt;/li>
+&lt;/ol>
+&lt;h2 id="inaccurate-position">Inaccurate Position&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Locator coverage&lt;/strong> - Need 3+ locators for accurate multilateration&lt;/li>
+&lt;li>&lt;strong>RF interference&lt;/strong> - Check for metal obstructions&lt;/li>
+&lt;li>&lt;strong>Locator placement&lt;/strong> - Verify locator positions are configured correctly&lt;/li>
+&lt;/ol>
+&lt;h2 id="short-battery-life">Short Battery Life&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Excessive motion&lt;/strong> - Vibrating equipment drains battery quickly&lt;/li>
+&lt;li>&lt;strong>Reporting interval&lt;/strong> - Consider longer intervals for static assets&lt;/li>
+&lt;li>&lt;strong>Environment&lt;/strong> - Extreme temperatures reduce battery capacity&lt;/li>
+&lt;/ol></description></item></channel></rss>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian Finder on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-finder/</link><description>Recent content in Haltian Finder on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/applications/haltian-finder/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-finder/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-finder/getting-started/</guid><description>&lt;p>This guide walks you through logging in to Haltian Finder and navigating the interface.&lt;/p>
+&lt;h2 id="login">Login&lt;/h2>
+&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/applications/haltian-finder/Finder_login.png" alt="Haltian Finder login screen" style="max-width:600px; border: 1px solid #ddd;">
+&lt;ol>
+&lt;li>Open &lt;a href="https://haltian-finder.eu.haltian.io">haltian-finder.eu.haltian.io&lt;/a> in your browser&lt;/li>
+&lt;li>Enter your credentials:&lt;/li>
+&lt;/ol>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Field&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Organization&lt;/strong>&lt;/td>
+ &lt;td>Your Haltian IoT organization name&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Username&lt;/strong>&lt;/td>
+ &lt;td>Your email address&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Password&lt;/strong>&lt;/td>
+ &lt;td>Your account password&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;ol start="3">
+&lt;li>Click &lt;strong>Sign In&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Account Access&lt;/div>
+&lt;p>If you don&amp;rsquo;t have an account or have forgotten your password, contact your organization&amp;rsquo;s Manager.&lt;/p>
+&lt;/div>
+&lt;h2 id="app-layout">App Layout&lt;/h2>
+&lt;p>After login, the Haltian Finder interface has two main areas:&lt;/p></description></item><item><title>Device Search</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-finder/device-search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-finder/device-search/</guid><description>&lt;p>The main screen of Haltian Finder is the device search page. Type in the search field to find devices — the search looks across device names, identifiers, and keywords simultaneously.&lt;/p>
+&lt;h2 id="how-search-works">How Search Works&lt;/h2>
+&lt;p>Use the search field to find sensor devices and tags by name, identifier, or assigned keyword. Search is case-insensitive and begins automatically after you stop typing for one second.&lt;/p>
+&lt;p>The search matches across:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Device name&lt;/strong> — full or partial match&lt;/li>
+&lt;li>&lt;strong>Device identifiers&lt;/strong> — Customer Label ID, GIAI, TUID, Wirepas Node ID, and serial number&lt;/li>
+&lt;li>&lt;strong>Keywords&lt;/strong> — any keyword assigned to the device&lt;/li>
+&lt;/ul>
+&lt;h3 id="search-examples">Search Examples&lt;/h3>
+&lt;p>&lt;strong>One search term&lt;/strong>&lt;/p></description></item><item><title>Device Details</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-finder/device-details/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-finder/device-details/</guid><description>&lt;p>When you open a device from search results or the recently viewed list, the device details view shows device information and an interactive location map.&lt;/p>
+&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/applications/haltian-finder/Finder_device_details.png" alt="Haltian Finder device details" style="max-width:600px; border: 1px solid #ddd;">
+&lt;h2 id="device-information-left-panel">Device Information (Left Panel)&lt;/h2>
+&lt;p>The left side of the device details view displays:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Element&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Device name&lt;/strong>&lt;/td>
+ &lt;td>The name assigned to the device&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Close button&lt;/strong>&lt;/td>
+ &lt;td>Returns to the search page&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Refresh button&lt;/strong>&lt;/td>
+ &lt;td>Reloads the device data&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Keywords&lt;/strong>&lt;/td>
+ &lt;td>Keywords assigned to this device&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Last seen&lt;/strong>&lt;/td>
+ &lt;td>When the device last communicated, shown as relative time (e.g. &amp;ldquo;2 hours ago&amp;rdquo;)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Device image&lt;/strong>&lt;/td>
+ &lt;td>Photo attached to the device, or a default icon for the device type&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="location-right-panel">Location (Right Panel)&lt;/h2>
+&lt;p>The right side shows the device&amp;rsquo;s location on an interactive map.&lt;/p></description></item><item><title>Profile &amp; Settings</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-finder/profile-settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-finder/profile-settings/</guid><description>&lt;p>Access your profile by clicking the &lt;strong>profile icon&lt;/strong> in the top-right corner of the navigation bar.&lt;/p>
+&lt;h2 id="profile-information">Profile Information&lt;/h2>
+&lt;p>The profile menu displays your account details:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Field&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Organization&lt;/strong>&lt;/td>
+ &lt;td>Your organization name&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Username&lt;/strong>&lt;/td>
+ &lt;td>Your login email&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Role&lt;/strong>&lt;/td>
+ &lt;td>Your assigned role (Manager, Designer, Installer, or Viewer)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>User UUID&lt;/strong>&lt;/td>
+ &lt;td>Your system identifier&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="log-out">Log Out&lt;/h2>
+&lt;ol>
+&lt;li>Click the &lt;strong>profile icon&lt;/strong> in the top-right corner&lt;/li>
+&lt;li>Select &lt;strong>Log out&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>Logging out clears your session and returns you to the login page.&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-finder/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-finder/troubleshooting/</guid><description>&lt;h2 id="login-issues">Login Issues&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Problem&lt;/th>
+ &lt;th>Solution&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Can&amp;rsquo;t log in&lt;/strong>&lt;/td>
+ &lt;td>Verify your organization name, email, and password are correct. Check for typos and extra spaces.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>&amp;ldquo;No site rights&amp;rdquo; error after login&lt;/strong>&lt;/td>
+ &lt;td>Your account does not have access to any sites. Contact your organization&amp;rsquo;s Manager to assign site access.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Forgot password&lt;/strong>&lt;/td>
+ &lt;td>Contact your organization&amp;rsquo;s Manager to reset your password.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Session expired&lt;/strong>&lt;/td>
+ &lt;td>Your login session has timed out. Sign in again with your credentials.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="search-issues">Search Issues&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Problem&lt;/th>
+ &lt;th>Solution&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>No results found&lt;/strong>&lt;/td>
+ &lt;td>Check spelling. Try searching by a different identifier (device name, Customer Label ID, TUID, Wirepas Node ID).&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Too many results (100+ warning)&lt;/strong>&lt;/td>
+ &lt;td>Refine your search terms to be more specific. Add more characters or use a unique identifier.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Search feels slow&lt;/strong>&lt;/td>
+ &lt;td>Search has a 1-second delay after typing to avoid unnecessary queries. Wait briefly for results to appear.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="device-details">Device Details&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Problem&lt;/th>
+ &lt;th>Solution&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Map not loading&lt;/strong>&lt;/td>
+ &lt;td>Check your internet connection. Try refreshing the page. Ensure JavaScript is enabled in your browser.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Location not showing&lt;/strong>&lt;/td>
+ &lt;td>The device may not have position data. Not all device types support location tracking.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Position history empty&lt;/strong>&lt;/td>
+ &lt;td>Try a longer time range. The device may not have moved during the selected period.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="browser-issues">Browser Issues&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Problem&lt;/th>
+ &lt;th>Solution&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Page not loading or blank screen&lt;/strong>&lt;/td>
+ &lt;td>Clear browser cache and cookies. Try a different browser (Chrome, Edge, Firefox, Safari).&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Layout looks broken&lt;/strong>&lt;/td>
+ &lt;td>Ensure you&amp;rsquo;re using a modern browser with the latest updates.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Recently viewed list empty&lt;/strong>&lt;/td>
+ &lt;td>Recently viewed devices are stored in your browser&amp;rsquo;s local storage. Clearing browser data resets this list.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item></channel></rss>
