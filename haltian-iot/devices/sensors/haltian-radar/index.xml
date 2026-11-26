@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian RADAR on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/</link><description>Recent content in Haltian RADAR on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/installation/</guid><description>&lt;h2 id="before-installation">Before Installation&lt;/h2>
+&lt;h3 id="prerequisites">Prerequisites&lt;/h3>
+&lt;ul>
+&lt;li>Ensure Thingsee Gateway is installed and operational&lt;/li>
+&lt;li>Plan sensor locations to maintain mesh network coverage (&amp;lt; 20m between nodes)&lt;/li>
+&lt;li>Identify monitoring zones (parking spaces or loading docks)&lt;/li>
+&lt;li>Determine optimal mounting position (wall, pole, or ceiling)&lt;/li>
+&lt;li>Verify mounting surface suitable for chosen method&lt;/li>
+&lt;/ul>
+&lt;h3 id="planning-sensor-placement">Planning Sensor Placement&lt;/h3>
+&lt;p>&lt;strong>Key Considerations:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Sensor beam must be directed toward monitored area&lt;/li>
+&lt;li>Adjust sensing distance to avoid detecting beyond intended zone&lt;/li>
+&lt;li>Install perpendicular to center of measured area for best performance&lt;/li>
+&lt;li>Can be angled up to 45° depending on installation spot&lt;/li>
+&lt;/ul>
+&lt;h3 id="network-coverage-planning">Network Coverage Planning&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Maximum distance&lt;/strong>: 20m between sensors or to gateway&lt;/li>
+&lt;li>Use intermediate sensors as routers for distances &amp;gt; 20m&lt;/li>
+&lt;li>RADAR sensors work outdoors - plan for weather exposure&lt;/li>
+&lt;li>IP68 rating allows installation in exposed locations&lt;/li>
+&lt;/ul>
+&lt;h2 id="parking-space-monitoring---wall-or-pole-mount">Parking Space Monitoring - Wall or Pole Mount&lt;/h2>
+&lt;p>&lt;strong>Most common installation method for parking&lt;/strong>&lt;/p></description></item><item><title>Operation</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/operation/</guid><description>&lt;h2 id="how-radar-detection-works">How RADAR Detection Works&lt;/h2>
+&lt;h3 id="60ghz-pulsed-coherent-radar-technology">60GHz Pulsed Coherent Radar Technology&lt;/h3>
+&lt;p>The Haltian RADAR uses &lt;strong>60GHz pulsed coherent radar&lt;/strong> to detect objects within its sensing range.&lt;/p>
+&lt;p>&lt;strong>Detection principle:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Transmit&lt;/strong>: Sensor emits 60GHz radio pulses&lt;/li>
+&lt;li>&lt;strong>Reflect&lt;/strong>: Pulses bounce off objects (vehicles, trailers, etc.)&lt;/li>
+&lt;li>&lt;strong>Receive&lt;/strong>: Sensor receives reflected pulses&lt;/li>
+&lt;li>&lt;strong>Calculate&lt;/strong>: Time-of-flight determines distance to object&lt;/li>
+&lt;li>&lt;strong>Decide&lt;/strong>: Distance compared to configured threshold → occupied/unoccupied&lt;/li>
+&lt;/ol>
+&lt;h3 id="detection-cone">Detection Cone&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Beam angle&lt;/strong>: 17 degrees&lt;/li>
+&lt;li>&lt;strong>Pattern&lt;/strong>: Conical beam from sensor face&lt;/li>
+&lt;li>&lt;strong>Coverage&lt;/strong>: Widens with distance (wider at far range)&lt;/li>
+&lt;li>&lt;strong>Sensitivity&lt;/strong>: Uniform across beam width&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Calculation example:&lt;/strong>&lt;/p></description></item><item><title>Configuration</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/configuration/</guid><description>&lt;h2 id="configuration-overview">Configuration Overview&lt;/h2>
+&lt;p>Haltian RADAR sensors are &lt;strong>remotely configurable&lt;/strong> via &lt;strong>Haltian Operations Cloud&lt;/strong>. This allows adjusting key parameters without physical access to the sensor.&lt;/p>
+&lt;p>&lt;strong>Key configurable parameters:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Sensing distance&lt;/strong>: 10 cm to 10 meters&lt;/li>
+&lt;li>&lt;strong>Measurement interval&lt;/strong>: How often sensor measures&lt;/li>
+&lt;li>&lt;strong>Reporting interval&lt;/strong>: How often data transmitted&lt;/li>
+&lt;li>&lt;strong>Operational mode&lt;/strong>: Parking, loading dock, or custom&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Note&lt;/div>
+&lt;p>Configuration changes require access to Haltian Operations Cloud. Contact Haltian support if you need assistance with remote configuration.&lt;/p></description></item><item><title>Specifications</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/specifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/specifications/</guid><description>&lt;h2 id="general-specifications">General Specifications&lt;/h2>
+&lt;h3 id="product-information">Product Information&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Product name&lt;/strong>&lt;/td>
+ &lt;td>Haltian RADAR&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Model&lt;/strong>&lt;/td>
+ &lt;td>RADAR&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Manufacturer&lt;/strong>&lt;/td>
+ &lt;td>Haltian Oy&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Use case&lt;/strong>&lt;/td>
+ &lt;td>Parking space occupancy, loading dock monitoring&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Technology&lt;/strong>&lt;/td>
+ &lt;td>60GHz pulsed coherent radar&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="physical-specifications">Physical Specifications&lt;/h2>
+&lt;h3 id="dimensions-and-weight">Dimensions and Weight&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Length&lt;/strong>&lt;/td>
+ &lt;td>108 mm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Width&lt;/strong>&lt;/td>
+ &lt;td>64 mm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Height&lt;/strong>&lt;/td>
+ &lt;td>42 mm&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Weight&lt;/strong>&lt;/td>
+ &lt;td>166 grams&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Mounting&lt;/strong>&lt;/td>
+ &lt;td>Wall, pole, or ceiling mount&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="enclosure">Enclosure&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Specification&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Material&lt;/strong>&lt;/td>
+ &lt;td>Ruggedized plastic housing&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Color&lt;/strong>&lt;/td>
+ &lt;td>Industrial gray/black (typically)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>IP rating&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>IP68&lt;/strong> (waterproof and dustproof)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Submersion rating&lt;/strong>&lt;/td>
+ &lt;td>Continuous immersion up to 1.5 meters&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="environmental-protection">Environmental Protection&lt;/h3>
+&lt;p>&lt;strong>IP68 certification:&lt;/strong>&lt;/p></description></item><item><title>Troubleshooting</title><link>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/devices/sensors/haltian-radar/troubleshooting/</guid><description>&lt;h2 id="troubleshooting-overview">Troubleshooting Overview&lt;/h2>
+&lt;p>This guide addresses common issues with Haltian RADAR sensors and provides step-by-step solutions.&lt;/p>
+&lt;p>&lt;strong>Quick troubleshooting approach:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Identify the problem (symptoms)&lt;/li>
+&lt;li>Check common causes (this guide)&lt;/li>
+&lt;li>Verify configuration (IoT Studio)&lt;/li>
+&lt;li>Contact support if unresolved&lt;/li>
+&lt;/ol>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Support Available&lt;/div>
+&lt;p>If you can&amp;rsquo;t resolve the issue using this guide, contact Haltian support: &lt;a href="mailto:support@haltian.com">support@haltian.com&lt;/a>. Include sensor ID, problem description, and troubleshooting steps already attempted.&lt;/p>
+&lt;/div>
+&lt;h2 id="detection-issues">Detection Issues&lt;/h2>
+&lt;h3 id="sensor-reports-occupied-when-space-is-empty-false-positive">Sensor Reports &amp;ldquo;Occupied&amp;rdquo; When Space is Empty (False Positive)&lt;/h3>
+&lt;p>&lt;strong>Symptoms:&lt;/strong>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Haltian Stage on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-stage/</link><description>Recent content in Haltian Stage on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/applications/haltian-stage/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting started</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-stage/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-stage/getting-started/</guid><description>&lt;h2 id="signing-in">Signing in&lt;/h2>
+&lt;p>Open &lt;a href="https://stage.eu.haltian.io">stage.eu.haltian.io&lt;/a>. The sign-in page offers two ways in.&lt;/p>
+&lt;h3 id="with-your-haltian-iot-account">With your Haltian IoT account&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Field&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Organisation&lt;/strong>&lt;/td>
+ &lt;td>Your Haltian IoT organization. It is part of the credential, not a choice made after signing in&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Email&lt;/strong>&lt;/td>
+ &lt;td>The email of your Haltian IoT account&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Password&lt;/strong>&lt;/td>
+ &lt;td>Your account password. The eye icon shows the password while you type&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>Select &lt;strong>Remember the organisation and email on this device&lt;/strong> to have them filled in next time, then select &lt;strong>Sign in&lt;/strong>.&lt;/p></description></item><item><title>Rooms</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-stage/rooms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-stage/rooms/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Rooms shows how meeting rooms, phone booths and other spaces are used and how their air is: which rooms were used, how much each was used, how many people each room held, and the CO₂, temperature and humidity in each room. A device is part of Rooms when it carries the keyword &lt;code>room&lt;/code> or &lt;code>rooms&lt;/code> in Haltian Studio.&lt;/p>
+&lt;div style="margin:20px 0;">
+&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/applications/haltian-stage/rooms-dashboard.webp" alt="Rooms dashboard with the floor plan and occupied share by hour" width="720" style="max-width:100%; height:auto; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.15); border:1px solid #e0e0e0;">
+&lt;br>&lt;em>The Rooms dashboard, with demo data&lt;/em>
+&lt;/div>
+&lt;h2 id="who-it-helps">Who it helps&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Person&lt;/th>
+ &lt;th>What they get&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Workplace manager&lt;/strong>&lt;/td>
+ &lt;td>Which rooms stood empty and which were used most, to decide where more rooms, or fewer, are needed&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Facility manager&lt;/strong>&lt;/td>
+ &lt;td>CO₂, temperature and humidity room by room, and how long each room spent at 900 ppm CO₂ or more&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Office team&lt;/strong>&lt;/td>
+ &lt;td>Which rooms were used and how much, on the floor plan, and when the rooms are usually busy&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="views">Views&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>View&lt;/th>
+ &lt;th>What you see&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Dashboard&lt;/strong>&lt;/td>
+ &lt;td>How many of the rooms were used in the period. The floor plan with each room as &lt;strong>Used&lt;/strong>, &lt;strong>Not used&lt;/strong> or &lt;strong>No data&lt;/strong>, and the floor&amp;rsquo;s zones as named outlines. A card per room with its share of time in use. Tiles for &lt;strong>Most rooms in use at once&lt;/strong>, &lt;strong>Time in use&lt;/strong> and the most people seen. The occupied share by hour or by day, and the most and least used rooms&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Time in use&lt;/strong>&lt;/td>
+ &lt;td>The share of time each room was in use, the least used room, the rooms never used, and the rooms under 80 % known. One bar per room, most used first&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Patterns&lt;/strong>&lt;/td>
+ &lt;td>A weekday-by-hour grid of the in-use share for all rooms, with the busiest and the quietest hour&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>People&lt;/strong>&lt;/td>
+ &lt;td>The people count over time, for every room that counts people or for one room, and the highest count per hour or day&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>A room&amp;rsquo;s page&lt;/strong>&lt;/td>
+ &lt;td>Opened from a room&amp;rsquo;s card, its name in the ranking, or its bar in &lt;strong>Time in use&lt;/strong>. &lt;strong>Time in use&lt;/strong>, &lt;strong>Most people&lt;/strong> and &lt;strong>Median when in use&lt;/strong>, a timeline of the chosen day&amp;rsquo;s in-use and free periods, the room&amp;rsquo;s own weekly pattern, and its air quality&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Air quality&lt;/strong>&lt;/td>
+ &lt;td>CO₂, temperature and humidity over the period, one line per room. The CO₂ chart has reference lines at 750 and 900 ppm, the WELL v2 ventilation levels. A &lt;strong>By room&lt;/strong> table with the mean, the highest reading and the time at 900 ppm or more, TVOC included&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Rooms&lt;/strong>&lt;/td>
+ &lt;td>Every device tagged &lt;code>room&lt;/code> in the space, with where it is, its &lt;strong>Last reading&lt;/strong> before midnight, its readiness (&lt;strong>Ready&lt;/strong>, &lt;strong>Partial&lt;/strong> or &lt;strong>Absent&lt;/strong>) and when it was last seen&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Export&lt;/strong>&lt;/td>
+ &lt;td>How a report is exported: the two formats, which reports can be exported, and that there are no scheduled or emailed reports. Each report exports itself from its own page&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Settings&lt;/strong>&lt;/td>
+ &lt;td>Which devices are included, what makes a device ready, the space scope, and your office hours&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>All reports use the &lt;a href="../getting-started/#the-period-bar">period bar&lt;/a> and can be exported.&lt;/p></description></item><item><title>Desks</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-stage/desks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-stage/desks/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Desks shows which desks were used, where they are on the floor plan, and how much each desk was used. It helps you see which desks nobody uses, when the office is busiest, and how many desks were in use at the same time. A device is part of Desks when it carries the keyword &lt;code>desk&lt;/code> or &lt;code>desks&lt;/code> in Haltian Studio.&lt;/p>
+&lt;div style="margin:20px 0;">
+&lt;img src="https://developer.haltian.io/assets/images/haltian-iot/applications/haltian-stage/desks-dashboard.webp" alt="Desks dashboard with tiles, the floor plan and desks in use by hour" width="720" style="max-width:100%; height:auto; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.15); border:1px solid #e0e0e0;">
+&lt;br>&lt;em>The Desks dashboard, with demo data&lt;/em>
+&lt;/div>
+&lt;h2 id="who-it-helps">Who it helps&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Person&lt;/th>
+ &lt;th>What they get&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Workplace or facility manager&lt;/strong>&lt;/td>
+ &lt;td>The share of time each desk was in use, the least used desk and the desks never used, to decide how many desks a floor needs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Space planner&lt;/strong>&lt;/td>
+ &lt;td>The busiest and quietest weekday hours across all desks, and the most desks in use at once, to plan desk sharing and office days&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Office manager&lt;/strong>&lt;/td>
+ &lt;td>Which desks were used yesterday, on the floor plan, and how much of the time each was in use&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="views">Views&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>View&lt;/th>
+ &lt;th>What you see&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Dashboard&lt;/strong>&lt;/td>
+ &lt;td>How many of the desks were used in the period. Tiles for &lt;strong>Desks used&lt;/strong>, &lt;strong>Utilisation&lt;/strong>, &lt;strong>In use per working day&lt;/strong> and &lt;strong>Most at once&lt;/strong>. The floor plan with each desk as &lt;strong>Used&lt;/strong>, &lt;strong>Not used&lt;/strong> or &lt;strong>No data&lt;/strong>, and the floor&amp;rsquo;s zones as named outlines. Desks in use by hour or by day, the most and least used desks, and a card per desk&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>A desk&amp;rsquo;s day&lt;/strong>&lt;/td>
+ &lt;td>Opened from a desk&amp;rsquo;s card, its name in the ranking, or its bar in &lt;strong>Utilisation&lt;/strong>. Time &lt;strong>In use&lt;/strong> and &lt;strong>Free&lt;/strong>, the &lt;strong>First movement&lt;/strong> and &lt;strong>In use until&lt;/strong>, and a timeline of the day&amp;rsquo;s in-use and free periods&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Utilisation&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>Average utilisation&lt;/strong>, &lt;strong>Least used&lt;/strong>, &lt;strong>Never used&lt;/strong> and &lt;strong>Under 80 % known&lt;/strong>. One bar per desk, most used first&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Patterns&lt;/strong>&lt;/td>
+ &lt;td>A weekday-by-hour grid across all desks, with &lt;strong>Busiest hour&lt;/strong> and &lt;strong>Quietest hour&lt;/strong>. A week or a month shows the pattern best&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Desks&lt;/strong>&lt;/td>
+ &lt;td>Every device tagged &lt;code>desk&lt;/code> in the space, with where it is, its &lt;strong>Last reading&lt;/strong> before midnight, its readiness and when it was last seen&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Settings&lt;/strong>&lt;/td>
+ &lt;td>Which devices count, the space scope, and the office hours, which you can edit here&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>On the floor plan, select a desk marker or a desk card to highlight the same desk in both. When desks sit on more than one floor, a tab per floor lets you switch between them.&lt;/p></description></item><item><title>Parking</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-stage/parking/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-stage/parking/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Parking shows how the car park was used. One sensor is one space. You see how full the car park was on average, how many spaces were still free at its busiest moment, when it fills, how long cars stay and which spaces are rarely used. A sensor is part of Parking when it carries the keyword &lt;code>parking&lt;/code> in Haltian Studio.&lt;/p>
+&lt;p>Parking shows measured occupancy only: parking booking is not part of Haltian IoT.&lt;/p></description></item><item><title>People flow</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-stage/people-flow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-stage/people-flow/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>People flow shows how many people come in and go out through your entrances, and when. It reads the entries and exits that people counters report to Haltian IoT. You see the busiest hour and day, when people arrive and when most have left, and which entrance carries the traffic. Where a counter was silent for part of the period, the app says &amp;ldquo;at least&amp;rdquo; instead of guessing.&lt;/p>
+&lt;p>A device is part of People flow when it carries the keyword &lt;code>peopleflow&lt;/code>, &lt;code>people flow&lt;/code>, &lt;code>entrance&lt;/code> or &lt;code>entryway&lt;/code> in Haltian Studio, plural forms included, and counts entries and exits.&lt;/p></description></item><item><title>Outdoor</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-stage/outdoor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-stage/outdoor/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Outdoor shows the conditions outside a site, as measured by its own sensors: what it was like outside over the period, how the period ran, and what that means for heating, frost and heat. It uses every sensor that carries the keyword &lt;code>outdoor&lt;/code> or &lt;code>outdoors&lt;/code> in Haltian Studio. A sensor that also detects occupancy, such as a Haltian RADAR in an outdoor parking space, adds how much of the time its space was taken.&lt;/p></description></item><item><title>Tracking</title><link>https://developer.haltian.io/haltian-iot/applications/haltian-stage/tracking/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/applications/haltian-stage/tracking/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Tracking shows where tagged equipment was in your building at the last midnight: the zone each item was in, where it was on the floor plan, and where it spent its time over a period. Tracked items are objects such as laptops, trolleys or shared tools. What to tag and how to name it is up to your organization. Tracking is for objects, not for people.&lt;/p>
+&lt;div class="alert alert-info" role="alert">&lt;div class="h4 alert-heading" role="heading">Tracking is off until you switch it on&lt;/div>
+&lt;p>Open the account menu at the top right and, under &lt;strong>Apps&lt;/strong>, switch &lt;strong>Tracking&lt;/strong> on. It then appears in the app switcher and on the landing page. See &lt;a href="../getting-started/#the-account-menu">The account menu&lt;/a>.&lt;/p></description></item></channel></rss>

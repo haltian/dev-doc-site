@@ -1,0 +1,62 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#F6FAFA', 'primaryTextColor': '#143633', 'primaryBorderColor': '#143633', 'lineColor': '#143633', 'secondaryColor': '#C7FDE6', 'tertiaryColor': '#73F9C1', 'clusterBkg': '#ffffff', 'clusterBorder': '#143633', 'edgeLabelBackground': '#ffffff'}}}%%
+graph LR
+    subgraph Devices["Devices"]
+        GW[Haltian IoT Gateway]
+        subgraph RoomA["Room A"]
+            P1[Thingsee PRESENCE]
+            P2[Thingsee PRESENCE]
+            E1[Haltian ENTRYWAY]
+        end
+        P3[Thingsee PRESENCE]
+        P4[Thingsee PRESENCE]
+        E2[Haltian ENTRYWAY]
+        E3[Haltian ENTRYWAY]
+    end
+
+    subgraph Platform["Haltian IoT Platform"]
+        BE[Cloud Backend]
+        DG[Device Groups]
+        ROOMA(["Room A"])
+        DEV1(["Device #1"])
+        DEV2(["Device #2"])
+        DEV3(["Device #3"])
+        ODE[Occupancy Engine]
+        subgraph APIs["APIs"]
+            STREAM[Stream API]
+            SVCAPI[Service API]
+        end
+        INTEGRATOR["Microsoft Places integrator"]
+    end
+
+    subgraph Apps["Haltian IoT Applications"]
+        STUDIO["Studio mobile installer"]
+    end
+
+    subgraph MS365["Microsoft 365"]
+        API[Microsoft Graph API]
+        MP[Microsoft Places]
+        TEAMS[Teams / Outlook]
+    end
+
+    P1 -->|Wirepas mesh| E1
+    P2 -->|Wirepas mesh| E1
+    E1 -->|Wirepas mesh| GW
+    P3 -->|Wirepas mesh| GW
+    P4 -->|Wirepas mesh| P3
+    E2 -->|Wirepas mesh| P3
+    E3 -->|Wirepas mesh| P1
+    GW --> BE
+    BE --> DG
+    DG --> ROOMA
+    ROOMA -->|contains| DEV1
+    ROOMA -->|contains| DEV2
+    ROOMA -->|contains| DEV3
+    ROOMA --> ODE
+    STREAM --> INTEGRATOR
+    INTEGRATOR --> API
+    API --> MP
+    MP --> TEAMS
+    STUDIO -->|setup| SVCAPI
+
+    style RoomA stroke-dasharray: 5 5
+    style APIs stroke-dasharray: 5 5

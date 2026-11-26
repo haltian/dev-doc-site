@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Device Groups on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/concepts/device-groups/</link><description>Recent content in Device Groups on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/concepts/device-groups/index.xml" rel="self" type="application/rss+xml"/><item><title>Sensor Composition</title><link>https://developer.haltian.io/haltian-iot/concepts/device-groups/composition/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/concepts/device-groups/composition/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The behavior of a device group depends on which sensor types it contains. The Occupancy Data Engine recognizes three composition scenarios, each with its own occupancy logic and reset behavior.&lt;/p>
+&lt;p>Choose the composition that matches your space and sensors:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Composition&lt;/th>
+ &lt;th>Sensors&lt;/th>
+ &lt;th>What you get&lt;/th>
+ &lt;th>Best for&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Entryway only&lt;/strong>&lt;/td>
+ &lt;td>1+ Entryway sensors&lt;/td>
+ &lt;td>People count (entries/exits)&lt;/td>
+ &lt;td>Rooms with controlled doorways&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Presence only&lt;/strong>&lt;/td>
+ &lt;td>1+ Presence sensors&lt;/td>
+ &lt;td>Occupied / not occupied&lt;/td>
+ &lt;td>Open areas, desks, small rooms&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Mixed&lt;/strong>&lt;/td>
+ &lt;td>Entryway + Presence sensors&lt;/td>
+ &lt;td>People count + validated occupancy&lt;/td>
+ &lt;td>Large rooms needing both count accuracy and presence confirmation&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="entryway-only">Entryway Only&lt;/h2>
+&lt;p>A device group with one or more Entryway sensors and no Presence sensors.&lt;/p></description></item></channel></rss>

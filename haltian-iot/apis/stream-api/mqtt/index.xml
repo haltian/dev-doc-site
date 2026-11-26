@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MQTT Stream API on Haltian Developer Documentation</title><link>https://developer.haltian.io/haltian-iot/apis/stream-api/mqtt/</link><description>Recent content in MQTT Stream API on Haltian Developer Documentation</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://developer.haltian.io/haltian-iot/apis/stream-api/mqtt/index.xml" rel="self" type="application/rss+xml"/><item><title>Topics</title><link>https://developer.haltian.io/haltian-iot/apis/stream-api/mqtt/topics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/stream-api/mqtt/topics/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The Stream API publishes device data to structured MQTT topics. Each topic follows a consistent naming pattern that includes integration identifiers and data types.&lt;/p>
+&lt;h2 id="topic-structure">Topic Structure&lt;/h2>
+&lt;pre tabindex="0">&lt;code>haltian-iot/events/{integration-id}/{api-key-id}/{event-kind}/{event-type}/{device-id}
+&lt;/code>&lt;/pre>&lt;h3 id="topic-parameters">Topic Parameters&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Parameter&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>integration-id&lt;/code>&lt;/td>
+ &lt;td>UUID matching the MQTT subscription integration&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>api-key-id&lt;/code>&lt;/td>
+ &lt;td>UUID matching the API key attached to the integration&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>event-kind&lt;/code>&lt;/td>
+ &lt;td>One of: &lt;code>measurements&lt;/code>, &lt;code>messages&lt;/code>, &lt;code>notifications&lt;/code>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>event-type&lt;/code>&lt;/td>
+ &lt;td>Specific measurement/message/notification type&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>device-id&lt;/code>&lt;/td>
+ &lt;td>UUID of the device (optional for notifications)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="event-kinds">Event Kinds&lt;/h2>
+&lt;h3 id="measurements">measurements&lt;/h3>
+&lt;p>Device sensor readings and telemetry data.&lt;/p></description></item><item><title>Examples</title><link>https://developer.haltian.io/haltian-iot/apis/stream-api/mqtt/examples/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/stream-api/mqtt/examples/</guid><description>&lt;div class="alert alert-primary" role="alert">&lt;div class="h4 alert-heading" role="heading">Need MQTT credentials?&lt;/div>
+&lt;p>See the &lt;a href="https://developer.haltian.io/haltian-iot/guides/mqtt-api-key-management/">MQTT API Key Management Guide&lt;/a> to create integration credentials via GraphQL before using these examples.&lt;/p>
+&lt;/div>
+&lt;p>Both examples use a persistent MQTT 3.1.1 session. Set a client ID that stays the same across restarts and is unique to each running instance. Reconnect with the same API key to resume the session. See the &lt;a href="../mqtt-faq/">MQTT FAQ&lt;/a> for session limits and delivery behavior.&lt;/p>
+&lt;h2 id="python-example">Python Example&lt;/h2>
+&lt;p>Using the &lt;code>paho-mqtt&lt;/code> library:&lt;/p></description></item><item><title>MQTT FAQ</title><link>https://developer.haltian.io/haltian-iot/apis/stream-api/mqtt/mqtt-faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/stream-api/mqtt/mqtt-faq/</guid><description>&lt;p>The MQTT API is subscribe-only; clients can receive messages but cannot publish them. This page describes the current MQTT broker behavior for persistent sessions and messages queued while a client is disconnected. These values may change.&lt;/p>
+&lt;h2 id="which-mqtt-protocol-versions-are-supported">Which MQTT protocol versions are supported?&lt;/h2>
+&lt;p>The broker supports MQTT 3.1, 3.1.1, and 5.&lt;/p>
+&lt;h2 id="how-long-does-the-broker-keep-a-persistent-session">How long does the broker keep a persistent session?&lt;/h2>
+&lt;p>For MQTT 3.1.1, set &lt;strong>Clean Session&lt;/strong> to &lt;code>false&lt;/code>; the broker keeps the session for 2 hours after disconnecting. For MQTT 5, set &lt;strong>Clean Start&lt;/strong> to &lt;code>false&lt;/code> and &lt;strong>Session Expiry Interval&lt;/strong> to a value greater than &lt;code>0&lt;/code>; the broker caps the interval at 2 hours. To resume a session, reconnect with the same client ID and API key.&lt;/p></description></item><item><title>Cloud Binary Passthrough</title><link>https://developer.haltian.io/haltian-iot/apis/stream-api/mqtt/cloud-binary-passthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://developer.haltian.io/haltian-iot/apis/stream-api/mqtt/cloud-binary-passthrough/</guid><description>&lt;div class="alert alert-warning" role="alert">&lt;div class="h4 alert-heading" role="heading">Beta Feature&lt;/div>
+&lt;p>Cloud Binary Passthrough is currently in &lt;strong>beta&lt;/strong>. This feature must be enabled for your organization before use. Contact &lt;a href="https://haltian.com/contact/">Haltian Support&lt;/a> to request access.&lt;/p>
+&lt;/div>
+&lt;blockquote>
+&lt;p>&lt;strong>Audience&lt;/strong>: Technical architects, developers, and AI coding agents&lt;br>
+&lt;strong>Prerequisite&lt;/strong>: MQTT subscription already configured via Haltian GraphQL API&lt;br>
+&lt;strong>Scope&lt;/strong>: Understanding and parsing Wirepas mesh network binary passthrough data via Haltian IoT Cloud&lt;/p>&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This guide explains how to process binary passthrough data from Wirepas mesh networks received via &lt;strong>cloud-based MQTT&lt;/strong>. The data flows from wireless sensors through Wirepas gateways to Haltian IoT Cloud, which forwards it to your MQTT broker.&lt;/p></description></item></channel></rss>
